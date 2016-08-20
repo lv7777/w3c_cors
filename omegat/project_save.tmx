@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
+        <seg>このドキュメントではのクロスオリジン・リクエストを有効にするためのメカニズムを定義します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>W3C Recommendation 16 January 2014</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T160556Z" creationid="lv7777" creationdate="20160820T160556Z">
