@@ -14,6 +14,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Status of this Document</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T162319Z" creationid="lv7777" creationdate="20160820T162319Z">
+        <seg>この文書の位置付けt</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
