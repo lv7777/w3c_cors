@@ -12,6 +12,14 @@
         <seg>概要</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>W3C Recommendation 16 January 2014</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T160556Z" creationid="lv7777" creationdate="20160820T160556Z">
+        <seg>2014年1月16日付W3C勧告</seg>
+      </tuv>
+    </tu>
 <!-- Alternative translations -->
   </body>
 </tmx>
