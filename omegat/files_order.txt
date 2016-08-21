@@ -1,0 +1,4 @@
+(mondo)HTML5日本語訳.htm
+cors.html
+Cross-Origin Resource Sharing.htm
+Cross-Origin Resource Sharing２.htm

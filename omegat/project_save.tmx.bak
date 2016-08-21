@@ -118,14 +118,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;Resource Sharing Check</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T011139Z" creationid="lv7777" creationdate="20160821T011139Z">
-        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;リソース共有のチェック</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.3 &lt;/s0&gt;Security</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T010721Z" creationid="lv7777" creationdate="20160821T010721Z">
@@ -394,14 +386,6 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T174623Z" creationid="lv7777" creationdate="20160820T174623Z">
         <seg>この仕様は他の仕様書のビルディングブロックとなるため、 CORS API と呼ばれる。This specification is a building block for other specifications, so-calledspecifications, which define how this specification is used.</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>This specification is written for resource authors and user agents.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T011232Z" creationid="lv7777" creationdate="20160821T011232Z">
-        <seg>この仕様はリソースの著者およびユーザ エージェントについて書かれている。</seg>
       </tuv>
     </tu>
     <tu>

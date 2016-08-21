@@ -1,0 +1,1360 @@
+<html lang="en-US" dir="ltr"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8"></meta>
+  <title>クロスオリジンリソースの共有</title>
+  <style>.example {
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: double;
+  color: #222;
+  background: #fcfcfc;
+}
+.example code strong {
+  color: inherit;
+  background: #ff0;
+}
+.note {
+  margin-left: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: green;
+}
+.note pre {
+  font-weight: normal;
+  font-style: normal;
+}
+.warning {
+  margin-left: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: red;
+}
+p.warning::before {
+  content: "Warning: ";
+}
+pre>code, li>code {
+  color: inherit;
+  background: transparent;
+}
+p.note::before {
+  content: "Note: ";
+}
+.XXX {
+  padding: .5em;
+  border: solid #f00;
+}
+p.XXX::before {
+  content: "Issue: ";
+}
+dl.switch {
+  padding-left: 2em;
+}
+dl.switch>dt {
+  text-indent: -1.5em;
+}
+dl.switch>dt:before {
+  content: '\0021aa';
+  padding: 0 0.5em 0 0;
+  display: inline-block;
+  width: 1em;
+  text-align: right;
+  line-height: 0.5em;
+}
+em.ct {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-style: normal;
+}
+dfn {
+  font-weight: bold;
+  font-style: normal;
+}
+code {
+  color: orangered;
+}
+code :link, code :visited {
+  color: inherit;
+}
+</style>
+  <link href="asset?aid=0" rel="stylesheet"></link>
+ </head>
+ <body dir="ltr">
+  <div class="head"><!--begin-logo-->
+
+
+<p><a href="http://www.w3.org/"><img alt="W3C" height="48" src="http://www.w3.org/Icons/w3c_home" width="72"></a></p><!--end-logo-->
+
+
+   <h1 id="cors">クロスオリジンリソースの共有</h1>
+
+   <h2 class="no-num no-toc" id="w3c-doctype">W3C勧告2014年1月16日</h2>
+
+   <dl>
+    <dt>このバージョン：</dt>
+    <dd class="publish"><a href="http://www.w3.org/TR/2014/REC-cors-20140116/">http://www.w3.org/TR/2014/REC-cors-20140116/</a></dd>
+
+     <dt class="publish">最新バージョン：</dt>
+         <dd class="publish"><a href="http://www.w3.org/TR/cors/">http://www.w3.org/TR/cors/</a></dd>
+
+    <dt>以前のバージョン：</dt>
+<dd><a href="http://www.w3.org/TR/2013/PR-cors-20131205/">http://www.w3.org/TR/2013/PR-cors-20131205/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2013/CR-cors-20130129/">http://www.w3.org/TR/2013/CR-cors-20130129/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2012/WD-cors-20120403/">http://www.w3.org/TR/2012/WD-cors-20120403/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2010/WD-cors-20100727/">http://www.w3.org/TR/2010/WD-cors-20100727/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2009/WD-cors-20090317/">http://www.w3.org/TR/2009/WD-cors-20090317/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2008/WD-access-control-20080912/">http://www.w3.org/TR/2008/WD-access-control-20080912/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2008/WD-access-control-20080214/">http://www.w3.org/TR/2008/WD-access-control-20080214/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20071126/">http://www.w3.org/TR/2007/WD-access-control-20071126/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20071001/">http://www.w3.org/TR/2007/WD-access-control-20071001/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20070618/">http://www.w3.org/TR/2007/WD-access-control-20070618/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20070215/">http://www.w3.org/TR/2007/WD-access-control-20070215/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2006/WD-access-control-20060517/">http://www.w3.org/TR/2006/WD-access-control-20060517/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2005/NOTE-access-control-20050613/">http://www.w3.org/TR/2005/NOTE-access-control-20050613/</a></dd>
+
+    <dt>編集者</dt>
+    <dd><a href="http://annevankesteren.nl/">アンバンケステレン</a> （以前の<a href="http://www.opera.com/">Opera SoftwareのASA</a> ）&lt; <a href="mailto:annevk@annevk.nl">annevk@annevk.nl</a> &gt;</dd>
+   </dl>
+<p>ある可能性がありますのでご了承ください<a href="http://www.w3.org/2014/cors-errata.html">エラッタ</a>この文書の。</p>
+  <p>この仕様書の英語版が唯一の規範的バージョンです。非規範的<a href="http://www.w3.org/Consortium/Translation/">翻訳は</a>また利用できます。
+  
+  </p>
+
+<div class="w3conly"><!--begin-copyright-->
+
+<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015 <a href="http://www.w3.org/"><abbr title="ワールドワイドウェブコンソーシアム">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="マサチューセッツ工科大学">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="情報と数学のための欧州研究コンソーシアム">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+
+  <hr class="top"><!--end-copyright-->
+</div>
+
+  </div>
+
+<div class="publish">
+
+  <h2 class="no-num no-toc" id="abstract">概要</h2>
+
+  <p>この文書では、クライアントサイドのクロスオリジン・リクエストを有効にするためのメカニズムを定義します。リソースへのクロスオリジンリクエストを行うためのAPIを有効にする仕様は、この仕様で定義されたアルゴリズムを使用することができます。そのようなAPIが上で使用されている場合は<code>http://example.org</code>上のリソース、リソース<code>http://hello-world.example</code>この仕様で説明されたメカニズムを使用して選ぶことができます（例えば、特定<code>Access-Control-Allow-Origin: http://example.org</code>レスポンスヘッダなど）、そのリソースからのクロス起源をフェッチすることを可能にするであろう<code>http://example.org</code> 。</p>
+
+
+
+
+  <h2 class="no-num no-toc" id="sotd">この文書のステータス</h2>
+
+<p><em>このセクションでは、公開時点でのこの文書の状態を説明します。他の文書がこの文書に取って代わることができます。現行のW3Cの刊行物および技術報告の最新の改訂版のリストはで見つけることができる<a href="http://www.w3.org/TR/">W3C技術報告インデックス</a> http://www.w3.org/TR/で。</em></p>
+
+  <p>このドキュメントは、ソフトウェア開発者によって<abbr title="ワールドワイドウェブコンソーシアム">、W3C</abbr>メンバーによって検討し、他の<abbr title="World Wide Web Consortium">W3C</abbr>グループや関係者によると、ディレクターによって<abbr title="World Wide Web Consortium">W3C</abbr>勧告として公布されました。安定した文書であり、参考資料として使用したり、他の文書から引用することができます。勧告の作成 ​​における<abbr title="World Wide Web Consortium">W3C</abbr>の役割は、仕様に対する注意を引き、その広範な普及を促進することです。これはウェブの機能性と相互運用性を強化します。</p>
+
+  <p>CORSのこのW3C勧告は、共同で生産された<a href="http://www.w3.org/2008/webapps/">Webアプリケーション</a> （Webアプリケーション）と<a href="http://www.w3.org/2011/webappsec/">Webアプリケーションのセキュリティ</a> （WebAppSec）ワーキンググループ、およびWebAppSecワーキンググループによって公開します。変更は勧告案として前回の出版以降に行われませんでした。</p>
+ <p>この文書に関するコメントをしたい場合は、それらを送ってください<a href="mailto:public-webappsec@w3.org">public-webappsec@w3.org~~V</a> （ <a href="mailto:public-webappsec-request@w3.org?subject=subscribe">購読</a> 、 <a href="http://lists.w3.org/Archives/Public/public-webappsec/">アーカイブ</a> ）。
+
+</p>
+
+<p>この文書は、下で動作するグループによって作成された<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日W3C特許方針</a> 。W3Cはのためのあらゆる特許の開示の公開リストを維持し<a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/49309/status">WebAppSec WG</a>および<a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/42538/status">WebアプリケーションWG</a>グループの成果物に関連するが、そのページには、特許開示にあたっての指示も含まれています。個人がいると思われる特許の実際の知識を持っている人は含まれてい<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">エッセンシャルクレーム（複数可）</a>に基づいて情報を開示する必要があり<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">、W3C特許方針のセクション6を</a> 。</p>
+
+<p>この勧告W3Cを公開することで、これらの仕様がそれぞれ推薦とRFCの状態に進み、このクロスオリジンリソースの共有勧告で指定された機能は、HTML5にまたはHTTPステータスコード308への変更によって影響されないことを期待しています。</p>
+
+  <p>初期<a href="http://odinho.html5.org/CORS/testsuite-report.html">実装レポートが</a>で、利用可能である<a href="http://webappsec-test.info/~bhill2/pub/CORS/cors-test-supplement.htm">勧告候補からの変更のためのサプリメント</a> 。</p>
+
+</div>
+
+<h2 class="no-num no-toc" id="toc">目次</h2><!--begin-toc-->
+
+  
+
+<ol class="toc">
+ <li><a href="https://www.w3.org/TR/cors/#introduction">1 はじめに</a></li>
+ <li><a href="https://www.w3.org/TR/cors/#conformance">適合性</a></li>
+ <li><a href="https://www.w3.org/TR/cors/#terminology">4.14 用語</a></li>
+ <li><a href="https://www.w3.org/TR/cors/#security"><span class="secno">Security Considerations</span>
+
+</a></li>
+ <li><a href="https://www.w3.org/TR/cors/#syntax">構文</a>
+  <ol class="toc">
+   <li><a href="https://www.w3.org/TR/cors/#access-control-allow-origin-response-header"><span class="secno">5.1</span> <code title="">Access-Control-Allow-Origin</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-allow-credentials-response-header"><span class="secno">5.2</span> <code title="">Access-Control-Allow-Credentials</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-expose-headers-response-header"><span class="secno">5.3</span> <code title="">Access-Control-Expose-Headers</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-max-age-response-header"><span class="secno">5.4</span> <code title="">Access-Control-Max-Age</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-allow-methods-response-header"><span class="secno">5.5</span> <code title="">Access-Control-Allow-Methods</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-allow-headers-response-header"><span class="secno">5.6</span> <code title="">Access-Control-Allow-Headers</code>レスポンスヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#origin-request-header"><span class="secno">5.7</span> <code title="">Origin</code>リクエストヘッダ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-request-method-request-header"><span class="secno">5.8</span> <code title="">Access-Control-Request-Method</code>要求ヘッダー</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#access-control-request-headers-request-header"><span class="secno">5.9</span> <code title="">Access-Control-Request-Headers</code>リクエスト・ヘッダー</a></li></ol></li>
+ <li><a href="https://www.w3.org/TR/cors/#resource-processing-model"><span class="secno">6</span>リソースの処理モデル</a>
+  <ol class="toc">
+   <li><a href="https://www.w3.org/TR/cors/#resource-requests"><span class="secno">6.1</span>シンプルなクロスオリジン・リクエスト、実際のリクエスト、およびリダイレクト</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#resource-preflight-requests"><span class="secno">6.2</span>プリフライトリクエスト</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#resource-security">セキュリティ</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#resource-implementation"><span class="secno">6.4</span>実装に関する考慮事項</a></li></ol></li>
+ <li><a href="https://www.w3.org/TR/cors/#user-agent-processing-model"><span class="secno">7</span>ユーザーエージェント処理モデル</a>
+  <ol class="toc">
+   <li><a href="https://www.w3.org/TR/cors/#cross-origin-request-0"><span class="secno">7.1</span>クロスオリジンリクエスト</a>
+    <ol class="toc">
+     <li><a href="https://www.w3.org/TR/cors/#handling-a-response-to-a-cross-origin-request"><span class="secno">7.1.1</span>クロスオリジンの要求に対する応答の処理</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#cross-origin-request-status-0"><span class="secno">7.1.2</span>クロスオリジン要求ステータス</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#source-origin-0"><span class="secno">7.1.3</span>ソースの起源</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#simple-cross-origin-request-0"><span class="secno">7.1.4</span>シンプルなクロスオリジンリクエスト</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#cross-origin-request-with-preflight-0">プリフライトと<span class="secno">7.1.5</span>クロスオリジンリクエスト</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#preflight-result-cache-0"><span class="secno">7.1.6</span>プリフライト結果キャッシュ</a></li>
+     <li><a href="https://www.w3.org/TR/cors/#generic-cross-origin-request-algorithms"><span class="secno">7.1.7</span>一般的なクロスオリジン・リクエスト・アルゴリズム</a></li></ol></li>
+   <li><a href="https://www.w3.org/TR/cors/#resource-sharing-check-0"><span class="secno">7.2</span>リソースの共有チェック</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#user-agent-security">セキュリティ</a></li></ol></li>
+ <li><a href="https://www.w3.org/TR/cors/#cors-api-specification-advice"><span class="secno">8</span> CORS API仕様を見ます</a>
+  <ol class="toc">
+   <li><a href="https://www.w3.org/TR/cors/#cors-api-specifiation-request"><span class="secno">8.1</span>クロスオリジン・リクエストを構築</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#cors-api-specification-redirect"><span class="secno">8.2</span>クロスオリジンリダイレクトに同一生成元への対処</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#cors-api-specification-response"><span class="secno">8.3</span>クロスオリジン要求ステータスの対処</a></li>
+   <li><a href="https://www.w3.org/TR/cors/#cors-api-specification-security"><span class="secno">8.4</span>セキュリティ</a></li></ol></li>
+ <li><a class="no-num" href="https://www.w3.org/TR/cors/#references">リファレンス</a></li>
+ <li><a class="no-num" href="https://www.w3.org/TR/cors/#acknowledgments">謝辞</a></li></ol><!--end-toc-->
+
+
+
+
+
+  <h2 id="introduction"><span class="secno">1</span>はじめに</h2>
+
+  <p><em>このセクションでは、非規範的です。</em></p>
+
+  <p>ユーザエージェントは、一般的にネットワーク要求に同一生成元制限を適用します。これらの制限は、別の起源から取得したデータを取得から1原点から実行しているクライアント側のWebアプリケーションを防止し、また、自動的に実行中のアプリケーションの原点とは異なる目的地に向かって起動することができ、安全でないHTTP要求を制限します。</p>
+
+  <p>このパターンに従うユーザエージェントでは、ネットワーク要求は、一般的にHTTP認証およびCookie情報を含むクロスオリジン・リクエストを持つユーザーの資格情報が含まれます。</p>
+
+  <p>この仕様は、いくつかの方法で、このモデルを拡張します。<ul>
+   <li>
+    <p>応答が含むことができ、 <code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>リクエストはリソースの内容へのアクセスを可能にするために、値としての場所のオリジンと、ヘッダを。</p>
+
+    <p>ユーザーエージェントは、値とリクエストが一致した場所のオリジンことを検証します。</p>
+   </li>
+
+   <li>
+    <p>ユーザエージェントは、経由で発見することができます<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエスト</a>クロスオリジンリソースは、非使用して、要求を受け入れるように準備されているかどうかを<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法を</a>与えられた原点から、。</p>
+
+    <p>これは、再びユーザエージェントによって検証されます。</p>
+   </li>
+
+   <li>
+    <p>サーバー側のアプリケーションは、HTTPリクエストを介して、ユーザエージェントによってクロスオリジンの要求と見なされたことを発見するために有効になっている<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダー。</p>
+
+    <p>この拡張は、彼らがサービスに喜んでいるクロスオリジン・リクエストに（例えば、何も返さない）の制限を強制するために、サーバー側のアプリケーションを可能にします。</p>
+   </li>
+  </ul>
+
+
+
+
+  <p>この仕様はこの仕様が使用される方法を定義するその他の仕様、いわゆるCORSのAPI仕様のためのビルディングブロックです。例としては、サーバー、送信されたイベントとのXMLHttpRequestです。 <a class="informative" href="https://www.w3.org/TR/cors/#refsEVENTSOURCE">[EVENTSOURCE]</a> <a class="informative" href="https://www.w3.org/TR/cors/#refsXHR">[XHR]</a>
+
+  <p><a href="http://www.w3.org/wiki/CORS">CORSのwikiページは</a>この文書に関する詳細な背景情報を提供します。</p>
+
+  <div class="example">
+   <p>リソースの作者はに存在する単純なテキストリソースがある場合<code>http://example.com/hello</code>文字列が含まれ、「Hello Worldのを！」そして、希望<code>http://hello-world.example</code>それにアクセスできるようにするには、次のようになりますこの仕様で導入されたヘッダと組み合わせる応答：</p>
+
+   <pre><code>アクセス制御は、許可-原産地をします。http：//hello-world.exampleのHello Worldを！</code></pre>
+
+   <p>使用<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code>上のクライアント・サイドのWebアプリケーション<code>http://hello-world.example</code>次のようにこのリソースにアクセスすることができます。<pre><code>varの各クライアント=新しいXMLHttpRequestを（）client.open（ "GET"、 "http://example.com/hello」）client.onreadystatechange =関数（）{/ *何かをする* /} client.send（）</code></pre>
+
+   <p>リソースの作成 ​​者以外の方法を用いて、クロスオリジンリクエスト処理できるようにしたい場合は、少し複雑になります<a href="https://www.w3.org/TR/cors/#simple-method" title="簡単な方法">簡単な方法を</a> 。その場合、著者が使用してプリフライト要求に応答する必要がある<code>OPTIONS</code>メソッドをしてから所望の方法を使用して実際のリクエストを処理する（する必要がある<code>DELETE</code> 、この例では）し、適切な応答を与えます。プリフライトリクエストに対するレスポンスは、指定された次のヘッダーを持つことができます：</p>
+
+   <pre><code>アクセス制御 - 許可 - 起源：のhttp：//hello-world.exampleアクセス制御マックスエイジ：3628800アクセス制御 - 許可-方法：PUT、DELETE</code></pre>
+
+   <p><code title="HTTPアクセス・コントロール・最大エージング"><a href="https://www.w3.org/TR/cors/#http-access-control-max-age">Access-Control-Max-Age</a></code>ヘッダは、後続の要求のために、指定された時間内に、何のプリフライトリクエストを行う必要がありませんように応答は、キャッシュできる期間を示します。<code title="HTTPアクセス・コントロールできるよう-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダは、実際の要求に使用することができる方法を示しています。実際の要求に対する応答は、単純にこのヘッダーを含めることができます。</p>
+
+   <pre><code>アクセス制御 - 許可 - 起源：のhttp：//hello-world.example</code></pre>
+
+   <p>追加のプリフライトリクエストを呼び出すの複雑さは、ユーザエージェントのタスクです。使用<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code>もう一度、アプリケーションがでホストされたと仮定し<code>http://calendar.example/app</code>著者は次のECMAScriptスニペットを使用することができます。<pre><code>機能deleteItem（品目ID、のupdateUI）{varの各クライアント=新しいXMLHttpRequestを（）client.open（ "DELETE"、 "のhttp：//calendar.example/app」）client.onload =のupdateUI client.onerror =のupdateUI client.onabort =のupdateUI client.send（ "ID =" +のitemId）}</code></pre>
+  </p></p></div>
+
+
+
+
+  <h2 id="conformance">適合性</h2>
+
+  <p>この仕様は、リソースの作成者とユーザエージェントのために書かれています。これは、使用するAPIを定義仕様についてアドバイス含ま<a href="https://www.w3.org/TR/cors/#cross-origin-request">クロスオリジンリクエスト</a> CORSのAPI仕様- -この仕様で定義されたアルゴリズムをし、一般的な<a href="https://www.w3.org/TR/cors/#security">セキュリティ上の考慮事項の</a>セクションでは、クライアント側のWebアプリケーションの作成 ​​者のためのいくつかのアドバイスが含まれています。</p>
+
+  <p>同様に、本明細書では非規範的、すべての図、例、およびノー​​トとしてマークセクションと付録は非規範的です。この仕様書内のその他の部分は規範的である。</p>
+
+  <p>本明細書では、用語及びRFC 2119に記載されるように解釈されることができる必要があります。
+  <a href="https://www.w3.org/TR/cors/#refsRFC2119">RFC： 791</a></p>
+
+  <p>アルゴリズムの一部（例えば、 "アルゴリズムを終了する」）として不可欠に言葉で表現要件は、アルゴリズムの導入に使用される（例えばなければならない）、キー単語の意味と解釈されるべきです。</p>
+
+  <p>準拠のリソースは、リソースに適用される本明細書に記載されているすべての要件を実装するものです。</p>
+
+  <p>準拠ユーザエージェントは、ユーザエージェントに適用可能である本明細書に記載されているすべての要件を実装するものです。</p>
+
+  <p>ユーザエージェントとリソース作成者は、最終結果が指定のアルゴリズムによって得られる結果と区別がつかない限り、本明細書を実施するために任意のアルゴリズムを使用することができます。</p>
+
+
+  <h2 id="terminology">4.14 用語</h2>
+
+  <p>Some terminology in this specification is from
+  <cite>The Web Origin Concept</cite>,
+  <cite>HTML</cite>,<!--fetch-->
+  <cite>HTTP</cite>
+  and
+  <cite>URI</cite>.
+  <a href="https://www.w3.org/TR/cors/#refsORIGIN">[ORIGIN]</a>
+  <a href="https://www.w3.org/TR/cors/#refsHTML">[HTML]</a>
+  <a href="https://www.w3.org/TR/cors/#refsHTTP">[HTTP]</a>
+  <a href="https://www.w3.org/TR/cors/#refsURI">[URI]</a>
+
+  <p>専門用語は、一般的に明細書全体で定義されています。しかし、実際には他のどこにも合わなかったいくつかの定義は、その代わりに、ここで定義されています。</p>
+
+  <p><dfn id="case-sensitive">大文字と小文字を区別し</dfn>た方法で2つの文字列を比較すると、コードポイントのために、正確にコードポイントを、それらを比較することを意味します。</p>
+
+  <p><dfn id="ascii-case-insensitive">ASCIIの大文字と小文字を区別しない</dfn>ようにして2つの文字列を比較すると、範囲U +でU + 005A LATIN CAPITAL LETTER Zと対応する文字の範囲U + 0041 LATIN CAPITAL LETTER Aの文字ことを除いて、正確にコードポイントのためのコードポイントを、それらを比較する意味しますU + 007A LATIN SMALL LETTER Zに0061 LATIN SMALL LETTER Aはまた、一致すると考えられています。</p>
+
+  <p>U + 007A LATIN SMALL LETTER Zの範囲U + 0061 LATIN SMALL LETTER Aに対応する文字とU + 005A LATIN CAPITAL LETTER Zの範囲U + 0041 LATIN CAPITAL LETTER A内のすべての文字を置き換える<dfn id="converted-to-ascii-lowercase" title="converted to ASCII lowercase">小文字</dfn>手段を<dfn id="converted-to-ascii-lowercase" title="ASCII小文字に変換">ASCIIに文字列を変換します</dfn> ）。</p>
+
+  <p>本明細書の目的のために長期的な<dfn id="user-credentials">ユーザー資格情報</dfn>の起源を持つユーザーエージェントの以前の対話に基づいて送信されるクッキー、HTTP認証、およびクライアント側のSSL証明書を意味します。具体的には、プロキシ認証またはを参照していない<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダー。
+  <a href="https://www.w3.org/TR/cors/#refsCOOKIES">クッキー</a></p>
+
+  <p>用語<dfn id="cross-origin">クロスオリジンは、</dfn>非意味するために使用される<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">同じ起源を</a> 。</p>
+
+  <p><var title="">この方法は、</var>それがある場合は<dfn id="simple-method">、単純な方法</dfn>であると言われ<a href="https://www.w3.org/TR/cors/#case-sensitive">、大文字と小文字を区別し</a> 、次のいずれかに一致します：</p>
+
+  <ul>
+   <li><code>もらう</code></li>
+   <li><code>長</code></li>
+   <li><code>POST</code></li>
+  </ul>
+
+  <p>A <var title="">header</var> is said to be a
+  <dfn id="simple-header">simple header</dfn> if the header field name is an
+  <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for <code>Accept</code>,
+  <code>Accept-Language</code>, or <code>Content-Language</code> or if it
+  is an <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for
+  <code>Content-Type</code> and the header field value media type (excluding
+  parameters) is an <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for
+  <code>application/x-www-form-urlencoded</code>,
+  <code>multipart/form-data</code>, or <code>text/plain</code>.</p>
+
+  <p><var title="">ヘッダは、</var>ヘッダフィールド名がある場合は<dfn id="simple-response-header">、単純な応答ヘッダ</dfn>であると言われている<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCIIの大文字と小文字を区別しない</a> 、次のいずれかに一致します：</p>
+
+  <ul>
+   <li><code>Cache-Control</code></li>
+   <li><code>コンテンツ言語</code></li>
+   <li><code>コンテンツタイプ</code></li>
+   <li><code>有効期限</code></li>
+   <li><code>最終更新</code></li>
+   <li><code>プラグマ</code></li>
+  </ul>
+
+  <p><dfn id="header-parsing" title="ヘッダー解析">ヘッダーを解析する</dfn>ときヘッダは、対応するABNF生産ごとに解析する必要があり<a href="https://www.w3.org/TR/cors/#syntax">、構文</a>セクション。ヘッダは、生産と一致しない場合には、 <dfn id="header-parsing-failed">ヘッダの解析が失敗した</dfn>と言われています。</p>
+
+
+
+
+  <h2 id="security"><span class="secno">Security Considerations</span>
+
+</h2>
+
+  <p><em>このセクションは非規範的です。</em></p>
+
+  <p>セキュリティ要件および考慮事項は、本明細書を通して記載されています。このセクションでは、他のどこにも合わなかったアドバイスを示しています。</p>
+
+  <hr>
+
+<p><a href="https://www.w3.org/TR/cors/#simple-cross-origin-request">シンプルなクロスオリジンリクエストは、</a>この仕様に準拠していない現在展開ユーザエージェントによって生成することができるものと合同として定義されています。（使用して、このようなクロスオリジンフォームの送信など、この仕様外で生成されたシンプルなクロスオリジンリクエスト<code>GET</code>や<code>POST</code>またはクロスオリジン<code>GET</code>に起因する要求<code>script</code>要素）は、通常、含まれる<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報を</a> 、この仕様に準拠したリソースは、常にシンプル期待する準備をしなければならないので、資格情報を使用して、クロスオリジンリクエスト。
+
+
+
+<p>このため、単純な要求は、検索以外の意味を持っているリソースは、要求の明示的に提供されるコンテンツで推測できないトークンを含めることを要求することにより、クロスサイトリクエストフォージェリ（CSRF）から身を守る必要があります。 <a class="informative" href="https://www.w3.org/TR/cors/#refsCSRF">[CSRF]</a>
+
+<p>この仕様は、HTTPレスポンスにリソースの表現にアクセスするには、ユーザーエージェントで実行して、外国の原点からのアプリケーションのインスタンスを許可する方法を定義します。リソースの特定のタイプは、特定の許可された起源を指定しようとするのではなく、すべての起源を拒否または許可してはいけません。
+
+
+
+<ol>
+ <li><p>このようなログインページなどの他の起源からのアプリケーションに有用ではないリソースは、返すべきではない<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダーを。リソースは、まだそのような要求の明示的に提供されるコンテンツで推測できないトークンを含めることを要求するなどCSRF攻撃、自分自身を守る必要があります。そのようなリソースのセキュリティ特性は、この仕様に準拠ユーザーエージェントの影響を受けません。
+
+ 
+
+ </li><li>
+  <p>なしアクセス制御チェックして、公的にアクセス可能なリソースは、常に安全に戻すことができる<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>その値"であるヘッダを<code>*</code> "。
+
+ 
+
+ </li><li><p><code>GET</code>そのエンティティボディのECMAScriptを返すことができるように解析するために起こる応答<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>その値は「ヘッダ<code>*</code> "それがHTML用いたクロスオリジンをアクセスすることができるように機密コメントはありません提供する<code>script</code>要素を。必要に応じて、そのようなリソースは、アクセス制御、上述のようにCSRFの保護を実現することができます。
+
+</p></li></p></li></p></li></ol>
+
+<p>作られた要求<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザー資格情報</a> 、または<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダは、特別な配慮が必要です。</p>
+
+<ol>
+ <li>
+  <p>要求は、検索以外の意義を持っているときに頼るとき、および<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダ、リソースが（その副作用を含む）要求を許可し、それに応答して、そのリソースの表現へのアクセスを許可区別するように注意する必要があります。
+
+  
+
+  <ol>
+   <li><p>リクエストの承認は、ユーザーの権限の交点と要求して、原点（複数可）を使用して行われるべきです。
+
+   
+
+   </li><li><p>リソースは、ユーザーが資格情報を使用して、クロスオリジンの要求が与えられた原点から表彰されていることが同意するために明示的に要求する承認の儀式を必要とすることは、しばしば適切です。このような場合には、クロスオリジンリクエストの一部として明示的にセキュリティトークンを渡すと、承認の範囲に関していかなる曖昧さを取り除くことができます。OAuthのは、このパターンの例です。
+   <a class="informative" href="https://www.w3.org/TR/cors/#refsOAUTH">OAuth 2.0{0}{/0}</a>
+  </p></li></p></ol></li></ol>
+
+ <li>
+  <p>使用<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報</a>クロスオリジンリクエストでは、適切な場合です：<ol>
+   <li>
+    <p>この仕様で定義された資格情報を使用して、クロスオリジンリクエストは、サーバー間のバックチャネル、JSONP、またはクロスドキュメントメッセージングなどの認証されたリソース共有の別の方法、の代わりに使用されます。
+    <a class="informative" href="https://www.w3.org/TR/cors/#refsJSONP">【JSONP]</a> <a class="informative" href="https://www.w3.org/TR/cors/#refsHTML">[HTML]</a>
+
+    <p>サーバー間のバックチャネルと比較した場合、要求の起源で、クロスサイトスクリプティングの脆弱性が要求されたリソースに対する権限の昇格を可能にすることができるように、この置換は、いくつかのケースでは、追加の攻撃面を露出させることができます。
+
+    
+
+    <p>JSONPがクロスオリジン・コード-注射を介して動作するのに対し、それはクロスオリジン・データ・アクセスを提供するようJSONP形式のクロスオリジン資格認定要求の代替として、この仕様の使用が大幅に、要求しているアプリケーションのセキュリティ状態を向上させます。
+
+    
+
+    <p>HTMLの中に、資格情報を使用して、リソースをロードするに頼るクロスオリジン通信技術の代替として<code>iframe</code>要素、続いてクロスドキュメントメッセージングまたは他のクロスオリジン側チャネルを採用し、この仕様はほぼ同等のセキュリティ状態を提供します。ここでも、データが予想される形式と許可された値に適合するように検証する必要があり、完全に信頼されていない起源から受け取りました。
+
+   
+
+   </li><li><p>検索以外の意味を持ちませんし、資格情報が他の公的にアクセス可能な情報については、ユーザー固有のカスタマイズを提供するためにのみ使用される場合、リソースへの要求のために。この場合、特定の起源へのアクセスを制限することは許可された起点を除いて、ユーザを識別するために使用されてからのカスタマイズを防止することにより、ユーザのプライバシーを保護することができます。
+  
+  </p></li></p></p></p></p></ol></li></ol>
+
+ <li>
+  <p>この仕様は、検索以外の意義を持っているとの間の調整または二つ以上の起源から発生するデータを伴う要求に使用される場合、（例えば、編集、 ​​印刷、保存、明確な起源での各可能リソース間の）要求は、設定するべき<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格をフラグ</a>とリソースが起源はすべて相互に完全に信頼されていない場合は特に、明示的にリクエストの内容で提供されるセキュリティトークンを使用して認証を行うべきです。
+
+  
+
+  <p>このような多起源のシナリオでは、起源の一つで悪質なリソースが混乱代理としてユーザーエージェントを参加し、クロスオリジンリクエストで送信されたユーザーの資格情報を悪用することにより、その権限を昇格することができる場合があります。このような攻撃を回避することは、コーディネートのアプリケーションは、各起源のため、受信したすべてのパラメータと命令を注意深く暗示効果は元のプリンシパルの権限を超えないことを確実にするために連携し、各ステップで検証され、その権限の範囲の明示的な知識を持っていることが必要です。
+  <a class="informative" href="https://www.w3.org/TR/cors/#refsCONFUSED">困った</a>
+
+  <p>代わりに、自動的にユーザエージェントによって要求に添付ユーザーの資格情報を使用するのではなく、それがすることが推奨され、マルチ原点相互作用において、このような脆弱性を回避することの難しさを考えると、特定の機能および承認されたリソースを指定するセキュリティトークンは、明示的なコンテンツの一部として渡されますリクエストの。 OAuthが再びこのようなパターンの例を提供します。
+
+</p></p></p></li></p></li></p></li></ol>
+
+  <hr>
+
+  <p>クライアント側のWebアプリケーションの作成 ​​者は強くから取得したコンテンツを検証することが奨励され<a href="https://www.w3.org/TR/cors/#cross-origin">、クロスオリジン</a>それは有害である可能性があるとしてリソースを。</p>
+
+
+  <p>一意に特定のホスト名によって識別され、および/または特定のポートにマッピングされていないWebアプリケーションは、必ずしもユニークな起源を持っていない、したがって、確実にこの仕様で定義されたメカニズムを利用することができません。原点は、スキームのみ、ホスト名およびポートで構成されているためです。</p>
+
+<p>例えば、そのURLのタイプであるWebアプリケーション<code>example.org/ <var>app-name</var> /</code>アプリ名の部分もexample.orgで実行されている他のWebアプリケーションからWebアプリケーションを区別する必要があるが、確実に採用することはできませんこの仕様で定義されたメカニズム。</p>
+
+<p>別個にマッピングするWebアプリケーション<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">の起源は、</a>セキュアなWebアプリケーションのための不可欠です。</p>
+
+
+  <h2 id="syntax">構文</h2>
+
+  <p>このセクションでは、この仕様が導入され、新しいヘッダーの構文を定義します。また、各ヘッダの機能の簡単な説明を提供します。</p>
+
+  <p><a href="https://www.w3.org/TR/cors/#resource-processing-model">リソース処理モデルの</a>セクションでは、リソースが応答でこれらのヘッダを使用するようにしている方法を詳しく説明します。同様に、 <a href="https://www.w3.org/TR/cors/#user-agent-processing-model">ユーザエージェント処理モデルの</a>セクションでは、ユーザエージェントはこれらのヘッダを使用するようにしている方法を詳しく説明します。</p>
+
+  <p>このセクションで使用されているABNFの構文は、HTTP / 1.1からです。
+  <a href="https://www.w3.org/TR/cors/#refsHTTP">http://127.0.0.1:8000</a></p>
+
+  <p class="note">HTTP / 1.1は、新しいヘッダーがその仕様で導入されたものと同等の解析規則を持っていることを確実にするためにABNFの基礎として使用されます。</p>
+
+  <p class="note">HTTP / 1.1は、現在、ヘッダの値の定義に暗黙の大手OWSは行いませんが、そのフォームを想定しています。</p>
+
+  <h3 id="access-control-allow-origin-response-header"><span class="secno">5.1</span> <code title="">Access-Control-Allow-Origin</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-allow-origin" title="HTTPアクセス・コントロールできるように、原点"><code>Access-Control-Allow-Origin</code></dfn>ヘッダは、リソースがの値を返すことによって基づいて、共有できるかどうかを示す<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>応じて、「*」、リクエストヘッダを、または「ヌル」。ABNF：</p>
+
+  <pre>アクセス制御--起源許可= "アクセス制御-許可-起源" "：" <a class="external" href="http://tools.ietf.org/html/rfc6454#section-7.1">起源-リストまたはヌル</a> | "*"</pre>
+
+  <p class="note">実際には<code class="external"><a href="http://tools.ietf.org/html/rfc6454#section-7.1">origin-list-or-null</a></code>生産は、より制約的です。むしろスペースで区切っ可能よりも<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4" title="元">起源を</a> 、それが単一のいずれかである<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">起源</a>または文字列" <code title="">null</code> "。
+  
+  <!-- serialized-origin / %x6E %x75 %x6C %x6C / "*" -->
+
+
+  <h3 id="access-control-allow-credentials-response-header"><span class="secno">5.2</span> <code title="">Access-Control-Allow-Credentials</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-allow-credentials" title="HTTPアクセス・コントロールできるように、資格情報"><code>Access-Control-Allow-Credentials</code></dfn>ヘッダがある場合は、要求に対する応答を露出させることができるかどうかを示す<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>設定されていません。応答の場合には一部<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエスト</a>それがあることを示し<a href="https://www.w3.org/TR/cors/#actual-request">、実際の要求が</a>含むことができ、 <a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報を</a> 。ABNF：</p>
+
+  <pre>Access-Control-Allow-Credentials： "とAccess-Control-Allow-Credentials" "："真真：％のx74.72.75.65。 「真」、大文字と小文字を区別</pre>
+
+
+  <h3 id="access-control-expose-headers-response-header"><span class="secno">5.3</span> <code title="">Access-Control-Expose-Headers</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-expose-headers" title="HTTPアクセス・コントロール・ヘッダを公開"><code>Access-Control-Expose-Headers</code></dfn>ヘッダは、ヘッダがCORS API仕様のAPIに公開しても安全であるかを示します。ABNF：</p>
+
+  <pre>アクセス制御-公開-ヘッダ= "アクセス制御-公開-ヘッダ" "："＃の<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">フィールド名</a></pre>
+
+
+  <h3 id="access-control-max-age-response-header"><span class="secno">5.4</span> <code title="">Access-Control-Max-Age</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-max-age" title="HTTPアクセス・コントロール・最大エージング"><code>Access-Control-Max-Age</code></dfn>ヘッダは、結果期間を示し<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストが</a>内にキャッシュすることができ<a href="https://www.w3.org/TR/cors/#preflight-result-cache">、プリフライト結果キャッシュ</a> 。ABNF：</p>
+
+  <pre>アクセス制御マックスエイジ= "アクセス制御マックスエイジ" "：" <a class="external" href="http://tools.ietf.org/html/rfc2616/#section-3.3.2">デルタ秒</a></pre>
+
+
+  <h3 id="access-control-allow-methods-response-header"><span class="secno">5.5</span> <code title="">Access-Control-Allow-Methods</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-allow-methods" title="HTTPアクセス・コントロールできるよう-方法"><code>Access-Control-Allow-Methods</code></dfn>ヘッダはへの応答の一部として示し、 <a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエスト</a>の方法は中に使用することができ、 <a href="https://www.w3.org/TR/cors/#actual-request">実際のリクエスト</a> 。<p class="note">` <code title="">Allow</code> `をヘッダには、CORSプロトコルの目的のためには関係ありません。ABNF：</p>
+
+  <pre>アクセス制御-許可-方法：「アクセス制御-許可-メソッド」 "："＃の<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-5.1.1">メソッド</a></pre>
+
+
+
+  <h3 id="access-control-allow-headers-response-header"><span class="secno">5.6</span> <code title="">Access-Control-Allow-Headers</code>レスポンスヘッダ</h3>
+
+  <p><dfn id="http-access-control-allow-headers" title="HTTPアクセス・コントロールできるように、ヘッダ"><code>Access-Control-Allow-Headers</code></dfn>ヘッダはへの応答の一部として示し、 <a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエスト</a>ヘッダフィールド名が中に使用することができ、 <a href="https://www.w3.org/TR/cors/#actual-request">実際のリクエスト</a> 。 ABNF：</p>
+
+  <pre>アクセス制御-許可-ヘッダ：「アクセス制御--ヘッダを許可する""： "＃の<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">フィールド名</a></pre>
+
+
+  <h3 id="origin-request-header"><span class="secno">5.7</span> <code title="">Origin</code>リクエストヘッダ</h3>
+
+  <p><dfn id="http-origin" title="HTTP-起源"><code>Origin</code></dfn>どこヘッダを示し<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンの要求</a>または<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストは</a>由来します。
+  <a href="https://www.w3.org/TR/cors/#refsORIGIN">生成元</a></p>
+
+
+  <h3 id="access-control-request-method-request-header"><span class="secno">5.8</span> <code title="">Access-Control-Request-Method</code>要求ヘッダー</h3>
+
+  <p><dfn id="http-access-control-request-method" title="HTTPアクセス制御要求-方法"><code>Access-Control-Request-Method</code></dfn>ヘッダがで使用される方法を示し<a href="https://www.w3.org/TR/cors/#actual-request">、実際の要求</a>の一部として、 <a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエスト</a> 。 ABNF：</p>
+
+  <pre>アクセス制御リクエスト-方法：「アクセス・コントロール・リクエスト・メソッド""： " <a class="external" href="http://tools.ietf.org/html/rfc2616/#section-5.1.1">メソッド</a></pre>
+
+
+  <h3 id="access-control-request-headers-request-header"><span class="secno">5.9</span> <code title="">Access-Control-Request-Headers</code>リクエスト・ヘッダー</h3>
+
+  <p><dfn id="http-access-control-request-headers" title="HTTPアクセス・コントロール・リクエスト・ヘッダー"><code>Access-Control-Request-Headers</code></dfn>ヘッダがで使用されるヘッダーを示す<a href="https://www.w3.org/TR/cors/#actual-request">実際のリクエスト</a>の一部として、 <a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトrequest</a> 。 ABNF：</p>
+
+  <pre>アクセス制御リクエスト・ヘッダー：「アクセス・コントロール・リクエスト・ヘッダ""： "＃の<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">フィールド名</a></pre>
+
+
+
+
+  <h2 id="resource-processing-model"><span class="secno">6</span>リソースの処理モデル</h2>
+
+  <p>このセクションでは、リソースが実装する必要が処理モデルについて説明します。リクエストの各タイプには、リソースは独自のサブセクションで説明されているに対処する必要があるかもしれません。</p>
+
+  <p>この仕様で記述されたリソースの共有ポリシーは特定のリソースにバインドされます。各リソースには、以下にバインドされているこのセクションの目的のために：</p>
+
+  <ul>
+   <li>
+    <p>ゼロ以上からなる<dfn id="list-of-origins">起源のリスト</dfn> <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4" title="元">起源</a>リソースへのアクセスを許可されています。</p>
+
+    <p class="note">これは含めることができ<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">、原点</a>かかわらへの要求があることに注意してくださいリソース自体のを<a href="https://www.w3.org/TR/cors/#cross-origin">クロスオリジン</a>リソースが戻ってリソースへリダイレクトすることができます。</p>
+   </li>
+
+   <li><p>リソースによってサポートされているゼロまたはそれ以上の方法からなる<dfn id="list-of-methods">メソッドのリスト</dfn> 。</p></li>
+
+   <li><p>リソースによってサポートされているゼロ個以上のヘッダーフィールド名から成る<dfn id="list-of-headers">ヘッダーのリスト</dfn> 。</p></li>
+
+   <li><p>以外のヘッダのゼロ個以上のヘッダーフィールド名からなる<dfn id="list-of-exposed-headers">露出したヘッダーのリスト</dfn> <a href="https://www.w3.org/TR/cors/#simple-response-header" title="シンプルなレスポンスヘッダ">簡単な応答ヘッダ</a>リソースが使用するかもしれないと露出させることができます。</p></li>
+
+   <li><p>Aは、リソースがサポートされるかどうかを示す<dfn id="supports-credentials">資格証明フラグサポートしている</dfn> <a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報</a>の要求でを。リソースが行い、それ以外の場合はfalseとき、それは本当です。</p></li>
+  </ul>
+
+
+  <h3 id="resource-requests"><span class="secno">6.1</span>シンプルなクロスオリジン・リクエスト、実際のリクエスト、およびリダイレクト</h3>
+
+  <p>応答して<a href="https://www.w3.org/TR/cors/#simple-cross-origin-request">、単純なクロスオリジンリクエスト</a>または<a href="https://www.w3.org/TR/cors/#actual-request">実際のリクエスト</a>リソースが応答を共有するかどうかを示します。</p>
+
+  <p>リソースが再配置されている場合、それは新しい共有するかどうかを示す<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URLを</a> 。</p>
+
+  <p>リソースは、追加ヘッダが応答で使用するかを決定するために以下の一連の手順を使用する必要があります。</p>
+
+  <ol>
+   <li><p>場合<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーが存在しないことの手順のセットを終了します。要求は、この仕様の範囲外です。</p></li>
+
+   <li>
+    <p>値ならば<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーではありません<a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a>の値のいずれかに一致<a href="https://www.w3.org/TR/cors/#list-of-origins">起源のリスト</a> 、追加のヘッダーを設定し、ステップのセットを終了しません。</p>
+
+    <p class="note">常に一致するので、許容可能である<a href="https://www.w3.org/TR/cors/#list-of-origins">起源のリストは</a>無制限とすることができます。</p>
+   </li>
+
+   <li>
+    <p>If the resource <a href="https://www.w3.org/TR/cors/#supports-credentials">supports credentials</a> add a single
+    <code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>
+    header, with the value of the <code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>
+    header as value, and add a single
+    <code title="HTTPアクセス・コントロールできるように、資格情報"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code>
+    header with the <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> string
+    "<code title="">true</code>" as value.</p>
+
+    <p>それ以外の場合は、単一の追加<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>の値のいずれかで、ヘッダを<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーまたは文字列" <code title="">*</code>値として"。</p>
+
+    <p class="note">文字列は" <code title="">*</code> "リソースのために使用することはできません<a href="https://www.w3.org/TR/cors/#supports-credentials">資格情報をサポートしています</a> 。</p>
+   </li>
+
+   <li><p>場合は<a href="https://www.w3.org/TR/cors/#list-of-exposed-headers">露出したヘッダーのリストが</a>空でないことは、1つまたは複数の追加<code title="HTTPアクセス・コントロール・ヘッダを公開"><a href="https://www.w3.org/TR/cors/#http-access-control-expose-headers">Access-Control-Expose-Headers</a></code>で指定したヘッダフィールド名値としてで、ヘッダ<a href="https://www.w3.org/TR/cors/#list-of-exposed-headers">露出したヘッダーのリストを</a> 。</p></li>
+  </ol>
+
+  <p class="note">By not adding the appropriate headers resource can also
+  clear the <a href="https://www.w3.org/TR/cors/#preflight-result-cache">preflight result cache</a> of all entries where
+  <a href="https://www.w3.org/TR/cors/#cache-origin" title="キャッシュ起源">origin</a> is a <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a>
+  match for the value of the <code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>
+  header and <a href="https://www.w3.org/TR/cors/#cache-url" title="キャッシュのURL">url</a> is a
+  <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> match for the
+  <a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a> of the
+  resource.</p>
+
+
+  <h3 id="resource-preflight-requests"><span class="secno">6.2</span>プリフライトリクエスト</h3>
+
+  <p>In response to a <a href="https://www.w3.org/TR/cors/#preflight-request">preflight request</a> the resource indicates
+  which methods and headers (other than
+  <a href="https://www.w3.org/TR/cors/#simple-method" title="簡単な方法">simple methods</a> and
+  <a href="https://www.w3.org/TR/cors/#simple-header" title="シンプルなヘッダー">simple headers</a>) it is willing to handle
+  and whether it <a href="https://www.w3.org/TR/cors/#supports-credentials">supports credentials</a>.</p>
+
+  <p>リソースは、追加ヘッダが応答で使用するかを決定するために以下の一連の手順を使用する必要があります。</p>
+
+  <ol>
+   <li><p>場合<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーが存在しないことの手順のセットを終了します。要求は、この仕様の範囲外です。</p></li>
+
+   <li>
+    <p>値ならば<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーではありません<a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a>の値のいずれかに一致<a href="https://www.w3.org/TR/cors/#list-of-origins">起源のリスト</a>追加のヘッダーを設定し、ステップのセットを終了しません。</p>
+
+    <p class="note">常に一致するので、許容可能である<a href="https://www.w3.org/TR/cors/#list-of-origins">起源のリストは</a>無制限とすることができます。</p>
+
+    <p class="note"><code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダは、単一のみ含めることができ<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">起源を</a>ユーザエージェントがリダイレクトに従いませんように。</p>
+   </li>
+
+   <li>
+    <p><var title="">この方法は、</var>結果としての価値とする<a href="https://www.w3.org/TR/cors/#header-parsing" title="ヘッダー解析">構文解析</a> <code title="HTTPアクセス制御要求-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-request-method">Access-Control-Request-Method</a></code>ヘッダーを。</p>
+
+    <p>そこにはされていない場合は<code title="HTTPアクセス制御要求-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-request-method">Access-Control-Request-Method</a></code>ヘッダー場合、または<a href="https://www.w3.org/TR/cors/#header-parsing-failed" title="失敗した構文解析ヘッダ">解析が失敗し</a> 、任意の追加のヘッダーを設定し、ステップのセットを終了しません。要求は、この仕様の範囲外です。</p>
+   </li>
+
+   <li>
+    <p><var title="">ヘッダフィールド名が</var>の結果などの値とする<a href="https://www.w3.org/TR/cors/#header-parsing" title="ヘッダー解析">解析する</a> <code title="HTTPアクセス・コントロール・リクエスト・ヘッダー"><a href="https://www.w3.org/TR/cors/#http-access-control-request-headers">Access-Control-Request-Headers</a></code>ヘッダを。</p>
+
+    <p>何も存在しない場合は<code title="HTTPアクセス・コントロール・リクエスト・ヘッダー"><a href="https://www.w3.org/TR/cors/#http-access-control-request-headers">Access-Control-Request-Headers</a></code>ヘッダは<var title="">ヘッダフィールド名が</var>空のリストであるとします。
+
+    
+
+    <p>場合<a href="https://www.w3.org/TR/cors/#header-parsing-failed" title="失敗した構文解析ヘッダ">構文解析が失敗した</a>任意の追加のヘッダーを設定し、ステップのセットを終了しません。要求は、この仕様の範囲外です。</p>
+   </p></li>
+
+   <li>
+    <p><var title="">この方法では</var>ない場合<var title="">は</var> <a href="https://www.w3.org/TR/cors/#case-sensitive">、大文字と小文字を区別</a>の値のいずれかに一致する<a href="https://www.w3.org/TR/cors/#list-of-methods">メソッドのリスト</a>追加のヘッダーを設定し、ステップのセットを終了しません。</p>
+
+    <p class="note">常に一致するので、許容される<a href="https://www.w3.org/TR/cors/#list-of-methods">メソッドのリストは</a>無制限とすることができます。</p>
+   </li>
+
+   <li>
+    <p><var title="">ヘッダーフィールド名</var>のいずれかがない場合には<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">、ASCIIの大文字と小文字を区別しない</a>で値のいずれかに一致する<a href="https://www.w3.org/TR/cors/#list-of-headers">ヘッダーのリスト</a>追加のヘッダーを設定し、ステップのセットを終了しません。</p>
+
+    <p class="note">常に一致するので、許容される<a href="https://www.w3.org/TR/cors/#list-of-headers">ヘッダのリストは</a>無制限とすることができます。</p>
+   </li>
+
+   <li>
+    <p>If the resource <a href="https://www.w3.org/TR/cors/#supports-credentials">supports credentials</a> add a single
+    <code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>
+    header, with the value of the <code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>
+    header as value, and add a single
+    <code title="HTTPアクセス・コントロールできるように、資格情報"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code>
+    header with the <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> string
+    "<code title="">true</code>" as value.</p>
+
+    <p>それ以外の場合は、単一の追加<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>の値のいずれかで、ヘッダを<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダーまたは文字列" <code title="">*</code>値として"。</p>
+
+    <p class="note">文字列は" <code title="">*</code> "リソースのために使用することはできません<a href="https://www.w3.org/TR/cors/#supports-credentials">資格情報をサポートしています</a> 。</p>
+   </li>
+
+   <li><p>必要に応じて、単一の追加<code title="HTTPアクセス・コントロール・最大エージング"><a href="https://www.w3.org/TR/cors/#http-access-control-max-age">Access-Control-Max-Age</a></code>などの値を持つユーザエージェントは要求の結果をキャッシュするために許可されている秒の量をヘッダを。</p></li><!-- there is no limit -->
+   
+
+   <li>
+    <p><var title="">この方法で</var>あれば<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法</a>このステップはスキップしてもよいです。</p>
+
+    <p>一つ以上の追加<code title="HTTPアクセス・コントロールできるよう-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code> （のサブセット）からなるヘッダー<a href="https://www.w3.org/TR/cors/#list-of-methods">メソッドのリストを</a> 。</p>
+
+    <p class="note">この方法であれば<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法で</a>それが表示されている必要はありませんが、これは禁止されていません。</p>
+
+    <p class="note">以来<a href="https://www.w3.org/TR/cors/#list-of-methods">メソッドのリストは</a>単にによって示される方法を返す、無制限とすることができる<a href="https://www.w3.org/TR/cors/#http-access-control-request-method">アクセス制御リクエスト・メソッドを</a> 、サポートされている場合は十分にすることができます。</p>
+   </li>
+
+   <li>
+    <p><var title="">ヘッダーフィールド名</var>のそれぞれである場合は<a href="https://www.w3.org/TR/cors/#simple-header">、単純なヘッダー</a>とnoneである<code>Content-Type</code>は、このステップをスキップすることができます。</p>
+
+    <p>一つ以上の追加<code title="HTTPアクセス・コントロールできるように、ヘッダ"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-headers">Access-Control-Allow-Headers</a></code> （の一部）からなるヘッダー<a href="https://www.w3.org/TR/cors/#list-of-headers">ヘッダーのリストを</a> 。</p>
+
+    <p class="note">ヘッダフィールド名である場合<a href="https://www.w3.org/TR/cors/#simple-header">、単純なヘッダー</a>とない<code>Content-Type</code> 、リストされる必要はありません。
+    <code>Content-Type</code>その値のサブセットのみが、それはとして適格になるとしてリストされる<a href="https://www.w3.org/TR/cors/#simple-header">単純なヘッダーを</a> 。</p>
+
+    <p class="note">以来<a href="https://www.w3.org/TR/cors/#list-of-headers">ヘッダーのリストは</a>無制限とすることができ、単にからサ ​​ポートされているヘッダを返す<a href="https://www.w3.org/TR/cors/#http-access-control-allow-headers">-ヘッダが許可するアクセス制御-</a>十分にすることができます。</p>
+   </li>
+  </ol>
+
+
+  <h3 id="resource-security">セキュリティ</h3>
+
+  <p><em>このセクションは非規範的です。</em></p>
+
+  <p>リソース著者が強く要求は例えば、安全な方法を使用していることを確認することが推奨されてい<code>GET</code>または<code>OPTIONS</code>ので、潜在的な攻撃者が簡単にユーザーのデータを変更することはできません、副作用がありません。リソースがこのように設定されている場合、攻撃者は効果的でなければならないでしょう<a href="https://www.w3.org/TR/cors/#list-of-origins">起源のリスト</a>害を行います。</p>
+
+  <p>チェックに加えて、 <code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダを、リソースの作者は強くもチェックすることが推奨されている<code>Host</code>ヘッダーを。それは、そのヘッダーが提供するホスト名が、リソースが存在するサーバーのホスト名と一致していることを確認されています。これは、DNSリバインディング攻撃に対する保護を提供します。</p>
+
+  <p>SSL / TLSのリソース共有ポリシーステートメントの使用の完全性保護を提供することが奨励されています。</p>
+
+  <h3 id="resource-implementation"><span class="secno">6.4</span>実装に関する考慮事項</h3>
+
+  <p><em>このセクションは非規範的です。</em></p>
+
+  <p>複数と共有するために自分自身を有効にするリソースの<code>Origins</code>が、と均一に応答しない<code>"*"</code>実際に発生しなければならない<code>Access-Control-Allow-Origin</code>彼らが許可したいすべての要求に応じて動的にヘッダーを。結果として、そのようなリソースの著者は、送るべき<code>Vary: Origin</code>のHTTPヘッダーを、または全体に-起源再使用する場合に不正確になることがあり、そのような応答のキャッシングを防ぐための他の適切な制御ディレクティブを提供します。</p>
+
+
+  <h2 id="user-agent-processing-model"><span class="secno">7</span>ユーザーエージェント処理モデル</h2>
+
+  <p>このセクションでは、ユーザーエージェントが実装する必要が処理モデルについて説明します。</p>
+
+  <p>このセクションの処理モデルは、アルゴリズムが呼び出され、どのように戻り値が処理されるときに定義CORS API仕様によって参照される必要があります。処理モデルは、スタンドアロンの使用には適していません。</p>
+
+
+  <h3 id="cross-origin-request-0"><span class="secno">7.1</span>クロスオリジンリクエスト</h3>
+
+  <p><dfn id="cross-origin-request">クロスオリジンリクエストアルゴリズム</dfn>は、次のパラメータを取ります。<dl>
+   <dt><dfn id="request-url">リクエストURL</dfn></dt>
+   <dd>
+    <p><a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a>する<a class="external" href="http://www.w3.org/TR/html5/infrastructure.html#fetching-resources" title="フェッチ資源">フェッチ</a> 。</p>
+
+    <p class="note"><a href="https://www.w3.org/TR/cors/#request-url">リクエストURLが</a>リダイレクトの顔に変更されます。</p>
+   </dd>
+
+   <dt><dfn id="request-method">リクエストメソッド</dfn></dt>
+   <dd><p>リクエスト方法。 <code>GET</code>明示的に設定しない限り、。</p></dd>
+
+   <dt><dfn id="author-request-headers">著者リクエストヘッダ</dfn></dt>
+   <dd><p>リクエストの著者によって設定されたヘッダのリスト。空、明示的に設定しない限り。</p></dd>
+
+   <dt><dfn id="request-entity-body">リクエストのエンティティボディ</dfn></dt>
+   <dd><p>リクエストのエンティティボディ。明示的に設定しない限り、不足しています。</p></dd>
+
+   <dt><dfn id="source-origin">発生源</dfn></dt>
+   <dd>
+    <p><a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">起源</a>要求の。</p>
+    <p class="note">いくつかのAPIの仕様に起因し、これは一般的な方法で定義され、したがって、それは、引数として提供される必要があることはできません。</p>
+   </dd>
+
+   <dt><dfn id="referrer-source">リファラーソース</dfn></dt>
+   <dd>
+    <p>いずれかの<code class="external"><a href="http://dom.spec.whatwg.org/#document">Document</a></code>または<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a> 。決定するために使用される<code title="HTTP-リファラー">Referer</code>ヘッダを。
+    
+    </p></dd>
+   
+
+   <dt><dfn id="manual-redirect-flag">手動リダイレクトフラグ</dfn></dt>
+   <dd><p>リダイレクトを自動的に<em>行わない</em>ときに設定します。
+
+   
+
+   <dt><dfn id="omit-credentials-flag">資格情報のフラグを省略</dfn></dt>
+   <dd><p>ときに設定し<a href="https://www.w3.org/TR/cors/#user-credentials">、ユーザーの資格情報が</a>要求に除外されるとクッキーがその応答で無視する場合。
+
+   
+
+   <dt><dfn id="force-preflight-flag">プリフライトフラグを強制</dfn></dt>
+   <dd><p>ときに設定<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストが</a>必要です。
+  
+  </p></dd></p></dd></p></dd></dl>
+
+  <p><a href="https://www.w3.org/TR/cors/#cross-origin-request">クロスオリジンリクエスト</a>アルゴリズムは、それらが定義するネットワークAPIのクロスオリジン・リクエストを許可したいCORSのAPI仕様で使用することができます。</p>
+
+  <p class="note">CORSのAPI仕様は、の能力を制限するのは自由です<a href="https://www.w3.org/TR/cors/#cross-origin-request">クロスオリジンリクエストを</a> 。例えば、 <a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグは</a>常に設定することができました。
+
+  
+
+  <p>ときに<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンリクエスト</a>アルゴリズムが起動され、これらの手順に従う必要があります。</p>
+
+  <ol>
+   <li>
+    <p>何らかの理由でユーザエージェントが作るしたくない場合は、要求は、このアルゴリズムを終了し、設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>エラーをネットワーク化</i>します。</p>
+
+    <p class="note"><a href="https://www.w3.org/TR/cors/#request-url">リクエストURLは、</a>何らかの方法でユーザーがブラックリストに載っている可能性があります。</p>
+   </li>
+
+   <li>
+    <p>次の条件に該当する場合、従う<a href="https://www.w3.org/TR/cors/#simple-cross-origin-request">単純なクロスオリジンリクエスト</a>アルゴリズムを：<ul>
+     <li><p><a href="https://www.w3.org/TR/cors/#request-method">リクエストメソッドが</a>あり<a href="https://www.w3.org/TR/cors/#simple-method">、単純な方法</a>と<a href="https://www.w3.org/TR/cors/#force-preflight-flag">力プリフライトフラグが</a>設定されていません。
+
+     
+
+     </li><li><p>それぞれの<a href="https://www.w3.org/TR/cors/#author-request-headers">作者のリクエストヘッダが</a>あり<a href="https://www.w3.org/TR/cors/#simple-header">、単純なヘッダー</a>や<a href="https://www.w3.org/TR/cors/#author-request-headers">著者リクエストヘッダが</a>空です。</p></li>
+    </p></ul></li></ul>
+   </p></li>
+
+   <li><p>それ以外の場合は、以下の<a href="https://www.w3.org/TR/cors/#cross-origin-request-with-preflight">プリフライトとのクロスオリジンリクエスト</a>アルゴリズムを。</p></li>
+  </ol>
+
+  <p class="note">Cross-origin requests using a method that is
+  <a href="https://www.w3.org/TR/cors/#simple-method" title="簡単な方法">simple</a> with
+  <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a> that are not
+  <a href="https://www.w3.org/TR/cors/#simple-header" title="シンプルなヘッダー">simple</a> will have a
+  <a href="https://www.w3.org/TR/cors/#preflight-request">preflight request</a> to ensure that the resource can handle
+  those headers. （同様にない方法で使用して要求に<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法を</a> 。）</p>
+
+
+  <h4 id="handling-a-response-to-a-cross-origin-request"><span class="secno">7.1.1</span>クロスオリジンの要求に対する応答の処理</h4>
+
+  <p>User agents must filter out all response headers
+  other than those that are a <a href="https://www.w3.org/TR/cors/#simple-response-header">simple response header</a> or of
+  which the field name is an <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for
+  one of the values of the
+  <code title="HTTPアクセス・コントロール・ヘッダを公開"><a href="https://www.w3.org/TR/cors/#http-access-control-expose-headers">Access-Control-Expose-Headers</a></code>
+  headers (if any), before exposing response headers to APIs defined in
+  CORS API specifications.</p>
+
+  <p class="note"><code class="external" title="DOM-のXMLHttpRequest-getResponseHeader"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#dom-xmlhttprequest-getresponseheader">getResponseHeader()</a></code>のメソッド<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> 、したがって、上記示されていない任意のヘッダを公開しません。</p>
+
+
+  <h4 id="cross-origin-request-status-0"><span class="secno">7.1.2</span>クロスオリジン要求ステータス</h4>
+
+  <p>各<a href="https://www.w3.org/TR/cors/#cross-origin-request">クロスオリジンリクエストは</a>作るためにAPIを有効にするAPI仕様CORS関連する<dfn id="cross-origin-request-status">クロスオリジンリクエストのステータス</dfn>があり<a href="https://www.w3.org/TR/cors/#cross-origin-request" title="クロスオリジンリクエスト">、クロスオリジンリクエスト</a>にフックすることができます。それはかけて最大2つの異なる値を取ることができ<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンリクエスト</a> 。値は次のとおりです。</p>
+
+  <dl>
+   <dt><i>プリフライト完了</i></dt>
+   <dd>ユーザーエージェントが作るしようとしている<a href="https://www.w3.org/TR/cors/#actual-request">実際のリクエストを</a> 。</dd>
+
+   <dt><i>成功</i>
+   <dd>リソースを共有することができます。</dd>
+
+   <dt><i>エラーを中止</i>
+   <dd>ユーザーが要求を中止しました。</dd>
+
+   <dt><i>ネットワークエラー</i>
+   <dd>リソースを共有することはできません。DNSエラー、TLSネゴシエーションの障害、またはネットワークエラーの他のタイプが発生した場合にも使用。
+   <span class="note">これは、HTTPステータスコード410などのエラーのいくつかのタイプを示すHTTPレスポンスを、含まれていません。</span>
+   <!-- shared with XMLHttpRequest -->
+  </dd></dt></dt></dt></dl>
+
+
+  <h4 id="source-origin-0"><span class="secno">7.1.3</span>ソースの起源</h4>
+
+  <p><a href="https://www.w3.org/TR/cors/#source-origin">発生源は、</a>初期である<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">原点</a>ユーザーエージェントが使用しなければならない<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダー。これは、中に変更することができます<a href="https://www.w3.org/TR/cors/#redirect-steps">リダイレクト手順</a> 。</p>
+
+
+  <h4 id="simple-cross-origin-request-0"><span class="secno">7.1.4</span>シンプルなクロスオリジンリクエスト</h4>
+
+  <p>以下の手順は<dfn id="simple-cross-origin-request">、単純なクロスオリジンリクエスト</dfn>に対して何をすべきか、ユーザエージェントについて説明します。</p>
+
+  <ol>
+   <li>
+    <p>適用<a href="https://www.w3.org/TR/cors/#make-a-request-steps">要求手順を行う</a>と、要求を行っている間、以下の<i>要求ルールを</i>守っ<i>て</i>ください。</p>
+
+    <dl class="switch">
+     <dt>場合は<a href="https://www.w3.org/TR/cors/#manual-redirect-flag">、手動リダイレクトフラグは</a>設定解除され、応答は301、302、303、307、または308のHTTPステータスコードを持っています</dt>
+     <dd><p>適用<a href="https://www.w3.org/TR/cors/#redirect-steps">リダイレクトステップを</a> 。</p></dd>
+
+     <dt>エンドユーザーが要求をキャンセルした場合</dt>
+     <dd><p>適用<a href="https://www.w3.org/TR/cors/#abort-steps">アボート手順を</a> 。</p></dd>
+
+     <dt>ネットワークエラーが存在する場合</dt>
+     <dd>
+      <p>DNSエラーの場合には、TLSネゴシエーション失敗、またはネットワークエラーの他のタイプ、適用<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーステップを</a> 。エンドユーザーとの対話の任意の種類を要求しないでください。</p>
+
+      <p class="note">これは、HTTPステータスコード410などのエラーのいくつかのタイプを示すHTTPレスポンスを、含まれていません。</p>
+     </dd>
+
+     <dt>さもなければ</dt>
+     <dd><p>実行<a href="https://www.w3.org/TR/cors/#resource-sharing-check">リソース共有チェック</a> 。それが失敗を返した場合、適用する<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワーク・エラー・ステップを</a> 。それはパスを返した場合、このアルゴリズムを終了し、設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>成功</i>に。実際に要求を終了しないでください。</p></dd>
+    </dl>
+   </li>
+  </ol>
+
+
+  <h4 id="cross-origin-request-with-preflight-0">プリフライトと<span class="secno">7.1.5</span>クロスオリジンリクエスト</h4>
+
+  <p>この仕様が存在する前に、特定のユーザーエージェントからの発信ができませんでしたクロスオリジンリクエストに対してリソースを保護するために、 <a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストは</a>リソースがこの仕様を認識していることを確認するために行われます。この要求の結果は以下の場所に格納され<a href="https://www.w3.org/TR/cors/#preflight-result-cache">たプリフライト結果キャッシュ</a> 。</p>
+
+  <p>以下の手順は、 <dfn id="cross-origin-request-with-preflight">プリフライトとのクロスオリジンリクエスト</dfn>に対して何をすべきか、ユーザエージェントについて説明します。これは、最初のいずれかを使用して許可する必要がある非同一生成元のURLへのリクエストで<a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュの&lt;/a&gt; &lt;a x="/0"/&gt;エントリまたは&lt;/a&gt; </a><a href="https://www.w3.org/TR/cors/#preflight-request"></a>プリフライトリクエストを&lt;/a&gt; &lt;a x="/1"/&gt;。&lt;/a&gt;</p>
+
+  <ol>
+   <li>
+    <p>以下の条件に該当する場合、次のステップに進みます。<ul>
+     <li>
+      <p>以下のための<a href="https://www.w3.org/TR/cors/#request-method">リクエストメソッド</a>があるのいずれか<a href="https://www.w3.org/TR/cors/#preflight-result-cache-method-match">の方法キャッシュ一致</a>またはそれは<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法</a>と<a href="https://www.w3.org/TR/cors/#force-preflight-flag">力プリフライトフラグが</a>設定されていません。
+
+     
+
+     </li><li>
+      <p>すべてのヘッダについては<a href="https://www.w3.org/TR/cors/#author-request-headers">、著者のリクエストヘッダ</a>が存在するいずれかの<a href="https://www.w3.org/TR/cors/#preflight-result-cache-header-match">ヘッダキャッシュ一致</a>フィールド名またはそれは<a href="https://www.w3.org/TR/cors/#simple-header">単純なヘッダー</a> 。</p>
+     </li>
+    </p></ul></li></ul><!-- the preflight request -->
+
+
+    
+    <p>Otherwise, make a
+    <dfn id="preflight-request">preflight request</dfn>.
+    <a class="external" href="http://www.w3.org/TR/html5/infrastructure.html#fetching-resources">Fetch</a> the <a href="https://www.w3.org/TR/cors/#request-url">request URL</a>
+    from <i title="">origin</i> <a href="https://www.w3.org/TR/cors/#source-origin">source origin</a> using
+    <a href="https://www.w3.org/TR/cors/#referrer-source">referrer source</a> as <i title="">override referrer source</i>
+    with the <i title="">manual redirect flag</i> and the
+    <i title="">block cookies flag</i> set, using the method
+    <code>OPTIONS</code>, and with the following additional constraints:</p>
+
+    <ul>
+     <li><p>含める<code title="HTTPアクセス制御要求-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-request-method">Access-Control-Request-Method</a></code>としてのヘッダーフィールド値を持つヘッダ<a href="https://www.w3.org/TR/cors/#request-method">要求メソッド</a> （つまりでも<a href="https://www.w3.org/TR/cors/#simple-method">簡単な方法を</a> ）。</p></li>
+
+     <li><p>If <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a> is not empty include an
+     <code title="HTTPアクセス・コントロール・リクエスト・ヘッダー"><a href="https://www.w3.org/TR/cors/#http-access-control-request-headers">Access-Control-Request-Headers</a></code>
+     header with as header field value a comma-separated list of the header
+     field names from <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a> in lexicographical
+     order, each <a href="https://www.w3.org/TR/cors/#converted-to-ascii-lowercase">converted to ASCII lowercase</a> (even when one or
+     more are a <a href="https://www.w3.org/TR/cors/#simple-header">simple header</a>).</p></li>
+
+     <li><p>除外<a href="https://www.w3.org/TR/cors/#author-request-headers">著者リクエストヘッダを</a> 。</p></li>
+
+     <li><p>除外<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報を</a> 。</p></li>
+
+     <li><p>除外<a href="https://www.w3.org/TR/cors/#request-entity-body">要求エンティティボディを</a> 。</p></li>
+    </ul>
+
+    <p>次の<i>要求規則は</i>作りながら観察される<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストを</a> ：</p>
+
+    <dl class="switch">
+     <dt>エンドユーザーが要求をキャンセルした場合</dt>
+     <dd><p>適用<a href="https://www.w3.org/TR/cors/#abort-steps">アボート手順を</a> 。</p></dd>
+
+     <dt>応答が2XXの範囲に含まれていないHTTPステータスコードを有する場合</dt>
+     <dd>
+      <p>適用<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーの手順を</a> 。</p>
+
+      <p class="note"><a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュやネットワーク・エラーの手順は</a> 、これが実際のネットワークエラーについてです、ここで使用されていません。</p>
+     </dd>
+
+     <dt>ネットワークエラーが存在する場合</dt>
+     <dd>
+      <p>DNSエラーの場合には、TLSネゴシエーション失敗、またはネットワークエラーの他のタイプ、適用<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーステップを</a> 。エンドユーザーとの対話の任意の種類を要求しないでください。</p>
+
+      <p class="note">これは、HTTPステータスコード410などのエラーのいくつかのタイプを示すHTTPレスポンスを、含まれていません。</p>
+
+      <p class="note"><a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュやネットワーク・エラーの手順は</a> 、これが実際のネットワークエラーについてです、ここで使用されていません。</p>
+     </dd>
+     <dt>そうでなければ（HTTPステータスコードが2XXの範囲にあります）</dt>
+     <dd>
+      <ol>
+       <li><p>場合は<a href="https://www.w3.org/TR/cors/#resource-sharing-check">リソース共有チェック</a>リターンが失敗し、適用<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュおよびネットワークエラーステップを</a> 。</p></li>
+
+       <li><p><var title="">メソッドは</var>空のリストにしてみましょう。</p></li>
+
+       <li>
+        <p>一つ以上存在する場合<code title="HTTPアクセス・コントロールできるよう-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダは<var title="">方法が</var>の結果としての値であるものとする<a href="https://www.w3.org/TR/cors/#header-parsing" title="ヘッダー解析">構文解析</a>ヘッダを。</p>
+
+        <p>場合<a href="https://www.w3.org/TR/cors/#header-parsing-failed" title="失敗した構文解析ヘッダ">の解析に失敗しまし</a>適用<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュとネットワークエラーステップを</a> 。</p>
+       </li>
+
+       <li>
+        <p><var title="">方法は</var>まだ空のリストであり、場合<a href="https://www.w3.org/TR/cors/#force-preflight-flag">力プリフライトフラグが</a>セットされ、追加<a href="https://www.w3.org/TR/cors/#request-method">要求メソッドを</a> <var title="">メソッド</var>に。
+
+        
+
+        <p class="note">これは、ことが保証され<a href="https://www.w3.org/TR/cors/#preflight-request" title="プリフライトリクエスト">、プリフライトリクエスト</a>のための単独で起こっ<a href="https://www.w3.org/TR/cors/#force-preflight-flag">力プリフライトフラグは</a>あまりにもキャッシュされます。
+
+       
+
+       </li><li><p><var title="">ヘッダーは</var>空のリストにしてみましょう。</p></li>
+
+       <li>
+        <p>一つ以上ある場合は<code title="HTTPアクセス・コントロールできるように、ヘッダ"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-headers">Access-Control-Allow-Headers</a></code>ヘッダは聞かせ<var title="">ヘッダーが</var>結果として値で<a href="https://www.w3.org/TR/cors/#header-parsing" title="ヘッダー解析">解析する</a>ヘッダを。</p>
+
+        <p>場合<a href="https://www.w3.org/TR/cors/#header-parsing-failed" title="失敗した構文解析ヘッダ">の解析に失敗しまし</a>適用<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュとネットワークエラーステップを</a> 。</p>
+       </li>
+
+       <li><p>If <a href="https://www.w3.org/TR/cors/#request-method">request method</a> is not a
+       <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> match for any method in
+       <var title="">methods</var> and is not a <a href="https://www.w3.org/TR/cors/#simple-method">simple method</a>,
+       apply the <a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">cache and network error steps</a>.</p></li>
+
+       <li><p>If the field name of each header in
+       <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a> is not an
+       <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for one of the
+       header field names in <var title="">headers</var> and the header is
+       not a <a href="https://www.w3.org/TR/cors/#simple-header">simple header</a>, apply the
+       <a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">cache and network error steps</a>.</p></li>
+
+       <li><p>ユーザエージェントが提供することができない何らかの理由<a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュを</a> （例えばので、限られたディスクスペースのこと）（すなわちステップの全体的なセットの次のステップに進み<a href="https://www.w3.org/TR/cors/#actual-request">、実際のリクエスト</a> ）。</p></li>
+
+       <li>
+        <p>単一がある場合は<code title="HTTPアクセス・コントロール・最大エージング"><a href="https://www.w3.org/TR/cors/#http-access-control-max-age">Access-Control-Max-Age</a></code>ヘッダは、 <a href="https://www.w3.org/TR/cors/#header-parsing" title="ヘッダー解析">解析し</a> 、それをと<var title="">max-年齢が</var>結果の値とします。</p>
+
+        <p>もしそのようなヘッダが存在しない場合は、そこに一以上のそのようなヘッダがある、または<a href="https://www.w3.org/TR/cors/#header-parsing-failed" title="失敗した構文解析ヘッダ">解析が失敗した</a> 、 <var title="">最大エージングが</var> （ゼロが許可されている）ユーザーエージェントの裁量での値とします。</p>
+
+        <p>ユーザエージェントが課した場合の制限<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a>フィールドの値と<var title="">max-ageが</var>その制限が<var title="">max-年齢が</var>限界であるとするよりも大きいです。</p>
+       </li>
+
+       <li>
+        <p>が存在するための<var title="">方法</var>で各メソッドの<a href="https://www.w3.org/TR/cors/#preflight-result-cache-method-match">メソッド・キャッシュ・マッチが</a>設定<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a> <var title="">最大エージング</var>に一致したエントリのフィールド値を。</p>
+
+        <p><em>何</em>が存在するための<var title="">方法</var>で各メソッドの<a href="https://www.w3.org/TR/cors/#preflight-result-cache-method-match">メソッド・キャッシュ・マッチが</a>内に新しいエントリを作成しない<a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュ</a>次のように設定し、さまざまな分野での：</p>
+
+        <dl>
+         <dt><a href="https://www.w3.org/TR/cors/#cache-origin" title="キャッシュ起源">元</a></dt>
+         <dd><a href="https://www.w3.org/TR/cors/#source-origin">発生源</a> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-url" title="キャッシュのURL">URL</a></dt>
+         <dd><a href="https://www.w3.org/TR/cors/#request-url">リクエストURL</a> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a></dt>
+         <dd><var title="">最大エージング</var> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-credentials" title="キャッシュ資格情報">Credentials</a></dt>
+         <dd>falseの場合は<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>そうでなければセット、または真のさ。
+
+         
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-method" title="キャッシュ方法">方法</a></dt>
+         <dd>指定したメソッド。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-header" title="キャッシュヘッダー">{0}{/0} 2.1. ヘッダ{0}{/0}</a></dt>
+         <dd>空っぽ</dd>
+        </dd></dl>
+       </li>
+
+       <li>
+        <p>が存在するために<var title="">、ヘッダー</var>内の各ヘッダのための<a href="https://www.w3.org/TR/cors/#preflight-result-cache-header-match">ヘッダ・キャッシュ・マッチが</a>設定<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a> <var title="">最大エージング</var>に一致したエントリのフィールド値を。</p>
+
+        <p><em>何</em>が存在するために<var title="">、ヘッダー</var>内の各ヘッダの<a href="https://www.w3.org/TR/cors/#preflight-result-cache-header-match">ヘッダキャッシュ一致が</a>内に新しいエントリを作成しない<a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュ</a>次のように設定し、さまざまな分野での：</p>
+
+        <dl>
+         <dt><a href="https://www.w3.org/TR/cors/#cache-origin" title="キャッシュ起源">元</a></dt>
+         <dd><a href="https://www.w3.org/TR/cors/#source-origin">発生源</a> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-url" title="キャッシュのURL">URL</a></dt>
+         <dd><a href="https://www.w3.org/TR/cors/#request-url">リクエストURL</a> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a></dt>
+         <dd><var title="">最大エージング</var> 。</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-credentials" title="キャッシュ資格情報">Credentials</a></dt>
+         <dd>falseの場合は<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>そうでなければセット、または真のさ。
+
+         
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-method" title="キャッシュ方法">方法</a></dt>
+         <dd>空っぽ</dd>
+
+         <dt><a href="https://www.w3.org/TR/cors/#cache-header" title="キャッシュヘッダー">{0}{/0} 2.1. ヘッダ{0}{/0}</a></dt>
+         <dd>指定したヘッダ。</dd>
+        </dd></dl>
+       </li>
+      </p></p></li></ol>
+     </dd>
+    </dl>
+   </p></li>
+
+   <li><p>設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>プリフライト完全</i>に。</p></li><!-- the actual request -->
+
+   
+   <li>
+    <p>これは、 <dfn id="actual-request">実際</dfn>の<dfn id="actual-request">要求</dfn>です。適用<a href="https://www.w3.org/TR/cors/#make-a-request-steps">要求手順を行う</a>と、要求を行っている間、以下の<i>要求ルールを</i>守っ<i>て</i>ください。</p>
+
+    <dl class="switch">
+     <dt>反応は301、302、303、307、または308のHTTPステータスコードを有する場合</dt>
+
+     <dd><p>適用<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュとネットワークエラーステップを</a> 。</p></dd>
+
+     <dt>エンドユーザーが要求をキャンセルした場合</dt>
+
+     <dd><p>適用<a href="https://www.w3.org/TR/cors/#abort-steps">アボート手順を</a> 。</p></dd>
+
+     <dt>ネットワークエラーが存在する場合</dt>
+     <dd>
+      <p>DNSエラーの場合には、TLSネゴシエーション失敗、またはネットワークエラーの他のタイプ、適用<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーステップを</a> 。エンドユーザーとの対話の任意の種類を要求しないでください。</p>
+
+      <p class="note">これは、HTTPステータスコード410などのエラーのいくつかのタイプを示すHTTPレスポンスを、含まれていません。</p>
+     </dd>
+
+
+     <dt>さもなければ</dt>
+
+     <dd><p>実行<a href="https://www.w3.org/TR/cors/#resource-sharing-check">リソース共有チェック</a> 。それが失敗を返した場合、適用され<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">たキャッシュおよびネットワークエラーステップを</a> 。それはパスを返した場合、このアルゴリズムを終了し、設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>成功</i>に。実際に要求を終了しないでください。</p></dd>
+    </dl>
+  </li></ol>
+
+  <div class="example">
+   <p>以下のシナリオを考えます：</p>
+
+   <ol>
+    <li><p>ユーザーエージェントは、次のようなAPIからの要求を取得する<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code>カスタム用いたクロスオリジンリクエストを実行するために、 <code>XMODIFY</code>からのメソッド<a href="https://www.w3.org/TR/cors/#source-origin">ソースの原点</a> <code>http://example.org</code>する<code>http://blog.example/entries/hello-world</code> 。</li><li><p>The user agent performs a <a href="https://www.w3.org/TR/cors/#preflight-request">preflight request</a> using
+    the <code>OPTIONS</code> method to
+    <code>http://blog.example/entries/hello-world</code> and includes the
+    <code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code> and
+    <code title="HTTPアクセス制御要求-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-request-method">Access-Control-Request-Method</a></code>
+    headers with the appropriate values.</p></li>
+
+    <li>
+     <p>その要求への応答は次のヘッダーが含まれています。</p>
+     <pre>アクセス制御 - 許可 - 原産地：http://example.orgアクセス制御マックスエイジ：2520アクセス制御 - 許可-方法：PUT、DELETE、XMODIFY</pre>
+
+    </li><li><p>ユーザエージェントは、使用して所望の要求実行<code>XMODIFY</code>ための方法を<code>http://blog.example/entries/hello-world</code>このように、リソースによって許可されました。また、今後四〇から二分間、何の<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストが</a>必要とされません。
+   
+   </p></li></li></p></li></ol>
+  </div>
+
+
+  <h4 id="preflight-result-cache-0"><span class="secno">7.1.6</span>プリフライト結果キャッシュ</h4>
+
+  <p>前述したように、 <a href="https://www.w3.org/TR/cors/#cross-origin-request-with-preflight">プリフライトとのクロスオリジンリクエストは、</a> <dfn id="preflight-result-cache">プリフライト結果キャッシュを</dfn>使用しています。このキャッシュは、エントリのセットで構成されています。各エントリには、以下のフィールドから構成されています。</p>
+
+  <dl>
+   <dt><dfn id="cache-origin" title="キャッシュ起源">元</dfn></dt>
+   <dd>保持している<a href="https://www.w3.org/TR/cors/#source-origin">発生源を</a> 。</dd>
+
+   <dt><dfn id="cache-url" title="キャッシュのURL">URL</dfn></dt>
+   <dd>保持している<a href="https://www.w3.org/TR/cors/#request-url">リクエストURLを</a> 。</dd>
+
+   <dt><dfn id="cache-max-age" title="キャッシュ最大エージング">最大エージング</dfn></dt>
+   <dd>保持している<code title="HTTPアクセス・コントロール・最大エージング"><a href="https://www.w3.org/TR/cors/#http-access-control-max-age">Access-Control-Max-Age</a></code>ヘッダー値を。</dd>
+
+   <dt><dfn id="cache-credentials" title="キャッシュ資格情報">Credentials</dfn></dt>
+   <dd>falseの場合は<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>そうでなければセット、または真のさ。
+
+   
+
+   <dt><dfn id="cache-method" title="キャッシュ方法">方法</dfn></dt>
+   <dd>空の場合は<a href="https://www.w3.org/TR/cors/#cache-header" title="キャッシュヘッダー">、ヘッダーが</a>空ではありません。そうでない場合の値の1 <code title="HTTPアクセス・コントロールできるよう-方法"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダー。</dd>
+
+   <dt><dfn id="cache-header" title="キャッシュヘッダー">{0}{/0} 2.1. ヘッダ{0}{/0}</dfn></dt>
+   <dd>場合は、空の<a href="https://www.w3.org/TR/cors/#cache-method" title="キャッシュ方法">メソッドは</a>空ではありません。そうでない場合の値の1 <code title="HTTPアクセス・コントロールできるように、ヘッダ"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-headers">Access-Control-Allow-Headers</a></code>ヘッダ。</dd>
+  </dd></dl>
+
+  <p class="note">明確にするため、 <a href="https://www.w3.org/TR/cors/#cache-method" title="キャッシュ方法">方法</a>および<a href="https://www.w3.org/TR/cors/#cache-header" title="キャッシュヘッダー">ヘッダ</a>フィールドは相互に排他的です。そのうちの一つが空になると、他には非空です。</p>
+
+  <p class="note">エントリの主キーは除くすべてのフィールドで構成されて<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a>フィールド。</p>
+
+  <p>で指定した時間ときエントリは除去されなければならない<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a>フィールドはエントリを格納経過しました。エントリはまた、追加され、以下のアルゴリズムごとに除去することができます。これらは、キャッシュ内の重複する項目があることは決してないことができるような方法で追加および削除されます。</p>
+
+  <p>で指定した時刻より前にユーザーエージェントは、キャッシュエントリをクリアすることができる<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a>フィールドが経過しました。</p>
+
+  <p class="note">これが効果的になりますが<a href="https://www.w3.org/TR/cors/#preflight-result-cache">、プリフライト結果キャッシュ</a>オプションを、ユーザーエージェントは強く、それをサポートすることをお勧めします。</p>
+
+
+  <h4 id="generic-cross-origin-request-algorithms"><span class="secno">7.1.7</span>一般的なクロスオリジン・リクエスト・アルゴリズム</h4>
+
+  <p>手順の一般的なセットで使用される変数は、ステップのこれらのセットを呼び出すアルゴリズムの一部です。</p>
+
+  <hr>
+
+  <p>Whenever the <dfn id="make-a-request-steps">make a request steps</dfn> are applied,
+  <a class="external" href="http://www.w3.org/TR/html5/infrastructure.html#fetching-resources">fetch</a> the <a href="https://www.w3.org/TR/cors/#request-url">request URL</a> from
+  <i title="">origin</i> <a href="https://www.w3.org/TR/cors/#source-origin">source origin</a> using
+  <a href="https://www.w3.org/TR/cors/#referrer-source">referrer source</a> as <i title="">override referrer source</i> with
+  the <i title="">manual redirect flag</i> set, and the
+  <i title="">block cookies flag</i> set if the
+  <a href="https://www.w3.org/TR/cors/#omit-credentials-flag">omit credentials flag</a> is set. Use method
+  <a href="https://www.w3.org/TR/cors/#request-method">request method</a>, entity body <a href="https://www.w3.org/TR/cors/#request-entity-body">request entity body</a>,
+  including the <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a>, and include
+  <a href="https://www.w3.org/TR/cors/#user-credentials">user credentials</a> if the <a href="https://www.w3.org/TR/cors/#omit-credentials-flag">omit credentials flag</a> is unset.
+
+  
+
+  <p><dfn id="redirect-steps">リダイレクト手順が</dfn>適用されるたびに、この一連の手順では、次のとおりです。</p>
+
+  <ol>
+   <li><p><var>元のURLが</var>あるとする<a href="https://www.w3.org/TR/cors/#request-url">要求URL</a> 。</li><li><p>てみましょう<a href="https://www.w3.org/TR/cors/#request-url">リクエストURLは</a>なる<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a>によって搬送される<code>Location</code>リダイレクト応答のヘッダ。</p></li>
+
+   <li><p>場合は<a href="https://www.w3.org/TR/cors/#request-url">、リクエストURL</a> &lt;スキーム&gt;がサポートされていない、無限ループの注意事項に違反している、またはユーザエージェントは、他のいくつかの理由のための新たな要求を行う適用したくない<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーの手順を</a> 。
+
+   
+
+   </li><li><p>場合は<a href="https://www.w3.org/TR/cors/#request-url">、リクエストURLが</a>含まれている<code class="external"><a href="http://tools.ietf.org/html/rfc2616/#section-3.2.1">userinfo</a></code>生産が適用されます<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーの手順を</a> 。</p></li>
+
+   <li><p>場合は<a href="https://www.w3.org/TR/cors/#resource-sharing-check">リソース共有チェック</a>リターンが失敗現在のリソースのために、適用する<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワーク・エラー・ステップを</a> 。
+   
+   <!--This prevents intranet data leakage.-->
+
+   </li><li><p>If the <a href="https://www.w3.org/TR/cors/#request-url">request URL</a>
+   <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a> is not
+   <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a> with the
+   <var>original URL</var> <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a>, set
+   <a href="https://www.w3.org/TR/cors/#source-origin">source origin</a> to a globally unique identifier (becomes
+   "<code title="">null</code>" when transmitted).
+
+   
+
+   </li><li><p><i>要求ルール</i>のセットを観察しながら、透過的にリダイレクトに従います。
+  
+  </p></li></p></li></p></li></p></li></p></li></ol>
+
+  <hr>
+
+  <p><dfn id="abort-steps">アボート手順が</dfn>適用されるたびに、ステップのセットを呼び出したアルゴリズムを終了し、設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>エラーを中止</i>します。</p>
+
+  <hr>
+
+  <p><dfn id="network-error-steps">ネットワークエラーの手順が</dfn>適用されるたびに、ステップのセットを呼び出したアルゴリズムを終了し、設定<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジン要求のステータスを</a> <i>ネットワークエラー</i>に。</p>
+
+  <p class="note">これは、の設定には影響ありません<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザー資格情報を</a> 。<i title="">ブロッククッキーフラグが</i>設定され<i title="">て</i>いない場合、すなわちは、クッキーは応答によって設定されます。
+
+  
+
+  <p><dfn id="cache-and-network-error-steps">キャッシュとネットワークエラー手順が</dfn>適用されるたびに、次の手順を実行します。</p>
+
+  <ol>
+   <li><p>Remove the entries in the <a href="https://www.w3.org/TR/cors/#preflight-result-cache">preflight result cache</a>
+   where <a href="https://www.w3.org/TR/cors/#cache-origin" title="キャッシュ起源">origin</a> field value is a
+   <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> match for <a href="https://www.w3.org/TR/cors/#source-origin">source origin</a>
+   and <a href="https://www.w3.org/TR/cors/#cache-url" title="キャッシュのURL">url</a> field value is a
+   <a href="https://www.w3.org/TR/cors/#case-sensitive">case-sensitive</a> match for <a href="https://www.w3.org/TR/cors/#request-url">request URL</a>.</p></li>
+
+   <li><p>適用<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーの手順</a>呼び出さアルゴリズムいるかのように動作する<a href="https://www.w3.org/TR/cors/#cache-and-network-error-steps">キャッシュやネットワークエラー手順が</a>呼び出された<a href="https://www.w3.org/TR/cors/#network-error-steps">ネットワークエラーの手順を</a>代わりにします。</p>
+  </li></ol>
+
+  <hr>
+
+  <p>キャッシュエントリが<dfn id="preflight-result-cache-match">キャッシュの試合</dfn>がある<a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュ</a>以下が真であるためには：</p>
+
+  <ul>
+   <li><p><a href="https://www.w3.org/TR/cors/#cache-origin" title="キャッシュ起源">原点</a>フィールドの値は、 <a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a>するためのマッチ<a href="https://www.w3.org/TR/cors/#source-origin">発生源</a> 。</p></li>
+
+   <li><p><a href="https://www.w3.org/TR/cors/#cache-url" title="キャッシュのURL">URLの</a>フィールド値は、 <a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a>するための一致<a href="https://www.w3.org/TR/cors/#request-url">要求URL</a> 。</p></li>
+
+   <li><p><a href="https://www.w3.org/TR/cors/#cache-credentials" title="キャッシュ資格情報">資格情報の</a>フィールドの値がtrueで、 <a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>設定されていない、またはそれが偽であると<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>設定されています。
+  
+  </p></li></ul>
+
+  <p>が存在するためにキャッシュエントリが存在する場合<dfn id="preflight-result-cache-method-match">の方法キャッシュの試合が</dfn>あり<a href="https://www.w3.org/TR/cors/#preflight-result-cache-match">、キャッシュ・マッチ</a>と<a href="https://www.w3.org/TR/cors/#cache-method" title="キャッシュ方法">メソッドの</a>フィールド値で<a href="https://www.w3.org/TR/cors/#case-sensitive">、大文字と小文字を区別し</a> 、所定の方法に一致します。</p>
+
+  <p>が存在するためにキャッシュエントリが存在する場合<dfn id="preflight-result-cache-header-match">、ヘッダキャッシュの試合が</dfn>あり<a href="https://www.w3.org/TR/cors/#preflight-result-cache-match">、キャッシュ・マッチ</a>と<a href="https://www.w3.org/TR/cors/#cache-header" title="キャッシュヘッダー">ヘッダ</a>フィールドの値が<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCIIの大文字と小文字を区別しない</a>指定したヘッダフィールド名の一致。</p>
+
+
+  <h3 id="resource-sharing-check-0"><span class="secno">7.2</span>リソースの共有チェック</h3>
+
+  <p>次のように与えられたリソースの<dfn id="resource-sharing-check">リソース共有チェック</dfn>アルゴリズムは、次のとおりです。</p>
+
+  <ol>
+   <li><p>応答がゼロまたは複数含まれている場合は<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダー値を、このアルゴリズムを失敗し、終了を返します。</p></li>
+
+   <li><p>場合<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダの値が" <code>*</code> "文字と<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a> 、セットリターンパスと、このアルゴリズムを終了します。</p></li>
+
+   <li><p>値ならば<code title="HTTPアクセス・コントロールできるように、原点"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ない<a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a>の値の一致<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>その仕様で定義されているように、ヘッダ、リターンが失敗し、このアルゴリズムを終了します。</p></li>
+
+   <li><p>場合<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>設定解除され、応答がゼロを含むか、または複数の<code title="HTTPアクセス・コントロールできるように、資格情報"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code> 、ヘッダの値の、このアルゴリズムを失敗し、終了を返します。</p></li>
+
+   <li><p>場合<a href="https://www.w3.org/TR/cors/#omit-credentials-flag">オミット資格情報フラグが</a>設定されていないと<code title="HTTPアクセス・コントロールできるように、資格情報"><a href="https://www.w3.org/TR/cors/#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code>ヘッダ値ではない<a href="https://www.w3.org/TR/cors/#case-sensitive">大文字と小文字を区別</a> 」に一致する<code>true</code> 」、リターンが失敗し、このアルゴリズムを終了します。
+
+   
+
+   </li><li><p>パスを返します。
+  
+  </p></li></p></li></ol>
+
+  <p class="note">上記のアルゴリズムはまた、ときに機能<a class="external" href="http://tools.ietf.org/html/rfc6454#section-6.2">ASCIIシリアライゼーション</a>起源のは、文字列"である<code>null</code> 」。</p>
+
+
+  <h3 id="user-agent-security"><span class="secno">7.3</span>セキュリティ</h3>
+
+  <p><em>このセクションでは、非規範的です。</em></p>
+
+  <p>様々な場所で、ユーザエージェントは追加の予防策を取ることが許可されています。例えば、ユーザエージェントは、キャッシュアイテムを格納し、彼らが到達する前にキャッシュ項目を削除しないように許可されている<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージングを</a> 、および特定には接続しないで<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url" title="URL">URLを</a> 。</p>
+
+  <p>ユーザーエージェントは、上の制限を課すことが奨励されている<a href="https://www.w3.org/TR/cors/#cache-max-age" title="キャッシュ最大エージング">最大エージング</a>項目がに滞在することはできませんので、 <a href="https://www.w3.org/TR/cors/#preflight-result-cache">プリフライト結果キャッシュ</a>時間の不合理な金額について。</p>
+
+  <p>最初のステップとして示されているように<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンリクエスト</a>アルゴリズムとに<a href="https://www.w3.org/TR/cors/#redirect-steps">リダイレクト手順の</a>アルゴリズムユーザエージェントアルゴリズムを終了し、要求をしないために許可されています。例えばので、これを行うことができます。</p>
+
+  <ul>
+   <li>リソースの原点がブラックリストに掲載しました。</li>
+   <li>リソースの起源は、イントラネットの一部であることが知られています。</li>
+   <li>URL &lt;スキーム&gt;はサポートされていません。</li>
+   <li><code>https</code>へ<code>http</code>許可されていません。</li>
+   <li><code>https</code>あるため、証明書エラーの許可されていません</li>
+  </ul>
+
+  <p>ユーザーエージェントは、一般的なレベルでだけではなく、リソース共有ポリシーにセキュリティ上の決定を適用することを推奨します。例えば、ユーザエージェントは、からの要求禁止されている場合<code>https</code>へ<code>http</code>のためのスキーム<a href="https://www.w3.org/TR/cors/#cross-origin-request">クロスオリジンリクエスト</a> HTMLのための同じ行うことが奨励された<code>img</code>要素を。</p>
+
+
+
+
+  <h2 id="cors-api-specification-advice"><span class="secno">8</span> CORS API仕様を見ます</h2>
+
+  <p><em>このセクションでは、非規範的です。</em></p>
+
+  <p>この仕様は、それを利用するAPIなしで実装することができないリソース共有ポリシーを定義します。ポリシーを使用するAPIを定義する仕様は、CORSのAPI仕様です。</p>
+
+  <p>場合CORSのAPI仕様は、アドバイスは、各APIのために個別に考慮されるべきであるポリシーを利用し、複数のAPIを定義します。</p>
+
+
+  <h3 id="cors-api-specifiation-request"><span class="secno">8.1</span>クロスオリジン・リクエストを構築</h3>
+
+  <p>For all <a href="https://www.w3.org/TR/cors/#cross-origin">cross-origin</a> requests that APIs can make for
+  which the resource sharing policy in this specification is supposed to
+  apply, the CORS API specification needs to reference the
+  <a href="https://www.w3.org/TR/cors/#cross-origin-request">cross-origin request</a> algorithm and set the following input
+  variables appropriately: <a href="https://www.w3.org/TR/cors/#request-url">request URL</a>,
+  <a href="https://www.w3.org/TR/cors/#request-method">request method</a>, <a href="https://www.w3.org/TR/cors/#author-request-headers">author request headers</a>,
+  <a href="https://www.w3.org/TR/cors/#request-entity-body">request entity body</a>, <a href="https://www.w3.org/TR/cors/#source-origin">source origin</a>,
+  <a href="https://www.w3.org/TR/cors/#manual-redirect-flag">manual redirect flag</a>, <a href="https://www.w3.org/TR/cors/#omit-credentials-flag">omit credentials flag</a>,
+  and the <a href="https://www.w3.org/TR/cors/#force-preflight-flag">force preflight flag</a>.</p>
+
+  <p>CORSのAPI仕様は、これらの入力変数は、APIによって制御することができるように許可されているが、また固定値を設定することができます。</p>
+
+  <p class="example">のみ使用して要求できますAPIのCORS API仕様<code>GET</code>メソッドを設定するかもしれません<a href="https://www.w3.org/TR/cors/#request-method">要求メソッド</a>にする<code>GET</code> 、 <a href="https://www.w3.org/TR/cors/#request-entity-body">要求エンティティボディ</a>は空にし、 <a href="https://www.w3.org/TR/cors/#source-origin">発生源を</a>いくつかの適切な値にし、他の変数は、APIによって制御することができます。</p>
+
+
+  <h3 id="cors-api-specification-redirect"><span class="secno">8.2</span>クロスオリジンリダイレクトに同一生成元への対処</h3>
+
+  <p>ブラウザはに基づいているため<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">、同じ起源の</a>セキュリティモデルと、この仕様で概説ポリシーがブラウザで使用されるAPIのために意図され、このポリシーを利用するAPIを処理するために有することが期待されている<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">同一生成元</a>であるリダイレクトの結果、要求を<a href="https://www.w3.org/TR/cors/#cross-origin">クロスオリジン</a>特別な方法インチ</p>
+
+  <p>透過的に扱うリダイレクトAPIのCORSのAPI仕様は、リダイレクトを「引く」と呼び出すことによって、透過的にだけでなく、このシナリオを処理することが奨励され<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンリクエスト</a> （上のアルゴリズムを<a href="https://www.w3.org/TR/cors/#cross-origin">クロスオリジン</a> URLをリダイレクト）。</p>
+
+  <p class="note">XMLHttpRequestの仕様では、これを行います。
+  <a class="informative" href="https://www.w3.org/TR/cors/#refsXHR">【XHR]</a>
+
+
+  <h3 id="cors-api-specification-response"><span class="secno">8.3</span>クロスオリジン要求ステータスの対処</h3>
+
+  <p>一方で<a href="https://www.w3.org/TR/cors/#cross-origin-request">、クロスオリジンリクエストが</a>進行しているその関連<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジンリクエストのステータスが</a>更新されます。値に応じて<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">、クロスオリジン要求ステータス</a> APIは、別の方法で反応させることです。</p>
+
+  <dl>
+   <dt><i>プリフライト完了</i></dt>
+   <dd>
+    <p>後にのみ、安全に露出させることができる機能<a href="https://www.w3.org/TR/cors/#preflight-request">プリフライトリクエストは</a>今有効にすることができます。</p>
+
+    <p class="note">例えばのためのprogressイベントアップロード<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> 。</p></dd>
+
+   <dt><i>成功</i></dt>
+   <dd>
+    <p>応答の内容は除外されていないヘッダを含む、APIと共有することができます。</p>
+
+    <p class="note">要求自体はまだ進んですることができます。すなわち<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">、クロスオリジンリクエストのステータス</a>値は、要求が完了したことを示すものではありません。</p>
+   </dd>
+
+   <dt><i>エラーを中止</i></dt>
+   <dd><p>ユーザが要求をアボート要求に類似して扱います。これは、 <i>ネットワークエラーの</i>処理方法と同等に扱うことができます。リクエストについてのさらなる情報を明らかにしないことを確認してください。</p></dd>
+
+   <dt><i>ネットワークエラー</i></dt>
+   <dd><p>何らかのエラーが発生した要求に類似して扱います。リクエストについてのさらなる情報を明らかにしないことを確認してください。</p></dd>
+  </dl>
+
+
+  <h3 id="cors-api-specification-security">セキュリティ</h3>
+
+  <p>同様に<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">同じ起源の</a>要求、CORSのAPI仕様は、適切にヘッダ、方法、および制限することが奨励されている<a href="https://www.w3.org/TR/cors/#user-credentials">ユーザーの資格情報</a>の作成 ​​者が設定している要求のために取得することができ<a href="https://www.w3.org/TR/cors/#cross-origin">、クロスオリジンを</a> 。</p>
+
+  <p class="note">XMLHttpRequestの仕様を確認すると、課されるべきである制限の種類のための良いスタートを提供します。
+  <a class="informative" href="https://www.w3.org/TR/cors/#refsXHR">【XHR]</a>
+
+  <p>CORSのAPI仕様にもなるまで何も明らかにしないようにする必要があり<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">、クロスオリジンリクエストのステータスは</a>例えばポートスキャンを防止するために、 <i>完全</i>または<i>成功を</i> <i>プリフライト</i>するように設定されています。</p>
+
+  <p class="note">XMLHttpRequestのではprogressイベントは、後にのみ送出され<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">、クロスオリジンリクエストのステータスが</a> <i>成功</i>に設定されています。一度progressイベントのみが送出されますアップロード<a href="https://www.w3.org/TR/cors/#cross-origin-request-status">クロスオリジンリクエストのステータスが</a> <i>プリフライト完了</i>です。</p>
+
+
+
+<h2 class="no-num" id="references">脚注</h2>
+<div id="anolis-references"><dl><dt id="refsCONFUSED">困った<dd>（非規範的） <cite><a href="http://www.cis.upenn.edu/~KeyKOS/ConfusedDeputy.html">混乱副</a></cite> 、ノームハーディ。
+
+
+
+<dt id="refsCOOKIES">クッキー<dd><cite><a href="http://tools.ietf.org/html/rfc6265">HTTP状態管理メカニズム</a></cite> 、アダム・バース。IETF<dt id="refsCSRF">[CSRF]<dd>（非規範的） <cite><a href="http://marc.info/?l=bugtraq&amp;m=99263135911884&amp;w=2">クロスサイト・リクエスト・フォージェリ</a></cite> 、ピーター・ワトキンス。
+
+
+
+<dt id="refsEVENTSOURCE">【EVENTSOURCE]<dd>（非規範的） <cite><a href="http://www.w3.org/TR/eventsource/">サーバーに送信されイベント</a></cite> 、イアン・ヒクソン。W3C<dt id="refsHTML">HTML<dd><cite><a href="http://www.w3.org/TR/html5/">HTML5</a></cite> 、ベルジョン、Leithead、ナバラ、オコナー、ファイファーとヒクソン。W3C<dt id="refsHTTP">http://127.0.0.1:8000<dd><cite><a href="http://tools.ietf.org/html/rfc2616">ハイパーテキスト転送プロトコル- HTTP / 1.1</a></cite> 、ロイ・フィールディング、ジェームズゲティス、ジェフリー・モーグルら..IETF<dt id="refsHTTP308">135<dd><cite><a href="https://datatracker.ietf.org/doc/draft-reschke-http-status-308/">ハイパーテキスト転送プロトコル（HTTP）ステータスコード308（恒久的なリダイレクト）</a></cite> 、ジュリアンReschke。IETF<dt id="refsJSONP">{0}8.5{/0} {1}JSONP{/1}<dd>（非規範的） <cite><a href="http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/">JSONP</a></cite> 、ボブIppolito。
+
+
+
+<dt id="refsOAUTH">OAuth 2.0{0}{/0}<dd>（非規範的） <cite><a href="http://tools.ietf.org/html/rfc5849">のOAuth 1.0プロトコル</a></cite> 、エランハンマー- Lahav。 IETF。<dt id="refsORIGIN">生成元<dd><cite><a href="http://tools.ietf.org/html/rfc6454">ウェブ起源コンセプト</a></cite> 、アダム・バース。IETF<dt id="refsRFC2119">RFC： 791<dd><cite><a href="http://tools.ietf.org/html/rfc2119">RFCsにおける使用のためのキーワードのレベルを示すために</a></cite> 、スコットブラドナーを。IETF<dt id="refsURI">ウーリ<dd><cite><a href="http://tools.ietf.org/html/rfc3986">統一資源識別子（URI）：一般的な構文</a></cite> 、ティム・バーナーズ=リー、ロイ・フィールディングとラリーMasinter。IETF<dt id="refsXHR">【XHR]<dd>（非規範的） <cite><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html">のXMLHttpRequest</a></cite> 、アンバンKesteren氏。W3C。</dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dd></dt></dl></div>
+
+
+  <h2 class="no-num" id="acknowledgments">謝辞</h2>
+
+  <p><em>この付録では、非規範的です。</em></p>
+
+  <p>エディタは、アダム・バース、アレクセイProskuryakov、アルネJohannessenの、アーサー・バーストウ、ベンジャミンホークス・ルイス、バート・ボス、ビョルンHöhrmann、ボリスZbarsky、ブラッド・ヒル、キャメロン・マコーマック、コリン・ジャクソン、デビッドHåsäther、デビッド・オーチャード、ディーン・ジャクソンに感謝したいと思いますエリック・ローレンス、フランクEllerman、フレデリック・ハーシュ、グラハムKlyne、ハル・ロックハート、アンリSivonen、イアン・ヒクソン、ジェシーM. Heines、ジョナスSicking、ジュリアンReschke、ラクラン・ハント、呂康豪（カン・ハオ呂）、マチェイStachowiak、マルクSilbey、マルコスカセレス、マーク・ノッティンガム、マーク・S・ミラー、マーティン・ダースト、マットWomer、Mhanoハークネス、マイケル・スミス、モハメドZergaoui、Nikunj Mehta氏、オーディンHørtheOmdal、フィリップJägenstedt、シャラスUdupa、サイモン・ピータース、Sunava Duttaさん、スーリヤ・イスマイル、トーマスレスラー、この仕様への貢献のためのタイラー閉じる、ジェフ・ホッジス、ウラジミールDzhuvinov、ウェインカー、およびZhenbin徐。</p>
+
+  <p>すべてこの文書の以前のバージョンを編集する助けブラッド・ポーター、マットOshryとR.オーバーン、に感謝します。</p>
+ 
+
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></body></html>

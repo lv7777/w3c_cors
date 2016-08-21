@@ -62,122 +62,74 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;a3&gt;W3C&lt;/a3&gt;'s role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
+        <seg>W3C's role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001234Z" creationid="lv7777" creationdate="20160821T001127Z">
-        <seg>勧告の作成における&lt;a3&gt;W3C&lt;/a3&gt;の役割は、仕様に注意を引き付け、広範な開発を促進することである。 </seg>
+        <seg>勧告の作成におけるW3Cの役割は、仕様に注意を引き付け、広範な開発を促進することである。 </seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;1 &lt;/s0&gt;Introduction</seg>
+        <seg>1 Introduction</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T172316Z" creationid="lv7777" creationdate="20160820T172316Z">
-        <seg>&lt;s0&gt;1 &lt;/s0&gt;導入</seg>
+        <seg>1 導入</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;2 &lt;/s0&gt;Conformance</seg>
+        <seg>2 Conformance</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003630Z" creationid="lv7777" creationdate="20160821T003630Z">
-        <seg>&lt;s0&gt;2 &lt;/s0&gt;準拠</seg>
+        <seg>2 準拠</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;3 &lt;/s0&gt;Terminology</seg>
+        <seg>3 Terminology</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003618Z" creationid="lv7777" creationdate="20160821T003618Z">
-        <seg>&lt;s0&gt;3 &lt;/s0&gt;用語</seg>
+        <seg>3 用語</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;4 &lt;/s0&gt;Security Considerations</seg>
+        <seg>4 Security Considerations</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003745Z" creationid="lv7777" creationdate="20160821T003745Z">
-        <seg>&lt;s0&gt;4 &lt;/s0&gt;セキュリティに関する考慮事項</seg>
+        <seg>4 セキュリティに関する考慮事項</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;5 &lt;/s0&gt;Syntax</seg>
+        <seg>5 Syntax</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003514Z" creationid="lv7777" creationdate="20160821T003514Z">
-        <seg>&lt;s0&gt;5 &lt;/s0&gt;構文</seg>
+        <seg>5 構文</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;5.1 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt; Response Header</seg>
+        <seg>5.1 Access-Control-Allow-Origin Response Header</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003816Z" creationid="lv7777" creationdate="20160821T003816Z">
-        <seg>&lt;s0&gt;5.1 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt; レスポンスヘッダ</seg>
+        <seg>5.1 Access-Control-Allow-Origin レスポンスヘッダ</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;Resource Sharing Check</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T011139Z" creationid="lv7777" creationdate="20160821T011139Z">
-        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;リソース共有のチェック</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;s0&gt;7.3 &lt;/s0&gt;Security</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T010721Z" creationid="lv7777" creationdate="20160821T010721Z">
-        <seg>&lt;s0&gt;7.3 &lt;/s0&gt;セキュリティ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;s0&gt;8.1 &lt;/s0&gt;Constructing a Cross-Origin Request</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T010708Z" creationid="lv7777" creationdate="20160821T010708Z">
-        <seg>&lt;s0&gt;8.1 &lt;/s0&gt;クロス オリジン要求の生成</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;s0&gt;8.2 &lt;/s0&gt;Dealing with Same Origin to Cross-Origin Redirects</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T010644Z" creationid="lv7777" creationdate="20160821T010644Z">
-        <seg>&lt;s0&gt;8.2 &lt;/s0&gt;同一オリジンからクロスオリジンへのリダイレクトの対応</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;s0&gt;8.3 &lt;/s0&gt;Dealing with the Cross-Origin Request Status</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T010551Z" creationid="lv7777" creationdate="20160821T010551Z">
-        <seg>&lt;s0&gt;8.3 &lt;/s0&gt;クロスオリジンリクエストのステータスに関して</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>&lt;s0&gt;8.4 &lt;/s0&gt;Security</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T010233Z" creationid="lv7777" creationdate="20160821T010233Z">
-        <seg>&lt;s0&gt;8.4 &lt;/s0&gt;セキュリティ</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
-        <seg>A list of current W3C publications and the latest revision of this technical report can be found in the &lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/.</seg>
+        <seg>A list of current W3C publications and the latest revision of this technical report can be found in the W3C technical reports index at http://www.w3.org/TR/.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000854Z" creationid="lv7777" creationdate="20160821T000854Z">
-        <seg>W3Cが現在公開しているリストとテクニカルレポートの最新版は、&lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/で見つけることができる。</seg>
+        <seg>W3Cが現在公開しているリストとテクニカルレポートの最新版は、W3C technical reports index at http://www.w3.org/TR/で見つけることができる。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>A response can include an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header, with the origin of where the request originated from as the value, to allow access to the resource's contents.</seg>
+        <seg>A response can include an Access-Control-Allow-Origin header, with the origin of where the request originated from as the value, to allow access to the resource's contents.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T180511Z" creationid="lv7777" creationdate="20160820T180511Z">
-        <seg>レスポンスには要求の発信元のオリジンを値として持つ、リソースの内容にアクセスを許可するための&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダを含めることができます。 </seg>
+        <seg>レスポンスには要求の発信元のオリジンを値として持つ、リソースの内容にアクセスを許可するためのAccess-Control-Allow-Origin ヘッダを含めることができます。 </seg>
       </tuv>
     </tu>
     <tu>
@@ -198,10 +150,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
+        <seg>An individual who has actual knowledge of a patent which the individual believes contains Essential Claim(s) must disclose the information in accordance with section 6 of the W3C Patent Policy.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
-        <seg>特許について十分に知識のある人物が、仕様に&lt;a3&gt;Essential Claim(s)&lt;/a3&gt;が認められると判断した場合は、&lt;a4&gt;W3C特許ポリシーの第6章&lt;/a4&gt;に従い情報を開示する必要がある。.</seg>
+        <seg>特許について十分に知識のある人物が、仕様にEssential Claim(s)が認められると判断した場合は、W3C特許ポリシーの第6章に従い情報を開示する必要がある。.</seg>
       </tuv>
     </tu>
     <tu>
@@ -214,18 +166,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If a resource author has a simple text resource residing at &lt;c0&gt;http://example.com/hello&lt;/c0&gt; which contains the string "Hello World!" and would like &lt;c1&gt;http://hello-world.example&lt;/c1&gt; to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
+        <seg>If a resource author has a simple text resource residing at http://example.com/hello which contains the string "Hello World!" and would like http://hello-world.example to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T174807Z" creationid="lv7777" creationdate="20160820T174807Z">
-        <seg>もしリソースの作者がIf a resource author has a simple text resource residing at &lt;c0&gt;http://example.com/hello&lt;/c0&gt; which contains the string "Hello World!" and would like &lt;c1&gt;http://hello-world.example&lt;/c1&gt; to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
+        <seg>もしリソースの作者がIf a resource author has a simple text resource residing at http://example.com/hello which contains the string "Hello World!" and would like http://hello-world.example to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>If you wish to make comments regarding this document, please send them to &lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; (&lt;a1&gt;subscribe&lt;/a1&gt;, &lt;a2&gt;archives&lt;/a2&gt;).</seg>
+        <seg>If you wish to make comments regarding this document, please send them to public-webappsec@w3.org (subscribe, archives).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
-        <seg>この文書にコメントするには、&lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; （&lt;a1&gt;購読&lt;/a1&gt;, &lt;a2&gt;アーカイブ&lt;/a2&gt;）に電子メールを送信されたい。</seg>
+        <seg>この文書にコメントするには、public-webappsec@w3.org （購読, アーカイブ）に電子メールを送信されたい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -254,10 +206,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Non-normative &lt;a0&gt;translations&lt;/a0&gt; may also be available.</seg>
+        <seg>Non-normative translations may also be available.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T005044Z" creationid="lv7777" creationdate="20160821T005044Z">
-        <seg>非標準の&lt;a0&gt;翻訳&lt;/a0&gt;もあります。</seg>
+        <seg>非標準の翻訳もあります。</seg>
       </tuv>
     </tu>
     <tu>
@@ -270,10 +222,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Please note there may be &lt;a0&gt;errata&lt;/a0&gt; for this document.</seg>
+        <seg>Please note there may be errata for this document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T173011Z" creationid="lv7777" creationdate="20160820T173011Z">
-        <seg>発行以降に報告されたエラーまたは問題については&lt;a0&gt;エラッタ&lt;/a0&gt;を確認されたい。</seg>
+        <seg>発行以降に報告されたエラーまたは問題についてはエラッタを確認されたい。</seg>
       </tuv>
     </tu>
     <tu>
@@ -294,10 +246,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>The &lt;a0&gt;CORS wiki page&lt;/a0&gt; provides more background information about this document.</seg>
+        <seg>The CORS wiki page provides more background information about this document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T173610Z" creationid="lv7777" creationdate="20160820T173610Z">
-        <seg>&lt;a0&gt;CORS wiki page&lt;/a0&gt; ではこのドキュメントのより裏側の情報を提供している。</seg>
+        <seg>CORS wiki page ではこのドキュメントのより裏側の情報を提供している。</seg>
       </tuv>
     </tu>
     <tu>
@@ -326,10 +278,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This W3C Recommendation of CORS was produced jointly by the &lt;a0&gt;Web Applications&lt;/a0&gt; (WebApps) and &lt;a1&gt;Web Application Security&lt;/a1&gt; (WebAppSec) Working Groups, and published by the WebAppSec Working Group.</seg>
+        <seg>This W3C Recommendation of CORS was produced jointly by the Web Applications (WebApps) and Web Application Security (WebAppSec) Working Groups, and published by the WebAppSec Working Group.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003203Z" creationid="lv7777" creationdate="20160821T003203Z">
-        <seg>これは、&lt;a0&gt;Web Applications&lt;/a0&gt; (WebApps)と &lt;a1&gt;Web Application Security&lt;/a1&gt; (WebAppSec) Working Groups による WebAppSecによって公開されたCORS W3C Recommendationである。</seg>
+        <seg>これは、Web Applications (WebApps)と Web Application Security (WebAppSec) Working Groups による WebAppSecによって公開されたCORS W3C Recommendationである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -342,18 +294,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This document has been reviewed by &lt;a0&gt;W3C&lt;/a0&gt; Members, by software developers, and by other &lt;a1&gt;W3C&lt;/a1&gt; groups and interested parties, and is endorsed by the Director as a &lt;a2&gt;W3C&lt;/a2&gt; Recommendation.</seg>
+        <seg>This document has been reviewed by W3C Members, by software developers, and by other W3C groups and interested parties, and is endorsed by the Director as a W3C Recommendation.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T004353Z" creationid="lv7777" creationdate="20160821T004353Z">
-        <seg>この文書は、&lt;a0&gt;W3C&lt;/a0&gt;のメンバー、ソフトウェア開発者、および他の&lt;a1&gt;W3C&lt;/a1&gt;グループや利害関係者によって検討され、&lt;a2&gt;W3C&lt;/a2&gt;勧告としてディレクターによって承認されている。</seg>
+        <seg>この文書は、W3Cのメンバー、ソフトウェア開発者、および他のW3Cグループや利害関係者によって検討され、W3C勧告としてディレクターによって承認されている。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This document was produced by groups operating under the &lt;a0&gt;5 February 2004 W3C Patent Policy&lt;/a0&gt;.</seg>
+        <seg>This document was produced by groups operating under the 5 February 2004 W3C Patent Policy.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001704Z" creationid="lv7777" creationdate="20160821T001704Z">
-        <seg>この文書は&lt;a0&gt;2004年2月6日のW3C特許ポリシー&lt;/a0&gt;の下で活動するグループによって作成された。</seg>
+        <seg>この文書は2004年2月6日のW3C特許ポリシーの下で活動するグループによって作成された。</seg>
       </tuv>
     </tu>
     <tu>
@@ -398,14 +350,6 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>This specification is written for resource authors and user agents.</seg>
-      </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T011232Z" creationid="lv7777" creationdate="20160821T011232Z">
-        <seg>この仕様はリソースの著者およびユーザ エージェントについて書かれている。</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv lang="EN-US">
         <seg>User agents commonly apply same-origin restrictions to network requests.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T175626Z" creationid="lv7777" creationdate="20160820T175626Z">
@@ -414,10 +358,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>Using &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; a client-side Web application on &lt;c2&gt;http://hello-world.example&lt;/c2&gt; can access this resource as follows:</seg>
+        <seg>Using XMLHttpRequest a client-side Web application on http://hello-world.example can access this resource as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T174938Z" creationid="lv7777" creationdate="20160820T174938Z">
-        <seg>以下のようにして &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; をクライアント側の Web application で使用し、 &lt;c2&gt;http://hello-world.example&lt;/c2&gt; にアクセスすることができる:</seg>
+        <seg>以下のようにして XMLHttpRequest をクライアント側の Web application で使用し、 http://hello-world.example にアクセスすることができる:</seg>
       </tuv>
     </tu>
     <tu>
@@ -430,10 +374,10 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
-        <seg>W3C maintains a public list of any patent disclosures for the &lt;a1&gt;WebAppSec WG&lt;/a1&gt; and the &lt;a2&gt;WebApps WG&lt;/a2&gt; made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent.</seg>
+        <seg>W3C maintains a public list of any patent disclosures for the WebAppSec WG and the WebApps WG made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002249Z" creationid="lv7777" creationdate="20160821T002201Z">
-        <seg>W3Cは、&lt;a1&gt;WebAppSec WG&lt;/a1&gt; と &lt;a2&gt;WebApps WG&lt;/a2&gt; が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。</seg>
+        <seg>W3Cは、WebAppSec WG と WebApps WG が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->

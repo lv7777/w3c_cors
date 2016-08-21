@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.6.0_2_r9092:9109" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#acknowledgments</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T004050Z" creationid="lv7777" creationdate="20160821T004050Z">
+        <seg>#謝辞</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#conformance</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003737Z" creationid="lv7777" creationdate="20160821T003737Z">
+        <seg>#準拠</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#introduction</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T170016Z" creationid="lv7777" creationdate="20160820T170004Z">
+        <seg>#導入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#references</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003954Z" creationid="lv7777" creationdate="20160821T003954Z">
+        <seg>#参考文献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#security</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003804Z" creationid="lv7777" creationdate="20160821T003804Z">
+        <seg>#セキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#syntax</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003552Z" creationid="lv7777" creationdate="20160821T003552Z">
+        <seg>#構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>#terminology</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003606Z" creationid="lv7777" creationdate="20160821T003606Z">
+        <seg>#用語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="3" x="3">&lt;a3&gt;</bpt>W3C<ept i="3">&lt;/a3&gt;</ept>'s role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T001234Z" creationid="lv7777" creationdate="20160821T001127Z">
+        <seg>勧告の作成における<bpt i="3" x="3">&lt;a3&gt;</bpt>W3C<ept i="3">&lt;/a3&gt;</ept>の役割は、仕様に注意を引き付け、広範な開発を促進することである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>1 <ept i="0">&lt;/s0&gt;</ept>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T172316Z" creationid="lv7777" creationdate="20160820T172316Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>1 <ept i="0">&lt;/s0&gt;</ept>導入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>2 <ept i="0">&lt;/s0&gt;</ept>Conformance</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003630Z" creationid="lv7777" creationdate="20160821T003630Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>2 <ept i="0">&lt;/s0&gt;</ept>準拠</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>3 <ept i="0">&lt;/s0&gt;</ept>Terminology</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003618Z" creationid="lv7777" creationdate="20160821T003618Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>3 <ept i="0">&lt;/s0&gt;</ept>用語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>4 <ept i="0">&lt;/s0&gt;</ept>Security Considerations</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003745Z" creationid="lv7777" creationdate="20160821T003745Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>4 <ept i="0">&lt;/s0&gt;</ept>セキュリティに関する考慮事項</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>5 <ept i="0">&lt;/s0&gt;</ept>Syntax</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003514Z" creationid="lv7777" creationdate="20160821T003514Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>5 <ept i="0">&lt;/s0&gt;</ept>構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>5.1 <ept i="0">&lt;/s0&gt;</ept><bpt i="1" x="1">&lt;c1&gt;</bpt>Access-Control-Allow-Origin<ept i="1">&lt;/c1&gt;</ept> Response Header</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003816Z" creationid="lv7777" creationdate="20160821T003816Z">
+        <seg><bpt i="0" x="0">&lt;s0&gt;</bpt>5.1 <ept i="0">&lt;/s0&gt;</ept><bpt i="1" x="1">&lt;c1&gt;</bpt>Access-Control-Allow-Origin<ept i="1">&lt;/c1&gt;</ept> レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A list of current W3C publications and the latest revision of this technical report can be found in the <bpt i="0" x="0">&lt;a0&gt;</bpt>W3C technical reports index<ept i="0">&lt;/a0&gt;</ept> at http://www.w3.org/TR/.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T000854Z" creationid="lv7777" creationdate="20160821T000854Z">
+        <seg>W3Cが現在公開しているリストとテクニカルレポートの最新版は、<bpt i="0" x="0">&lt;a0&gt;</bpt>W3C technical reports index<ept i="0">&lt;/a0&gt;</ept> at http://www.w3.org/TR/で見つけることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>A response can include an <bpt i="0" x="0">&lt;c0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>Access-Control-Allow-Origin<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/c0&gt;</ept> header, with the origin of where the request originated from as the value, to allow access to the resource's contents.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T180511Z" creationid="lv7777" creationdate="20160820T180511Z">
+        <seg>レスポンスには要求の発信元のオリジンを値として持つ、リソースの内容にアクセスを許可するための<bpt i="0" x="0">&lt;c0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>Access-Control-Allow-Origin<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/c0&gt;</ept> ヘッダを含めることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T155146Z" creationid="lv7777" creationdate="20160820T155146Z">
+        <seg>概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Acknowledgments</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T004040Z" creationid="lv7777" creationdate="20160821T004040Z">
+        <seg>謝辞</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>An individual who has actual knowledge of a patent which the individual believes contains <bpt i="3" x="3">&lt;a3&gt;</bpt>Essential Claim(s)<ept i="3">&lt;/a3&gt;</ept> must disclose the information in accordance with <bpt i="4" x="4">&lt;a4&gt;</bpt>section 6 of the W3C Patent Policy<ept i="4">&lt;/a4&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
+        <seg>特許について十分に知識のある人物が、仕様に<bpt i="3" x="3">&lt;a3&gt;</bpt>Essential Claim(s)<ept i="3">&lt;/a3&gt;</ept>が認められると判断した場合は、<bpt i="4" x="4">&lt;a4&gt;</bpt>W3C特許ポリシーの第6章<ept i="4">&lt;/a4&gt;</ept>に従い情報を開示する必要がある。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Examples are Server-Sent Events and XMLHttpRequest.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T174652Z" creationid="lv7777" creationdate="20160820T174652Z">
+        <seg>例えば are Server-Sent Events や XMLHttpRequestなどがある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If a resource author has a simple text resource residing at <bpt i="0" x="0">&lt;c0&gt;</bpt>http://example.com/hello<ept i="0">&lt;/c0&gt;</ept> which contains the string "Hello World!" and would like <bpt i="1" x="1">&lt;c1&gt;</bpt>http://hello-world.example<ept i="1">&lt;/c1&gt;</ept> to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T174807Z" creationid="lv7777" creationdate="20160820T174807Z">
+        <seg>もしリソースの作者がIf a resource author has a simple text resource residing at <bpt i="0" x="0">&lt;c0&gt;</bpt>http://example.com/hello<ept i="0">&lt;/c0&gt;</ept> which contains the string "Hello World!" and would like <bpt i="1" x="1">&lt;c1&gt;</bpt>http://hello-world.example<ept i="1">&lt;/c1&gt;</ept> to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>If you wish to make comments regarding this document, please send them to <bpt i="0" x="0">&lt;a0&gt;</bpt>public-webappsec@w3.org<ept i="0">&lt;/a0&gt;</ept> (<bpt i="1" x="1">&lt;a1&gt;</bpt>subscribe<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>archives<ept i="2">&lt;/a2&gt;</ept>).</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
+        <seg>この文書にコメントするには、<bpt i="0" x="0">&lt;a0&gt;</bpt>public-webappsec@w3.org<ept i="0">&lt;/a0&gt;</ept> （<bpt i="1" x="1">&lt;a1&gt;</bpt>購読<ept i="1">&lt;/a1&gt;</ept>, <bpt i="2" x="2">&lt;a2&gt;</bpt>アーカイブ<ept i="2">&lt;/a2&gt;</ept>）に電子メールを送信されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>In user agents that follow this pattern, network requests typically include user credentials with cross-origin requests, including HTTP authentication and cookie information.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T010058Z" creationid="lv7777" creationdate="20160821T010058Z">
+        <seg>上のパターンが適用されるユーザーエージェントには、HTTP認証や cookie 情報などのユーザーの資格情報が含まれる典型的なネットワークリクエストがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>It is a stable document and may be used as reference material or cited from another document.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T001016Z" creationid="lv7777" creationdate="20160821T001016Z">
+        <seg>これは安定した文書であり、規範的仕様として使用されてもよく、他の文書から引用してもよい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>No changes were made since the previous publication as Proposed Recommendation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003416Z" creationid="lv7777" creationdate="20160821T003416Z">
+        <seg>この文書がProposed Recommendationのステータスの時から変更されていない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Non-normative <bpt i="0" x="0">&lt;a0&gt;</bpt>translations<ept i="0">&lt;/a0&gt;</ept> may also be available.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T005044Z" creationid="lv7777" creationdate="20160821T005044Z">
+        <seg>非標準の<bpt i="0" x="0">&lt;a0&gt;</bpt>翻訳<ept i="0">&lt;/a0&gt;</ept>もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Other documents may supersede this document.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T000721Z" creationid="lv7777" creationdate="20160821T000721Z">
+        <seg>他の文書がこの文書に取って代わるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Please note there may be <bpt i="0" x="0">&lt;a0&gt;</bpt>errata<ept i="0">&lt;/a0&gt;</ept> for this document.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T173011Z" creationid="lv7777" creationdate="20160820T173011Z">
+        <seg>発行以降に報告されたエラーまたは問題については<bpt i="0" x="0">&lt;a0&gt;</bpt>エラッタ<ept i="0">&lt;/a0&gt;</ept>を確認されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>References</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T004002Z" creationid="lv7777" creationdate="20160821T004002Z">
+        <seg>参考文献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Status of this Document</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T000507Z" creationid="lv7777" creationdate="20160820T162319Z">
+        <seg>この文書の位置付け</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The <bpt i="0" x="0">&lt;a0&gt;</bpt>CORS wiki page<ept i="0">&lt;/a0&gt;</ept> provides more background information about this document.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T173610Z" creationid="lv7777" creationdate="20160820T173610Z">
+        <seg><bpt i="0" x="0">&lt;a0&gt;</bpt>CORS wiki page<ept i="0">&lt;/a0&gt;</ept> ではこのドキュメントのより裏側の情報を提供している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The English version of this specification is the only normative version.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T004742Z" creationid="lv7777" creationdate="20160821T004742Z">
+        <seg>この仕様の英語版の仕様書のみが正規のバージョンとなる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>The user agent validates that the value and origin of where the request originated match.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T000500Z" creationid="lv7777" creationdate="20160821T000500Z">
+        <seg>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>These restrictions prevent a client-side Web application running from one origin from obtaining data retrieved from another origin, and also limit unsafe HTTP requests that can be automatically launched toward destinations that differ from the running application's origin.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T005615Z" creationid="lv7777" creationdate="20160821T005615Z">
+        <seg>これらの制限は、のあるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This W3C Recommendation of CORS was produced jointly by the <bpt i="0" x="0">&lt;a0&gt;</bpt>Web Applications<ept i="0">&lt;/a0&gt;</ept> (WebApps) and <bpt i="1" x="1">&lt;a1&gt;</bpt>Web Application Security<ept i="1">&lt;/a1&gt;</ept> (WebAppSec) Working Groups, and published by the WebAppSec Working Group.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T003203Z" creationid="lv7777" creationdate="20160821T003203Z">
+        <seg>これは、<bpt i="0" x="0">&lt;a0&gt;</bpt>Web Applications<ept i="0">&lt;/a0&gt;</ept> (WebApps)と <bpt i="1" x="1">&lt;a1&gt;</bpt>Web Application Security<ept i="1">&lt;/a1&gt;</ept> (WebAppSec) Working Groups による WebAppSecによって公開されたCORS W3C Recommendationである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
+        <seg>このドキュメントではのクロスオリジン・リクエストを有効にするためのメカニズムを定義します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This document has been reviewed by <bpt i="0" x="0">&lt;a0&gt;</bpt>W3C<ept i="0">&lt;/a0&gt;</ept> Members, by software developers, and by other <bpt i="1" x="1">&lt;a1&gt;</bpt>W3C<ept i="1">&lt;/a1&gt;</ept> groups and interested parties, and is endorsed by the Director as a <bpt i="2" x="2">&lt;a2&gt;</bpt>W3C<ept i="2">&lt;/a2&gt;</ept> Recommendation.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T004353Z" creationid="lv7777" creationdate="20160821T004353Z">
+        <seg>この文書は、<bpt i="0" x="0">&lt;a0&gt;</bpt>W3C<ept i="0">&lt;/a0&gt;</ept>のメンバー、ソフトウェア開発者、および他の<bpt i="1" x="1">&lt;a1&gt;</bpt>W3C<ept i="1">&lt;/a1&gt;</ept>グループや利害関係者によって検討され、<bpt i="2" x="2">&lt;a2&gt;</bpt>W3C<ept i="2">&lt;/a2&gt;</ept>勧告としてディレクターによって承認されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This document was produced by groups operating under the <bpt i="0" x="0">&lt;a0&gt;</bpt>5 February 2004 W3C Patent Policy<ept i="0">&lt;/a0&gt;</ept>.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T001704Z" creationid="lv7777" creationdate="20160821T001704Z">
+        <seg>この文書は<bpt i="0" x="0">&lt;a0&gt;</bpt>2004年2月6日のW3C特許ポリシー<ept i="0">&lt;/a0&gt;</ept>の下で活動するグループによって作成された。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This enhances the functionality and interoperability of the Web.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T001134Z" creationid="lv7777" creationdate="20160821T001134Z">
+        <seg>これはウェブの機能と相互運用性を強化する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This section describes the status of this document at the time of its publication.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T000911Z" creationid="lv7777" creationdate="20160821T000911Z">
+        <seg>この節は、公開時点におけるこの文書のステータスについて説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This section is non-normative.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T005053Z" creationid="lv7777" creationdate="20160820T175035Z">
+        <seg>このセクションは非標準です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This specification extends this model in several ways:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T175710Z" creationid="lv7777" creationdate="20160820T175710Z">
+        <seg>この仕様は、いくつかの方法でこのモデルを拡張します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>This specification is a building block for other specifications, so-called CORS API specifications, which define how this specification is used.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T174623Z" creationid="lv7777" creationdate="20160820T174623Z">
+        <seg>この仕様は他の仕様書のビルディングブロックとなるため、 CORS API と呼ばれる。This specification is a building block for other specifications, so-calledspecifications, which define how this specification is used.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>User agents commonly apply same-origin restrictions to network requests.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T175626Z" creationid="lv7777" creationdate="20160820T175626Z">
+        <seg>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Using <bpt i="0" x="0">&lt;c0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>XMLHttpRequest<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/c0&gt;</ept> a client-side Web application on <bpt i="2" x="2">&lt;c2&gt;</bpt>http://hello-world.example<ept i="2">&lt;/c2&gt;</ept> can access this resource as follows:</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T174938Z" creationid="lv7777" creationdate="20160820T174938Z">
+        <seg>以下のようにして <bpt i="0" x="0">&lt;c0&gt;</bpt><bpt i="1" x="1">&lt;a1&gt;</bpt>XMLHttpRequest<ept i="1">&lt;/a1&gt;</ept><ept i="0">&lt;/c0&gt;</ept> をクライアント側の Web application で使用し、 <bpt i="2" x="2">&lt;c2&gt;</bpt>http://hello-world.example<ept i="2">&lt;/c2&gt;</ept> にアクセスすることができる:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>W3C Recommendation 16 January 2014</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160820T160556Z" creationid="lv7777" creationdate="20160820T160556Z">
+        <seg>2014年1月16日付W3C勧告</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>W3C maintains a public list of any patent disclosures for the <bpt i="1" x="1">&lt;a1&gt;</bpt>WebAppSec WG<ept i="1">&lt;/a1&gt;</ept> and the <bpt i="2" x="2">&lt;a2&gt;</bpt>WebApps WG<ept i="2">&lt;/a2&gt;</ept> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent.</seg>
+      </tuv>
+      <tuv xml:lang="JA" changeid="lv7777" changedate="20160821T002249Z" creationid="lv7777" creationdate="20160821T002201Z">
+        <seg>W3Cは、<bpt i="1" x="1">&lt;a1&gt;</bpt>WebAppSec WG<ept i="1">&lt;/a1&gt;</ept> と <bpt i="2" x="2">&lt;a2&gt;</bpt>WebApps WG<ept i="2">&lt;/a2&gt;</ept> が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
