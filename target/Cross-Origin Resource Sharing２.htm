@@ -146,15 +146,14 @@
      <li><a href="#cross-origin-request-with-preflight-0"><span class="secno">7.1.5 </span>Cross-Origin Request with Preflight</a></li>
      <li><a href="#preflight-result-cache-0"><span class="secno">7.1.6 </span>Preflight Result Cache</a></li>
      <li><a href="#generic-cross-origin-request-algorithms"><span class="secno">7.1.7 </span>Generic Cross-Origin Request Algorithms</a></li></ol></li>
-   <li><a href="#resource-sharing-check-0"><span class="secno">7.2 </span>Resource Sharing Check</a></li>
-   <li><a href="#user-agent-security"><span class="secno">7.3 </span>Security</a></li></ol></li>
+   <li><a href="#resource-sharing-check-0"><span class="secno">7.2 </span>リソース共有のチェック</a></li>
+   <li><a href="#user-agent-security"><span class="secno">7.3 </span>セキュリティ</a></li></ol></li>
  <li><a href="#cors-api-specification-advice"><span class="secno">8 </span>CORS API Specification Advice</a>
   <ol class="toc">
-   <li><a href="#cors-api-specifiation-request"><span class="secno">8.1 </span>Constructing a Cross-Origin Request</a></li>
-   <li><a href="#cors-api-specification-redirect"><span class="secno">8.2 </span>Dealing with Same Origin to Cross-Origin Redirects</a></li>
-   <li><a href="#cors-api-specification-response"><span class="secno">8.3 </span>Dealing with the
-  Cross-Origin Request Status</a></li>
-   <li><a href="#cors-api-specification-security"><span class="secno">8.4 </span>Security</a></li></ol></li>
+   <li><a href="#cors-api-specifiation-request"><span class="secno">8.1 </span>クロス オリジン要求の生成</a></li>
+   <li><a href="#cors-api-specification-redirect"><span class="secno">8.2 </span>同一オリジンからクロスオリジンへのリダイレクトの対応</a></li>
+   <li><a href="#cors-api-specification-response"><span class="secno">8.3 </span>クロスオリジンリクエストのステータスに関して</a></li>
+   <li><a href="#cors-api-specification-security"><span class="secno">8.4 </span>セキュリティ</a></li></ol></li>
  <li><a class="no-num" href="#参考文献">参考文献</a></li>
  <li><a class="no-num" href="#謝辞">謝辞</a></li></ol><!--end-toc-->
 
@@ -164,7 +163,7 @@
 
   <h2 id="introduction"><span class="secno">1 </span>導入</h2>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
   <p>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。これらの制限は、のあるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</p>
 
@@ -180,33 +179,27 @@
    </li>
 
    <li>
-    <p>User agents can discover via a <a href="#preflight-request">preflight request</a> whether
-    a cross-origin resource is prepared to accept requests, using a
-    non-<a href="#simple-method">simple method</a>, from a given origin.</p>
+    <p>UAは<a href="#simple-method">simple method</a>ではないメソッドを使用して<a href="#preflight-request">preflight request</a>を通じてクロスオリジンのリソースがそのアクセスを受け入れるかどうか判断できる。</p>
 
-    <p>This is again validated by the user agent.</p>
+    <p>これは、再びユーザエージェントによって検証される。</p>
    </li>
 
    <li>
-    <p>Server-side applications are enabled to discover that an HTTP request
-    was deemed a cross-origin request by the user agent, through the
-    <code title="http-origin"><a href="#http-origin">Origin</a></code> header.</p>
+    <p> サーバーサイドアプリケーションは<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダを通してHTTPリクエストがUAによるクロスオリジンリクエストと見なされるかどうかを判断できる。</p>
 
-    <p>This extension enables server-side applications to enforce
-    limitations (e.g. returning nothing) on the cross-origin requests that
-    they are willing to service.</p>
+    <p>この拡張はサーバーサイドアプリケーションがクロスオリジンリクエスト上でサービスを行うかどうかの(何も返さない等の)制限を強制できる。</p>
    </li>
   </ul>
 
 
 
 
-  <p>この仕様は他の仕様書のビルディングブロックとなるため、 CORS API と呼ばれる。This specification is a building block for other specifications, so-calledspecifications, which define how this specification is used. 例えば are Server-Sent Events や XMLHttpRequestなどがある。<a class="informative" href="#refsEVENTSOURCE">[EVENTSOURCE]</a> <a class="informative" href="#refsXHR">[XHR]</a>
+  <p>この仕様は他の仕様書のビルディングブロックであり、 この仕様がどのように使用されるかを定義する。CORS API と呼ばれる。例えば are Server-Sent Events や XMLHttpRequestなどがある。<a class="informative" href="#refsEVENTSOURCE">[EVENTSOURCE]</a> <a class="informative" href="#refsXHR">[XHR]</a>
 
   </p><p><a href="http://www.w3.org/wiki/CORS">CORS wiki page</a> ではこのドキュメントのより裏側の情報を提供している。</p>
 
   <div class="example">
-   <p>もしリソースの作者がIf a resource author has a simple text resource residing at <code>http://example.com/hello</code> which contains the string "Hello World!" and would like <code>http://hello-world.example</code> to be able to access it, the response combined with a header introduced by this specification could look as follows:</p>
+   <p>"Hello World!" という文字列が書かれているシンプルなテキストが <code>http://example.com/hello</code>のパスに置かれていて <code>http://hello-world.example</code>からのアクセスを許可したい場合、この仕様で導入されたヘッダの組み合わせのレスポンスは以下のようになる。:</p>
 
    <pre><code>Access-Control-Allow-Origin: http://hello-world.example
 
@@ -219,37 +212,17 @@ client.open("GET", "http://example.com/hello")
 client.onreadystatechange = function() { /* do something */ }
 client.send()</code></pre>
 
-   <p>It gets slightly more complicated if the resource author wants to be
-   able to handle cross-origin requests using methods other than
-   <a href="#simple-method" title="simple method">simple methods</a>. In that case
-   the author needs to reply to a preflight request that uses the
-   <code>OPTIONS</code> method and then needs to handle the actual request
-   that uses the desired method (<code>DELETE</code> in this example) and
-   give an appropriate response. The response to the preflight request could
-   have the following headers specified:</p>
+   <p>もしリソースの作者が<a href="#simple-method" title="simple method">simple methods</a>以外のメソッドでクロスオリジンリクエストを使用できるようにしたいと思った場合、もう少し複雑になります。その場合にはプリフライトリクエストに<code>OPTIONS</code>メソッドを使用してレスポンスを返し、その後(<code>DELETE</code> などの)使用したいメソッドを使った実際のリクエストを処理して適切なレスポンスを返す必要があります。プリフライトリクエストに対するレスポンスは、次のヘッダーを持つことができます：</p>
 
    <pre><code>Access-Control-Allow-Origin: http://hello-world.example
 Access-Control-Max-Age: 3628800
 Access-Control-Allow-Methods: PUT, DELETE</code></pre>
 
-   <p>The
-   <code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code>
-   header indicates how long the response can be cached, so that for
-   subsequent requests, within the specified time, no preflight request has
-   to be made. The
-   <code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>
-   header indicates the methods that can be used in the actual request. The
-   response to the actual request can simply contain this header:</p>
+   <p><code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code>ヘッダではどれだけの期間レスポンスをキャッシュさせるかを指示することができる。 それ以降のリクエストのために、指定された時間内なら、プリフライトリクエストを作成する必要はない。<code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。 . 実際のリクエストのレスポンスには、以下のヘッダを含めることができる。</p>
 
    <pre><code>Access-Control-Allow-Origin: http://hello-world.example</code></pre>
 
-   <p>The complexity of invoking the additional preflight request is
-   the task of the user agent. Using
-   <code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> again and assuming the
-   application were hosted at <code>http://calendar.example/app</code> the
-   author could use the following ECMAScript snippet:
-
-   
+   <p>追加のプリフライトリクエストを呼び出すのはUAが行う複雑なタスクである。 アプリケーションのホストが <code>http://calendar.example/app</code> に置かれており、再度 <code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> を使用すると仮定すると、作者は以下のECMAScript のスニペットを使用できる:
 
    </p><pre><code>function deleteItem(itemId, updateUI) {
   var client = new XMLHttpRequest()
@@ -266,12 +239,7 @@ Access-Control-Allow-Methods: PUT, DELETE</code></pre>
 
   <h2 id="conformance"><span class="secno">2 </span>準拠</h2>
 
-  <p>This specification is written for resource authors and user agents. It
-  includes advice for specifications that define APIs that use the
-  <a href="#cross-origin-request">cross-origin request</a> algorithm defined in this specification
-  — CORS API specifications — and the general
-  <a href="#セキュリティ">security considerations</a> section includes some
-  advice for client-side Web application authors.</p>
+  <p>この仕様はリソースの著者およびユーザ エージェントについて書かれている。It includes advice for specifications that define APIs that use the <a href="#cross-origin-request">cross-origin request</a> algorithm defined in this specification — CORS API specifications — and the general <a href="#セキュリティ">security considerations</a> section includes some advice for client-side Web application authors.</p>
 
   <p>As well as sections and appendices marked as non-normative, all
   diagrams, examples, and notes in this specification are non-normative.
@@ -300,9 +268,7 @@ Access-Control-Allow-Methods: PUT, DELETE</code></pre>
 
   <h2 id="terminology"><span class="secno">3 </span>用語</h2>
 
-  <p>Some terminology in this specification is from
-  <cite>The Web Origin Concept</cite>,
-  <cite>HTML</cite>,<!--fetch-->
+  <p>この仕様書内のいくつか<cite>The Web Origin Concept</cite>, <cite>HTML</cite>の仕様のものである。<!--fetch-->
   <cite>HTTP</cite>
   and
   <cite>URI</cite>.
@@ -311,41 +277,19 @@ Access-Control-Allow-Methods: PUT, DELETE</code></pre>
   <a href="#refsHTTP">[HTTP]</a>
   <a href="#refsURI">[URI]</a>
 
-  </p><p>Terminology is generally defined throughout the specification. However,
-  the few definitions that did not really fit anywhere else are defined here
-  instead.</p>
+  </p><p>用語は大抵仕様所以外の場所で定義されている。しかし、いくつかの用語はどこにも定義されていない。そのような語はここで定義されている。</p>
 
-  <p>Comparing two strings in a
-  <dfn id="case-sensitive">case-sensitive</dfn> manner means comparing them
-  exactly, codepoint for codepoint.</p>
+  <p>二つの文字列を比較して <dfn id="case-sensitive">case-sensitive</dfn> であるとは、それらを比較したときコードポイントとコードポイントが正確に一致しているという意味である。</p>
 
-  <p>Comparing two strings in an
-  <dfn id="ascii-case-insensitive">ASCII case-insensitive</dfn> manner means
-  comparing them exactly, codepoint for codepoint, except that the
-  characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A
-  LATIN CAPITAL LETTER Z and the corresponding characters in the range
-  U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z are
-  considered to also match.</p>
+  <p>2つの文字列を比較して<dfn id="ascii-case-insensitive">ASCII case-insensitive</dfn> であるとは、それらを比較した時、コードポイントとコードポイントが正確に一致し、なおかつその文字がU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲、または U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z の範囲に収まっている、という意味である。</p>
 
-  <p><dfn id="converted-to-ascii-lowercase" title="converted to ASCII lowercase">Converting a string to ASCII lowercase</dfn>
-  means replacing all characters in the range U+0041 LATIN CAPITAL LETTER A
-  to U+005A LATIN CAPITAL LETTER Z with the corresponding characters in the
-  range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z).</p>
+  <p><dfn id="converted-to-ascii-lowercase" title="ASCII lowercaseに変換する">文字列をASCII lowercaseに変換する</dfn> とはU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲と一致する全ての文字列をそれと一致する U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z 内の文字に変換するという意味である。</p>
 
-  <p>The term <dfn id="user-credentials">user credentials</dfn> for the purposes of this
-  specification means cookies, HTTP authentication, and client-side SSL
-  certificates 
-  that would be sent based on the user agent's previous interactions with the origin.
-  Specifically it does not refer to proxy authentication or
-  the <code title="http-origin"><a href="#http-origin">Origin</a></code> header.
-  <a href="#refsCOOKIES">[COOKIES]</a></p>
+  <p>語 <dfn id="user-credentials">ユーザー資格情報</dfn> はこの仕様書内では cookie, HTTP 認証、クライアント側SSL証明書の意味で使用される。hat would be sent based on the user agent's previous interactions with the origin. 特にこの語はプロキシ認証情報や<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダとは関係ないものとする。？要検証<a href="#refsCOOKIES">[COOKIES]</a></p>
 
-  <p>The term <dfn id="cross-origin">cross-origin</dfn> is used to mean non
-  <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a>.</p>
+  <p>語<dfn id="cross-origin">クロスオリジン</dfn>は <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">同一オリジン</a>ではないという意味で使用される。.</p>
 
-  <p>A <var title="">method</var> is said to be a
-  <dfn id="simple-method">simple method</dfn> if it is a
-  <a href="#case-sensitive">case-sensitive</a> match for one of the following:</p>
+  <p>もし <var title="">method</var> が <a href="#case-sensitive">case-sensitive</a>で以下にマッチする場合、<dfn id="simple-method">simple method</dfn>と呼ばれる:</p>
 
   <ul>
    <li><code>GET</code></li>
@@ -353,20 +297,9 @@ Access-Control-Allow-Methods: PUT, DELETE</code></pre>
    <li><code>POST</code></li>
   </ul>
 
-  <p>A <var title="">header</var> is said to be a
-  <dfn id="simple-header">simple header</dfn> if the header field name is an
-  <a href="#ascii-case-insensitive">ASCII case-insensitive</a> match for <code>Accept</code>,
-  <code>Accept-Language</code>, or <code>Content-Language</code> or if it
-  is an <a href="#ascii-case-insensitive">ASCII case-insensitive</a> match for
-  <code>Content-Type</code> and the header field value media type (excluding
-  parameters) is an <a href="#ascii-case-insensitive">ASCII case-insensitive</a> match for
-  <code>application/x-www-form-urlencoded</code>,
-  <code>multipart/form-data</code>, or <code>text/plain</code>.</p>
+  <p>もし <var title="">ヘッダ</var>のフィールド名が<a href="#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Accept</code>, <code>Accept-Language</code>, or <code>Content-Language</code> にマッチする場合、 もしくは<a href="#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Content-Type</code>にマッチ、なおかつヘッダフィールドの値メディアタイプ(パラメータ以外)が <a href="#ascii-case-insensitive">ASCII case-insensitive</a> で<code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, or <code>text/plain</code>にマッチする場合、 そのヘッダは<dfn id="simple-header">simple header</dfn> と呼ばれる。</p>
 
-  <p>A <var title="">header</var> is said to be a
-  <dfn id="simple-response-header">simple response header</dfn> if the
-  header field name is an <a href="#ascii-case-insensitive">ASCII case-insensitive</a> match for one
-  of the following:</p>
+  <p>もし <var title="">ヘッダ</var>のフィールド名が <a href="#ascii-case-insensitive">ASCII case-insensitive</a> で以下にマッチする場合、 <dfn id="simple-response-header">シンプルレスポンスヘッダ</dfn> と呼ばれる。</p>
 
   <ul>
    <li><code>Cache-Control</code></li>
@@ -377,62 +310,27 @@ Access-Control-Allow-Methods: PUT, DELETE</code></pre>
    <li><code>Pragma</code></li>
   </ul>
 
-  <p>When
-  <dfn id="header-parsing" title="header parsing">parsing a header</dfn> the
-  header must be parsed per the corresponding ABNF
-  production in the <a href="#構文">syntax</a> section. If the header does
-  not match the production it is said that
-  <dfn id="header-parsing-failed">header parsing failed</dfn>.</p>
+  <p><dfn id="header-parsing" title="header parsing">ヘッダを解析する</dfn>時、 ヘッダは <a href="#構文">構文</a> セクションのABNFと一致した所ごとに解析されなければならない。もしヘッダがこの仕様書で述べられているどんなABNFにもマッチしない場合、<dfn id="header-parsing-failed">ヘッダ解析に失敗した</dfn>と言われる。</p>
 
 
 
 
   <h2 id="security"><span class="secno">4 </span>セキュリティに関する考慮事項</h2>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
-  <p>Security requirements and considerations are listed throughout this
-  specification. This section lists advice that did not fit anywhere
-  else.</p>
+  <p>セキュリティ要求と考慮事項はこの仕様書を通じて述べられている。このセクションではそれ以外のアドバイスをリスト化している。</p>
 
   <hr>
 
-<p>A <a href="#simple-cross-origin-request">simple cross-origin request</a> has been defined as congruent
-with those which may be generated by currently deployed user agents that do
-not conform to this specification. Simple cross-origin requests generated
-outside this specification (such as cross-origin form submissions using
-<code>GET</code> or <code>POST</code> or cross-origin <code>GET</code>
-requests resulting from <code>script</code> elements) typically include
-<a href="#user-credentials">user credentials</a>, so resources conforming to this specification
-must always be prepared to expect simple cross-origin requests with
-credentials.
+<p>A <a href="#simple-cross-origin-request">simple cross-origin request</a> has been defined as congruent with those which may be generated by currently deployed user agents that do not conform to this specification.<a href="#simple-cross-origin-request">simple cross-origin request</a>はこの仕様に準拠していない現在存在するUAによって生成された。それらと同様に合同この仕様以外の場所で生成される シンプルなクロスオリジンリクエストリクエスト(例えば<code>GET</code> や <code>POST</code> を使用したクロスオリジン間のフォームのポスト 、もしくは <code>script</code>要素で生成されたクロスオリジン間の <code>GET</code> リクエスト等) では大抵<a href="#user-credentials">ユーザー資格情報</a>が含まれている。そのため、この仕様に準拠したリソースは常に資格情報を持ったシンプルなクロスオリジンリクエストに備えなければならない。
 
+</p><p>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request. <a class="informative" href="#refsCSRF">[CSRF]</a>
 
-
-</p><p>Because of this, resources for which simple requests have significance
-other than retrieval must protect themselves from Cross-Site Request Forgery
-(CSRF)
-by requiring the inclusion of an unguessable token in the explicitly
-provided content of the request.
-<a class="informative" href="#refsCSRF">[CSRF]</a>
-
-</p><p>This specification defines how to authorize an instance of an application
-from a foreign origin, executing in the user agent, to access the
-representation of the resource in an HTTP response. Certain types of
-resources should not attempt to specify particular authorized origins, but
-instead either deny or allow all origins.
-
-
+</p><p>この仕様書ではどのようにHTTPレスポンスでリソースにアクセスするために自オリジン外のアプリケーションのインスタンスが認証されるかを定義する。特定のタイプのリソースを特定の認証されたオリジンとして指定してはいけない。代わりにすべて拒否、もしくはすべて許可にすべきだ。
 
 </p><ol>
- <li><p>A resource that is not useful to applications from other origins, such as a login page, ought not to return an
- <code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>
- header. The resource still must protect itself against CSRF attacks, such
- as by requiring the inclusion of an unguessable token in the explicitly
- provided content of the request. The security properties of such resources
- are unaffected by user-agents conformant to this specification.
-
- 
+ <li><p>ログインページ等の他のオリジンのアプリケーションで使用できないリソースには<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダを返してはいけない。リソースは(またstillをまたという意味で使うことはある？)リクエストを明示的に提供している推測可能なトークンを含んだコンテンツの要求などのCSRF攻撃から守らなければいけない。このようなリソースのセキュリティのプロパティは、この仕様に準拠しているユーザ エージェントの影響を受けません。
 
  </p></li><li>
   <p>A resource that is publicly accessible, with no access control checks,
@@ -965,7 +863,7 @@ ABNF:</p>
 
   <h3 id="resource-security"><span class="secno">6.3 </span>Security</h3>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
   <p>Resource authors are strongly encouraged to ensure that requests using
   safe methods, e.g. <code>GET</code> or <code>OPTIONS</code>, have no side
@@ -984,7 +882,7 @@ ABNF:</p>
 
   <h3 id="resource-implementation"><span class="secno">6.4 </span>Implementation Considerations</h3>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
   <p>Resources that wish to enable themselves to be shared with multiple
   <code>Origins</code> but do not respond uniformly with <code>"*"</code>
@@ -1729,7 +1627,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   name.</p>
 
 
-  <h3 id="resource-sharing-check-0"><span class="secno">7.2 </span>Resource Sharing Check</h3>
+  <h3 id="resource-sharing-check-0"><span class="secno">7.2 </span>リソース共有のチェック</h3>
 
   <p>The <dfn id="resource-sharing-check">resource sharing check</dfn>
   algorithm for a given resource is as follows:</p>
@@ -1772,9 +1670,9 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   the string "<code>null</code>".</p>
 
 
-  <h3 id="user-agent-security"><span class="secno">7.3 </span>Security</h3>
+  <h3 id="user-agent-security"><span class="secno">7.3 </span>セキュリティ</h3>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
   <p>At various places user agents are allowed to take additional
   precautions. E.g. user agents are allowed to not store cache items, remove
@@ -1811,7 +1709,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
 
   <h2 id="cors-api-specification-advice"><span class="secno">8 </span>CORS API Specification Advice</h2>
 
-  <p><em>このセクションは非標準です。</em></p>
+  <p><em>この節は規定ではない。</em></p>
 
   <p>This specification defines a resource sharing policy that cannot be
   implemented without an API that utilizes it. The specification that
@@ -1821,7 +1719,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   policy the advice is to be considered separately for each API.</p>
 
 
-  <h3 id="cors-api-specifiation-request"><span class="secno">8.1 </span>Constructing a Cross-Origin Request</h3>
+  <h3 id="cors-api-specifiation-request"><span class="secno">8.1 </span>クロス オリジン要求の生成</h3>
 
   <p>For all <a href="#cross-origin">cross-origin</a> requests that APIs can make for
   which the resource sharing policy in this specification is supposed to
@@ -1844,7 +1742,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   API.</p>
 
 
-  <h3 id="cors-api-specification-redirect"><span class="secno">8.2 </span>Dealing with Same Origin to Cross-Origin Redirects</h3>
+  <h3 id="cors-api-specification-redirect"><span class="secno">8.2 </span>同一オリジンからクロスオリジンへのリダイレクトの対応</h3>
 
   <p>Since browsers are based on a
   <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a> security model and the
@@ -1863,8 +1761,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   <a class="informative" href="#refsXHR">[XHR]</a>
 
 
-  </p><h3 id="cors-api-specification-response"><span class="secno">8.3 </span>Dealing with the
-  Cross-Origin Request Status</h3>
+  </p><h3 id="cors-api-specification-response"><span class="secno">8.3 </span>クロスオリジンリクエストのステータスに関して</h3>
 
   <p>While a <a href="#cross-origin-request">cross-origin request</a> is progressing its
   associated <a href="#cross-origin-request-status">cross-origin request status</a> is updated.
@@ -1905,7 +1802,7 @@ Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
   </dl>
 
 
-  <h3 id="cors-api-specification-security"><span class="secno">8.4 </span>Security</h3>
+  <h3 id="cors-api-specification-security"><span class="secno">8.4 </span>セキュリティ</h3>
 
   <p>Similarly to <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a> requests,
   CORS API specifications are encouraged to properly limit headers, methods,

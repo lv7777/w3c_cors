@@ -286,9 +286,7 @@ code :link, code :visited {
 
   <h2 id="terminology">4.14 用語</h2>
 
-  <p>Some terminology in this specification is from
-  <cite>The Web Origin Concept</cite>,
-  <cite>HTML</cite>,<!--fetch-->
+  <p>この仕様書内のいくつか<cite>The Web Origin Concept</cite>, <cite>HTML</cite>の仕様のものである。<!--fetch-->
   <cite>HTTP</cite>
   and
   <cite>URI</cite>.
@@ -303,7 +301,7 @@ code :link, code :visited {
 
   <p><dfn id="ascii-case-insensitive">ASCIIの大文字と小文字を区別しない</dfn>ようにして2つの文字列を比較すると、範囲U +でU + 005A LATIN CAPITAL LETTER Zと対応する文字の範囲U + 0041 LATIN CAPITAL LETTER Aの文字ことを除いて、正確にコードポイントのためのコードポイントを、それらを比較する意味しますU + 007A LATIN SMALL LETTER Zに0061 LATIN SMALL LETTER Aはまた、一致すると考えられています。</p>
 
-  <p>U + 007A LATIN SMALL LETTER Zの範囲U + 0061 LATIN SMALL LETTER Aに対応する文字とU + 005A LATIN CAPITAL LETTER Zの範囲U + 0041 LATIN CAPITAL LETTER A内のすべての文字を置き換える<dfn id="converted-to-ascii-lowercase" title="converted to ASCII lowercase">小文字</dfn>手段を<dfn id="converted-to-ascii-lowercase" title="ASCII小文字に変換">ASCIIに文字列を変換します</dfn> ）。</p>
+  <p>U + 007A LATIN SMALL LETTER Zの範囲U + 0061 LATIN SMALL LETTER Aに対応する文字とU + 005A LATIN CAPITAL LETTER Zの範囲U + 0041 LATIN CAPITAL LETTER A内のすべての文字を置き換える<dfn id="converted-to-ascii-lowercase" title="ASCII lowercaseに変換する">小文字</dfn>手段を<dfn id="converted-to-ascii-lowercase" title="ASCII小文字に変換">ASCIIに文字列を変換します</dfn> ）。</p>
 
   <p>本明細書の目的のために長期的な<dfn id="user-credentials">ユーザー資格情報</dfn>の起源を持つユーザーエージェントの以前の対話に基づいて送信されるクッキー、HTTP認証、およびクライアント側のSSL証明書を意味します。具体的には、プロキシ認証またはを参照していない<code title="HTTP-起源"><a href="https://www.w3.org/TR/cors/#http-origin">Origin</a></code>ヘッダー。
   <a href="https://www.w3.org/TR/cors/#refsCOOKIES">クッキー</a></p>
@@ -318,15 +316,7 @@ code :link, code :visited {
    <li><code>POST</code></li>
   </ul>
 
-  <p>A <var title="">header</var> is said to be a
-  <dfn id="simple-header">simple header</dfn> if the header field name is an
-  <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for <code>Accept</code>,
-  <code>Accept-Language</code>, or <code>Content-Language</code> or if it
-  is an <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for
-  <code>Content-Type</code> and the header field value media type (excluding
-  parameters) is an <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> match for
-  <code>application/x-www-form-urlencoded</code>,
-  <code>multipart/form-data</code>, or <code>text/plain</code>.</p>
+  <p>もし <var title="">ヘッダ</var>のフィールド名が<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Accept</code>, <code>Accept-Language</code>, or <code>Content-Language</code> にマッチする場合、 もしくは<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Content-Type</code>にマッチ、なおかつヘッダフィールドの値メディアタイプ(パラメータ以外)が <a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCII case-insensitive</a> で<code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, or <code>text/plain</code>にマッチする場合、 そのヘッダは<dfn id="simple-header">simple header</dfn> と呼ばれる。</p>
 
   <p><var title="">ヘッダは、</var>ヘッダフィールド名がある場合は<dfn id="simple-response-header">、単純な応答ヘッダ</dfn>であると言われている<a href="https://www.w3.org/TR/cors/#ascii-case-insensitive">ASCIIの大文字と小文字を区別しない</a> 、次のいずれかに一致します：</p>
 
