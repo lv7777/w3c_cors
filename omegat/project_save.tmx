@@ -406,6 +406,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Requests made with &lt;a0&gt;user credentials&lt;/a0&gt;, or the &lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; header require special consideration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T005147Z" creationid="lv7777" creationdate="20160824T005147Z">
+        <seg> &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;もしくは、 &lt;c1&gt;&lt;a2&gt;オリジン&lt;/a2&gt;&lt;/c1&gt;ヘッダを保持しているリクエストの要求には特別な配慮が必要である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Security requirements and considerations are listed throughout this specification.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T225730Z" creationid="lv7777" creationdate="20160821T103907Z">
