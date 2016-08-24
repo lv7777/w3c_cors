@@ -182,6 +182,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;c0&gt;GET&lt;/c0&gt; response whose entity body happens to parse as ECMAScript can return an &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; header whose value is "&lt;c3&gt;*&lt;/c3&gt;" provided there are no sensitive comments as it can be accessed cross-origin using an HTML &lt;c4&gt;script&lt;/c4&gt; element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020108Z" creationid="lv7777" creationdate="20160824T020108Z">
+        <seg>機密性のあるコメントがなく、HTMLscript要素を使用してクロスオリジンとしてアクセスできるECMAScriptとして解析される &lt;c0&gt;GET&lt;/c0&gt; レスポンスのボディは 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。[参照:http://security.stackexchange.com/questions/43936/does-returning-access-control-allow-origin-weaken-the-security-of-json-get-re/43965#43965]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;v0&gt;header&lt;/v0&gt; is said to be a &lt;d1&gt;simple header&lt;/d1&gt; if the header field name is an &lt;a2&gt;ASCII case-insensitive&lt;/a2&gt; match for &lt;c3&gt;Accept&lt;/c3&gt;, &lt;c4&gt;Accept-Language&lt;/c4&gt;, or &lt;c5&gt;Content-Language&lt;/c5&gt; or if it is an &lt;a6&gt;ASCII case-insensitive&lt;/a6&gt; match for &lt;c7&gt;Content-Type&lt;/c7&gt; and the header field value media type (excluding parameters) is an &lt;a8&gt;ASCII case-insensitive&lt;/a8&gt; match for &lt;c9&gt;application/x-www-form-urlencoded&lt;/c9&gt;, &lt;c10&gt;multipart/form-data&lt;/c10&gt;, or &lt;c11&gt;text/plain&lt;/c11&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T231213Z" creationid="lv7777" creationdate="20160821T102530Z">
@@ -218,6 +226,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T002910Z" creationid="lv7777" creationdate="20160822T002910Z">
         <seg>ログインページ等の他のオリジンのアプリケーションで使用できないリソースには&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt;ヘッダを返してはいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A resource that is publicly accessible, with no access control checks, can always safely return an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header whose value is "&lt;c2&gt;*&lt;/c2&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020223Z" creationid="lv7777" creationdate="20160824T020207Z">
+        <seg>アクセスコントロールがなく、公開されたリソースは常に安全に 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。</seg>
       </tuv>
     </tu>
     <tu>
