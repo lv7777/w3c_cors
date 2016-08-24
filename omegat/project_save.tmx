@@ -374,6 +374,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this case, restricting access to certain origins may protect user privacy by preventing customizations from being used to identify a user, except at authorized origins.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T021554Z" creationid="lv7777" creationdate="20160824T021554Z">
+        <seg>その場合、特定のオリジンを制限されたアクセスは認証されたオリジンを除き、ユーザーを識別することに使用されているカスタマイズを防止することによってユーザーのプライバシー保護する。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In user agents that follow this pattern, network requests typically include user credentials with cross-origin requests, including HTTP authentication and cookie information.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T010058Z" creationid="lv7777" creationdate="20160821T010058Z">
