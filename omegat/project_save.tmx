@@ -254,6 +254,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Authorization for a request should be performed using only the intersection of the authority of the user and the requesting origin(s).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T015142Z" creationid="lv7777" creationdate="20160824T015142Z">
+        <seg>リクエストの許可はユーザーの権限と要求しているオリジンのみを使用して判断する必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T000956Z" creationid="lv7777" creationdate="20160821T230559Z">
