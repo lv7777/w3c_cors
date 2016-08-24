@@ -742,6 +742,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When requests have significance other than retrieval, and when relying on the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header, resources must be careful to distinguish between authorizing a request (including its side-effects) and authorizing access to the representation of that resource in the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T011011Z" creationid="lv7777" creationdate="20160824T011011Z">
+        <seg>リクエストが署名を持っており、&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダが信頼できる場合、リソースは気を付ける必要がある認証リクエストWhen requests have significance other than retrieval, and when relying on the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header, resources must be careful to distinguish between authorizing a request (including its side-effects) and authorizing access to the representation of that resource in the response.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>converted to ASCII lowercase</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
