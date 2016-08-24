@@ -734,6 +734,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use of &lt;a0&gt;user credentials&lt;/a0&gt; in a cross-origin request is appropriate when:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020949Z" creationid="lv7777" creationdate="20160824T020949Z">
+        <seg>クロスオリジンリクエスト &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;を使用するのは次のような例の場合が適切である:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>User agents can discover via a &lt;a0&gt;preflight request&lt;/a0&gt; whether a cross-origin resource is prepared to accept requests, using a non-&lt;a1&gt;simple method&lt;/a1&gt;, from a given origin.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T070848Z" creationid="lv7777" creationdate="20160821T070848Z">
