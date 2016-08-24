@@ -310,6 +310,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If needed, such resources can implement access control and CSRF protections as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T004910Z" creationid="lv7777" creationdate="20160824T004910Z">
+        <seg>もし必要なら、そのようなリソースに上記のようなアクセスコントロールやCSRFプロテクションを付加することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the header does not match the production it is said that &lt;d2&gt;header parsing failed&lt;/d2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T113109Z" creationid="lv7777" creationdate="20160821T113109Z">
