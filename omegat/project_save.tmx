@@ -270,6 +270,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As well as sections and appendices marked as non-normative, all diagrams, examples, and notes in this specification are non-normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113609Z" creationid="lv7777" creationdate="20160830T113609Z">
+        <seg>セクション名や付録と同様に、この仕様書の図、例、注釈は準拠ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Authorization for a request should be performed using only the intersection of the authority of the user and the requesting origin(s).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T015142Z" creationid="lv7777" creationdate="20160824T015142Z">
@@ -306,6 +314,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103257Z" creationid="lv7777" creationdate="20160821T101149Z">
         <seg>2つの文字列を比較して&lt;d0&gt;ASCII case-insensitive&lt;/d0&gt; であるとは、それらを比較した時、コードポイントとコードポイントが正確に一致し、なおかつその文字がU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲、または U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z の範囲に収まっている、という意味である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Everything else in this specification is normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113710Z" creationid="lv7777" creationdate="20160830T113710Z">
+        <seg>それ以外の全ては準拠するべき標準である。</seg>
       </tuv>
     </tu>
     <tu>
