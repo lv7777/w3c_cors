@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A conformant user agent is one that implements all the requirements listed in this specification that are applicable to user agents.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T121819Z" creationid="lv7777" creationdate="20160830T121521Z">
+        <seg>準拠しているUAとはこの仕様書にリストされている全ての要求が実装されているUAのことである</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A list of current W3C publications and the latest revision of this technical report can be found in the &lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000854Z" creationid="lv7777" creationdate="20160821T000854Z">
@@ -778,6 +786,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020949Z" creationid="lv7777" creationdate="20160824T020949Z">
         <seg>クロスオリジンリクエスト &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;を使用するのは次のような例の場合が適切である:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents and resource authors may employ any algorithm to implement this specification, so long as the end result is indistinguishable from the result that would be obtained by the specification's algorithms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T120758Z" creationid="lv7777" creationdate="20160830T120758Z">
+        <seg>仕様書のアルゴリズムから得られる結果が区別不能な場合に限り、UAとリソースの著者はこの仕様を実装するためのどんなアルゴリズムでも実装できる。(結果が同じならば別に仕様書のアルゴでなくてもよい。)</seg>
       </tuv>
     </tu>
     <tu>
