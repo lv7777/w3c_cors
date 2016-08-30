@@ -294,6 +294,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a substitute for JSONP-style cross-origin credentialed requests, use of this specification significantly improves the security posture of the requesting application, as it provides cross-origin data access whereas JSONP operates via cross-origin code-injection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T173921Z" creationid="lv7777" creationdate="20160830T173921Z">
+        <seg>JSONP型の機密情報クロスオリジンリクエストの代わりとして、この仕様を使用した場合、JSONP型はクロスオリジンのコードインジェクション経由で命令するのに対してクロスオリジンデータアクセスを提供するのでリクエストするアプリケーションのセキュリティに対する姿勢がかなり上昇する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As well as sections and appendices marked as non-normative, all diagrams, examples, and notes in this specification are non-normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113609Z" creationid="lv7777" creationdate="20160830T113609Z">
