@@ -398,6 +398,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In this specification, The words must and may are to be interpreted as described in RFC 2119.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113856Z" creationid="lv7777" creationdate="20160830T113856Z">
+        <seg>この仕様書では、単語はRFC 2119の仕様で説明されているものとして解釈する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In user agents that follow this pattern, network requests typically include user credentials with cross-origin requests, including HTTP authentication and cookie information.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T010058Z" creationid="lv7777" creationdate="20160821T010058Z">
