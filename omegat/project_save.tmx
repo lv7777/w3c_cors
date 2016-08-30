@@ -494,6 +494,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Requirements phrased in the imperative as part of algorithms (e.g. "terminate the algorithm") are to be interpreted with the meaning of the key word (e.g. must) used in introducing the algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T115856Z" creationid="lv7777" creationdate="20160830T115856Z">
+        <seg>アルゴリズムの中の命令的言い回しによる要件（例えば： “先頭部のスペース文字並びを取り除く”, “false を返してこの手続きを終了” など）は、アルゴリズムを導入する際に利用されているキーワード（ “〜しなければならない”, “〜すべき”, “〜してもよい”, 等々）の意味の下で解釈されることになる。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Security requirements and considerations are listed throughout this specification.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T225730Z" creationid="lv7777" creationdate="20160821T103907Z">
