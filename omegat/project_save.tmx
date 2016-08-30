@@ -342,6 +342,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Cross-origin requests using a method that is &lt;a0&gt;simple&lt;/a0&gt; with &lt;a1&gt;author request headers&lt;/a1&gt; that are not &lt;a2&gt;simple&lt;/a2&gt; will have a &lt;a3&gt;preflight request&lt;/a3&gt; to ensure that the resource can handle those headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T170022Z" creationid="lv7777" creationdate="20160830T170022Z">
+        <seg> &lt;a0&gt;simple&lt;/a0&gt; なメソッドを使用して、&lt;a1&gt;author request headers&lt;/a1&gt; が&lt;a2&gt;simple&lt;/a2&gt;Cross-origin requests using a method that is &lt;a0&gt;simple&lt;/a0&gt; with &lt;a1&gt;author request headers&lt;/a1&gt; that are not &lt;a2&gt;simple&lt;/a2&gt; will have a &lt;a3&gt;preflight request&lt;/a3&gt; to ensure that the resource can handle those headers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Everything else in this specification is normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113710Z" creationid="lv7777" creationdate="20160830T113710Z">
@@ -794,6 +802,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T011232Z" creationid="lv7777" creationdate="20160821T011232Z">
         <seg>この仕様はリソースの著者およびユーザ エージェントについて書かれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This substitution can expose additional attack surface in some cases, as a cross-site scripting vulnerability in the requesting origin can allow elevation of privileges against the requested resource when compared to a server-to-server back channel.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T170550Z" creationid="lv7777" creationdate="20160830T170550Z">
+        <seg>この置換は、サーバー間のバックチャンネルと比較した場合、要求するオリジンがリクエストされたオリジンに対して権限を昇格させるXSS脆弱性、などのいくつかの場合において追加の攻撃する境界を露出することができてしまう。</seg>
       </tuv>
     </tu>
     <tu>
