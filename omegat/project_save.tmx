@@ -230,6 +230,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A cross-origin request with credentials as defined in this specification is used to substitute for alternate methods of authenticated resource sharing, such as server-to-server back channels, JSONP, or cross-document messaging.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T132906Z" creationid="lv7777" creationdate="20160830T132906Z">
+        <seg>この仕様書で定義されている機密情報を持ったクロスオリジンリクエストはサーバー間のバックチャンネル、JSONP、クロスドキュメントメッセージング等の認証されたリソース共有の代わりの方法として使用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A list of current W3C publications and the latest revision of this technical report can be found in the &lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000854Z" creationid="lv7777" creationdate="20160821T000854Z">
