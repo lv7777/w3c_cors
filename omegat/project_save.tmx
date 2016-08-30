@@ -214,6 +214,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T122533Z" creationid="lv7777" creationdate="20160830T122533Z">
+        <seg>準拠しているしているリソースとはA conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A conformant user agent is one that implements all the requirements listed in this specification that are applicable to user agents.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T121819Z" creationid="lv7777" creationdate="20160830T121521Z">
