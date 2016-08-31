@@ -344,8 +344,8 @@
       <tuv lang="EN-US">
         <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T042936Z" creationid="lv7777" creationdate="20160831T034619Z">
-        <seg>前述ののような攻撃を避けるためには、それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションや、すべての引数Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege //for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T061433Z" creationid="lv7777" creationdate="20160831T034619Z">
+        <seg>前述のような攻撃を避けるためには、それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションや、そのアプリケーションの受け取ったすべてのパラメータと指示Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
     </tu>
     <tu>
