@@ -416,8 +416,8 @@
       <tuv lang="EN-US">
         <seg>For requests to resources that have no significance other than retrieval, and where the credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T012305Z" creationid="lv7777" creationdate="20160831T012305Z">
-        <seg>/検索以外の意図を持ってないリソースへのリクエスト/For requests to resources that have no significance other than retrieval, and where the/ユーザー固有のカスタマイズ//オレオレ証明書/ credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T070317Z" creationid="lv7777" creationdate="20160831T012305Z">
+        <seg>/公開情報ではないユーザー固有のカスタマイズのみに使用している資格情報/を持ち検索以外の意図を持ってないリソースへのリクエストのために。</seg>
       </tuv>
     </tu>
     <tu>
@@ -426,6 +426,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T064204Z" creationid="lv7777" creationdate="20160831T064204Z">
         <seg>上記のような相互の複数のオリジンによる脆弱性を避けるのは難しく、代わりにUAのリクエストに自動的にアタッチされるユーザー資格情報、特定の機能やリクエストの明示的なコンテンツの一部として渡された認証されたリソースを指定するセキュリティトークンを使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTTP/1.1 currently does not make leading OWS implied in header value definitions but that form is assumed here.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T072755Z" creationid="lv7777" creationdate="20160831T072755Z">
+        <seg>HTTP/1.1 は現在暗示的にヘッダの値の定義にOWSを使用しないがここの形式ではOWSを想定している。</seg>
       </tuv>
     </tu>
     <tu>
@@ -554,6 +562,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020411Z" creationid="lv7777" creationdate="20160824T020411Z">
         <seg>認証を要求するための適切なリソースIt is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise, the &lt;a1&gt;user agent processing model&lt;/a1&gt; section details how user agents are to use these headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T071230Z" creationid="lv7777" creationdate="20160831T071230Z">
+        <seg>同様に、 &lt;a1&gt;user agent processing model&lt;/a1&gt; セクションではUAがどのようにそれらのヘッダを使用するか説明する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -694,6 +710,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;resource processing model&lt;/a0&gt; section details how resources are to use these headers in a response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T070518Z" creationid="lv7777" creationdate="20160831T070518Z">
+        <seg>&lt;a0&gt;resource processing model&lt;/a0&gt; セクションではリソースがそれらのヘッダをレスポンス内でどのように使用するか説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header indicates how long the response can be cached, so that for subsequent requests, within the specified time, no preflight request has to be made.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083008Z" creationid="lv7777" creationdate="20160821T083008Z">
@@ -706,6 +730,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083130Z" creationid="lv7777" creationdate="20160821T083130Z">
         <seg>&lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt;ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ABNF syntax used in this section is from HTTP/1.1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T071242Z" creationid="lv7777" creationdate="20160831T071242Z">
+        <seg>このセクションで使用されているABNFの構文は、HTTP / 1.1からです。</seg>
       </tuv>
     </tu>
     <tu>
