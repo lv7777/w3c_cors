@@ -406,6 +406,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For example, a web application whose URL is of the type &lt;c0&gt;example.org/&lt;v1&gt;app-name&lt;/v1&gt;/&lt;/c0&gt; and the app-name portion is necessary to distinguish the web application from other web applications also running at example.org, will be unable to securely employ the mechanism defined in this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051604Z" creationid="lv7777" creationdate="20160831T051055Z">
+        <seg>例として、URLが &lt;c0&gt;example.org/&lt;v1&gt;app-name&lt;/v1&gt;/&lt;/c0&gt; であるアプリケーションが存在しており、app-nameの部分はexample.orgで実行されているほかのウェブアプリケーションと区別する必要のあるとします。また、ほかのアプリケーションはしっかりとこの仕様で定義されたメカニズムを採用することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For requests to resources that have no significance other than retrieval, and where the credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T012305Z" creationid="lv7777" creationdate="20160831T012305Z">
@@ -502,6 +510,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It also provides a short description of the function of each header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T052028Z" creationid="lv7777" creationdate="20160831T052028Z">
+        <seg>ここではそれぞれのヘッダの機能の短い説明も提供している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It gets slightly more complicated if the resource author wants to be able to handle cross-origin requests using methods other than &lt;a0&gt;simple methods&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T081318Z" creationid="lv7777" creationdate="20160821T081318Z">
@@ -530,6 +546,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020411Z" creationid="lv7777" creationdate="20160824T020411Z">
         <seg>認証を要求するための適切なリソースIt is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mapping web applications to distinct &lt;a0&gt;origins&lt;/a0&gt; is vital for secure web applications.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051810Z" creationid="lv7777" creationdate="20160831T051810Z">
+        <seg>異なった &lt;a0&gt;オリジン&lt;/a0&gt; にウェブアプリケーションをマッピングすることはウェブアプリケーションのセキュリティを上昇するために必要です。</seg>
       </tuv>
     </tu>
     <tu>
@@ -826,6 +850,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T045846Z" creationid="lv7777" creationdate="20160831T045846Z">
         <seg>これはオリジンがスキームとホスト名とポートにより構成されているためである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section defines the syntax of the new headers this specification introduces.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051916Z" creationid="lv7777" creationdate="20160831T051916Z">
+        <seg>このセクションではこの仕様書で導入する新しいヘッダの構文を定義する。</seg>
       </tuv>
     </tu>
     <tu>
