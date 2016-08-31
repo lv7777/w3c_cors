@@ -590,6 +590,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Go to the next step if the following conditions are true:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160240Z" creationid="lv7777" creationdate="20160831T160240Z">
+        <seg>もし以下の条件がtrueの場合、次のステップに進める:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>HTTP/1.1 currently does not make leading OWS implied in header value definitions but that form is assumed here.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T072755Z" creationid="lv7777" creationdate="20160831T072755Z">
@@ -1238,6 +1246,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The steps below describe what user agents must do for a &lt;d0&gt;cross-origin request with preflight&lt;/d0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160142Z" creationid="lv7777" creationdate="20160831T160142Z">
+        <seg>このステップではUAは&lt;d0&gt;プリフライト付きcross-origin request&lt;/d0&gt;のために何をしなければならないかを以下に記述している:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The steps below describe what user agents must do for a &lt;d0&gt;simple cross-origin request&lt;/d0&gt;:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T145908Z" creationid="lv7777" creationdate="20160831T145908Z">
@@ -1466,6 +1482,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T170550Z" creationid="lv7777" creationdate="20160830T170550Z">
         <seg>この置換は、サーバー間のバックチャンネルと比較した場合、要求するオリジンがリクエストされたオリジンに対して権限を昇格させるXSS脆弱性、などのいくつかの場合において追加の攻撃する境界を露出することができてしまう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160051Z" creationid="lv7777" creationdate="20160831T160051Z">
+        <seg>To protect resources/リソースを保護するためには/クロスオリジンリクエストに対して/ against cross-origin requests/特定のUAから生成できない/ that could not originate from certain user agents /この仕様書が存在する以前の/before this specification existed// a &lt;a0&gt;preflight request&lt;/a0&gt; はリソースがこの仕様書に気づくのを保証させる/ aware of this specification.To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
       </tuv>
     </tu>
     <tu>
