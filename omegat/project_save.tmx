@@ -382,6 +382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For requests to resources that have no significance other than retrieval, and where the credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T012305Z" creationid="lv7777" creationdate="20160831T012305Z">
+        <seg>/検索以外の意図を持ってないリソースへのリクエスト/For requests to resources that have no significance other than retrieval, and where the/ユーザー固有のカスタマイズ//オレオレ証明書/ credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, the few definitions that did not really fit anywhere else are defined here instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T095804Z" creationid="lv7777" creationdate="20160821T095804Z">
