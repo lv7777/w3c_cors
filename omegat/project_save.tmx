@@ -438,6 +438,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>HTTP/1.1 is used as ABNF basis to ensure that the new headers have equivalent parsing rules to those introduced in that specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T093902Z" creationid="lv7777" creationdate="20160831T093902Z">
+        <seg>この仕様で導入される新しいヘッダが同等の解析ルールを持つことを保障するためにHTTP/1.1 をABNFの基本とする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, the few definitions that did not really fit anywhere else are defined here instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T095804Z" creationid="lv7777" creationdate="20160821T095804Z">
