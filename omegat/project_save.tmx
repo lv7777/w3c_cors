@@ -286,6 +286,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Again, data received from origins that are not completely trusted has to be validated to conform to expected formats and authorized values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T174449Z" creationid="lv7777" creationdate="20160830T174449Z">
+        <seg>再度（また？）、完全に信頼されていないオリジンから受信したデータが期待したフォーマットおよび承認済の値に準拠しているために検証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
