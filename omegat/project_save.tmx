@@ -430,6 +430,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each of the &lt;a0&gt;author request headers&lt;/a0&gt; is a &lt;a1&gt;simple header&lt;/a1&gt; or &lt;a2&gt;author request headers&lt;/a2&gt; is empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T125428Z" creationid="lv7777" creationdate="20160831T125428Z">
+        <seg>各&lt;a0&gt;author request headers&lt;/a0&gt; が &lt;a1&gt;simple header&lt;/a1&gt; である、もしくは &lt;a2&gt;author request headers&lt;/a2&gt; が空である場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each type of request a resource might have to deal with is described in its own subsection.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T101638Z" creationid="lv7777" creationdate="20160831T101638Z">
@@ -534,10 +542,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If for some reason the user agent does not want to make the request terminate this algorithm and set the &lt;a0&gt;cross-origin request status&lt;/a0&gt; to &lt;i1&gt;network error&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123420Z" creationid="lv7777" creationdate="20160831T123420Z">
+        <seg>もし何かの事情のためにUAがリクエストを送りたくない場合、このアルゴリズムを終了させて、 &lt;a0&gt;cross-origin request status&lt;/a0&gt; を &lt;i1&gt;network error&lt;/i1&gt;にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If needed, such resources can implement access control and CSRF protections as described above.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T004910Z" creationid="lv7777" creationdate="20160824T004910Z">
         <seg>もし必要なら、そのようなリソースに上記のようなアクセスコントロールやCSRFプロテクションを付加することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the following conditions are true, follow the &lt;a0&gt;simple cross-origin request&lt;/a0&gt; algorithm:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123722Z" creationid="lv7777" creationdate="20160831T123722Z">
+        <seg>以下の条件が真の場合、 &lt;a0&gt;simple cross-origin request&lt;/a0&gt; アルゴリズムに従う必要がある。(note:途中から？たぶん最初から。)：</seg>
       </tuv>
     </tu>
     <tu>
@@ -766,6 +790,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Set when &lt;a0&gt;user credentials&lt;/a0&gt; are to be excluded in the request and when cookies are to be ignored in its response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T122849Z" creationid="lv7777" creationdate="20160831T122849Z">
+        <seg>リクエスト内で &lt;a0&gt;user credentials&lt;/a0&gt; が除外され、レスポンス内でクッキーが無視された場合にセットする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set when a &lt;a0&gt;preflight request&lt;/a0&gt; is required.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T122935Z" creationid="lv7777" creationdate="20160831T122935Z">
+        <seg>&lt;a0&gt;プリフライト リクエスト&lt;/a0&gt;が必要な場合にセットする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Set when redirects are &lt;e0&gt;not&lt;/e0&gt; to be automatically followed.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T121332Z" creationid="lv7777" creationdate="20160831T121332Z">
@@ -838,10 +878,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request URL&lt;/a0&gt; could have been blacklisted by the user in some fashion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123551Z" creationid="lv7777" creationdate="20160831T123551Z">
+        <seg> &lt;a0&gt;request URL&lt;/a0&gt; はいくつかの方法でユーザーによってブラックリスト入りされている可能性がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;request URL&lt;/a0&gt; is modified in face of redirects.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T115647Z" creationid="lv7777" creationdate="20160831T115647Z">
         <seg>&lt;a0&gt;request URL&lt;/a0&gt; はリダイレクトされた場合、修正される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request method&lt;/a0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; and the &lt;a2&gt;force preflight flag&lt;/a2&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123843Z" creationid="lv7777" creationdate="20160831T123843Z">
+        <seg>&lt;a0&gt;リクエストメソッド&lt;/a0&gt; が&lt;a1&gt;シンプルメソッド&lt;/a1&gt; で&lt;a2&gt;force preflight flag&lt;/a2&gt; がセットされていない場合。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1258,6 +1314,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020317Z" creationid="lv7777" creationdate="20160824T011011Z">
         <seg>リクエストが検索以外の意義を持ち、&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダが信頼できる場合、リソースは認証リクエストとリソースが入っているレスポンスへのアクセスを許可の区別に気を付ける必要がある</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm is invoked, these steps must be followed:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123142Z" creationid="lv7777" creationdate="20160831T123142Z">
+        <seg>&lt;a0&gt;クロスオリジンリクエスト&lt;/a0&gt; アルゴリズムが呼び出された場合、以下の手順を踏む必要がある。</seg>
       </tuv>
     </tu>
     <tu>
