@@ -334,6 +334,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Authors of client-side Web applications are strongly encouraged to validate content retrieved from a &lt;a0&gt;cross-origin&lt;/a0&gt; resource as it might be harmful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045334Z" creationid="lv7777" creationdate="20160831T045334Z">
+        <seg>クライアント側のウェブアプリケーションの作者には &lt;a0&gt;cross-origin&lt;/a0&gt; から受け取った有害かもしれないリソースを検証することを強く推奨する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T042936Z" creationid="lv7777" creationdate="20160831T034619Z">
@@ -814,6 +822,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is because an origin is composed of only the scheme, hostname, and port.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045846Z" creationid="lv7777" creationdate="20160831T045846Z">
+        <seg>これはオリジンがスキームとホスト名とポートにより構成されているためである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the status of this document at the time of its publication.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000911Z" creationid="lv7777" creationdate="20160821T000911Z">
@@ -938,6 +954,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002249Z" creationid="lv7777" creationdate="20160821T002201Z">
         <seg>W3Cは、&lt;a1&gt;WebAppSec WG&lt;/a1&gt; と &lt;a2&gt;WebApps WG&lt;/a2&gt; が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Web applications that are not uniquely identified by specific host names, and/or mapped to specific ports, do not necessarily have a unique origin, and thus will not be able to securely utilize the mechanism defined in this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045812Z" creationid="lv7777" creationdate="20160831T045812Z">
+        <seg>一意に特定できないホスト名や、特定のポートにマッピングされていない、必ずしも一意のオリジンを持っていないウェブアプリケーションは、この仕様書で定義されている安全機構を使用することができない。</seg>
       </tuv>
     </tu>
     <tu>
