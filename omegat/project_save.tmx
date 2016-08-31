@@ -30,6 +30,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>#network-error-steps</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151051Z" creationid="lv7777" creationdate="20160831T151051Z">
+        <seg>#network-error-steps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>#references</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003954Z" creationid="lv7777" creationdate="20160821T003954Z">
@@ -366,6 +374,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;abort steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151031Z" creationid="lv7777" creationdate="20160831T151031Z">
+        <seg>&lt;a0&gt;abort steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;make a request steps&lt;/a0&gt; and observe the &lt;i1&gt;request rules&lt;/i1&gt; below while making the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150118Z" creationid="lv7777" creationdate="20160831T150118Z">
+        <seg>&lt;a0&gt;make a request steps&lt;/a0&gt; を適用し、リクエストが作成されるまでの間以下の &lt;i1&gt;request rules&lt;/i1&gt; を監視しなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;redirect steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150245Z" creationid="lv7777" creationdate="20160831T150245Z">
+        <seg>&lt;a0&gt;redirect steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a substitute for JSONP-style cross-origin credentialed requests, use of this specification significantly improves the security posture of the requesting application, as it provides cross-origin data access whereas JSONP operates via cross-origin code-injection.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T173921Z" creationid="lv7777" creationdate="20160830T173921Z">
@@ -450,6 +482,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T133429Z" creationid="lv7777" creationdate="20160830T170022Z">
         <seg> &lt;a0&gt;simple&lt;/a0&gt; なメソッドを使用して、&lt;a1&gt;author request headers&lt;/a1&gt; が&lt;a2&gt;simple&lt;/a2&gt;でないCross-origin requestsを行うとき 、リソースがそれらのヘッダを処理できることを保証するために&lt;a3&gt;preflight request&lt;/a3&gt;を持つ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not request any kind of end user interaction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151512Z" creationid="lv7777" creationdate="20160831T151512Z">
+        <seg>エンドユーザーと会話するタイプのDo not request any kind of end user interaction.</seg>
       </tuv>
     </tu>
     <tu>
@@ -590,6 +630,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;manual redirect flag&lt;/a0&gt; is unset and the response has an HTTP status code of 301, 302, 303, 307, or 308</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150224Z" creationid="lv7777" creationdate="20160831T150224Z">
+        <seg>もし&lt;a0&gt;manual redirect flag&lt;/a0&gt; が未設定で、レスポンスのHTTPステータスコードが 301, 302, 303, 307, or 308のいづれかの場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the end user cancels the request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151012Z" creationid="lv7777" creationdate="20160831T150949Z">
+        <seg>もしエンドユーザーがリクエストをキャンセルした場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the following conditions are true, follow the &lt;a0&gt;simple cross-origin request&lt;/a0&gt; algorithm:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T123722Z" creationid="lv7777" creationdate="20160831T123722Z">
@@ -606,10 +662,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If there is a network error</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151047Z" creationid="lv7777" creationdate="20160831T151047Z">
+        <seg>ネットワークエラーが起こった場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you wish to make comments regarding this document, please send them to &lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; (&lt;a1&gt;subscribe&lt;/a1&gt;, &lt;a2&gt;archives&lt;/a2&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
         <seg>この文書にコメントするには、&lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; （&lt;a1&gt;購読&lt;/a1&gt;, &lt;a2&gt;アーカイブ&lt;/a2&gt;）に電子メールを送信されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case of DNS errors, TLS negotiation failure, or other type of network errors, apply the &lt;a0&gt;network error steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151301Z" creationid="lv7777" creationdate="20160831T151301Z">
+        <seg>DNS エラー、 TLS ネゴシエーションの失敗、それ以外のタイプのネットワークエラーが発生した場合、 &lt;a0&gt;network error steps&lt;/a0&gt;を適用する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -674,6 +746,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T052028Z" creationid="lv7777" creationdate="20160831T052028Z">
         <seg>ここではそれぞれのヘッダの機能の短い説明も提供している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can be modified during the &lt;a4&gt;redirect steps&lt;/a4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145236Z" creationid="lv7777" creationdate="20160831T145236Z">
+        <seg>これは、&lt;a4&gt;redirect steps&lt;/a4&gt;を踏む間に修正することができる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -770,6 +850,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000721Z" creationid="lv7777" creationdate="20160821T000721Z">
         <seg>他の文書がこの文書に取って代わるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151545Z" creationid="lv7777" creationdate="20160831T151545Z">
+        <seg>それ以外の場合</seg>
       </tuv>
     </tu>
     <tu>
@@ -958,6 +1046,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;source origin&lt;/a0&gt; is the initial &lt;a1&gt;origin&lt;/a1&gt; that user agents must use for the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145156Z" creationid="lv7777" creationdate="20160831T145156Z">
+        <seg>&lt;a0&gt;source origin&lt;/a0&gt; はUAが&lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; ヘッダに使用しなければならない初期の&lt;a1&gt;origin&lt;/a1&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header indicates how long the response can be cached, so that for subsequent requests, within the specified time, no preflight request has to be made.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083008Z" creationid="lv7777" creationdate="20160821T083008Z">
@@ -1102,6 +1198,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The steps below describe what user agents must do for a &lt;d0&gt;simple cross-origin request&lt;/d0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145908Z" creationid="lv7777" creationdate="20160831T145908Z">
+        <seg>このステップではUAは&lt;d0&gt;simple cross-origin request&lt;/d0&gt;のために何をしなければならないかを以下に記述している。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The term &lt;d0&gt;cross-origin&lt;/d0&gt; is used to mean non &lt;a1&gt;same origin&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T100043Z" creationid="lv7777" creationdate="20160821T100030Z">
@@ -1202,6 +1306,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001704Z" creationid="lv7777" creationdate="20160821T001704Z">
         <seg>この文書は&lt;a0&gt;2004年2月6日のW3C特許ポリシー&lt;/a0&gt;の下で活動するグループによって作成された。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This does not include HTTP responses that indicate some type of error, such as HTTP status code 410.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151538Z" creationid="lv7777" creationdate="20160831T151538Z">
+        <seg>&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</seg>
       </tuv>
     </tu>
     <tu>
