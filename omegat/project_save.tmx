@@ -734,6 +734,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Otherwise, follow the &lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T125502Z" creationid="lv7777" creationdate="20160831T125502Z">
+        <seg>それ以外の場合、&lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; アルゴリズムに従う必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Please note there may be &lt;a0&gt;errata&lt;/a0&gt; for this document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T173011Z" creationid="lv7777" creationdate="20160820T173011Z">
