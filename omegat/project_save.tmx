@@ -758,6 +758,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This appendix is non-normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T035004Z" creationid="lv7777" creationdate="20160831T035004Z">
+        <seg>この付録は非規定である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
