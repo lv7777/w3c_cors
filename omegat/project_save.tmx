@@ -334,6 +334,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T034619Z" creationid="lv7777" creationdate="20160831T034619Z">
+        <seg>前述ののような攻撃リクエストを避けるためにAvoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege /それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションの/for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Because of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T000956Z" creationid="lv7777" creationdate="20160821T230559Z">
@@ -442,6 +450,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020821Z" creationid="lv7777" creationdate="20160824T020821Z">
         <seg>このような場合、曖昧な許可している範囲を削除できるクロスオリジンリクエストリクエストの一環としてセキュリティトークンを明示的に渡す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such multi-origin scenarios, a malicious resource at one of the origins may be able to enlist the user-agent as a confused deputy and elevate its privileges by abusing user credentials sent with cross-origin requests.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T033655Z" creationid="lv7777" creationdate="20160831T033655Z">
+        <seg>このようなマルチオリジンのシナリオでは、一つのオリジンの悪意のあるリソースがUAを混乱した代理(https://ja.wikipedia.org/wiki/Confused_deputy_problem)として登録すし、悪意のあるユーザー資格情報をクロスオリジンリクエストで送信することで、権限を昇格することができるかもしれない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -936,8 +952,8 @@
       <tuv lang="EN-US">
         <seg>When this specification is used for requests which have significance other than retrieval and which involve coordination between or data originating from more than two origins, (e.g. between resources enabling editing, printing and storage, each at distinct origins) requests ought to set the &lt;a0&gt;omit credentials flag&lt;/a0&gt; and resources ought to perform authorization using security tokens explicitly provided in the content of the request, especially if the origins are not all mutually and completely trusted.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T031414Z" creationid="lv7777" creationdate="20160831T031414Z">
-        <seg>この仕様が検索以外のの意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは&lt;a0&gt;omit credentials flag&lt;/a0&gt;を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T034915Z" creationid="lv7777" creationdate="20160831T031414Z">
+        <seg>この仕様が検索以外の意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは&lt;a0&gt;omit credentials flag&lt;/a0&gt;を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。</seg>
       </tuv>
     </tu>
     <tu>
