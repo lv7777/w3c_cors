@@ -190,6 +190,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of methods&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103359Z" creationid="lv7777" creationdate="20160831T103359Z">
+        <seg>語 &lt;d0&gt;&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of origins&lt;/d0&gt; consisting of zero or more &lt;a1&gt;origins&lt;/a1&gt; that are allowed access to the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T102947Z" creationid="lv7777" creationdate="20160831T102947Z">
+        <seg>リソースにアクセスするのを許可されている 0、もしくはそれ以上の  &lt;a1&gt;origins&lt;/a1&gt; から構成されている &lt;d0&gt;オリジンのリスト&lt;/d0&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;supports credentials&lt;/d0&gt; flag that indicates whether the resource supports &lt;a1&gt;user credentials&lt;/a1&gt; in the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103759Z" creationid="lv7777" creationdate="20160831T103759Z">
+        <seg>&lt;d0&gt;supports credentials&lt;/d0&gt; フラグはリクエスト内でリソースが &lt;a1&gt;user credentials&lt;/a1&gt;をサポートするかどうかを指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;v0&gt;header&lt;/v0&gt; is said to be a &lt;d1&gt;simple header&lt;/d1&gt; if the header field name is an &lt;a2&gt;ASCII case-insensitive&lt;/a2&gt; match for &lt;c3&gt;Accept&lt;/c3&gt;, &lt;c4&gt;Accept-Language&lt;/c4&gt;, or &lt;c5&gt;Content-Language&lt;/c5&gt; or if it is an &lt;a6&gt;ASCII case-insensitive&lt;/a6&gt; match for &lt;c7&gt;Content-Type&lt;/c7&gt; and the header field value media type (excluding parameters) is an &lt;a8&gt;ASCII case-insensitive&lt;/a8&gt; match for &lt;c9&gt;application/x-www-form-urlencoded&lt;/c9&gt;, &lt;c10&gt;multipart/form-data&lt;/c10&gt;, or &lt;c11&gt;text/plain&lt;/c11&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T231213Z" creationid="lv7777" creationdate="20160821T102530Z">
@@ -426,6 +450,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T070317Z" creationid="lv7777" creationdate="20160831T012305Z">
         <seg>/公開情報ではないユーザー固有のカスタマイズのみに使用している資格情報/を持ち検索以外の意図を持ってないリソースへのリクエストのために。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For the purposes of this section each resource is bound to the following:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103055Z" creationid="lv7777" creationdate="20160831T102531Z">
+        <seg>このセクションの目的のためにリソースは以下と結びついている(関係がある)。</seg>
       </tuv>
     </tu>
     <tu>
@@ -806,6 +838,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The resource sharing policy described by this specification is bound to a particular resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T101937Z" creationid="lv7777" creationdate="20160831T101937Z">
+        <seg>この仕様書で説明されているリソース共有ポリシーは特定のリソースに結びついている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The resource still must protect itself against CSRF attacks, such as by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T004101Z" creationid="lv7777" creationdate="20160822T004101Z">
@@ -886,6 +926,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This can include the &lt;a0&gt;origin&lt;/a0&gt; of the resource itself though be aware that requests to &lt;a1&gt;cross-origin&lt;/a1&gt; resources can be redirected back to the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103246Z" creationid="lv7777" creationdate="20160831T103246Z">
+        <seg>これにはThis can include the &lt;a0&gt;origin&lt;/a0&gt; of the resource itself though be aware that requests to &lt;a1&gt;cross-origin&lt;/a1&gt; resources can be redirected back to the resource.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
@@ -952,8 +1000,8 @@
       <tuv lang="EN-US">
         <seg>This section describes the processing models that resources have to implement.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T100448Z" creationid="lv7777" creationdate="20160831T100448Z">
-        <seg>このセクションでは、リソースが実装する必要が処理モデルについて説明します。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T102539Z" creationid="lv7777" creationdate="20160831T100448Z">
+        <seg>このセクションでは、リソースが実装する必要がある処理モデルについて説明します。</seg>
       </tuv>
     </tu>
     <tu>
