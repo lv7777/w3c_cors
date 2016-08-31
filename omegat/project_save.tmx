@@ -390,6 +390,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Each type of request a resource might have to deal with is described in its own subsection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T101638Z" creationid="lv7777" creationdate="20160831T101638Z">
+        <seg>リクエストの各タイプはリソースは自分自身のサブセクションで説明されている問題に対処する必要があるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Everything else in this specification is normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113710Z" creationid="lv7777" creationdate="20160830T113710Z">
@@ -482,6 +490,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
         <seg>この文書にコメントするには、&lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; （&lt;a1&gt;購読&lt;/a1&gt;, &lt;a2&gt;アーカイブ&lt;/a2&gt;）に電子メールを送信されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In practice the &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; production is more constrained.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T094910Z" creationid="lv7777" creationdate="20160831T094910Z">
+        <seg>実際には、値 &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; は制約的である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -630,6 +646,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Rather than allowing a space-separated list of &lt;a2&gt;origins&lt;/a2&gt;, it is either a single &lt;a3&gt;origin&lt;/a3&gt; or the string "&lt;c4&gt;null&lt;/c4&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T095609Z" creationid="lv7777" creationdate="20160831T095609Z">
+        <seg> &lt;a2&gt;origins&lt;/a2&gt;の空白区切りのリストが許可されているというより、これは, 一つの &lt;a3&gt;オリジン&lt;/a3&gt; または文字列"&lt;c4&gt;null&lt;/c4&gt;"のどちらかである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>References</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T004002Z" creationid="lv7777" creationdate="20160821T004002Z">
@@ -738,6 +762,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083130Z" creationid="lv7777" creationdate="20160821T083130Z">
         <seg>&lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt;ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; header indicates whether the response to request can be exposed when the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T100350Z" creationid="lv7777" creationdate="20160831T100350Z">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; ヘッダはリクエストのレスポンスheader indicates whether the response to request can be exposed when the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is unset.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; header indicates whether a resource can be shared based by returning the value of the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; request header, "*", or "null" in the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T100043Z" creationid="lv7777" creationdate="20160831T094341Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダはレスポンス内の &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; リクエストヘッダの帰ってきた値 "*"もしくは "null"に基づきリソースが共有できるかどうか指示するものである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -906,6 +946,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T051916Z" creationid="lv7777" creationdate="20160831T051916Z">
         <seg>このセクションではこの仕様書で導入する新しいヘッダの構文を定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the processing models that resources have to implement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T100448Z" creationid="lv7777" creationdate="20160831T100448Z">
+        <seg>このセクションでは、リソースが実装する必要が処理モデルについて説明します。</seg>
       </tuv>
     </tu>
     <tu>
