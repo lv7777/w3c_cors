@@ -70,6 +70,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;GET&lt;/c0&gt;, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115722Z" creationid="lv7777" creationdate="20160831T115722Z">
+        <seg>明示的に設定されない場合&lt;c0&gt;GET&lt;/c0&gt;が設定される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;d0&gt;Converting a string to ASCII lowercase&lt;/d0&gt; means replacing all characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Z with the corresponding characters in the range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103711Z" creationid="lv7777" creationdate="20160821T103711Z">
@@ -270,6 +278,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A list of headers set by authors for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115926Z" creationid="lv7777" creationdate="20160831T115926Z">
+        <seg>リクエストの作成者によって設定されるヘッダのリスト。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A resource that is not useful to applications from other origins, such as a login page, ought not to return an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T002910Z" creationid="lv7777" creationdate="20160822T002910Z">
@@ -418,6 +434,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T101638Z" creationid="lv7777" creationdate="20160831T101638Z">
         <seg>リクエストの各タイプはリソースは自分自身のサブセクションで説明されている問題に対処する必要があるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Either a &lt;c0&gt;&lt;a1&gt;Document&lt;/a1&gt;&lt;/c0&gt; or &lt;a2&gt;URL&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121156Z" creationid="lv7777" creationdate="20160831T121156Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Document&lt;/a1&gt;&lt;/c0&gt; もしくは &lt;a2&gt;URL&lt;/a2&gt;のどちらか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115818Z" creationid="lv7777" creationdate="20160831T115818Z">
+        <seg>明示的に設定されない場合空になる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -638,6 +670,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Missing, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T120002Z" creationid="lv7777" creationdate="20160831T120002Z">
+        <seg>明示的に設定されない場合空になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>No changes were made since the previous publication as Proposed Recommendation.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003416Z" creationid="lv7777" creationdate="20160821T003416Z">
@@ -726,6 +766,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Set when redirects are &lt;e0&gt;not&lt;/e0&gt; to be automatically followed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121332Z" creationid="lv7777" creationdate="20160831T121332Z">
+        <seg>リダイレクト時に自動で追跡し &lt;e0&gt;ない&lt;/e0&gt;場合にセットする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Simple cross-origin requests generated outside this specification (such as cross-origin form submissions using &lt;c1&gt;GET&lt;/c1&gt; or &lt;c2&gt;POST&lt;/c2&gt; or cross-origin &lt;c3&gt;GET&lt;/c3&gt; requests resulting from &lt;c4&gt;script&lt;/c4&gt; elements) typically include &lt;a5&gt;user credentials&lt;/a5&gt;, so resources conforming to this specification must always be prepared to expect simple cross-origin requests with credentials.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T235124Z" creationid="lv7777" creationdate="20160821T101237Z">
@@ -774,6 +822,30 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;URL&lt;/a0&gt; to be &lt;a1&gt;fetched&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115614Z" creationid="lv7777" creationdate="20160831T115614Z">
+        <seg> &lt;a1&gt;fetched&lt;/a1&gt;するための&lt;a0&gt;URL&lt;/a0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;origin&lt;/a0&gt; of the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T120031Z" creationid="lv7777" creationdate="20160831T120031Z">
+        <seg>リクエストの &lt;a0&gt;オリジン&lt;/a0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request URL&lt;/a0&gt; is modified in face of redirects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115647Z" creationid="lv7777" creationdate="20160831T115647Z">
+        <seg>&lt;a0&gt;request URL&lt;/a0&gt; はリダイレクトされた場合、修正される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;resource processing model&lt;/a0&gt; section details how resources are to use these headers in a response.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T070518Z" creationid="lv7777" creationdate="20160831T070518Z">
@@ -814,6 +886,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;cross-origin request&lt;/d0&gt; algorithm takes the following parameters:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115541Z" creationid="lv7777" creationdate="20160831T115541Z">
+        <seg> &lt;d0&gt;cross-origin request&lt;/d0&gt; アルゴリズムは以下の引数を取る:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The ABNF syntax used in this section is from HTTP/1.1.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T071242Z" creationid="lv7777" creationdate="20160831T071242Z">
@@ -834,6 +914,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T091318Z" creationid="lv7777" creationdate="20160821T090459Z">
         <seg>追加のプリフライトリクエストを呼び出すのはUAが行う複雑なタスクである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The entity body for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115951Z" creationid="lv7777" creationdate="20160831T115951Z">
+        <seg>リクエストのボディ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The method for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115701Z" creationid="lv7777" creationdate="20160831T115701Z">
+        <seg>リクエストのメソッド。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1074,6 +1170,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020949Z" creationid="lv7777" creationdate="20160824T020949Z">
         <seg>クロスオリジンリクエスト &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;を使用するのは次のような例の場合が適切である:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used to determine the &lt;c3&gt;Referer&lt;/c3&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121237Z" creationid="lv7777" creationdate="20160831T121237Z">
+        <seg>&lt;c3&gt;Referer&lt;/c3&gt; ヘッダを決定するために使用される。</seg>
       </tuv>
     </tu>
     <tu>
