@@ -310,6 +310,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a substitute for cross-origin communication techniques relying on loading a resource, with credentials, into an HTML &lt;c0&gt;iframe&lt;/c0&gt; element, and subsequently employing cross-document messaging or other cross-origin side channels, this specification provides a roughly equivalent security posture.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T013857Z" creationid="lv7777" creationdate="20160831T013857Z">
+        <seg>リソースのロードに依存するHTML &lt;c0&gt;iframe&lt;/c0&gt;要素の中に入った資格情報付きのクロスオリジン通信技術の代替として、他のクロスオリジンサイドチャネルまたはクロスオリジン通信技術を実装する場合、この仕様はほぼ同等のセキュリティ状態を提供する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As well as sections and appendices marked as non-normative, all diagrams, examples, and notes in this specification are non-normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113609Z" creationid="lv7777" creationdate="20160830T113609Z">
