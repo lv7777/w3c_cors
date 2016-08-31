@@ -422,6 +422,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Given the difficulty of avoiding such vulnerabilities in multi-origin interactions it is recommended that, instead of using user credentials automatically attached to the request by the user agent, security tokens which specify the particular capabilities and resources authorized be passed as part of the explicit content of a request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T064204Z" creationid="lv7777" creationdate="20160831T064204Z">
+        <seg>上記のような相互の複数のオリジンによる脆弱性を避けるのは難しく、代わりにUAのリクエストに自動的にアタッチされるユーザー資格情報、特定の機能やリクエストの明示的なコンテンツの一部として渡された認証されたリソースを指定するセキュリティトークンを使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>However, the few definitions that did not really fit anywhere else are defined here instead.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T095804Z" creationid="lv7777" creationdate="20160821T095804Z">
