@@ -336,16 +336,16 @@
       <tuv lang="EN-US">
         <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T034619Z" creationid="lv7777" creationdate="20160831T034619Z">
-        <seg>前述ののような攻撃リクエストを避けるためにAvoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege /それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションの/for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T042936Z" creationid="lv7777" creationdate="20160831T034619Z">
+        <seg>前述ののような攻撃を避けるためには、それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションや、すべての引数Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege //for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>Because of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160822T000956Z" creationid="lv7777" creationdate="20160821T230559Z">
-        <seg>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T042645Z" creationid="lv7777" creationdate="20160821T230559Z">
+        <seg>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request./リクエスト内のコンテンツで提供されている推測しにくいトークン/</seg>
       </tuv>
     </tu>
     <tu>
