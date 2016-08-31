@@ -934,6 +934,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>When this specification is used for requests which have significance other than retrieval and which involve coordination between or data originating from more than two origins, (e.g. between resources enabling editing, printing and storage, each at distinct origins) requests ought to set the &lt;a0&gt;omit credentials flag&lt;/a0&gt; and resources ought to perform authorization using security tokens explicitly provided in the content of the request, especially if the origins are not all mutually and completely trusted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T031414Z" creationid="lv7777" creationdate="20160831T031414Z">
+        <seg>この仕様が検索以外のの意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは&lt;a0&gt;omit credentials flag&lt;/a0&gt;を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>converted to ASCII lowercase</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
