@@ -486,6 +486,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It includes advice for specifications that define APIs that use the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm defined in this specification — CORS API specifications — and the general &lt;a1&gt;security considerations&lt;/a1&gt; section includes some advice for client-side Web application authors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T025420Z" creationid="lv7777" creationdate="20160831T025420Z">
+        <seg>これには — CORS API specifications — などのこの仕様書の中で定義されている&lt;a0&gt;cross-origin request&lt;/a0&gt;アルゴリズムで使用するAPIを定義する仕様書へのアドバイスや通常のクライアント側のウェブアプリケーションの作者に向けたいくつかのアドバイスが含まれている &lt;a1&gt;security considerations&lt;/a1&gt;セクションが含まれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It is a stable document and may be used as reference material or cited from another document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001016Z" creationid="lv7777" creationdate="20160821T001016Z">
