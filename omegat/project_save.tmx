@@ -158,6 +158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt;Generic Cross-Origin Request Algorithms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T100345Z" creationid="lv7777" creationdate="20160901T100304Z">
+        <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt; 通常のCross-Origin Requestアルゴリズム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.2 &lt;/s0&gt;Resource Sharing Check</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T011139Z" creationid="lv7777" creationdate="20160821T011139Z">
@@ -594,6 +602,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T115818Z" creationid="lv7777" creationdate="20160831T115818Z">
         <seg>明示的に設定されない場合空になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Entries can also be added and removed per the algorithms below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T100238Z" creationid="lv7777" creationdate="20160901T100238Z">
+        <seg>エントリーはまた、下のアルゴリズムごとに追加したり削除したりすることができる。？？？</seg>
       </tuv>
     </tu>
     <tu>
@@ -1330,6 +1346,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T115541Z" creationid="lv7777" creationdate="20160831T115541Z">
         <seg> &lt;d0&gt;cross-origin request&lt;/d0&gt; アルゴリズムは以下の引数を取る:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;resource sharing check&lt;/d0&gt; algorithm for a given resource is as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102241Z" creationid="lv7777" creationdate="20160901T102241Z">
+        <seg>与えられたリソースの&lt;d0&gt;リソース共有チェック&lt;/d0&gt; アルゴリズムは以下の通りである。</seg>
       </tuv>
     </tu>
     <tu>
