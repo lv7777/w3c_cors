@@ -78,6 +78,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;a1&gt;Fetch&lt;/a1&gt; the &lt;a2&gt;request URL&lt;/a2&gt; from &lt;i3&gt;origin&lt;/i3&gt; &lt;a4&gt;source origin&lt;/a4&gt; using &lt;a5&gt;referrer source&lt;/a5&gt; as &lt;i6&gt;override referrer source&lt;/i6&gt; with the &lt;i7&gt;manual redirect flag&lt;/i7&gt; and the &lt;i8&gt;block cookies flag&lt;/i8&gt; set, using the method &lt;c9&gt;OPTIONS&lt;/c9&gt;, and with the following additional constraints:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T024321Z" creationid="lv7777" creationdate="20160901T024321Z">
+        <seg> &lt;i7&gt;manual redirect flag&lt;/i7&gt; と &lt;i8&gt;block cookies flag&lt;/i8&gt; をセットして、&lt;i6&gt;override referrer source&lt;/i6&gt; として &lt;a5&gt;referrer source&lt;/a5&gt; を使用し、&lt;a4&gt;source origin&lt;/a4&gt;から、 &lt;c9&gt;OPTIONS&lt;/c9&gt;メソッドを使い&lt;a2&gt;request URL&lt;/a2&gt;に&lt;a1&gt;Fetch&lt;/a1&gt;する。その後、以下の追加の制約に進む：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;a3&gt;W3C&lt;/a3&gt;'s role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001234Z" creationid="lv7777" creationdate="20160821T001127Z">
