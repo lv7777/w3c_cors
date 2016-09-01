@@ -430,6 +430,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As mentioned, a &lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; uses a &lt;d1&gt;preflight result cache&lt;/d1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081219Z" creationid="lv7777" creationdate="20160901T081219Z">
+        <seg>既に述べたように、&lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; は &lt;d1&gt;preflight result cache&lt;/d1&gt;を使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As well as sections and appendices marked as non-normative, all diagrams, examples, and notes in this specification are non-normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113609Z" creationid="lv7777" creationdate="20160830T113609Z">
@@ -530,6 +538,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T142708Z" creationid="lv7777" creationdate="20160831T142708Z">
         <seg>それぞれの &lt;a0&gt;cross-origin request&lt;/a0&gt; は &lt;a2&gt;cross-origin requests&lt;/a2&gt; にフックできるようにするためのAPIが使用できるCORS API 仕様を持っている&lt;d1&gt;cross-origin request status&lt;/d1&gt; を持っているt。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each entry consists of the following fields:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081324Z" creationid="lv7777" creationdate="20160901T081324Z">
+        <seg>それぞれのエントリは以下のフィールドから構成されている:</seg>
       </tuv>
     </tu>
     <tu>
@@ -786,6 +802,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
         <seg>この文書にコメントするには、&lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; （&lt;a1&gt;購読&lt;/a1&gt;, &lt;a2&gt;アーカイブ&lt;/a2&gt;）に電子メールを送信されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition, for the coming forty-two minutes, no &lt;a2&gt;preflight request&lt;/a2&gt; will be needed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081143Z" creationid="lv7777" creationdate="20160901T081143Z">
+        <seg>加えて、今から42分間は &lt;a2&gt;preflight request&lt;/a2&gt; は必要ではなくなる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1430,6 +1454,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The user agent performs a &lt;a0&gt;preflight request&lt;/a0&gt; using the &lt;c1&gt;OPTIONS&lt;/c1&gt; method to &lt;c2&gt;http://blog.example/entries/hello-world&lt;/c2&gt; and includes the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; and &lt;c5&gt;&lt;a6&gt;Access-Control-Request-Method&lt;/a6&gt;&lt;/c5&gt; headers with the appropriate values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080838Z" creationid="lv7777" creationdate="20160901T080838Z">
+        <seg>UAは適切な値を持つ &lt;c5&gt;&lt;a6&gt;Access-Control-Request-Method&lt;/a6&gt;&lt;/c5&gt; ヘッダと &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; を含み、&lt;c1&gt;OPTIONS&lt;/c1&gt; メソッドを使った&lt;a0&gt;preflight request&lt;/a0&gt; を&lt;c2&gt;http://blog.example/entries/hello-world&lt;/c2&gt;に送信する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent then performs the desired request using the &lt;c0&gt;XMODIFY&lt;/c0&gt; method to &lt;c1&gt;http://blog.example/entries/hello-world&lt;/c1&gt; as this was allowed by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081607Z" creationid="lv7777" creationdate="20160901T081456Z">
+        <seg>UAは &lt;c0&gt;XMODIFY&lt;/c0&gt; メソッドを使用してリソースの共有が許可されている&lt;c1&gt;http://blog.example/entries/hello-world&lt;/c1&gt;に要求リクエストを送る。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The user agent validates that the value and origin of where the request originated match.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000500Z" creationid="lv7777" creationdate="20160821T000500Z">
@@ -1466,6 +1506,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T035004Z" creationid="lv7777" creationdate="20160831T035004Z">
         <seg>この付録は非規定である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This cache consists of a set of entries.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081249Z" creationid="lv7777" creationdate="20160901T081249Z">
+        <seg>このキャッシュはいくつかのエントリから構成されている。</seg>
       </tuv>
     </tu>
     <tu>
