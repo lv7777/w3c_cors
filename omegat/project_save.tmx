@@ -550,6 +550,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>E.g. if a user agent disallows requests from the &lt;c0&gt;https&lt;/c0&gt; to the &lt;c1&gt;http&lt;/c1&gt; scheme for a &lt;a2&gt;cross-origin request&lt;/a2&gt; it is encouraged to do the same for the HTML &lt;c3&gt;img&lt;/c3&gt; element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T124701Z" creationid="lv7777" creationdate="20160901T124701Z">
+        <seg>例：もしUAが &lt;c0&gt;https&lt;/c0&gt; スキームから &lt;c1&gt;http&lt;/c1&gt; スキームに向かって発信する&lt;a2&gt;cross-origin request&lt;/a2&gt; リクエストを許可しない場合、同じことをHTML &lt;c3&gt;img&lt;/c3&gt; 要素にも適用することを推奨される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>E.g. user agents are allowed to not store cache items, remove cache items before they reached their &lt;a0&gt;max-age&lt;/a0&gt;, and not connect to certain &lt;a1&gt;URLs&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T120526Z" creationid="lv7777" creationdate="20160901T120526Z">
@@ -938,6 +946,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T081143Z" creationid="lv7777" creationdate="20160901T081143Z">
         <seg>加えて、今から42分間は &lt;a2&gt;preflight request&lt;/a2&gt; は必要ではなくなる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case a CORS API specification defines multiple APIs that utilize the policy the advice is to be considered separately for each API.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125822Z" creationid="lv7777" creationdate="20160901T125822Z">
+        <seg>In case a CORS API 仕様書がポリシーを使用する複数のAPIを定義していた場合、このアドバイスはそれぞれのAPIごとに考慮する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1534,6 +1550,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The specification that defines the API that uses the policy is a CORS API specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125549Z" creationid="lv7777" creationdate="20160901T125549Z">
+        <seg>この仕様書はCORS API仕様書のポリシーを使用するAPIを定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The steps below describe what user agents must do for a &lt;d0&gt;cross-origin request with preflight&lt;/d0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T160142Z" creationid="lv7777" creationdate="20160831T160142Z">
@@ -1774,6 +1798,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This specification defines a resource sharing policy that cannot be implemented without an API that utilizes it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125317Z" creationid="lv7777" creationdate="20160901T125317Z">
+        <seg>この仕様書ではこの仕様書を活用するAPI抜きでは実装できないリソース共有ポリシーを定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This specification defines how to authorize an instance of an application from a foreign origin, executing in the user agent, to access the representation of the resource in an HTTP response.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T001245Z" creationid="lv7777" creationdate="20160822T001245Z">
@@ -1850,6 +1882,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T120758Z" creationid="lv7777" creationdate="20160830T120758Z">
         <seg>仕様書のアルゴリズムから得られる結果が区別不能な場合に限り、UAとリソースの著者はこの仕様を実装するためのどんなアルゴリズムでも実装できる。(結果が同じならば別に仕様書のアルゴでなくてもよい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents are encouraged to apply security decisions on a generic level and not just to the resource sharing policy.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T124435Z" creationid="lv7777" creationdate="20160901T124435Z">
+        <seg>UAは通常レベルのセキュリティ上の決定を適用することと、その決定はリソース共有ポリシーだけに適用しないことを推奨される。</seg>
       </tuv>
     </tu>
     <tu>
