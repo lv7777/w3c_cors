@@ -1334,6 +1334,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The response to that request includes the following headers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080605Z" creationid="lv7777" creationdate="20160901T080605Z">
+        <seg>このレスポンスには以下のヘッダが含まれている：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The response to the actual request can simply contain this header:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083212Z" creationid="lv7777" creationdate="20160821T083212Z">
@@ -1402,6 +1410,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T143147Z" creationid="lv7777" creationdate="20160831T143147Z">
         <seg>ユーザーがリクエストを中断した。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent gets the request from an API, such as &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;, to perform a cross-origin request using the custom &lt;c2&gt;XMODIFY&lt;/c2&gt; method from &lt;a3&gt;source origin&lt;/a3&gt; &lt;c4&gt;http://example.org&lt;/c4&gt; to &lt;c5&gt;http://blog.example/entries/hello-world&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080518Z" creationid="lv7777" creationdate="20160901T080518Z">
+        <seg>UAは &lt;a3&gt;source origin&lt;/a3&gt; &lt;c4&gt;http://example.org&lt;/c4&gt; から &lt;c5&gt;http://blog.example/entries/hello-world&lt;/c5&gt;へのカスタムメソッド&lt;c2&gt;XMODIFY&lt;/c2&gt; を使ったクロスオリジンリクエストを送信するために、&lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;などのAPIからリクエストを取得する。</seg>
       </tuv>
     </tu>
     <tu>
