@@ -582,6 +582,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Empty if &lt;a0&gt;method&lt;/a0&gt; is not empty; otherwise one of the values from the &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Headers&lt;/a2&gt;&lt;/c1&gt; headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T085734Z" creationid="lv7777" creationdate="20160901T085734Z">
+        <seg>もし &lt;a0&gt;method&lt;/a0&gt; が空ではない場合、空になる。それ以外の場合、 &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Methods&lt;/a2&gt;&lt;/c1&gt; ヘッダの値になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Empty, unless explicitly set.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T115818Z" creationid="lv7777" creationdate="20160831T115818Z">
