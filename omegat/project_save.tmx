@@ -598,6 +598,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Entries must be removed when the time specified in the &lt;a0&gt;max-age&lt;/a0&gt; field has passed since storing the entry.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T091109Z" creationid="lv7777" creationdate="20160901T091109Z">
+        <seg>エントリが格納されてから、&lt;a0&gt;max-age&lt;/a0&gt; フィールドで指定された時間が過ぎた場合、エントリーはクリアされなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Everything else in this specification is normative.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T113710Z" creationid="lv7777" creationdate="20160830T113710Z">
@@ -1718,6 +1726,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>To be clear, the &lt;a0&gt;method&lt;/a0&gt; and &lt;a1&gt;header&lt;/a1&gt; fields are mutually exclusive.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T090203Z" creationid="lv7777" creationdate="20160901T090203Z">
+        <seg>誤解の無いように言うと、&lt;a0&gt;method&lt;/a0&gt; と &lt;a1&gt;header&lt;/a1&gt; のフィールドは互いに排他的である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T160051Z" creationid="lv7777" creationdate="20160831T160051Z">
@@ -1818,6 +1834,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T112835Z" creationid="lv7777" creationdate="20160821T112835Z">
         <seg>&lt;d0&gt;ヘッダを解析する&lt;/d0&gt;時、 ヘッダは &lt;a1&gt;構文&lt;/a1&gt; セクションのABNFと一致した所ごとに解析されなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When one of them is empty the other is non-empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T090248Z" creationid="lv7777" creationdate="20160901T090248Z">
+        <seg>片方が空の時、もう片方が空ではない。</seg>
       </tuv>
     </tu>
     <tu>
