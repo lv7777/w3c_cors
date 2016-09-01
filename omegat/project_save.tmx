@@ -158,6 +158,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.2 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150836Z" creationid="lv7777" creationdate="20160901T150836Z">
+        <seg>&lt;s0&gt;5.2 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt;Generic Cross-Origin Request Algorithms</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T100345Z" creationid="lv7777" creationdate="20160901T100304Z">
@@ -968,8 +976,8 @@
       <tuv lang="EN-US">
         <seg>In practice the &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; production is more constrained.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T094910Z" creationid="lv7777" creationdate="20160831T094910Z">
-        <seg>実際には、値 &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; は制約的である。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150755Z" creationid="lv7777" creationdate="20160831T094910Z">
+        <seg>実際には、値 &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; はより制約的である。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1400,16 +1408,72 @@
       <tuv lang="EN-US">
         <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; header indicates whether the response to request can be exposed when the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is unset.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T100350Z" creationid="lv7777" creationdate="20160831T100350Z">
-        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; ヘッダはリクエストのレスポンスheader indicates whether the response to request can be exposed when the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is unset.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T151016Z" creationid="lv7777" creationdate="20160831T100350Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; ヘッダは &lt;a2&gt;omit credentials flag&lt;/a2&gt; がセットされていないときにリクエストのレスポンスを公開できるかどうかを支持するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates, as part of the response to a &lt;a2&gt;preflight request&lt;/a2&gt;, which header field names can be used during the &lt;a3&gt;actual request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155024Z" creationid="lv7777" creationdate="20160901T155024Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt;&lt;/d0&gt; ヘッダは&lt;a2&gt;preflight request&lt;/a2&gt;のレスポンスの一部として、どのヘッダフィールド名が &lt;a3&gt;actual request&lt;/a3&gt;で使用できるかを指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt;&lt;/d0&gt; header indicates, as part of the response to a &lt;a2&gt;preflight request&lt;/a2&gt;, which methods can be used during the &lt;a3&gt;actual request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154632Z" creationid="lv7777" creationdate="20160901T154632Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt;&lt;/d0&gt; ヘッダは&lt;a2&gt;preflight request&lt;/a2&gt;のレスポンスの一部として、どのメソッドが &lt;a3&gt;actual request&lt;/a3&gt;で使用できるかを指示したものである。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; header indicates whether a resource can be shared based by returning the value of the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; request header, "*", or "null" in the response.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T100043Z" creationid="lv7777" creationdate="20160831T094341Z">
-        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダはレスポンス内の &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; リクエストヘッダの帰ってきた値 "*"もしくは "null"に基づきリソースが共有できるかどうか指示するものである。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150706Z" creationid="lv7777" creationdate="20160831T094341Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダはレスポンス内の &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; リクエストヘッダの帰ってきた値 、もしくは"*"、もしくは "null"に基づきリソースが共有できるかどうか指示するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates which headers are safe to expose to the API of a CORS API specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154307Z" creationid="lv7777" creationdate="20160901T154058Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt;&lt;/d0&gt;ヘッダはどのヘッダが安全にCORS API 仕様のAPIに公開されているかを指示するものである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt;&lt;/d0&gt; header indicates how long the results of a &lt;a2&gt;preflight request&lt;/a2&gt; can be cached in a &lt;a3&gt;preflight result cache&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154442Z" creationid="lv7777" creationdate="20160901T154442Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt;&lt;/d0&gt; ヘッダはどれだけの時間&lt;a3&gt;preflight result cache&lt;/a3&gt;に &lt;a2&gt;preflight request&lt;/a2&gt; の結果をキャッシュできるかを指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates which headers will be used in the &lt;a2&gt;actual request&lt;/a2&gt; as part of the &lt;a3&gt;preflight request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155439Z" creationid="lv7777" creationdate="20160901T155439Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt;&lt;/d0&gt; ヘッダはどのヘッダを &lt;a2&gt;actual request&lt;/a2&gt; で使用するかを &lt;a3&gt;preflight request&lt;/a3&gt;で指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt;&lt;/d0&gt; header indicates which method will be used in the &lt;a2&gt;actual request&lt;/a2&gt; as part of the &lt;a3&gt;preflight request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155346Z" creationid="lv7777" creationdate="20160901T155346Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt;&lt;/d0&gt; ヘッダはどのメソッドを &lt;a2&gt;actual request&lt;/a2&gt; で使用するかを &lt;a3&gt;preflight request&lt;/a3&gt;で指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Origin&lt;/c1&gt;&lt;/d0&gt; header indicates where the &lt;a2&gt;cross-origin request&lt;/a2&gt; or &lt;a3&gt;preflight request&lt;/a3&gt; originates from.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155136Z" creationid="lv7777" creationdate="20160901T155136Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダは &lt;a2&gt;cross-origin request&lt;/a2&gt; や &lt;a3&gt;preflight request&lt;/a3&gt; がどこから生成されているかを指示するものである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1978,6 +2042,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T090248Z" creationid="lv7777" creationdate="20160901T090248Z">
         <seg>片方が空の時、もう片方が空ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When part of the response to a &lt;a3&gt;preflight request&lt;/a3&gt; it indicates that the &lt;a4&gt;actual request&lt;/a4&gt; can include &lt;a5&gt;user credentials&lt;/a5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T151425Z" creationid="lv7777" creationdate="20160901T151425Z">
+        <seg>When part of the response to a これが&lt;a3&gt;preflight request&lt;/a3&gt;のレスポンスであった場合、 このヘッダは &lt;a4&gt;実際のリクエストに&lt;/a4&gt; に &lt;a5&gt;ユーザー資格情報&lt;/a5&gt;が存在できるかどうかについて指示するものである。</seg>
       </tuv>
     </tu>
     <tu>
