@@ -790,6 +790,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Include an &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; header with as header field value the &lt;a2&gt;request method&lt;/a2&gt; (even when that is a &lt;a3&gt;simple method&lt;/a3&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T024559Z" creationid="lv7777" creationdate="20160901T024559Z">
+        <seg>値が&lt;a2&gt;request method&lt;/a2&gt; の &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; ヘッダを含める (リクエストが &lt;a3&gt;simple method&lt;/a3&gt;の時でさえも)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>It also provides a short description of the function of each header.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T052028Z" creationid="lv7777" creationdate="20160831T052028Z">
