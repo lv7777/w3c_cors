@@ -830,6 +830,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header value is the "&lt;c2&gt;*&lt;/c2&gt;" character and the &lt;a3&gt;omit credentials flag&lt;/a3&gt; is set, return pass and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102543Z" creationid="lv7777" creationdate="20160901T102543Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値が文字 "&lt;c2&gt;*&lt;/c2&gt;" であり、 &lt;a3&gt;omit credentials flag&lt;/a3&gt; が設定されていた場合、成功と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the end user cancels the request</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T151012Z" creationid="lv7777" creationdate="20160831T150949Z">
@@ -858,6 +866,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T065033Z" creationid="lv7777" creationdate="20160901T065033Z">
         <seg>もしレスポンスのHTTPステータスコードが2XXの範囲ではない場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the response includes zero or more than one &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header values, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102352Z" creationid="lv7777" creationdate="20160901T102352Z">
+        <seg>もしリソースが0以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値を含んでいた場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the value of &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; is not a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header as defined by its specification, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T114707Z" creationid="lv7777" creationdate="20160901T114338Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt;の値がこの仕様書で定義されている&lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダの値に &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1562,6 +1586,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T143026Z" creationid="lv7777" creationdate="20160831T143026Z">
         <seg>以下の値のいずれかの:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The variables used in the generic set of steps are part of the algorithms that invoke these set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T114505Z" creationid="lv7777" creationdate="20160901T114505Z">
+        <seg>通常の一連のステップで使用されている変数はそのステップを呼び出しているアルゴリズムの一部である。</seg>
       </tuv>
     </tu>
     <tu>
