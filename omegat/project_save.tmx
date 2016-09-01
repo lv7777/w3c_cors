@@ -246,6 +246,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of headers&lt;/d0&gt; consisting of zero or more header field names that are supported by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T161650Z" creationid="lv7777" creationdate="20160901T161650Z">
+        <seg>リソースがサポートしている0、もしくはそれ以上の  ヘッダフィールド名 から構成されている &lt;d0&gt;ヘッダのリスト&lt;/d0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;d0&gt;list of methods&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T161118Z" creationid="lv7777" creationdate="20160831T103359Z">
