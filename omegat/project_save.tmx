@@ -248,16 +248,16 @@
       <tuv lang="EN-US">
         <seg>A &lt;d0&gt;list of methods&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T103359Z" creationid="lv7777" creationdate="20160831T103359Z">
-        <seg>語 &lt;d0&gt;&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T161118Z" creationid="lv7777" creationdate="20160831T103359Z">
+        <seg>リソースがサポートしている0、もしくはそれ以上の  メソッド から構成されている &lt;d0&gt;メソッドのリスト&lt;/d0&gt;。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>A &lt;d0&gt;list of origins&lt;/d0&gt; consisting of zero or more &lt;a1&gt;origins&lt;/a1&gt; that are allowed access to the resource.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T102947Z" creationid="lv7777" creationdate="20160831T102947Z">
-        <seg>リソースにアクセスするのを許可されている 0、もしくはそれ以上の  &lt;a1&gt;origins&lt;/a1&gt; から構成されている &lt;d0&gt;オリジンのリスト&lt;/d0&gt;.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T160931Z" creationid="lv7777" creationdate="20160831T102947Z">
+        <seg>リソースにアクセスするのを許可されている 0、もしくはそれ以上の  &lt;a1&gt;origins&lt;/a1&gt; から構成されている &lt;d0&gt;オリジンのリスト&lt;/d0&gt;。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1752,8 +1752,8 @@
       <tuv lang="EN-US">
         <seg>This can include the &lt;a0&gt;origin&lt;/a0&gt; of the resource itself though be aware that requests to &lt;a1&gt;cross-origin&lt;/a1&gt; resources can be redirected back to the resource.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160831T103246Z" creationid="lv7777" creationdate="20160831T103246Z">
-        <seg>これにはThis can include the &lt;a0&gt;origin&lt;/a0&gt; of the resource itself though be aware that requests to &lt;a1&gt;cross-origin&lt;/a1&gt; resources can be redirected back to the resource.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T160906Z" creationid="lv7777" creationdate="20160831T103246Z">
+        <seg>これには &lt;a1&gt;cross-origin&lt;/a1&gt; リクエストのリソースがリソース自身にリダイレクトバックに気づくためにリソース自身の &lt;a0&gt;origin&lt;/a0&gt; を含むことができる。</seg>
       </tuv>
     </tu>
     <tu>
