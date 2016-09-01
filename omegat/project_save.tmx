@@ -622,6 +622,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>False if the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is set, or true otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084401Z" creationid="lv7777" creationdate="20160901T084401Z">
+        <seg>もし&lt;a0&gt;omit credentials flag&lt;/a0&gt;がセットされている場合、falseになる。それ以外の場合、trueになる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;a0&gt;request method&lt;/a0&gt; there either is a &lt;a1&gt;method cache match&lt;/a1&gt; or it is a &lt;a2&gt;simple method&lt;/a2&gt; and the &lt;a3&gt;force preflight flag&lt;/a3&gt; is unset.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T010006Z" creationid="lv7777" creationdate="20160901T010006Z">
@@ -690,6 +698,30 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T093902Z" creationid="lv7777" creationdate="20160831T093902Z">
         <seg>この仕様で導入される新しいヘッダが同等の解析ルールを持つことを保障するためにHTTP/1.1 をABNFの基本とする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;a0&gt;request URL&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084209Z" creationid="lv7777" creationdate="20160901T084209Z">
+        <seg>&lt;a0&gt;request URL&lt;/a0&gt;を保持する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;a0&gt;source origin&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084153Z" creationid="lv7777" creationdate="20160901T084153Z">
+        <seg> &lt;a0&gt;source origin&lt;/a0&gt;を保持する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084240Z" creationid="lv7777" creationdate="20160901T084240Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt;のヘッダの値を保持する。</seg>
       </tuv>
     </tu>
     <tu>
