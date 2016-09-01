@@ -454,6 +454,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>At various places user agents are allowed to take additional precautions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120302Z" creationid="lv7777" creationdate="20160901T120302Z">
+        <seg>様々な場所で、ユーザエージェントは追加の予防策を取ることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Authorization for a request should be performed using only the intersection of the authority of the user and the requesting origin(s).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T015142Z" creationid="lv7777" creationdate="20160824T015142Z">
@@ -538,6 +546,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T153432Z" creationid="lv7777" creationdate="20160831T151512Z">
         <seg>エンドユーザーと会話するタイプのリクエストをしてはいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E.g. user agents are allowed to not store cache items, remove cache items before they reached their &lt;a0&gt;max-age&lt;/a0&gt;, and not connect to certain &lt;a1&gt;URLs&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120526Z" creationid="lv7777" creationdate="20160901T120526Z">
+        <seg>例えば、UAはキャッシュしたアイテムを保存することを許可しない、キャッシュの&lt;a0&gt;max-age&lt;/a0&gt;に届く前にキャッシュしたアイテムを削除する、特定の &lt;a1&gt;URLs&lt;/a1&gt;に接続しない、などである。</seg>
       </tuv>
     </tu>
     <tu>
@@ -826,6 +842,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T150224Z" creationid="lv7777" creationdate="20160831T150224Z">
         <seg>もし&lt;a0&gt;manual redirect flag&lt;/a0&gt; が未設定で、レスポンスのHTTPステータスコードが 301, 302, 303, 307, or 308のいづれかの場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is unset and the &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; header value is not a &lt;a3&gt;case-sensitive&lt;/a3&gt; match for "&lt;c4&gt;true&lt;/c4&gt;", return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T115209Z" creationid="lv7777" creationdate="20160901T115209Z">
+        <seg>もし &lt;a0&gt;omit credentials flag&lt;/a0&gt; がセットされておらず、レスポンスに0以上の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; ヘッダの値が"&lt;c4&gt;true&lt;/c4&gt;"に&lt;a3&gt;case-sensitive&lt;/a3&gt; マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is unset and the response includes zero or more than one &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; header values, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T115006Z" creationid="lv7777" creationdate="20160901T115006Z">
+        <seg>もし &lt;a0&gt;omit credentials flag&lt;/a0&gt; がセットされておらず、レスポンスに0以上の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; ヘッダの値が含まれている場合、失敗と判断しこのアルゴリズムを終了する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1818,6 +1850,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T120758Z" creationid="lv7777" creationdate="20160830T120758Z">
         <seg>仕様書のアルゴリズムから得られる結果が区別不能な場合に限り、UAとリソースの著者はこの仕様を実装するためのどんなアルゴリズムでも実装できる。(結果が同じならば別に仕様書のアルゴでなくてもよい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents are encouraged to impose a limit on &lt;a0&gt;max-age&lt;/a0&gt; so items cannot stay in the &lt;a1&gt;preflight result cache&lt;/a1&gt; for unreasonable amounts of time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120835Z" creationid="lv7777" creationdate="20160901T120835Z">
+        <seg>UAは  &lt;a1&gt;preflight result cache&lt;/a1&gt; を不当な長い時間にしてアイテムをキャッシュしないようにするために&lt;a0&gt;max-age&lt;/a0&gt; に制限を課すことを推奨される。</seg>
       </tuv>
     </tu>
     <tu>
