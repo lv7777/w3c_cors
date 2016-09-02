@@ -254,6 +254,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of exposed headers&lt;/d0&gt; consisting of zero or more header field names of headers other than the &lt;a1&gt;simple response headers&lt;/a1&gt; that the resource might use and can be exposed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T023302Z" creationid="lv7777" creationdate="20160902T023302Z">
+        <seg>リソースが使用して、リソースを公開することのできる &lt;a1&gt;simple response headers&lt;/a1&gt; 以外のヘッダのヘッダフィールド名から構成されている0以上の &lt;d0&gt;公開されているヘッダのリスト&lt;/d0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A &lt;d0&gt;list of headers&lt;/d0&gt; consisting of zero or more header field names that are supported by the resource.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T161650Z" creationid="lv7777" creationdate="20160901T161650Z">
