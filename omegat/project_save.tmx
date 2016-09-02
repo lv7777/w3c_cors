@@ -838,6 +838,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;v0&gt;method&lt;/v0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; this step may be skipped.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043533Z" creationid="lv7777" creationdate="20160902T043533Z">
+        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a resource author has a simple text resource residing at &lt;c0&gt;http://example.com/hello&lt;/c0&gt; which contains the string "Hello World!" and would like &lt;c1&gt;http://hello-world.example&lt;/c1&gt; to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T080707Z" creationid="lv7777" creationdate="20160820T174807Z">
