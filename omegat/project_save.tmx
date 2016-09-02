@@ -398,6 +398,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Add one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Headers&lt;/a1&gt;&lt;/c0&gt; headers consisting of (a subset of) the &lt;a2&gt;list of headers&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T045757Z" creationid="lv7777" creationdate="20160902T045757Z">
+        <seg>&lt;a2&gt;list of headers&lt;/a2&gt;(のサブセット)から構成されている1以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Headers&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加える 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Add one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers consisting of (a subset of) the &lt;a2&gt;list of methods&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T043831Z" creationid="lv7777" creationdate="20160902T043831Z">
@@ -854,10 +862,18 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If a header field name is a &lt;a0&gt;simple header&lt;/a0&gt; and is not &lt;c1&gt;Content-Type&lt;/c1&gt;, it is not required to be listed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T045934Z" creationid="lv7777" creationdate="20160902T045934Z">
+        <seg>ヘッダフィールド名が&lt;a0&gt;simple header&lt;/a0&gt; であり、 &lt;c1&gt;Content-Type&lt;/c1&gt;でない場合、これをリスティングする必要はない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If a method is a &lt;a0&gt;simple method&lt;/a0&gt; it does not need to be listed, but this is not prohibited.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160902T043931Z" creationid="lv7777" creationdate="20160902T043931Z">
-        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。If a method is a &lt;a0&gt;simple method&lt;/a0&gt; it does not need to be listed, but this is not prohibited.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T044331Z" creationid="lv7777" creationdate="20160902T043931Z">
+        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、リスティングする必要はないが、禁止されていない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -874,6 +890,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T043021Z" creationid="lv7777" creationdate="20160902T043021Z">
         <seg>もし 何かの&lt;v0&gt;ヘッダフィールド名&lt;/v0&gt; が&lt;a2&gt;list of headers&lt;/a2&gt;内のいずれかの値に &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; マッチしない場合、追加のヘッダを設定してはならない。そしてこの一連の流れを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If each of the &lt;v0&gt;header field-names&lt;/v0&gt; is a &lt;a1&gt;simple header&lt;/a1&gt; and none is &lt;c2&gt;Content-Type&lt;/c2&gt;, this step may be skipped.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T044501Z" creationid="lv7777" creationdate="20160902T044501Z">
+        <seg>各&lt;v0&gt;header field-names&lt;/v0&gt; が &lt;a1&gt;simple header&lt;/a1&gt; であり、 &lt;c2&gt;Content-Type&lt;/c2&gt;がnoneならこの手順を省略することができる。</seg>
       </tuv>
     </tu>
     <tu>
