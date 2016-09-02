@@ -854,10 +854,26 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;a0&gt;parsing failed&lt;/a0&gt; apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051734Z" creationid="lv7777" creationdate="20160902T051734Z">
+        <seg>もし&lt;a0&gt;解析に失敗した&lt;/a0&gt;場合、&lt;a1&gt;cache and network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;v0&gt;method&lt;/v0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; this step may be skipped.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T043533Z" creationid="lv7777" creationdate="20160902T043533Z">
         <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;v0&gt;methods&lt;/v0&gt; is still the empty list and the &lt;a1&gt;force preflight flag&lt;/a1&gt; is set, append the &lt;a2&gt;request method&lt;/a2&gt; to &lt;v3&gt;methods&lt;/v3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051910Z" creationid="lv7777" creationdate="20160902T051910Z">
+        <seg>もし &lt;v0&gt;methods&lt;/v0&gt; がまだ空のリストであり、 &lt;a1&gt;force preflight flag&lt;/a1&gt; がセットされている場合、&lt;a2&gt;request method&lt;/a2&gt;を&lt;v3&gt;methods&lt;/v3&gt;に追加する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -966,6 +982,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;resource sharing check&lt;/a0&gt; returns fail, apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051431Z" creationid="lv7777" creationdate="20160902T051431Z">
+        <seg>もし&lt;a0&gt;リソース共有チェック&lt;/a0&gt; が失敗した場合、 &lt;a1&gt;cache and network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header value is the "&lt;c2&gt;*&lt;/c2&gt;" character and the &lt;a3&gt;omit credentials flag&lt;/a3&gt; is set, return pass and terminate this algorithm.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T102543Z" creationid="lv7777" creationdate="20160901T102543Z">
@@ -1050,6 +1074,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T035628Z" creationid="lv7777" creationdate="20160902T035628Z">
         <seg>もし &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値が  &lt;a3&gt;list of origins&lt;/a3&gt;内の何らかの値に&lt;a2&gt;case-sensitive&lt;/a2&gt; マッチ しない場合、追加のヘッダを設定してはいけない。そしてこの一連の流れをを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If there are one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051639Z" creationid="lv7777" creationdate="20160902T051639Z">
+        <seg>もし1以上のmore &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; ヘッダheaders let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
       </tuv>
     </tu>
     <tu>
@@ -1234,6 +1266,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T023437Z" creationid="lv7777" creationdate="20160902T023437Z">
         <seg>リソースがサポートする場合はtrueであり、それ以外の場合はfalseになる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;methods&lt;/v0&gt; be the empty list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051523Z" creationid="lv7777" creationdate="20160902T051523Z">
+        <seg>&lt;v0&gt;methods&lt;/v0&gt; が空のリストにする。</seg>
       </tuv>
     </tu>
     <tu>
