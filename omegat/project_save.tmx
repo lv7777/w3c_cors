@@ -1006,6 +1006,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In response to a &lt;a0&gt;simple cross-origin request&lt;/a0&gt; or &lt;a1&gt;actual request&lt;/a1&gt; the resource indicates whether or not to share the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034250Z" creationid="lv7777" creationdate="20160902T034250Z">
+        <seg>&lt;a0&gt;simple cross-origin request&lt;/a0&gt; や &lt;a1&gt;actual request&lt;/a1&gt; のレスポンス内で、リソースがこのリソースを公開するかどうかを指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In such cases, passing security tokens explicitly as part of the cross-origin request can remove any ambiguity as to the scope of authorization.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020821Z" creationid="lv7777" creationdate="20160824T020821Z">
