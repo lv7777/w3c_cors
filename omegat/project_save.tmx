@@ -846,6 +846,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If any of the &lt;v0&gt;header field-names&lt;/v0&gt; is not a &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; match for any of the values in &lt;a2&gt;list of headers&lt;/a2&gt; do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043021Z" creationid="lv7777" creationdate="20160902T043021Z">
+        <seg>もし 何かの&lt;v0&gt;ヘッダフィールド名&lt;/v0&gt; が&lt;a2&gt;list of headers&lt;/a2&gt;内のいずれかの値に &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; マッチしない場合、追加のヘッダを設定してはならない。そしてこの一連の流れを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If for some reason the user agent does not want to make the request terminate this algorithm and set the &lt;a0&gt;cross-origin request status&lt;/a0&gt; to &lt;i1&gt;network error&lt;/i1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T123420Z" creationid="lv7777" creationdate="20160831T123420Z">
