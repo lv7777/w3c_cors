@@ -398,6 +398,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Add one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers consisting of (a subset of) the &lt;a2&gt;list of methods&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043831Z" creationid="lv7777" creationdate="20160902T043831Z">
+        <seg>&lt;a2&gt;list of methods&lt;/a2&gt;(のサブセット)から構成されている1以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加える 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Again, data received from origins that are not completely trusted has to be validated to conform to expected formats and authorized values.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T174449Z" creationid="lv7777" creationdate="20160830T174449Z">
@@ -842,6 +850,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T043533Z" creationid="lv7777" creationdate="20160902T043533Z">
         <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a method is a &lt;a0&gt;simple method&lt;/a0&gt; it does not need to be listed, but this is not prohibited.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043931Z" creationid="lv7777" creationdate="20160902T043931Z">
+        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。If a method is a &lt;a0&gt;simple method&lt;/a0&gt; it does not need to be listed, but this is not prohibited.</seg>
       </tuv>
     </tu>
     <tu>
