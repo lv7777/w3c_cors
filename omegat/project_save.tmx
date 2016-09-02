@@ -934,6 +934,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the resource has been relocated, it indicates whether to share its new &lt;a0&gt;URL&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034639Z" creationid="lv7777" creationdate="20160902T034639Z">
+        <seg>もしリソースが再配置されていた場合、これは新しい &lt;a0&gt;URL&lt;/a0&gt;を共有かどうか指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the response has an HTTP status code that is not in the 2xx range</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T065033Z" creationid="lv7777" creationdate="20160901T065033Z">
@@ -1274,6 +1282,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T115856Z" creationid="lv7777" creationdate="20160830T115856Z">
         <seg>アルゴリズムの中の命令的言い回しによる要件（例えば： “先頭部のスペース文字並びを取り除く”, “false を返してこの手続きを終了” など）は、アルゴリズムを導入する際に利用されているキーワード（ “〜しなければならない”, “〜すべき”, “〜してもよい”, 等々）の意味の下で解釈されることになる。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resources must use the following set of steps to determine which additional headers to use in the response:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034902Z" creationid="lv7777" creationdate="20160902T034902Z">
+        <seg>リソースはリソース内でどの追加のヘッダを使用するか決定するために以下の一連の流れを使用しなければならない。：</seg>
       </tuv>
     </tu>
     <tu>
