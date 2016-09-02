@@ -1014,6 +1014,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the field name of each header in &lt;a0&gt;author request headers&lt;/a0&gt; is not an &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; match for one of the header field names in &lt;v2&gt;headers&lt;/v2&gt; and the header is not a &lt;a3&gt;simple header&lt;/a3&gt;, apply the &lt;a4&gt;cache and network error steps&lt;/a4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T060503Z" creationid="lv7777" creationdate="20160902T060503Z">
+        <seg> &lt;a0&gt;author request headers&lt;/a0&gt;内のそれぞれのヘッダのフィールド名が &lt;v2&gt;headers&lt;/v2&gt; 内のヘッダフィールド名の一つに&lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; マッチせず、そのヘッダが&lt;a3&gt;simple header&lt;/a3&gt;ではない場合、&lt;a4&gt;cache and network error steps&lt;/a4&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the following conditions are true, follow the &lt;a0&gt;simple cross-origin request&lt;/a0&gt; algorithm:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T123722Z" creationid="lv7777" creationdate="20160831T123722Z">
