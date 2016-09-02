@@ -878,6 +878,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;list of exposed headers&lt;/a0&gt; is not empty add one or more &lt;c1&gt;&lt;a2&gt;Access-Control-Expose-Headers&lt;/a2&gt;&lt;/c1&gt; headers, with as values the header field names given in the &lt;a3&gt;list of exposed headers&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040858Z" creationid="lv7777" creationdate="20160902T040858Z">
+        <seg>もし &lt;a0&gt;list of exposed headers&lt;/a0&gt; が空ではない場合、1以上のi &lt;c1&gt;&lt;a2&gt;Access-Control-Expose-Headers&lt;/a2&gt;&lt;/c1&gt;ヘッダを付け加えて &lt;a3&gt;list of exposed headers&lt;/a3&gt;で与えられているヘッダフィールド名を値として用いる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the &lt;a0&gt;manual redirect flag&lt;/a0&gt; is unset and the response has an HTTP status code of 301, 302, 303, 307, or 308</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T150224Z" creationid="lv7777" creationdate="20160831T150224Z">
@@ -910,6 +918,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header is not present terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035213Z" creationid="lv7777" creationdate="20160902T035213Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダが存在しない場合、この一連の流れを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the end user cancels the request</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T151012Z" creationid="lv7777" creationdate="20160831T150949Z">
@@ -930,6 +946,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T113109Z" creationid="lv7777" creationdate="20160821T113109Z">
         <seg>もしヘッダがこの仕様書で述べられているどんなABNFにもマッチしない場合、&lt;d2&gt;ヘッダ解析に失敗した&lt;/d2&gt;と言われる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the resource &lt;a0&gt;supports credentials&lt;/a0&gt; add a single &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; header, with the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header as value, and add a single &lt;c5&gt;&lt;a6&gt;Access-Control-Allow-Credentials&lt;/a6&gt;&lt;/c5&gt; header with the &lt;a7&gt;case-sensitive&lt;/a7&gt; string "&lt;c8&gt;true&lt;/c8&gt;" as value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040057Z" creationid="lv7777" creationdate="20160902T040057Z">
+        <seg>もしリソースが&lt;a0&gt;資格情報をサポートしている&lt;/a0&gt;場合、 単体の &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; ヘッダを付け加えて、値には、 &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダの値と同等の値を書き込み。さらに単体の &lt;c5&gt;&lt;a6&gt;Access-Control-Allow-Credentials&lt;/a6&gt;&lt;/c5&gt; ヘッダを付け加えて、値には文字列 "&lt;c8&gt;true&lt;/c8&gt;" と&lt;a7&gt;case-sensitive&lt;/a7&gt; する値を書き込む。</seg>
       </tuv>
     </tu>
     <tu>
@@ -962,6 +986,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T114707Z" creationid="lv7777" creationdate="20160901T114338Z">
         <seg>もし&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt;の値がこの仕様書で定義されている&lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダの値に &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the value of the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header is not a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for any of the values in &lt;a3&gt;list of origins&lt;/a3&gt;, do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035628Z" creationid="lv7777" creationdate="20160902T035628Z">
+        <seg>もし &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値が  &lt;a3&gt;list of origins&lt;/a3&gt;内の何らかの値に&lt;a2&gt;case-sensitive&lt;/a2&gt; マッチ しない場合、追加のヘッダを設定してはいけない。そしてこの一連の流れをを終了する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1010,6 +1042,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T150755Z" creationid="lv7777" creationdate="20160831T094910Z">
         <seg>実際には、値 &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; はより制約的である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In response to a &lt;a0&gt;preflight request&lt;/a0&gt; the resource indicates which methods and headers (other than &lt;a1&gt;simple methods&lt;/a1&gt; and &lt;a2&gt;simple headers&lt;/a2&gt;) it is willing to handle and whether it &lt;a3&gt;supports credentials&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T041351Z" creationid="lv7777" creationdate="20160902T041351Z">
+        <seg>&lt;a0&gt;preflight request&lt;/a0&gt; のレスポンス内で、リソースはどのメソッドとヘッダ( &lt;a1&gt;simple methods&lt;/a1&gt; や &lt;a2&gt;simple headers&lt;/a2&gt;以外の)を処理できるか、リソースが&lt;a3&gt;資格情報をサポートしている&lt;/a3&gt;かどうかなどを決定する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1210,6 +1250,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T071046Z" creationid="lv7777" creationdate="20160901T071046Z">
         <seg>それ以外(HTTPステータスコードが2xxの範囲に収まっている)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, add a single &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header, with either the value of the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; header or the string "&lt;c4&gt;*&lt;/c4&gt;" as value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040501Z" creationid="lv7777" creationdate="20160902T040312Z">
+        <seg>そうでない場合、単体の &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加えて、値には  &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; ヘッダの値と同等の値か、文字列"&lt;c4&gt;*&lt;/c4&gt;"のどちらかを書き込む。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1598,6 +1646,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The request is outside the scope of this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035301Z" creationid="lv7777" creationdate="20160902T035301Z">
+        <seg>このリクエストはこの仕様書の範囲外となる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The resource can be shared.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T143049Z" creationid="lv7777" creationdate="20160831T143049Z">
@@ -1690,6 +1746,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T145908Z" creationid="lv7777" creationdate="20160831T145908Z">
         <seg>このステップではUAは&lt;d0&gt;simple cross-origin request&lt;/d0&gt;のために何をしなければならないかを以下に記述している。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The string "&lt;c0&gt;*&lt;/c0&gt;" cannot be used for a resource that &lt;a1&gt;supports credentials&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040618Z" creationid="lv7777" creationdate="20160902T040618Z">
+        <seg>文字列 "&lt;c0&gt;*&lt;/c0&gt;" は &lt;a1&gt;資格情報をサポートしている&lt;/a1&gt;リソースに対して使用することができない。</seg>
       </tuv>
     </tu>
     <tu>
