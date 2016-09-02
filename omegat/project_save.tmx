@@ -1270,6 +1270,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;headers&lt;/v0&gt; be the empty list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T052027Z" creationid="lv7777" creationdate="20160902T052027Z">
+        <seg>&lt;v0&gt;headers&lt;/v0&gt; が空のリストにする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let &lt;v0&gt;methods&lt;/v0&gt; be the empty list.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T051523Z" creationid="lv7777" creationdate="20160902T051523Z">
