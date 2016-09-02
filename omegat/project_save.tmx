@@ -166,6 +166,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Handling a Response to a Cross-Origin Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T164841Z" creationid="lv7777" creationdate="20160901T164841Z">
+        <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Cross-Origin Requestのレスポンスを処理する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt;Generic Cross-Origin Request Algorithms</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T100345Z" creationid="lv7777" creationdate="20160901T100304Z">
@@ -1846,6 +1854,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This section describes the processing models that user agents have to implement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T165051Z" creationid="lv7777" creationdate="20160901T164955Z">
+        <seg>このセクションではUAが実装する必要のある処理モデルについて説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section describes the status of this document at the time of its publication.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000911Z" creationid="lv7777" creationdate="20160821T000911Z">
@@ -2090,6 +2106,22 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
         <seg>ASCII lowercaseに変換する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://www.w3.org/TR/2014/REC-cors-20140116/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T020308Z" creationid="lv7777" creationdate="20160902T020308Z">
+        <seg>http://www.w3.org/TR/2014/REC-cors-20140116/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://www.w3.org/TR/cors/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T020344Z" creationid="lv7777" creationdate="20160902T020319Z">
+        <seg>http://www.w3.org/TR/cors/</seg>
       </tuv>
     </tu>
 <!-- Alternative translations -->
