@@ -1118,6 +1118,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>It is true when the resource does and false otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T023437Z" creationid="lv7777" creationdate="20160902T023437Z">
+        <seg>リソースがサポートする場合はtrueであり、それ以外の場合はfalseになる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Likewise, the &lt;a1&gt;user agent processing model&lt;/a1&gt; section details how user agents are to use these headers.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T071230Z" creationid="lv7777" creationdate="20160831T071230Z">
