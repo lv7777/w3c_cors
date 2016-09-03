@@ -1102,6 +1102,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If there is a single &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header, &lt;a2&gt;parse&lt;/a2&gt; it and let &lt;v3&gt;max-age&lt;/v3&gt; be the resulting value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T101752Z" creationid="lv7777" creationdate="20160903T101752Z">
+        <seg>もし単一の &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; ヘッダがある場合、ヘッダを&lt;a2&gt;解析&lt;/a2&gt; し、&lt;v3&gt;max-age&lt;/v3&gt;を結果の値にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If you wish to make comments regarding this document, please send them to &lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; (&lt;a1&gt;subscribe&lt;/a1&gt;, &lt;a2&gt;archives&lt;/a2&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
