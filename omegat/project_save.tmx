@@ -446,6 +446,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;cache and network error steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T102338Z" creationid="lv7777" creationdate="20160903T102338Z">
+        <seg>&lt;a0&gt;cache and network error steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Apply the &lt;a0&gt;make a request steps&lt;/a0&gt; and observe the &lt;i1&gt;request rules&lt;/i1&gt; below while making the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T150118Z" creationid="lv7777" creationdate="20160831T150118Z">
@@ -1050,6 +1058,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T034639Z" creationid="lv7777" creationdate="20160902T034639Z">
         <seg>もしリソースが再配置されていた場合、これは新しい &lt;a0&gt;URL&lt;/a0&gt;を共有かどうか指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the response has an HTTP status code of 301, 302, 303, 307, or 308</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T102301Z" creationid="lv7777" creationdate="20160903T102301Z">
+        <seg>もしレスポンスの HTTP ステータスコードが 301, 302, 303, 307, 308のいずれかを持っている場合</seg>
       </tuv>
     </tu>
     <tu>
