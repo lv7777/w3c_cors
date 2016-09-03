@@ -1982,6 +1982,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>They are added and removed in such a way that there can never be duplicate items in the cache.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T103302Z" creationid="lv7777" creationdate="20160903T103302Z">
+        <seg>キャッシュの中のアイテムが決して重複しない方法で追加したり削除することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This W3C Recommendation of CORS was produced jointly by the &lt;a0&gt;Web Applications&lt;/a0&gt; (WebApps) and &lt;a1&gt;Web Application Security&lt;/a1&gt; (WebAppSec) Working Groups, and published by the WebAppSec Working Group.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T003203Z" creationid="lv7777" creationdate="20160821T003203Z">
@@ -2242,6 +2250,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T175626Z" creationid="lv7777" creationdate="20160820T175626Z">
         <seg>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents may clear cache entries before the time specified in the &lt;a0&gt;max-age&lt;/a0&gt; field has passed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T103448Z" creationid="lv7777" creationdate="20160903T103448Z">
+        <seg>UAは &lt;a0&gt;max-age&lt;/a0&gt; の指定された時間が過ぎ去る前に、キャッシュのエントリーをクリアすることができる。</seg>
       </tuv>
     </tu>
     <tu>
