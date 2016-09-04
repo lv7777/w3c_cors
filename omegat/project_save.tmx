@@ -470,6 +470,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;network error steps&lt;/a0&gt; acting as if the algorithm that invoked the &lt;a1&gt;cache and network error steps&lt;/a1&gt; invoked the &lt;a2&gt;network error steps&lt;/a2&gt; instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091116Z" creationid="lv7777" creationdate="20160904T091116Z">
+        <seg>もしアルゴリズムが &lt;a2&gt;network error steps&lt;/a2&gt; の代わりに &lt;a1&gt;cache and network error steps&lt;/a1&gt; を呼び出した場合、&lt;a0&gt;network error steps&lt;/a0&gt; を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Apply the &lt;a0&gt;network error steps&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T065054Z" creationid="lv7777" creationdate="20160901T065054Z">
@@ -1478,6 +1486,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Remove the entries in the &lt;a0&gt;preflight result cache&lt;/a0&gt; where &lt;a1&gt;origin&lt;/a1&gt; field value is a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for &lt;a3&gt;source origin&lt;/a3&gt; and &lt;a4&gt;url&lt;/a4&gt; field value is a &lt;a5&gt;case-sensitive&lt;/a5&gt; match for &lt;a6&gt;request URL&lt;/a6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T090849Z" creationid="lv7777" creationdate="20160904T090849Z">
+        <seg>Remove the entries in the&lt;a1&gt;origin&lt;/a1&gt; フィールドの値が  &lt;a3&gt;source origin&lt;/a3&gt;と &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチし、 ・&lt;a4&gt;url&lt;/a4&gt; フィールドの値が &lt;a6&gt;request URL&lt;/a6&gt;と&lt;a5&gt;case-sensitive&lt;/a5&gt; マッチする&lt;a0&gt;preflight result cache&lt;/a0&gt; 内のエントリーを削除する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Requests made with &lt;a0&gt;user credentials&lt;/a0&gt;, or the &lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; header require special consideration.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T005147Z" creationid="lv7777" creationdate="20160824T005147Z">
@@ -1598,6 +1614,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;credentials&lt;/a0&gt; field value is true and the &lt;a1&gt;omit credentials flag&lt;/a1&gt; is unset, or it is false and the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091557Z" creationid="lv7777" creationdate="20160904T091557Z">
+        <seg>&lt;a0&gt;資格情報&lt;/a0&gt;フィールドの値がtrueであり、&lt;a1&gt;omit credentials flag&lt;/a1&gt; が未設定、もしくはomit credentials flagがfalseであり、なおかつ&lt;a2&gt;omit credentials flag&lt;/a2&gt;が設定済みである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;origin&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;source origin&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091155Z" creationid="lv7777" creationdate="20160904T091155Z">
+        <seg> &lt;a0&gt;origin&lt;/a0&gt; フィールドの値が &lt;a2&gt;source origin&lt;/a2&gt;に &lt;a1&gt;case-sensitive&lt;/a1&gt; マッチした場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;origin&lt;/a0&gt; of the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T120031Z" creationid="lv7777" creationdate="20160831T120031Z">
@@ -1642,6 +1674,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T145156Z" creationid="lv7777" creationdate="20160831T145156Z">
         <seg>&lt;a0&gt;source origin&lt;/a0&gt; はUAが&lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; ヘッダに使用しなければならない初期の&lt;a1&gt;origin&lt;/a1&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;url&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;request URL&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091251Z" creationid="lv7777" creationdate="20160904T091251Z">
+        <seg> &lt;a0&gt;url&lt;/a0&gt; フィールドの値が &lt;a2&gt;requestURL&lt;/a2&gt;に &lt;a1&gt;case-sensitive&lt;/a1&gt; マッチした場合。</seg>
       </tuv>
     </tu>
     <tu>
