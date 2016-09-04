@@ -1814,6 +1814,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The above algorithm also functions when the &lt;a0&gt;ASCII serialization&lt;/a0&gt; of an origin is the string "&lt;c1&gt;null&lt;/c1&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T092114Z" creationid="lv7777" creationdate="20160904T092114Z">
+        <seg>オリジンの&lt;a0&gt;ASCII serialization&lt;/a0&gt;が文字列 "&lt;c1&gt;null&lt;/c1&gt;"である場合、上記のアルゴリズムは関数でもある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The complexity of invoking the additional preflight request is the task of the user agent.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T091318Z" creationid="lv7777" creationdate="20160821T090459Z">
