@@ -430,6 +430,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085108Z" creationid="lv7777" creationdate="20160904T085108Z">
+        <seg>/UAはこれをサポートすることを強く推奨される。/Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
@@ -854,6 +862,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I.e. if the &lt;i1&gt;block cookies flag&lt;/i1&gt; is unset, cookies will be set by the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085643Z" creationid="lv7777" creationdate="20160904T085643Z">
+        <seg>例 &lt;i1&gt;block cookies flag&lt;/i1&gt; が未設定の場合、クッキーがレスポンスにセットされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;a0&gt;author request headers&lt;/a0&gt; is not empty include an &lt;c1&gt;&lt;a2&gt;Access-Control-Request-Headers&lt;/a2&gt;&lt;/c1&gt; header with as header field value a comma-separated list of the header field names from &lt;a3&gt;author request headers&lt;/a3&gt; in lexicographical order, each &lt;a4&gt;converted to ASCII lowercase&lt;/a4&gt; (even when one or more are a &lt;a5&gt;simple header&lt;/a5&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T064700Z" creationid="lv7777" creationdate="20160901T064700Z">
@@ -986,6 +1002,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T115006Z" creationid="lv7777" creationdate="20160901T115006Z">
         <seg>もし &lt;a0&gt;omit credentials flag&lt;/a0&gt; がセットされておらず、レスポンスに0以上の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; ヘッダの値が含まれている場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; is not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085543Z" creationid="lv7777" creationdate="20160904T085543Z">
+        <seg>もし&lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; がサポートされていない場合、無限ループの規則に違反するかもしくはUAがis not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2354,6 +2378,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T034915Z" creationid="lv7777" creationdate="20160831T031414Z">
         <seg>この仕様が検索以外の意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは&lt;a0&gt;omit credentials flag&lt;/a0&gt;を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whenever the &lt;d0&gt;cache and network error steps&lt;/d0&gt; are applied, follow these steps:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085738Z" creationid="lv7777" creationdate="20160904T085738Z">
+        <seg>&lt;d0&gt;cache and network error steps&lt;/d0&gt; が適用されたかによって以下の手順に従う。</seg>
       </tuv>
     </tu>
     <tu>
