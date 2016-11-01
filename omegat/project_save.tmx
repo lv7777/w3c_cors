@@ -438,6 +438,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Always matching is acceptable since the &lt;a0&gt;list of origins&lt;/a0&gt; can be unbounded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T124458Z" creationid="lv7777" creationdate="20161101T124458Z">
+        <seg>&lt;a0&gt;list of origins&lt;/a0&gt; は無制限にすることができるため、"常に一致"が許容される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
