@@ -1382,6 +1382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;method&lt;/v0&gt; be the value as result of &lt;a1&gt;parsing&lt;/a1&gt; the &lt;c2&gt;&lt;a3&gt;Access-Control-Request-Method&lt;/a3&gt;&lt;/c2&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T125409Z" creationid="lv7777" creationdate="20161101T125409Z">
+        <seg>&lt;v0&gt;method&lt;/v0&gt;を &lt;c2&gt;&lt;a3&gt;Access-Control-Request-Method&lt;/a3&gt;&lt;/c2&gt; ヘッダを&lt;a1&gt;解析&lt;/a1&gt;した結果の値にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let &lt;v0&gt;methods&lt;/v0&gt; be the empty list.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T051523Z" creationid="lv7777" creationdate="20160902T051523Z">
@@ -1738,6 +1746,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T083008Z" creationid="lv7777" creationdate="20160821T083008Z">
         <seg>&lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt;ヘッダではどれだけの期間レスポンスをキャッシュさせるかを指示することができる。 それ以降のリクエストのために、指定された時間内なら、プリフライトリクエストを作成する必要はない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header can only contain a single &lt;a2&gt;origin&lt;/a2&gt; as the user agent will not follow redirects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T125145Z" creationid="lv7777" creationdate="20161101T125145Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダにはUAがリダイレクトを追跡しない、単一の&lt;a2&gt;origin&lt;/a2&gt;のみ記述することができる。</seg>
       </tuv>
     </tu>
     <tu>
