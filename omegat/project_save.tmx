@@ -2492,6 +2492,14 @@
         <seg>http://www.w3.org/TR/cors/</seg>
       </tuv>
     </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>本明細書の目的のために長期的な&lt;d0&gt;ユーザー資格情報&lt;/d0&gt;の起源を持つユーザーエージェントの以前の対話に基づいて送信されるクッキー、HTTP認証、およびクライアント側のSSL証明書を意味します。具体的には、プロキシ認証またはを参照していない&lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダー。 &lt;a3&gt;クッキー&lt;/a3&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T114253Z" creationid="lv7777" creationdate="20161101T114253Z">
+        <seg></seg>
+      </tuv>
+    </tu>
 <!-- Alternative translations -->
   </body>
 </tmx>
