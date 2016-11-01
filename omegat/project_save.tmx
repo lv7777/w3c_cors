@@ -566,6 +566,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CORS API specifications also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T071256Z" creationid="lv7777" creationdate="20161101T071256Z">
+        <seg>CORS API 仕様はまた、 also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Certain types of resources should not attempt to specify particular authorized origins, but instead either deny or allow all origins.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T002625Z" creationid="lv7777" creationdate="20160822T001617Z">
