@@ -1600,8 +1600,8 @@
       <tuv lang="EN-US">
         <seg>Specifically it does not refer to proxy authentication or the &lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; header.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T100709Z" creationid="lv7777" creationdate="20160821T100709Z">
-        <seg>特にこの語はプロキシ認証情報や&lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; ヘッダとは関係ないものとする。？要検証</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T120926Z" creationid="lv7777" creationdate="20160821T100709Z">
+        <seg>特にこの語はプロキシ認証情報や&lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; ヘッダとは関係がない。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1992,16 +1992,16 @@
       <tuv lang="EN-US">
         <seg>The term &lt;d0&gt;cross-origin&lt;/d0&gt; is used to mean non &lt;a1&gt;same origin&lt;/a1&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T100043Z" creationid="lv7777" creationdate="20160821T100030Z">
-        <seg>語&lt;d0&gt;クロスオリジン&lt;/d0&gt;は &lt;a1&gt;同一オリジン&lt;/a1&gt;ではないという意味で使用される。.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T120933Z" creationid="lv7777" creationdate="20160821T100030Z">
+        <seg>語&lt;d0&gt;クロスオリジン&lt;/d0&gt;は &lt;a1&gt;同一オリジン&lt;/a1&gt;ではないという意味で使用される。</seg>
       </tuv>
     </tu>
     <tu>
       <tuv lang="EN-US">
         <seg>The term &lt;d0&gt;user credentials&lt;/d0&gt; for the purposes of this specification means cookies, HTTP authentication, and client-side SSL certificates that would be sent based on the user agent's previous interactions with the origin.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T101426Z" creationid="lv7777" creationdate="20160821T100259Z">
-        <seg>語 &lt;d0&gt;ユーザー資格情報&lt;/d0&gt; はこの仕様書内では cookie, HTTP 認証、クライアント側SSL証明書の意味で使用される。hat would be sent based on the user agent's previous interactions with the origin.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T120502Z" creationid="lv7777" creationdate="20160821T100259Z">
+        <seg>語 &lt;d0&gt;ユーザー資格情報&lt;/d0&gt; はこの仕様書内では cookie、HTTP 認証、クライアント側SSL証明書の意味で使用される。hat would be sent based on the user agent's previous interactions with the origin.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2072,8 +2072,8 @@
       <tuv lang="EN-US">
         <seg>These restrictions prevent a client-side Web application running from one origin from obtaining data retrieved from another origin, and also limit unsafe HTTP requests that can be automatically launched toward destinations that differ from the running application's origin.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T005615Z" creationid="lv7777" creationdate="20160821T005615Z">
-        <seg>これらの制限は、のあるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T115322Z" creationid="lv7777" creationdate="20160821T005615Z">
+        <seg>これらの制限は、あるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
       </tuv>
     </tu>
     <tu>
