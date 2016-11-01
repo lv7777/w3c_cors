@@ -1,0 +1,2505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="3.6.0_2_r9092:9109" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#acknowledgments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T004050Z" creationid="lv7777" creationdate="20160821T004050Z">
+        <seg>#謝辞</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#conformance</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003737Z" creationid="lv7777" creationdate="20160821T003737Z">
+        <seg>#準拠</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#introduction</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T170016Z" creationid="lv7777" creationdate="20160820T170004Z">
+        <seg>#導入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#network-error-steps</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151051Z" creationid="lv7777" creationdate="20160831T151051Z">
+        <seg>#network-error-steps</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#references</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003954Z" creationid="lv7777" creationdate="20160821T003954Z">
+        <seg>#参考文献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#security</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003804Z" creationid="lv7777" creationdate="20160821T003804Z">
+        <seg>#セキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#syntax</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003552Z" creationid="lv7777" creationdate="20160821T003552Z">
+        <seg>#構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>#terminology</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003606Z" creationid="lv7777" creationdate="20160821T003606Z">
+        <seg>#用語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>(Similarly to requests using a method that is not a &lt;a4&gt;simple method&lt;/a4&gt;.)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T133627Z" creationid="lv7777" creationdate="20160831T133627Z">
+        <seg>(同様にリクエストに&lt;a4&gt;simple method&lt;/a4&gt;ではないメソッドを使用する。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a1&gt;Fetch&lt;/a1&gt; the &lt;a2&gt;request URL&lt;/a2&gt; from &lt;i3&gt;origin&lt;/i3&gt; &lt;a4&gt;source origin&lt;/a4&gt; using &lt;a5&gt;referrer source&lt;/a5&gt; as &lt;i6&gt;override referrer source&lt;/i6&gt; with the &lt;i7&gt;manual redirect flag&lt;/i7&gt; and the &lt;i8&gt;block cookies flag&lt;/i8&gt; set, using the method &lt;c9&gt;OPTIONS&lt;/c9&gt;, and with the following additional constraints:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T024321Z" creationid="lv7777" creationdate="20160901T024321Z">
+        <seg> &lt;i7&gt;manual redirect flag&lt;/i7&gt; と &lt;i8&gt;block cookies flag&lt;/i8&gt; をセットして、&lt;i6&gt;override referrer source&lt;/i6&gt; として &lt;a5&gt;referrer source&lt;/a5&gt; を使用し、&lt;a4&gt;source origin&lt;/a4&gt;から、 &lt;c9&gt;OPTIONS&lt;/c9&gt;メソッドを使い&lt;a2&gt;request URL&lt;/a2&gt;に&lt;a1&gt;Fetch&lt;/a1&gt;する。その後、以下の追加の制約に進む：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;a3&gt;W3C&lt;/a3&gt;'s role in making the Recommendation is to draw attention to the specification and to promote its widespread deployment.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T001234Z" creationid="lv7777" creationdate="20160821T001127Z">
+        <seg>勧告の作成における&lt;a3&gt;W3C&lt;/a3&gt;の役割は、仕様に注意を引き付け、広範な開発を促進することである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;GET&lt;/c0&gt;, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115722Z" creationid="lv7777" creationdate="20160831T115722Z">
+        <seg>明示的に設定されない場合&lt;c0&gt;GET&lt;/c0&gt;が設定される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;d0&gt;Converting a string to ASCII lowercase&lt;/d0&gt; means replacing all characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Z with the corresponding characters in the range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T103711Z" creationid="lv7777" creationdate="20160821T103711Z">
+        <seg>&lt;d0&gt;文字列をASCII lowercaseに変換する&lt;/d0&gt; とはU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲と一致する全ての文字列をそれと一致する U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z 内の文字に変換するという意味である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;1 &lt;/s0&gt;Introduction</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T172316Z" creationid="lv7777" creationdate="20160820T172316Z">
+        <seg>&lt;s0&gt;1 &lt;/s0&gt;導入</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;2 &lt;/s0&gt;Conformance</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003630Z" creationid="lv7777" creationdate="20160821T003630Z">
+        <seg>&lt;s0&gt;2 &lt;/s0&gt;準拠</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;3 &lt;/s0&gt;Terminology</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003618Z" creationid="lv7777" creationdate="20160821T003618Z">
+        <seg>&lt;s0&gt;3 &lt;/s0&gt;用語</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;4 &lt;/s0&gt;Security Considerations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003745Z" creationid="lv7777" creationdate="20160821T003745Z">
+        <seg>&lt;s0&gt;4 &lt;/s0&gt;セキュリティに関する考慮事項</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5 &lt;/s0&gt;Syntax</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003514Z" creationid="lv7777" creationdate="20160821T003514Z">
+        <seg>&lt;s0&gt;5 &lt;/s0&gt;構文</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.1 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003816Z" creationid="lv7777" creationdate="20160821T003816Z">
+        <seg>&lt;s0&gt;5.1 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt; レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.2 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150836Z" creationid="lv7777" creationdate="20160901T150836Z">
+        <seg>&lt;s0&gt;5.2 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Handling a Response to a Cross-Origin Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T164841Z" creationid="lv7777" creationdate="20160901T164841Z">
+        <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Cross-Origin Requestのレスポンスを処理する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt;Generic Cross-Origin Request Algorithms</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T100345Z" creationid="lv7777" creationdate="20160901T100304Z">
+        <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt; 通常のCross-Origin Requestアルゴリズム</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;Resource Sharing Check</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T011139Z" creationid="lv7777" creationdate="20160821T011139Z">
+        <seg>&lt;s0&gt;7.2 &lt;/s0&gt;リソース共有のチェック</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.3 &lt;/s0&gt;Security</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010721Z" creationid="lv7777" creationdate="20160821T010721Z">
+        <seg>&lt;s0&gt;7.3 &lt;/s0&gt;セキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;8.1 &lt;/s0&gt;Constructing a Cross-Origin Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010708Z" creationid="lv7777" creationdate="20160821T010708Z">
+        <seg>&lt;s0&gt;8.1 &lt;/s0&gt;クロス オリジン要求の生成</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;8.2 &lt;/s0&gt;Dealing with Same Origin to Cross-Origin Redirects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010644Z" creationid="lv7777" creationdate="20160821T010644Z">
+        <seg>&lt;s0&gt;8.2 &lt;/s0&gt;同一オリジンからクロスオリジンへのリダイレクトの対応</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;8.3 &lt;/s0&gt;Dealing with the Cross-Origin Request Status</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010551Z" creationid="lv7777" creationdate="20160821T010551Z">
+        <seg>&lt;s0&gt;8.3 &lt;/s0&gt;クロスオリジンリクエストのステータスに関して</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;8.4 &lt;/s0&gt;Security</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010233Z" creationid="lv7777" creationdate="20160821T010233Z">
+        <seg>&lt;s0&gt;8.4 &lt;/s0&gt;セキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;This does not include HTTP responses that indicate some type of error, such as HTTP status code 410.&lt;/s0&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T144510Z" creationid="lv7777" creationdate="20160831T144510Z">
+        <seg>&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;a0&gt;simple cross-origin request&lt;/a0&gt; has been defined as congruent with those which may be generated by currently deployed user agents that do not conform to this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T231126Z" creationid="lv7777" creationdate="20160821T112547Z">
+        <seg>A &lt;a0&gt;simple cross-origin request&lt;/a0&gt; has been defined as congruent with those which may be generated by currently deployed user agents that do not conform to this specification.&lt;a0&gt;simple cross-origin request&lt;/a0&gt;はこの仕様に準拠していない現在存在するUAによって生成された。それらと同様に合同</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;c0&gt;GET&lt;/c0&gt; response whose entity body happens to parse as ECMAScript can return an &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; header whose value is "&lt;c3&gt;*&lt;/c3&gt;" provided there are no sensitive comments as it can be accessed cross-origin using an HTML &lt;c4&gt;script&lt;/c4&gt; element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020108Z" creationid="lv7777" creationdate="20160824T020108Z">
+        <seg>機密性のあるコメントがなく、HTMLscript要素を使用してクロスオリジンとしてアクセスできるECMAScriptとして解析される &lt;c0&gt;GET&lt;/c0&gt; レスポンスのボディは 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。[参照:http://security.stackexchange.com/questions/43936/does-returning-access-control-allow-origin-weaken-the-security-of-json-get-re/43965#43965]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of exposed headers&lt;/d0&gt; consisting of zero or more header field names of headers other than the &lt;a1&gt;simple response headers&lt;/a1&gt; that the resource might use and can be exposed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T023302Z" creationid="lv7777" creationdate="20160902T023302Z">
+        <seg>リソースが使用して、リソースを公開することのできる &lt;a1&gt;simple response headers&lt;/a1&gt; 以外のヘッダのヘッダフィールド名から構成されている0以上の &lt;d0&gt;公開されているヘッダのリスト&lt;/d0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of headers&lt;/d0&gt; consisting of zero or more header field names that are supported by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T161650Z" creationid="lv7777" creationdate="20160901T161650Z">
+        <seg>リソースがサポートしている0、もしくはそれ以上の  ヘッダフィールド名 から構成されている &lt;d0&gt;ヘッダのリスト&lt;/d0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of methods&lt;/d0&gt; consisting of zero or more methods that are supported by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T161118Z" creationid="lv7777" creationdate="20160831T103359Z">
+        <seg>リソースがサポートしている0、もしくはそれ以上の  メソッド から構成されている &lt;d0&gt;メソッドのリスト&lt;/d0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;list of origins&lt;/d0&gt; consisting of zero or more &lt;a1&gt;origins&lt;/a1&gt; that are allowed access to the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T160931Z" creationid="lv7777" creationdate="20160831T102947Z">
+        <seg>リソースにアクセスするのを許可されている 0、もしくはそれ以上の  &lt;a1&gt;origins&lt;/a1&gt; から構成されている &lt;d0&gt;オリジンのリスト&lt;/d0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;d0&gt;supports credentials&lt;/d0&gt; flag that indicates whether the resource supports &lt;a1&gt;user credentials&lt;/a1&gt; in the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103759Z" creationid="lv7777" creationdate="20160831T103759Z">
+        <seg>&lt;d0&gt;supports credentials&lt;/d0&gt; フラグはリクエスト内でリソースが &lt;a1&gt;user credentials&lt;/a1&gt;をサポートするかどうかを指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;v0&gt;header&lt;/v0&gt; is said to be a &lt;d1&gt;simple header&lt;/d1&gt; if the header field name is an &lt;a2&gt;ASCII case-insensitive&lt;/a2&gt; match for &lt;c3&gt;Accept&lt;/c3&gt;, &lt;c4&gt;Accept-Language&lt;/c4&gt;, or &lt;c5&gt;Content-Language&lt;/c5&gt; or if it is an &lt;a6&gt;ASCII case-insensitive&lt;/a6&gt; match for &lt;c7&gt;Content-Type&lt;/c7&gt; and the header field value media type (excluding parameters) is an &lt;a8&gt;ASCII case-insensitive&lt;/a8&gt; match for &lt;c9&gt;application/x-www-form-urlencoded&lt;/c9&gt;, &lt;c10&gt;multipart/form-data&lt;/c10&gt;, or &lt;c11&gt;text/plain&lt;/c11&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T231213Z" creationid="lv7777" creationdate="20160821T102530Z">
+        <seg>もし &lt;v0&gt;ヘッダ&lt;/v0&gt;のフィールド名が&lt;a2&gt;ASCII case-insensitive&lt;/a2&gt;で&lt;c3&gt;Accept&lt;/c3&gt;, &lt;c4&gt;Accept-Language&lt;/c4&gt;, or &lt;c5&gt;Content-Language&lt;/c5&gt; にマッチする場合、 もしくは&lt;a6&gt;ASCII case-insensitive&lt;/a6&gt;で&lt;c7&gt;Content-Type&lt;/c7&gt;にマッチ、なおかつヘッダフィールドの値メディアタイプ(パラメータ以外)が &lt;a8&gt;ASCII case-insensitive&lt;/a8&gt; で&lt;c9&gt;application/x-www-form-urlencoded&lt;/c9&gt;, &lt;c10&gt;multipart/form-data&lt;/c10&gt;, or &lt;c11&gt;text/plain&lt;/c11&gt;にマッチする場合、 そのヘッダは&lt;d1&gt;simple header&lt;/d1&gt; と呼ばれる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;v0&gt;header&lt;/v0&gt; is said to be a &lt;d1&gt;simple response header&lt;/d1&gt; if the header field name is an &lt;a2&gt;ASCII case-insensitive&lt;/a2&gt; match for one of the following:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T102847Z" creationid="lv7777" creationdate="20160821T102606Z">
+        <seg>もし &lt;v0&gt;ヘッダ&lt;/v0&gt;のフィールド名が &lt;a2&gt;ASCII case-insensitive&lt;/a2&gt; で以下にマッチする場合、 &lt;d1&gt;シンプルレスポンスヘッダ&lt;/d1&gt; と呼ばれる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A &lt;v0&gt;method&lt;/v0&gt; is said to be a &lt;d1&gt;simple method&lt;/d1&gt; if it is a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for one of the following:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T100852Z" creationid="lv7777" creationdate="20160821T100852Z">
+        <seg>もし &lt;v0&gt;method&lt;/v0&gt; が &lt;a2&gt;case-sensitive&lt;/a2&gt;で以下にマッチする場合、&lt;d1&gt;simple method&lt;/d1&gt;と呼ばれる:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T122533Z" creationid="lv7777" creationdate="20160830T122533Z">
+        <seg>準拠しているしているリソースとはA conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A conformant user agent is one that implements all the requirements listed in this specification that are applicable to user agents.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T121819Z" creationid="lv7777" creationdate="20160830T121521Z">
+        <seg>準拠しているUAとはこの仕様書にリストされている全ての要求が実装されているUAのことである</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A cross-origin request with credentials as defined in this specification is used to substitute for alternate methods of authenticated resource sharing, such as server-to-server back channels, JSONP, or cross-document messaging.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T132906Z" creationid="lv7777" creationdate="20160830T132906Z">
+        <seg>この仕様書で定義されている機密情報を持ったクロスオリジンリクエストはサーバー間のバックチャンネル、JSONP、クロスドキュメントメッセージング等の認証されたリソース共有の代わりの方法として使用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A list of current W3C publications and the latest revision of this technical report can be found in the &lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T000854Z" creationid="lv7777" creationdate="20160821T000854Z">
+        <seg>W3Cが現在公開しているリストとテクニカルレポートの最新版は、&lt;a0&gt;W3C technical reports index&lt;/a0&gt; at http://www.w3.org/TR/で見つけることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A list of headers set by authors for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115926Z" creationid="lv7777" creationdate="20160831T115926Z">
+        <seg>リクエストの作成者によって設定されるヘッダのリスト。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A resource that is not useful to applications from other origins, such as a login page, ought not to return an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160822T002910Z" creationid="lv7777" creationdate="20160822T002910Z">
+        <seg>ログインページ等の他のオリジンのアプリケーションで使用できないリソースには&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt;ヘッダを返してはいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A resource that is publicly accessible, with no access control checks, can always safely return an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header whose value is "&lt;c2&gt;*&lt;/c2&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020223Z" creationid="lv7777" creationdate="20160824T020207Z">
+        <seg>アクセスコントロールがなく、公開されたリソースは常に安全に 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>A response can include an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header, with the origin of where the request originated from as the value, to allow access to the resource's contents.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T180511Z" creationid="lv7777" creationdate="20160820T180511Z">
+        <seg>レスポンスには要求の発信元のオリジンを値として持つ、リソースの内容にアクセスを許可するための&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダを含めることができます。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T155146Z" creationid="lv7777" creationdate="20160820T155146Z">
+        <seg>概要</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Acknowledgments</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T004040Z" creationid="lv7777" creationdate="20160821T004040Z">
+        <seg>謝辞</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Add one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Headers&lt;/a1&gt;&lt;/c0&gt; headers consisting of (a subset of) the &lt;a2&gt;list of headers&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T045757Z" creationid="lv7777" creationdate="20160902T045757Z">
+        <seg>&lt;a2&gt;list of headers&lt;/a2&gt;(のサブセット)から構成されている1以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Headers&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加える 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Add one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers consisting of (a subset of) the &lt;a2&gt;list of methods&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043831Z" creationid="lv7777" creationdate="20160902T043831Z">
+        <seg>&lt;a2&gt;list of methods&lt;/a2&gt;(のサブセット)から構成されている1以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加える 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Again, data received from origins that are not completely trusted has to be validated to conform to expected formats and authorized values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T174449Z" creationid="lv7777" creationdate="20160830T174449Z">
+        <seg>再度（また？）、完全に信頼されていないオリジンから受信したデータが期待したフォーマットおよび承認済の値に準拠しているために検証します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Also used when a DNS error, TLS negotiation failure, or other type of network error occurs.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143625Z" creationid="lv7777" creationdate="20160831T143625Z">
+        <seg>DNS エラーが、 TLS ネゴシエーションの失敗、外のタイプのネットワークエラーが発生した場合などにも使用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085108Z" creationid="lv7777" creationdate="20160904T085108Z">
+        <seg>/UAはこれをサポートすることを強く推奨される。/Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
+        <seg>特許について十分に知識のある人物が、仕様に&lt;a3&gt;Essential Claim(s)&lt;/a3&gt;が認められると判断した場合は、&lt;a4&gt;W3C特許ポリシーの第6章&lt;/a4&gt;に従い情報を開示する必要がある。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;abort steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151031Z" creationid="lv7777" creationdate="20160831T151031Z">
+        <seg>&lt;a0&gt;abort steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;cache and network error steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T102338Z" creationid="lv7777" creationdate="20160903T102338Z">
+        <seg>&lt;a0&gt;cache and network error steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;make a request steps&lt;/a0&gt; and observe the &lt;i1&gt;request rules&lt;/i1&gt; below while making the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150118Z" creationid="lv7777" creationdate="20160831T150118Z">
+        <seg>&lt;a0&gt;make a request steps&lt;/a0&gt; を適用し、リクエストが作成されるまでの間以下の &lt;i1&gt;request rules&lt;/i1&gt; を監視しなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;network error steps&lt;/a0&gt; acting as if the algorithm that invoked the &lt;a1&gt;cache and network error steps&lt;/a1&gt; invoked the &lt;a2&gt;network error steps&lt;/a2&gt; instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091116Z" creationid="lv7777" creationdate="20160904T091116Z">
+        <seg>もしアルゴリズムが &lt;a2&gt;network error steps&lt;/a2&gt; の代わりに &lt;a1&gt;cache and network error steps&lt;/a1&gt; を呼び出した場合、&lt;a0&gt;network error steps&lt;/a0&gt; を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;network error steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T065054Z" creationid="lv7777" creationdate="20160901T065054Z">
+        <seg>&lt;a1&gt;network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Apply the &lt;a0&gt;redirect steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150245Z" creationid="lv7777" creationdate="20160831T150245Z">
+        <seg>&lt;a0&gt;redirect steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a substitute for JSONP-style cross-origin credentialed requests, use of this specification significantly improves the security posture of the requesting application, as it provides cross-origin data access whereas JSONP operates via cross-origin code-injection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T173921Z" creationid="lv7777" creationdate="20160830T173921Z">
+        <seg>JSONP型の機密情報クロスオリジンリクエストの代わりとして、この仕様を使用した場合、JSONP型はクロスオリジンのコードインジェクション経由で命令するのに対してクロスオリジンデータアクセスを提供するのでリクエストするアプリケーションのセキュリティに対する姿勢がかなり上昇する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As a substitute for cross-origin communication techniques relying on loading a resource, with credentials, into an HTML &lt;c0&gt;iframe&lt;/c0&gt; element, and subsequently employing cross-document messaging or other cross-origin side channels, this specification provides a roughly equivalent security posture.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T013857Z" creationid="lv7777" creationdate="20160831T013857Z">
+        <seg>リソースのロードに依存するHTML &lt;c0&gt;iframe&lt;/c0&gt;要素の中に入った資格情報付きのクロスオリジン通信技術の代替として、他のクロスオリジンサイドチャネルまたはクロスオリジン通信技術を実装する場合、この仕様はほぼ同等のセキュリティ状態を提供する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As mentioned, a &lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; uses a &lt;d1&gt;preflight result cache&lt;/d1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081219Z" creationid="lv7777" creationdate="20160901T081219Z">
+        <seg>既に述べたように、&lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; は &lt;d1&gt;preflight result cache&lt;/d1&gt;を使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As well as sections and appendices marked as non-normative, all diagrams, examples, and notes in this specification are non-normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113609Z" creationid="lv7777" creationdate="20160830T113609Z">
+        <seg>セクション名や付録と同様に、この仕様書の図、例、注釈は準拠ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>At various places user agents are allowed to take additional precautions.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120302Z" creationid="lv7777" creationdate="20160901T120302Z">
+        <seg>様々な場所で、ユーザエージェントは追加の予防策を取ることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Authorization for a request should be performed using only the intersection of the authority of the user and the requesting origin(s).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T015142Z" creationid="lv7777" creationdate="20160824T015142Z">
+        <seg>リクエストの許可はユーザーの権限と要求しているオリジンのみを使用して判断する必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Authors of client-side Web applications are strongly encouraged to validate content retrieved from a &lt;a0&gt;cross-origin&lt;/a0&gt; resource as it might be harmful.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045334Z" creationid="lv7777" creationdate="20160831T045334Z">
+        <seg>クライアント側のウェブアプリケーションの作者には &lt;a0&gt;cross-origin&lt;/a0&gt; から受け取った有害かもしれないリソースを検証することを強く推奨する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T061433Z" creationid="lv7777" creationdate="20160831T034619Z">
+        <seg>前述のような攻撃を避けるためには、それぞれのオリジンの特権の範囲の明示的な知識を持っているアプリケーションや、そのアプリケーションの受け取ったすべてのパラメータと指示Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Because of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T042645Z" creationid="lv7777" creationdate="20160821T230559Z">
+        <seg>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request./リクエスト内のコンテンツで提供されている推測しにくいトークン/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>CORS API specifications also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T071256Z" creationid="lv7777" creationdate="20161101T071256Z">
+        <seg>CORS API 仕様はまた、 also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Certain types of resources should not attempt to specify particular authorized origins, but instead either deny or allow all origins.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160822T002625Z" creationid="lv7777" creationdate="20160822T001617Z">
+        <seg>特定のタイプのリソースを特定の認証されたオリジンとして指定してはいけない。代わりにすべて拒否、もしくはすべて許可にすべきだ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparing two strings in a &lt;d0&gt;case-sensitive&lt;/d0&gt; manner means comparing them exactly, codepoint for codepoint.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T102949Z" creationid="lv7777" creationdate="20160821T101104Z">
+        <seg>二つの文字列を比較して &lt;d0&gt;case-sensitive&lt;/d0&gt; であるとは、それらを比較したときコードポイントとコードポイントが正確に一致しているという意味である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Comparing two strings in an &lt;d0&gt;ASCII case-insensitive&lt;/d0&gt; manner means comparing them exactly, codepoint for codepoint, except that the characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Z and the corresponding characters in the range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z are considered to also match.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T103257Z" creationid="lv7777" creationdate="20160821T101149Z">
+        <seg>2つの文字列を比較して&lt;d0&gt;ASCII case-insensitive&lt;/d0&gt; であるとは、それらを比較した時、コードポイントとコードポイントが正確に一致し、なおかつその文字がU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲、または U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z の範囲に収まっている、という意味である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Consider the following scenario:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T071250Z" creationid="lv7777" creationdate="20160901T071250Z">
+        <seg>以下のシナリオを考えてみる：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Cross-origin requests using a method that is &lt;a0&gt;simple&lt;/a0&gt; with &lt;a1&gt;author request headers&lt;/a1&gt; that are not &lt;a2&gt;simple&lt;/a2&gt; will have a &lt;a3&gt;preflight request&lt;/a3&gt; to ensure that the resource can handle those headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T133429Z" creationid="lv7777" creationdate="20160830T170022Z">
+        <seg> &lt;a0&gt;simple&lt;/a0&gt; なメソッドを使用して、&lt;a1&gt;author request headers&lt;/a1&gt; が&lt;a2&gt;simple&lt;/a2&gt;でないCross-origin requestsを行うとき 、リソースがそれらのヘッダを処理できることを保証するために&lt;a3&gt;preflight request&lt;/a3&gt;を持つ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not actually terminate the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T153011Z" creationid="lv7777" creationdate="20160831T153011Z">
+        <seg>実際にリクエストを終了してはいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Do not request any kind of end user interaction.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T153432Z" creationid="lv7777" creationdate="20160831T151512Z">
+        <seg>エンドユーザーと会話するタイプのリクエストをしてはいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E.g. if a user agent disallows requests from the &lt;c0&gt;https&lt;/c0&gt; to the &lt;c1&gt;http&lt;/c1&gt; scheme for a &lt;a2&gt;cross-origin request&lt;/a2&gt; it is encouraged to do the same for the HTML &lt;c3&gt;img&lt;/c3&gt; element.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T124701Z" creationid="lv7777" creationdate="20160901T124701Z">
+        <seg>例：もしUAが &lt;c0&gt;https&lt;/c0&gt; スキームから &lt;c1&gt;http&lt;/c1&gt; スキームに向かって発信する&lt;a2&gt;cross-origin request&lt;/a2&gt; リクエストを許可しない場合、同じことをHTML &lt;c3&gt;img&lt;/c3&gt; 要素にも適用することを推奨される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E.g. user agents are allowed to not store cache items, remove cache items before they reached their &lt;a0&gt;max-age&lt;/a0&gt;, and not connect to certain &lt;a1&gt;URLs&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120526Z" creationid="lv7777" creationdate="20160901T120526Z">
+        <seg>例えば、UAはキャッシュしたアイテムを保存することを許可しない、キャッシュの&lt;a0&gt;max-age&lt;/a0&gt;に届く前にキャッシュしたアイテムを削除する、特定の &lt;a1&gt;URLs&lt;/a1&gt;に接続しない、などである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each &lt;a0&gt;cross-origin request&lt;/a0&gt; has an associated &lt;d1&gt;cross-origin request status&lt;/d1&gt; that CORS API specifications that enable an API to make &lt;a2&gt;cross-origin requests&lt;/a2&gt; can hook into.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T142708Z" creationid="lv7777" creationdate="20160831T142708Z">
+        <seg>それぞれの &lt;a0&gt;cross-origin request&lt;/a0&gt; は &lt;a2&gt;cross-origin requests&lt;/a2&gt; にフックできるようにするためのAPIが使用できるCORS API 仕様を持っている&lt;d1&gt;cross-origin request status&lt;/d1&gt; を持っているt。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each entry consists of the following fields:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081324Z" creationid="lv7777" creationdate="20160901T081324Z">
+        <seg>それぞれのエントリは以下のフィールドから構成されている:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each of the &lt;a0&gt;author request headers&lt;/a0&gt; is a &lt;a1&gt;simple header&lt;/a1&gt; or &lt;a2&gt;author request headers&lt;/a2&gt; is empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T125428Z" creationid="lv7777" creationdate="20160831T125428Z">
+        <seg>各&lt;a0&gt;author request headers&lt;/a0&gt; が &lt;a1&gt;simple header&lt;/a1&gt; である、もしくは &lt;a2&gt;author request headers&lt;/a2&gt; が空である場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Each type of request a resource might have to deal with is described in its own subsection.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T101638Z" creationid="lv7777" creationdate="20160831T101638Z">
+        <seg>リクエストの各タイプはリソースは自分自身のサブセクションで説明されている問題に対処する必要があるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Either a &lt;c0&gt;&lt;a1&gt;Document&lt;/a1&gt;&lt;/c0&gt; or &lt;a2&gt;URL&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121156Z" creationid="lv7777" creationdate="20160831T121156Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Document&lt;/a1&gt;&lt;/c0&gt; もしくは &lt;a2&gt;URL&lt;/a2&gt;のどちらか。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty if &lt;a0&gt;header&lt;/a0&gt; is not empty; otherwise one of the values from the &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Methods&lt;/a2&gt;&lt;/c1&gt; headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T085010Z" creationid="lv7777" creationdate="20160901T085010Z">
+        <seg>もし &lt;a0&gt;header&lt;/a0&gt; が空ではない場合、空になる。それ以外の場合、 &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Methods&lt;/a2&gt;&lt;/c1&gt; ヘッダの値になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty if &lt;a0&gt;method&lt;/a0&gt; is not empty; otherwise one of the values from the &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Headers&lt;/a2&gt;&lt;/c1&gt; headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T085734Z" creationid="lv7777" creationdate="20160901T085734Z">
+        <seg>もし &lt;a0&gt;method&lt;/a0&gt; が空ではない場合、空になる。それ以外の場合、 &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Methods&lt;/a2&gt;&lt;/c1&gt; ヘッダの値になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Empty, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115818Z" creationid="lv7777" creationdate="20160831T115818Z">
+        <seg>明示的に設定されない場合空になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Entries can also be added and removed per the algorithms below.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T100238Z" creationid="lv7777" creationdate="20160901T100238Z">
+        <seg>エントリーはまた、下のアルゴリズムごとに追加したり削除したりすることができる。？？？</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Entries must be removed when the time specified in the &lt;a0&gt;max-age&lt;/a0&gt; field has passed since storing the entry.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T091109Z" creationid="lv7777" creationdate="20160901T091109Z">
+        <seg>エントリが格納されてから、&lt;a0&gt;max-age&lt;/a0&gt; フィールドで指定された時間が過ぎた場合、エントリーはクリアされなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Everything else in this specification is normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113710Z" creationid="lv7777" creationdate="20160830T113710Z">
+        <seg>それ以外の全ては準拠するべき標準である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Examples are Server-Sent Events and XMLHttpRequest.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T174652Z" creationid="lv7777" creationdate="20160820T174652Z">
+        <seg>例えば are Server-Sent Events や XMLHttpRequestなどがある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exclude &lt;a0&gt;user credentials&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T064729Z" creationid="lv7777" creationdate="20160901T064729Z">
+        <seg> &lt;a0&gt;user credentials&lt;/a0&gt;を除外する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exclude the &lt;a0&gt;author request headers&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T064716Z" creationid="lv7777" creationdate="20160901T064716Z">
+        <seg>&lt;a0&gt;author request headers&lt;/a0&gt;を除外する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Exclude the &lt;a0&gt;request entity body&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T064755Z" creationid="lv7777" creationdate="20160901T064755Z">
+        <seg>&lt;a0&gt;request entity body&lt;/a0&gt;を除外する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>False if the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is set, or true otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084401Z" creationid="lv7777" creationdate="20160901T084401Z">
+        <seg>もし&lt;a0&gt;omit credentials flag&lt;/a0&gt;がセットされている場合、falseになる。それ以外の場合、trueになる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For &lt;a0&gt;request method&lt;/a0&gt; there either is a &lt;a1&gt;method cache match&lt;/a1&gt; or it is a &lt;a2&gt;simple method&lt;/a2&gt; and the &lt;a3&gt;force preflight flag&lt;/a3&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T010006Z" creationid="lv7777" creationdate="20160901T010006Z">
+        <seg>&lt;a0&gt;request method&lt;/a0&gt; が&lt;a1&gt;method cache match&lt;/a1&gt; する、もしくは &lt;a2&gt;simple method&lt;/a2&gt; なおかつ &lt;a3&gt;force preflight flag&lt;/a3&gt; が未設定であるのいずれかにマッチする場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For every header of &lt;a0&gt;author request headers&lt;/a0&gt; there either is a &lt;a1&gt;header cache match&lt;/a1&gt; for the field name or it is a &lt;a2&gt;simple header&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T005746Z" creationid="lv7777" creationdate="20160901T005746Z">
+        <seg>&lt;a0&gt;author request headers&lt;/a0&gt; のすべてのヘッダがフィールド名に&lt;a1&gt;header cache match&lt;/a1&gt;しているか、もしくはヘッダが&lt;a2&gt;simple header&lt;/a2&gt;であるかのどちらかにマッチしている場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For example, a web application whose URL is of the type &lt;c0&gt;example.org/&lt;v1&gt;app-name&lt;/v1&gt;/&lt;/c0&gt; and the app-name portion is necessary to distinguish the web application from other web applications also running at example.org, will be unable to securely employ the mechanism defined in this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051604Z" creationid="lv7777" creationdate="20160831T051055Z">
+        <seg>例として、URLが &lt;c0&gt;example.org/&lt;v1&gt;app-name&lt;/v1&gt;/&lt;/c0&gt; であるアプリケーションが存在しており、app-nameの部分はexample.orgで実行されているほかのウェブアプリケーションと区別する必要のあるとします。また、ほかのアプリケーションはしっかりとこの仕様で定義されたメカニズムを採用することができません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For requests to resources that have no significance other than retrieval, and where the credentials are used only to provide user-specific customization for otherwise publicly accessible information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T070317Z" creationid="lv7777" creationdate="20160831T012305Z">
+        <seg>/公開情報ではないユーザー固有のカスタマイズのみに使用している資格情報/を持ち検索以外の意図を持ってないリソースへのリクエストのために。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For the purposes of this section each resource is bound to the following:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T103055Z" creationid="lv7777" creationdate="20160831T102531Z">
+        <seg>このセクションの目的のためにリソースは以下と結びついている(関係がある)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Given the difficulty of avoiding such vulnerabilities in multi-origin interactions it is recommended that, instead of using user credentials automatically attached to the request by the user agent, security tokens which specify the particular capabilities and resources authorized be passed as part of the explicit content of a request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T064204Z" creationid="lv7777" creationdate="20160831T064204Z">
+        <seg>上記のような相互の複数のオリジンによる脆弱性を避けるのは難しく、代わりにUAのリクエストに自動的にアタッチされるユーザー資格情報、特定の機能やリクエストの明示的なコンテンツの一部として渡された認証されたリソースを指定するセキュリティトークンを使用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Go to the next step if the following conditions are true:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160240Z" creationid="lv7777" creationdate="20160831T160240Z">
+        <seg>もし以下の条件がtrueの場合、次のステップに進める:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTTP/1.1 currently does not make leading OWS implied in header value definitions but that form is assumed here.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T072755Z" creationid="lv7777" creationdate="20160831T072755Z">
+        <seg>HTTP/1.1 は現在暗示的にヘッダの値の定義にOWSを使用しないがここの形式ではOWSを想定している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>HTTP/1.1 is used as ABNF basis to ensure that the new headers have equivalent parsing rules to those introduced in that specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T093902Z" creationid="lv7777" creationdate="20160831T093902Z">
+        <seg>この仕様で導入される新しいヘッダが同等の解析ルールを持つことを保障するためにHTTP/1.1 をABNFの基本とする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;a0&gt;request URL&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084209Z" creationid="lv7777" creationdate="20160901T084209Z">
+        <seg>&lt;a0&gt;request URL&lt;/a0&gt;を保持する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;a0&gt;source origin&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084153Z" creationid="lv7777" creationdate="20160901T084153Z">
+        <seg> &lt;a0&gt;source origin&lt;/a0&gt;を保持する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Holds the &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T084240Z" creationid="lv7777" creationdate="20160901T084240Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt;のヘッダの値を保持する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>However, the few definitions that did not really fit anywhere else are defined here instead.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T095804Z" creationid="lv7777" creationdate="20160821T095804Z">
+        <seg>しかし、いくつかの用語はどこにも定義されていない。そのような語はここで定義されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>I.e. if the &lt;i1&gt;block cookies flag&lt;/i1&gt; is unset, cookies will be set by the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085643Z" creationid="lv7777" creationdate="20160904T085643Z">
+        <seg>例 &lt;i1&gt;block cookies flag&lt;/i1&gt; が未設定の場合、クッキーがレスポンスにセットされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;a0&gt;author request headers&lt;/a0&gt; is not empty include an &lt;c1&gt;&lt;a2&gt;Access-Control-Request-Headers&lt;/a2&gt;&lt;/c1&gt; header with as header field value a comma-separated list of the header field names from &lt;a3&gt;author request headers&lt;/a3&gt; in lexicographical order, each &lt;a4&gt;converted to ASCII lowercase&lt;/a4&gt; (even when one or more are a &lt;a5&gt;simple header&lt;/a5&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T064700Z" creationid="lv7777" creationdate="20160901T064700Z">
+        <seg>もし &lt;a0&gt;author request headers&lt;/a0&gt; が空でない場合、 &lt;a3&gt;author request headers&lt;/a3&gt; のフィールド名を&lt;a4&gt;ASCII lowercase&lt;/a4&gt;に変換して辞書式順序でコンマ区切りのリストとした値を使った&lt;c1&gt;&lt;a2&gt;Access-Control-Request-Headers&lt;/a2&gt;&lt;/c1&gt; ヘッダ を含める (リクエストが&lt;a5&gt;simple header&lt;/a5&gt;の時でさえも)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;a0&gt;parsing failed&lt;/a0&gt; apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051734Z" creationid="lv7777" creationdate="20160902T051734Z">
+        <seg>もし&lt;a0&gt;解析に失敗した&lt;/a0&gt;場合、&lt;a1&gt;cache and network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;v0&gt;method&lt;/v0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; this step may be skipped.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043533Z" creationid="lv7777" creationdate="20160902T043533Z">
+        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、この手順を省略することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If &lt;v0&gt;methods&lt;/v0&gt; is still the empty list and the &lt;a1&gt;force preflight flag&lt;/a1&gt; is set, append the &lt;a2&gt;request method&lt;/a2&gt; to &lt;v3&gt;methods&lt;/v3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051910Z" creationid="lv7777" creationdate="20160902T051910Z">
+        <seg>もし &lt;v0&gt;methods&lt;/v0&gt; がまだ空のリストであり、 &lt;a1&gt;force preflight flag&lt;/a1&gt; がセットされている場合、&lt;a2&gt;request method&lt;/a2&gt;を&lt;v3&gt;methods&lt;/v3&gt;に追加する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a header field name is a &lt;a0&gt;simple header&lt;/a0&gt; and is not &lt;c1&gt;Content-Type&lt;/c1&gt;, it is not required to be listed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T045934Z" creationid="lv7777" creationdate="20160902T045934Z">
+        <seg>ヘッダフィールド名が&lt;a0&gt;simple header&lt;/a0&gt; であり、 &lt;c1&gt;Content-Type&lt;/c1&gt;でない場合、これをリスティングする必要はない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a method is a &lt;a0&gt;simple method&lt;/a0&gt; it does not need to be listed, but this is not prohibited.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T044331Z" creationid="lv7777" creationdate="20160902T043931Z">
+        <seg>&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、リスティングする必要はないが、禁止されていない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If a resource author has a simple text resource residing at &lt;c0&gt;http://example.com/hello&lt;/c0&gt; which contains the string "Hello World!" and would like &lt;c1&gt;http://hello-world.example&lt;/c1&gt; to be able to access it, the response combined with a header introduced by this specification could look as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T080707Z" creationid="lv7777" creationdate="20160820T174807Z">
+        <seg>"Hello World!" という文字列が書かれているシンプルなテキストが &lt;c0&gt;http://example.com/hello&lt;/c0&gt;のパスに置かれていて &lt;c1&gt;http://hello-world.example&lt;/c1&gt;からのアクセスを許可したい場合、この仕様で導入されたヘッダの組み合わせのレスポンスは以下のようになる。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If any of the &lt;v0&gt;header field-names&lt;/v0&gt; is not a &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; match for any of the values in &lt;a2&gt;list of headers&lt;/a2&gt; do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T043021Z" creationid="lv7777" creationdate="20160902T043021Z">
+        <seg>もし 何かの&lt;v0&gt;ヘッダフィールド名&lt;/v0&gt; が&lt;a2&gt;list of headers&lt;/a2&gt;内のいずれかの値に &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; マッチしない場合、追加のヘッダを設定してはならない。そしてこの一連の流れを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If each of the &lt;v0&gt;header field-names&lt;/v0&gt; is a &lt;a1&gt;simple header&lt;/a1&gt; and none is &lt;c2&gt;Content-Type&lt;/c2&gt;, this step may be skipped.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T044501Z" creationid="lv7777" creationdate="20160902T044501Z">
+        <seg>各&lt;v0&gt;header field-names&lt;/v0&gt; が &lt;a1&gt;simple header&lt;/a1&gt; であり、 &lt;c2&gt;Content-Type&lt;/c2&gt;がnoneならこの手順を省略することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If for some reason the user agent does not want to make the request terminate this algorithm and set the &lt;a0&gt;cross-origin request status&lt;/a0&gt; to &lt;i1&gt;network error&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123420Z" creationid="lv7777" creationdate="20160831T123420Z">
+        <seg>もし何かの事情のためにUAがリクエストを送りたくない場合、このアルゴリズムを終了させて、 &lt;a0&gt;cross-origin request status&lt;/a0&gt; を &lt;i1&gt;network error&lt;/i1&gt;にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it returns fail, apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T071339Z" creationid="lv7777" creationdate="20160901T071339Z">
+        <seg>もし失敗した場合、&lt;a1&gt;cache and network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If it returns fail, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T152422Z" creationid="lv7777" creationdate="20160831T152422Z">
+        <seg>もし失敗と判定された場合、&lt;a1&gt;network error steps&lt;/a1&gt;を適用する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If needed, such resources can implement access control and CSRF protections as described above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T004910Z" creationid="lv7777" creationdate="20160824T004910Z">
+        <seg>もし必要なら、そのようなリソースに上記のようなアクセスコントロールやCSRFプロテクションを付加することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;list of exposed headers&lt;/a0&gt; is not empty add one or more &lt;c1&gt;&lt;a2&gt;Access-Control-Expose-Headers&lt;/a2&gt;&lt;/c1&gt; headers, with as values the header field names given in the &lt;a3&gt;list of exposed headers&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040858Z" creationid="lv7777" creationdate="20160902T040858Z">
+        <seg>もし &lt;a0&gt;list of exposed headers&lt;/a0&gt; が空ではない場合、1以上のi &lt;c1&gt;&lt;a2&gt;Access-Control-Expose-Headers&lt;/a2&gt;&lt;/c1&gt;ヘッダを付け加えて &lt;a3&gt;list of exposed headers&lt;/a3&gt;で与えられているヘッダフィールド名を値として用いる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;manual redirect flag&lt;/a0&gt; is unset and the response has an HTTP status code of 301, 302, 303, 307, or 308</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T150224Z" creationid="lv7777" creationdate="20160831T150224Z">
+        <seg>もし&lt;a0&gt;manual redirect flag&lt;/a0&gt; が未設定で、レスポンスのHTTPステータスコードが 301, 302, 303, 307, or 308のいづれかの場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is unset and the &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; header value is not a &lt;a3&gt;case-sensitive&lt;/a3&gt; match for "&lt;c4&gt;true&lt;/c4&gt;", return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T115209Z" creationid="lv7777" creationdate="20160901T115209Z">
+        <seg>もし &lt;a0&gt;omit credentials flag&lt;/a0&gt; がセットされておらず、レスポンスに0以上の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; ヘッダの値が"&lt;c4&gt;true&lt;/c4&gt;"に&lt;a3&gt;case-sensitive&lt;/a3&gt; マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;omit credentials flag&lt;/a0&gt; is unset and the response includes zero or more than one &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; header values, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T115006Z" creationid="lv7777" creationdate="20160901T115006Z">
+        <seg>もし &lt;a0&gt;omit credentials flag&lt;/a0&gt; がセットされておらず、レスポンスに0以上の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Credentials&lt;/a2&gt;&lt;/c1&gt; ヘッダの値が含まれている場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; is not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085543Z" creationid="lv7777" creationdate="20160904T085543Z">
+        <seg>もし&lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; がサポートされていない場合、無限ループの規則に違反するかもしくはUAがis not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;resource sharing check&lt;/a0&gt; returns fail, apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051431Z" creationid="lv7777" creationdate="20160902T051431Z">
+        <seg>もし&lt;a0&gt;リソース共有チェック&lt;/a0&gt; が失敗した場合、 &lt;a1&gt;cache and network error steps&lt;/a1&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header value is the "&lt;c2&gt;*&lt;/c2&gt;" character and the &lt;a3&gt;omit credentials flag&lt;/a3&gt; is set, return pass and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102543Z" creationid="lv7777" creationdate="20160901T102543Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値が文字 "&lt;c2&gt;*&lt;/c2&gt;" であり、 &lt;a3&gt;omit credentials flag&lt;/a3&gt; が設定されていた場合、成功と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header is not present terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035213Z" creationid="lv7777" creationdate="20160902T035213Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダが存在しない場合、この一連の流れを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the end user cancels the request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151012Z" creationid="lv7777" creationdate="20160831T150949Z">
+        <seg>もしエンドユーザーがリクエストをキャンセルした場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the field name of each header in &lt;a0&gt;author request headers&lt;/a0&gt; is not an &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; match for one of the header field names in &lt;v2&gt;headers&lt;/v2&gt; and the header is not a &lt;a3&gt;simple header&lt;/a3&gt;, apply the &lt;a4&gt;cache and network error steps&lt;/a4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T060503Z" creationid="lv7777" creationdate="20160902T060503Z">
+        <seg> &lt;a0&gt;author request headers&lt;/a0&gt;内のそれぞれのヘッダのフィールド名が &lt;v2&gt;headers&lt;/v2&gt; 内のヘッダフィールド名の一つに&lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; マッチせず、そのヘッダが&lt;a3&gt;simple header&lt;/a3&gt;ではない場合、&lt;a4&gt;cache and network error steps&lt;/a4&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the following conditions are true, follow the &lt;a0&gt;simple cross-origin request&lt;/a0&gt; algorithm:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123722Z" creationid="lv7777" creationdate="20160831T123722Z">
+        <seg>以下の条件が真の場合、 &lt;a0&gt;simple cross-origin request&lt;/a0&gt; アルゴリズムに従う必要がある。(note:途中から？たぶん最初から。)：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the header does not match the production it is said that &lt;d2&gt;header parsing failed&lt;/d2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T113109Z" creationid="lv7777" creationdate="20160821T113109Z">
+        <seg>もしヘッダがこの仕様書で述べられているどんなABNFにもマッチしない場合、&lt;d2&gt;ヘッダ解析に失敗した&lt;/d2&gt;と言われる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the resource &lt;a0&gt;supports credentials&lt;/a0&gt; add a single &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; header, with the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header as value, and add a single &lt;c5&gt;&lt;a6&gt;Access-Control-Allow-Credentials&lt;/a6&gt;&lt;/c5&gt; header with the &lt;a7&gt;case-sensitive&lt;/a7&gt; string "&lt;c8&gt;true&lt;/c8&gt;" as value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040057Z" creationid="lv7777" creationdate="20160902T040057Z">
+        <seg>もしリソースが&lt;a0&gt;資格情報をサポートしている&lt;/a0&gt;場合、 単体の &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; ヘッダを付け加えて、値には、 &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダの値と同等の値を書き込み。さらに単体の &lt;c5&gt;&lt;a6&gt;Access-Control-Allow-Credentials&lt;/a6&gt;&lt;/c5&gt; ヘッダを付け加えて、値には文字列 "&lt;c8&gt;true&lt;/c8&gt;" と&lt;a7&gt;case-sensitive&lt;/a7&gt; する値を書き込む。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the resource has been relocated, it indicates whether to share its new &lt;a0&gt;URL&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034639Z" creationid="lv7777" creationdate="20160902T034639Z">
+        <seg>もしリソースが再配置されていた場合、これは新しい &lt;a0&gt;URL&lt;/a0&gt;を共有かどうか指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the response has an HTTP status code of 301, 302, 303, 307, or 308</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T102301Z" creationid="lv7777" creationdate="20160903T102301Z">
+        <seg>もしレスポンスの HTTP ステータスコードが 301, 302, 303, 307, 308のいずれかを持っている場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the response has an HTTP status code that is not in the 2xx range</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T065033Z" creationid="lv7777" creationdate="20160901T065033Z">
+        <seg>もしレスポンスのHTTPステータスコードが2XXの範囲ではない場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the response includes zero or more than one &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header values, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102352Z" creationid="lv7777" creationdate="20160901T102352Z">
+        <seg>もしリソースが0以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値を含んでいた場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the value of &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; is not a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header as defined by its specification, return fail and terminate this algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T114707Z" creationid="lv7777" creationdate="20160901T114338Z">
+        <seg>もし&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt;の値がこの仕様書で定義されている&lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダの値に &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the value of the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header is not a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for any of the values in &lt;a3&gt;list of origins&lt;/a3&gt;, do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035628Z" creationid="lv7777" creationdate="20160902T035628Z">
+        <seg>もし &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダの値が  &lt;a3&gt;list of origins&lt;/a3&gt;内の何らかの値に&lt;a2&gt;case-sensitive&lt;/a2&gt; マッチ しない場合、追加のヘッダを設定してはいけない。そしてこの一連の流れをを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If there are one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051639Z" creationid="lv7777" creationdate="20160902T051639Z">
+        <seg>もし1以上のmore &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; ヘッダheaders let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If there is a network error</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151047Z" creationid="lv7777" creationdate="20160831T151047Z">
+        <seg>ネットワークエラーが起こった場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If there is a single &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header, &lt;a2&gt;parse&lt;/a2&gt; it and let &lt;v3&gt;max-age&lt;/v3&gt; be the resulting value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T101752Z" creationid="lv7777" creationdate="20160903T101752Z">
+        <seg>もし単一の &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; ヘッダがある場合、ヘッダを&lt;a2&gt;解析&lt;/a2&gt; し、&lt;v3&gt;max-age&lt;/v3&gt;を結果の値にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If you wish to make comments regarding this document, please send them to &lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; (&lt;a1&gt;subscribe&lt;/a1&gt;, &lt;a2&gt;archives&lt;/a2&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T001521Z" creationid="lv7777" creationdate="20160821T001521Z">
+        <seg>この文書にコメントするには、&lt;a0&gt;public-webappsec@w3.org&lt;/a0&gt; （&lt;a1&gt;購読&lt;/a1&gt;, &lt;a2&gt;アーカイブ&lt;/a2&gt;）に電子メールを送信されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In XMLHttpRequest progress events are dispatched only after the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;success&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T101640Z" creationid="lv7777" creationdate="20161101T101424Z">
+        <seg>XMLHttpRequest プログレスイベントは&lt;a0&gt;cross-origin request status&lt;/a0&gt;が&lt;i1&gt;success&lt;/i1&gt;になった後にのみ発行される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In addition, for the coming forty-two minutes, no &lt;a2&gt;preflight request&lt;/a2&gt; will be needed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081143Z" creationid="lv7777" creationdate="20160901T081143Z">
+        <seg>加えて、今から42分間は &lt;a2&gt;preflight request&lt;/a2&gt; は必要ではなくなる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case a CORS API specification defines multiple APIs that utilize the policy the advice is to be considered separately for each API.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125822Z" creationid="lv7777" creationdate="20160901T125822Z">
+        <seg>In case a CORS API 仕様書がポリシーを使用する複数のAPIを定義していた場合、このアドバイスはそれぞれのAPIごとに考慮する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In case of DNS errors, TLS negotiation failure, or other type of network errors, apply the &lt;a0&gt;network error steps&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151301Z" creationid="lv7777" creationdate="20160831T151301Z">
+        <seg>DNS エラー、 TLS ネゴシエーションの失敗、それ以外のタイプのネットワークエラーが発生した場合、 &lt;a0&gt;network error steps&lt;/a0&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In practice the &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; production is more constrained.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150755Z" creationid="lv7777" creationdate="20160831T094910Z">
+        <seg>実際には、値 &lt;c0&gt;&lt;a1&gt;origin-list-or-null&lt;/a1&gt;&lt;/c0&gt; はより制約的である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In response to a &lt;a0&gt;preflight request&lt;/a0&gt; the resource indicates which methods and headers (other than &lt;a1&gt;simple methods&lt;/a1&gt; and &lt;a2&gt;simple headers&lt;/a2&gt;) it is willing to handle and whether it &lt;a3&gt;supports credentials&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T041351Z" creationid="lv7777" creationdate="20160902T041351Z">
+        <seg>&lt;a0&gt;preflight request&lt;/a0&gt; のレスポンス内で、リソースはどのメソッドとヘッダ( &lt;a1&gt;simple methods&lt;/a1&gt; や &lt;a2&gt;simple headers&lt;/a2&gt;以外の)を処理できるか、リソースが&lt;a3&gt;資格情報をサポートしている&lt;/a3&gt;かどうかなどを決定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In response to a &lt;a0&gt;simple cross-origin request&lt;/a0&gt; or &lt;a1&gt;actual request&lt;/a1&gt; the resource indicates whether or not to share the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034250Z" creationid="lv7777" creationdate="20160902T034250Z">
+        <seg>&lt;a0&gt;simple cross-origin request&lt;/a0&gt; や &lt;a1&gt;actual request&lt;/a1&gt; のレスポンス内で、リソースがこのリソースを公開するかどうかを指示する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such cases, passing security tokens explicitly as part of the cross-origin request can remove any ambiguity as to the scope of authorization.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020821Z" creationid="lv7777" creationdate="20160824T020821Z">
+        <seg>このような場合、曖昧な許可している範囲を削除できるクロスオリジンリクエストリクエストの一環としてセキュリティトークンを明示的に渡す。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In such multi-origin scenarios, a malicious resource at one of the origins may be able to enlist the user-agent as a confused deputy and elevate its privileges by abusing user credentials sent with cross-origin requests.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T033655Z" creationid="lv7777" creationdate="20160831T033655Z">
+        <seg>このようなマルチオリジンのシナリオでは、一つのオリジンの悪意のあるリソースがUAを混乱した代理(https://ja.wikipedia.org/wiki/Confused_deputy_problem)として登録すし、悪意のあるユーザー資格情報をクロスオリジンリクエストで送信することで、権限を昇格することができるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In that case the author needs to reply to a preflight request that uses the &lt;c1&gt;OPTIONS&lt;/c1&gt; method and then needs to handle the actual request that uses the desired method (&lt;c2&gt;DELETE&lt;/c2&gt; in this example) and give an appropriate response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T082135Z" creationid="lv7777" creationdate="20160821T082135Z">
+        <seg>その場合にはプリフライトリクエストに&lt;c1&gt;OPTIONS&lt;/c1&gt;メソッドを使用してレスポンスを返し、その後(&lt;c2&gt;DELETE&lt;/c2&gt; などの)使用したいメソッドを使った実際のリクエストを処理して適切なレスポンスを返す必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this case, restricting access to certain origins may protect user privacy by preventing customizations from being used to identify a user, except at authorized origins.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T021554Z" creationid="lv7777" creationdate="20160824T021554Z">
+        <seg>その場合、特定のオリジンを制限されたアクセスは認証されたオリジンを除き、ユーザーを識別することに使用されているカスタマイズを防止することによってユーザーのプライバシー保護する。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In this specification, The words must and may are to be interpreted as described in RFC 2119.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T113856Z" creationid="lv7777" creationdate="20160830T113856Z">
+        <seg>この仕様書では、単語はRFC 2119の仕様で説明されているものとして解釈する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>In user agents that follow this pattern, network requests typically include user credentials with cross-origin requests, including HTTP authentication and cookie information.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T010058Z" creationid="lv7777" creationdate="20160821T010058Z">
+        <seg>上のパターンが適用されるユーザーエージェントには、HTTP認証や cookie 情報などのユーザーの資格情報が含まれる典型的なネットワークリクエストがあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Include an &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; header with as header field value the &lt;a2&gt;request method&lt;/a2&gt; (even when that is a &lt;a3&gt;simple method&lt;/a3&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T024559Z" creationid="lv7777" creationdate="20160901T024559Z">
+        <seg>値が&lt;a2&gt;request method&lt;/a2&gt; の &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; ヘッダを含める (リクエストが &lt;a3&gt;simple method&lt;/a3&gt;の時でさえも)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It also provides a short description of the function of each header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T052028Z" creationid="lv7777" creationdate="20160831T052028Z">
+        <seg>ここではそれぞれのヘッダの機能の短い説明も提供している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can be modified during the &lt;a4&gt;redirect steps&lt;/a4&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145236Z" creationid="lv7777" creationdate="20160831T145236Z">
+        <seg>これは、&lt;a4&gt;redirect steps&lt;/a4&gt;を踏む間に修正することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It can take at most two distinct values over the course of a &lt;a3&gt;cross-origin request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143006Z" creationid="lv7777" creationdate="20160831T143006Z">
+        <seg>これは &lt;a3&gt;cross-origin request&lt;/a3&gt;の間、２つの異なった値を取ることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It gets slightly more complicated if the resource author wants to be able to handle cross-origin requests using methods other than &lt;a0&gt;simple methods&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T081318Z" creationid="lv7777" creationdate="20160821T081318Z">
+        <seg>もしリソースの作者が&lt;a0&gt;simple methods&lt;/a0&gt;以外のメソッドでクロスオリジンリクエストを使用できるようにしたいと思った場合、もう少し複雑になります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It includes advice for specifications that define APIs that use the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm defined in this specification — CORS API specifications — and the general &lt;a1&gt;security considerations&lt;/a1&gt; section includes some advice for client-side Web application authors.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T025420Z" creationid="lv7777" creationdate="20160831T025420Z">
+        <seg>これには — CORS API specifications — などのこの仕様書の中で定義されている&lt;a0&gt;cross-origin request&lt;/a0&gt;アルゴリズムで使用するAPIを定義する仕様書へのアドバイスや通常のクライアント側のウェブアプリケーションの作者に向けたいくつかのアドバイスが含まれている &lt;a1&gt;security considerations&lt;/a1&gt;セクションが含まれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is a stable document and may be used as reference material or cited from another document.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T001016Z" creationid="lv7777" creationdate="20160821T001016Z">
+        <seg>これは安定した文書であり、規範的仕様として使用されてもよく、他の文書から引用してもよい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020411Z" creationid="lv7777" creationdate="20160824T020411Z">
+        <seg>認証を要求するための適切なリソースIt is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>It is true when the resource does and false otherwise.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T023437Z" creationid="lv7777" creationdate="20160902T023437Z">
+        <seg>リソースがサポートする場合はtrueであり、それ以外の場合はfalseになる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;headers&lt;/v0&gt; be the empty list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T052027Z" creationid="lv7777" creationdate="20160902T052027Z">
+        <seg>&lt;v0&gt;headers&lt;/v0&gt; が空のリストにする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;methods&lt;/v0&gt; be the empty list.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T051523Z" creationid="lv7777" creationdate="20160902T051523Z">
+        <seg>&lt;v0&gt;methods&lt;/v0&gt; が空のリストにする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Likewise, the &lt;a1&gt;user agent processing model&lt;/a1&gt; section details how user agents are to use these headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T071230Z" creationid="lv7777" creationdate="20160831T071230Z">
+        <seg>同様に、 &lt;a1&gt;user agent processing model&lt;/a1&gt; セクションではUAがどのようにそれらのヘッダを使用するか説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Mapping web applications to distinct &lt;a0&gt;origins&lt;/a0&gt; is vital for secure web applications.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051810Z" creationid="lv7777" creationdate="20160831T051810Z">
+        <seg>異なった &lt;a0&gt;オリジン&lt;/a0&gt; にウェブアプリケーションをマッピングすることはウェブアプリケーションのセキュリティを上昇するために必要です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Missing, unless explicitly set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T120002Z" creationid="lv7777" creationdate="20160831T120002Z">
+        <seg>明示的に設定されない場合空になる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>No changes were made since the previous publication as Proposed Recommendation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003416Z" creationid="lv7777" creationdate="20160821T003416Z">
+        <seg>この文書がProposed Recommendationのステータスの時から変更されていない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Non-normative &lt;a0&gt;translations&lt;/a0&gt; may also be available.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T005044Z" creationid="lv7777" creationdate="20160821T005044Z">
+        <seg>非標準の&lt;a0&gt;翻訳&lt;/a0&gt;もあります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>OAuth is an example of this pattern.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020444Z" creationid="lv7777" creationdate="20160824T020444Z">
+        <seg>以下はOAuthの例である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Other documents may supersede this document.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T000721Z" creationid="lv7777" creationdate="20160821T000721Z">
+        <seg>他の文書がこの文書に取って代わるかもしれない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151545Z" creationid="lv7777" creationdate="20160831T151545Z">
+        <seg>それ以外の場合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise (the HTTP status code is in the 2xx range)</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T071046Z" creationid="lv7777" creationdate="20160901T071046Z">
+        <seg>それ以外(HTTPステータスコードが2xxの範囲に収まっている)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, add a single &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header, with either the value of the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; header or the string "&lt;c4&gt;*&lt;/c4&gt;" as value.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040501Z" creationid="lv7777" creationdate="20160902T040312Z">
+        <seg>そうでない場合、単体の &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダを付け加えて、値には  &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; ヘッダの値と同等の値か、文字列"&lt;c4&gt;*&lt;/c4&gt;"のどちらかを書き込む。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, follow the &lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T125502Z" creationid="lv7777" creationdate="20160831T125502Z">
+        <seg>それ以外の場合、&lt;a0&gt;cross-origin request with preflight&lt;/a0&gt; アルゴリズムに従う必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, if it returns pass, terminate this algorithm and set the &lt;a2&gt;cross-origin request status&lt;/a2&gt; to &lt;i3&gt;success&lt;/i3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T152615Z" creationid="lv7777" creationdate="20160831T152615Z">
+        <seg>それ以外の場合、もし判定が通った場合、このアルゴリズムを終了し、&lt;a2&gt;cross-origin request status&lt;/a2&gt; を &lt;i3&gt;success&lt;/i3&gt;に設定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Otherwise, make a &lt;d0&gt;preflight request&lt;/d0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T010032Z" creationid="lv7777" creationdate="20160901T010032Z">
+        <seg>それ以外の場合、&lt;d0&gt;preflight request&lt;/d0&gt;を作成する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Perform a &lt;a0&gt;resource sharing check&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T071256Z" creationid="lv7777" creationdate="20160831T152357Z">
+        <seg>&lt;a0&gt;resource sharing check&lt;/a0&gt;を行う。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Please note there may be &lt;a0&gt;errata&lt;/a0&gt; for this document.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T173011Z" creationid="lv7777" creationdate="20160820T173011Z">
+        <seg>発行以降に報告されたエラーまたは問題については&lt;a0&gt;エラッタ&lt;/a0&gt;を確認されたい。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Rather than allowing a space-separated list of &lt;a2&gt;origins&lt;/a2&gt;, it is either a single &lt;a3&gt;origin&lt;/a3&gt; or the string "&lt;c4&gt;null&lt;/c4&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T095609Z" creationid="lv7777" creationdate="20160831T095609Z">
+        <seg> &lt;a2&gt;origins&lt;/a2&gt;の空白区切りのリストが許可されているというより、これは, 一つの &lt;a3&gt;オリジン&lt;/a3&gt; または文字列"&lt;c4&gt;null&lt;/c4&gt;"のどちらかである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>References</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T004002Z" creationid="lv7777" creationdate="20160821T004002Z">
+        <seg>参考文献</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Remove the entries in the &lt;a0&gt;preflight result cache&lt;/a0&gt; where &lt;a1&gt;origin&lt;/a1&gt; field value is a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for &lt;a3&gt;source origin&lt;/a3&gt; and &lt;a4&gt;url&lt;/a4&gt; field value is a &lt;a5&gt;case-sensitive&lt;/a5&gt; match for &lt;a6&gt;request URL&lt;/a6&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T090849Z" creationid="lv7777" creationdate="20160904T090849Z">
+        <seg>Remove the entries in the&lt;a1&gt;origin&lt;/a1&gt; フィールドの値が  &lt;a3&gt;source origin&lt;/a3&gt;と &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチし、 ・&lt;a4&gt;url&lt;/a4&gt; フィールドの値が &lt;a6&gt;request URL&lt;/a6&gt;と&lt;a5&gt;case-sensitive&lt;/a5&gt; マッチする&lt;a0&gt;preflight result cache&lt;/a0&gt; 内のエントリーを削除する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Requests made with &lt;a0&gt;user credentials&lt;/a0&gt;, or the &lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; header require special consideration.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T005147Z" creationid="lv7777" creationdate="20160824T005147Z">
+        <seg> &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;もしくは、 &lt;c1&gt;&lt;a2&gt;オリジン&lt;/a2&gt;&lt;/c1&gt;ヘッダを保持しているリクエストの要求には特別な配慮が必要である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Requirements phrased in the imperative as part of algorithms (e.g. "terminate the algorithm") are to be interpreted with the meaning of the key word (e.g. must) used in introducing the algorithm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T115856Z" creationid="lv7777" creationdate="20160830T115856Z">
+        <seg>アルゴリズムの中の命令的言い回しによる要件（例えば： “先頭部のスペース文字並びを取り除く”, “false を返してこの手続きを終了” など）は、アルゴリズムを導入する際に利用されているキーワード（ “〜しなければならない”, “〜すべき”, “〜してもよい”, 等々）の意味の下で解釈されることになる。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resources must use the following set of steps to determine which additional headers to use in the response:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T034902Z" creationid="lv7777" creationdate="20160902T034902Z">
+        <seg>リソースはリソース内でどの追加のヘッダを使用するか決定するために以下の一連の流れを使用しなければならない。：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Reviewing the XMLHttpRequest specification provides a good start for the kind of limitations that are to be imposed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T104312Z" creationid="lv7777" creationdate="20161101T104312Z">
+        <seg>XMLHttpRequest 仕様書のレビューは課すタイプの制限の良いスタートを提供します。provides a good start for the kind of limitations that are to be imposed.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Security requirements and considerations are listed throughout this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T225730Z" creationid="lv7777" creationdate="20160821T103907Z">
+        <seg>セキュリティ要求と考慮事項はこの仕様書を通じて述べられている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Server-side applications are enabled to discover that an HTTP request was deemed a cross-origin request by the user agent, through the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T073751Z" creationid="lv7777" creationdate="20160821T073751Z">
+        <seg> サーバーサイドアプリケーションは&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダを通してHTTPリクエストがUAによるクロスオリジンリクエストと見なされるかどうかを判断できる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set when &lt;a0&gt;user credentials&lt;/a0&gt; are to be excluded in the request and when cookies are to be ignored in its response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T122849Z" creationid="lv7777" creationdate="20160831T122849Z">
+        <seg>リクエスト内で &lt;a0&gt;user credentials&lt;/a0&gt; が除外され、レスポンス内でクッキーが無視された場合にセットする</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set when a &lt;a0&gt;preflight request&lt;/a0&gt; is required.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T122935Z" creationid="lv7777" creationdate="20160831T122935Z">
+        <seg>&lt;a0&gt;プリフライト リクエスト&lt;/a0&gt;が必要な場合にセットする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Set when redirects are &lt;e0&gt;not&lt;/e0&gt; to be automatically followed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121332Z" creationid="lv7777" creationdate="20160831T121332Z">
+        <seg>リダイレクト時に自動で追跡し &lt;e0&gt;ない&lt;/e0&gt;場合にセットする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Simple cross-origin requests generated outside this specification (such as cross-origin form submissions using &lt;c1&gt;GET&lt;/c1&gt; or &lt;c2&gt;POST&lt;/c2&gt; or cross-origin &lt;c3&gt;GET&lt;/c3&gt; requests resulting from &lt;c4&gt;script&lt;/c4&gt; elements) typically include &lt;a5&gt;user credentials&lt;/a5&gt;, so resources conforming to this specification must always be prepared to expect simple cross-origin requests with credentials.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T235124Z" creationid="lv7777" creationdate="20160821T101237Z">
+        <seg>この仕様以外の場所で生成される シンプルなクロスオリジンリクエストリクエスト(例えば&lt;c1&gt;GET&lt;/c1&gt; や &lt;c2&gt;POST&lt;/c2&gt; を使用したクロスオリジン間のフォームのポスト 、もしくは &lt;c4&gt;script&lt;/c4&gt;要素で生成されたクロスオリジン間の &lt;c3&gt;GET&lt;/c3&gt; リクエスト等) では大抵&lt;a5&gt;ユーザー資格情報&lt;/a5&gt;が含まれている。そのため、この仕様に準拠したリソースは常に資格情報を持ったシンプルなクロスオリジンリクエストに備えなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Some terminology in this specification is from &lt;c0&gt;The Web Origin Concept&lt;/c0&gt;, &lt;c1&gt;HTML&lt;/c1&gt;,</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T095630Z" creationid="lv7777" creationdate="20160821T095630Z">
+        <seg>この仕様書内のいくつか&lt;c0&gt;The Web Origin Concept&lt;/c0&gt;, &lt;c1&gt;HTML&lt;/c1&gt;の仕様のものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Specifically it does not refer to proxy authentication or the &lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T100709Z" creationid="lv7777" creationdate="20160821T100709Z">
+        <seg>特にこの語はプロキシ認証情報や&lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt; ヘッダとは関係ないものとする。？要検証</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Status of this Document</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T000507Z" creationid="lv7777" creationdate="20160820T162319Z">
+        <seg>この文書の位置付け</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Terminology is generally defined throughout the specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T095716Z" creationid="lv7777" creationdate="20160821T095716Z">
+        <seg>用語は大抵仕様所以外の場所で定義されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;CORS wiki page&lt;/a0&gt; provides more background information about this document.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T173610Z" creationid="lv7777" creationdate="20160820T173610Z">
+        <seg>&lt;a0&gt;CORS wiki page&lt;/a0&gt; ではこのドキュメントのより裏側の情報を提供している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;URL&lt;/a0&gt; to be &lt;a1&gt;fetched&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115614Z" creationid="lv7777" creationdate="20160831T115614Z">
+        <seg> &lt;a1&gt;fetched&lt;/a1&gt;するための&lt;a0&gt;URL&lt;/a0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;credentials&lt;/a0&gt; field value is true and the &lt;a1&gt;omit credentials flag&lt;/a1&gt; is unset, or it is false and the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091557Z" creationid="lv7777" creationdate="20160904T091557Z">
+        <seg>&lt;a0&gt;資格情報&lt;/a0&gt;フィールドの値がtrueであり、&lt;a1&gt;omit credentials flag&lt;/a1&gt; が未設定、もしくはomit credentials flagがfalseであり、なおかつ&lt;a2&gt;omit credentials flag&lt;/a2&gt;が設定済みである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;origin&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;source origin&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091155Z" creationid="lv7777" creationdate="20160904T091155Z">
+        <seg> &lt;a0&gt;origin&lt;/a0&gt; フィールドの値が &lt;a2&gt;source origin&lt;/a2&gt;に &lt;a1&gt;case-sensitive&lt;/a1&gt; マッチした場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;origin&lt;/a0&gt; of the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T120031Z" creationid="lv7777" creationdate="20160831T120031Z">
+        <seg>リクエストの &lt;a0&gt;オリジン&lt;/a0&gt; 。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request URL&lt;/a0&gt; could have been blacklisted by the user in some fashion.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123551Z" creationid="lv7777" creationdate="20160831T123551Z">
+        <seg> &lt;a0&gt;request URL&lt;/a0&gt; はいくつかの方法でユーザーによってブラックリスト入りされている可能性がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request URL&lt;/a0&gt; is modified in face of redirects.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115647Z" creationid="lv7777" creationdate="20160831T115647Z">
+        <seg>&lt;a0&gt;request URL&lt;/a0&gt; はリダイレクトされた場合、修正される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request method&lt;/a0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; and the &lt;a2&gt;force preflight flag&lt;/a2&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123843Z" creationid="lv7777" creationdate="20160831T123843Z">
+        <seg>&lt;a0&gt;リクエストメソッド&lt;/a0&gt; が&lt;a1&gt;シンプルメソッド&lt;/a1&gt; で&lt;a2&gt;force preflight flag&lt;/a2&gt; がセットされていない場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;resource processing model&lt;/a0&gt; section details how resources are to use these headers in a response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T070518Z" creationid="lv7777" creationdate="20160831T070518Z">
+        <seg>&lt;a0&gt;resource processing model&lt;/a0&gt; セクションではリソースがそれらのヘッダをレスポンス内でどのように使用するか説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;source origin&lt;/a0&gt; is the initial &lt;a1&gt;origin&lt;/a1&gt; that user agents must use for the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145156Z" creationid="lv7777" creationdate="20160831T145156Z">
+        <seg>&lt;a0&gt;source origin&lt;/a0&gt; はUAが&lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; ヘッダに使用しなければならない初期の&lt;a1&gt;origin&lt;/a1&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;url&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;request URL&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T091251Z" creationid="lv7777" creationdate="20160904T091251Z">
+        <seg> &lt;a0&gt;url&lt;/a0&gt; フィールドの値が &lt;a2&gt;requestURL&lt;/a2&gt;に &lt;a1&gt;case-sensitive&lt;/a1&gt; マッチした場合。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header indicates how long the response can be cached, so that for subsequent requests, within the specified time, no preflight request has to be made.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T083008Z" creationid="lv7777" creationdate="20160821T083008Z">
+        <seg>&lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt;ヘッダではどれだけの期間レスポンスをキャッシュさせるかを指示することができる。 それ以降のリクエストのために、指定された時間内なら、プリフライトリクエストを作成する必要はない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c0&gt;&lt;a1&gt;getResponseHeader()&lt;/a1&gt;&lt;/c0&gt; method of &lt;c2&gt;&lt;a3&gt;XMLHttpRequest&lt;/a3&gt;&lt;/c2&gt; will therefore not expose any header not indicated above.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T135240Z" creationid="lv7777" creationdate="20160831T135240Z">
+        <seg> 従って、&lt;c2&gt;&lt;a3&gt;XMLHttpRequest&lt;/a3&gt;&lt;/c2&gt; の&lt;c0&gt;&lt;a1&gt;getResponseHeader()&lt;/a1&gt;&lt;/c0&gt; メソッドは上記で指示していないどんなメソッドも公開することができない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt; header indicates the methods that can be used in the actual request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T083130Z" creationid="lv7777" creationdate="20160821T083130Z">
+        <seg>&lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt;ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。 .</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; header indicates whether the response to request can be exposed when the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T151016Z" creationid="lv7777" creationdate="20160831T100350Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Credentials&lt;/c1&gt;&lt;/d0&gt; ヘッダは &lt;a2&gt;omit credentials flag&lt;/a2&gt; がセットされていないときにリクエストのレスポンスを公開できるかどうかを支持するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates, as part of the response to a &lt;a2&gt;preflight request&lt;/a2&gt;, which header field names can be used during the &lt;a3&gt;actual request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155024Z" creationid="lv7777" creationdate="20160901T155024Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt;&lt;/d0&gt; ヘッダは&lt;a2&gt;preflight request&lt;/a2&gt;のレスポンスの一部として、どのヘッダフィールド名が &lt;a3&gt;actual request&lt;/a3&gt;で使用できるかを指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt;&lt;/d0&gt; header indicates, as part of the response to a &lt;a2&gt;preflight request&lt;/a2&gt;, which methods can be used during the &lt;a3&gt;actual request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154632Z" creationid="lv7777" creationdate="20160901T154632Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt;&lt;/d0&gt; ヘッダは&lt;a2&gt;preflight request&lt;/a2&gt;のレスポンスの一部として、どのメソッドが &lt;a3&gt;actual request&lt;/a3&gt;で使用できるかを指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; header indicates whether a resource can be shared based by returning the value of the &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; request header, "*", or "null" in the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T150706Z" creationid="lv7777" creationdate="20160831T094341Z">
+        <seg> &lt;d0&gt;&lt;c1&gt;Access-Control-Allow-Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダはレスポンス内の &lt;c2&gt;&lt;a3&gt;Origin&lt;/a3&gt;&lt;/c2&gt; リクエストヘッダの帰ってきた値 、もしくは"*"、もしくは "null"に基づきリソースが共有できるかどうか指示するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates which headers are safe to expose to the API of a CORS API specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154307Z" creationid="lv7777" creationdate="20160901T154058Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt;&lt;/d0&gt;ヘッダはどのヘッダが安全にCORS API 仕様のAPIに公開されているかを指示するものである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt;&lt;/d0&gt; header indicates how long the results of a &lt;a2&gt;preflight request&lt;/a2&gt; can be cached in a &lt;a3&gt;preflight result cache&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T154442Z" creationid="lv7777" creationdate="20160901T154442Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt;&lt;/d0&gt; ヘッダはどれだけの時間&lt;a3&gt;preflight result cache&lt;/a3&gt;に &lt;a2&gt;preflight request&lt;/a2&gt; の結果をキャッシュできるかを指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt;&lt;/d0&gt; header indicates which headers will be used in the &lt;a2&gt;actual request&lt;/a2&gt; as part of the &lt;a3&gt;preflight request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155439Z" creationid="lv7777" creationdate="20160901T155439Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt;&lt;/d0&gt; ヘッダはどのヘッダを &lt;a2&gt;actual request&lt;/a2&gt; で使用するかを &lt;a3&gt;preflight request&lt;/a3&gt;で指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt;&lt;/d0&gt; header indicates which method will be used in the &lt;a2&gt;actual request&lt;/a2&gt; as part of the &lt;a3&gt;preflight request&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155346Z" creationid="lv7777" creationdate="20160901T155346Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt;&lt;/d0&gt; ヘッダはどのメソッドを &lt;a2&gt;actual request&lt;/a2&gt; で使用するかを &lt;a3&gt;preflight request&lt;/a3&gt;で指示したものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;&lt;c1&gt;Origin&lt;/c1&gt;&lt;/d0&gt; header indicates where the &lt;a2&gt;cross-origin request&lt;/a2&gt; or &lt;a3&gt;preflight request&lt;/a3&gt; originates from.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T155136Z" creationid="lv7777" creationdate="20160901T155136Z">
+        <seg>&lt;d0&gt;&lt;c1&gt;Origin&lt;/c1&gt;&lt;/d0&gt; ヘッダは &lt;a2&gt;cross-origin request&lt;/a2&gt; や &lt;a3&gt;preflight request&lt;/a3&gt; がどこから生成されているかを指示するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;cross-origin request&lt;/d0&gt; algorithm takes the following parameters:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115541Z" creationid="lv7777" creationdate="20160831T115541Z">
+        <seg> &lt;d0&gt;cross-origin request&lt;/d0&gt; アルゴリズムは以下の引数を取る:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The &lt;d0&gt;resource sharing check&lt;/d0&gt; algorithm for a given resource is as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T102241Z" creationid="lv7777" creationdate="20160901T102241Z">
+        <seg>与えられたリソースの&lt;d0&gt;リソース共有チェック&lt;/d0&gt; アルゴリズムは以下の通りである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The ABNF syntax used in this section is from HTTP/1.1.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T071242Z" creationid="lv7777" creationdate="20160831T071242Z">
+        <seg>このセクションで使用されているABNFの構文は、HTTP / 1.1からです。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The English version of this specification is the only normative version.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T004742Z" creationid="lv7777" creationdate="20160821T004742Z">
+        <seg>この仕様の英語版の仕様書のみが正規のバージョンとなる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The above algorithm also functions when the &lt;a0&gt;ASCII serialization&lt;/a0&gt; of an origin is the string "&lt;c1&gt;null&lt;/c1&gt;".</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T092114Z" creationid="lv7777" creationdate="20160904T092114Z">
+        <seg>オリジンの&lt;a0&gt;ASCII serialization&lt;/a0&gt;が文字列 "&lt;c1&gt;null&lt;/c1&gt;"である場合、上記のアルゴリズムは関数でもある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The complexity of invoking the additional preflight request is the task of the user agent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T091318Z" creationid="lv7777" creationdate="20160821T090459Z">
+        <seg>追加のプリフライトリクエストを呼び出すのはUAが行う複雑なタスクである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The entity body for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115951Z" creationid="lv7777" creationdate="20160831T115951Z">
+        <seg>リクエストのボディ。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The following &lt;i0&gt;request rules&lt;/i0&gt; are to be observed while making the &lt;a1&gt;preflight request&lt;/a1&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T064952Z" creationid="lv7777" creationdate="20160901T064952Z">
+        <seg>以下の &lt;i0&gt;request rules&lt;/i0&gt; を&lt;a1&gt;preflight request&lt;/a1&gt;を作成するまでの間監視しなければならない:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The method for the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T115701Z" creationid="lv7777" creationdate="20160831T115701Z">
+        <seg>リクエストのメソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The request is outside the scope of this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T035301Z" creationid="lv7777" creationdate="20160902T035301Z">
+        <seg>このリクエストはこの仕様書の範囲外となる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The resource can be shared.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143049Z" creationid="lv7777" creationdate="20160831T143049Z">
+        <seg>リソースは共有することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The resource cannot be shared.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143459Z" creationid="lv7777" creationdate="20160831T143459Z">
+        <seg>リソースを共有することできない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The resource sharing policy described by this specification is bound to a particular resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T101937Z" creationid="lv7777" creationdate="20160831T101937Z">
+        <seg>この仕様書で説明されているリソース共有ポリシーは特定のリソースに結びついている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The resource still must protect itself against CSRF attacks, such as by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160822T004101Z" creationid="lv7777" creationdate="20160822T004101Z">
+        <seg>リソースは(またstillをまたという意味で使うことはある？)リクエストを明示的に提供している推測可能なトークンを含んだコンテンツの要求などのCSRF攻撃から守らなければいけない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The response to that request includes the following headers:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080605Z" creationid="lv7777" creationdate="20160901T080605Z">
+        <seg>このレスポンスには以下のヘッダが含まれている：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The response to the actual request can simply contain this header:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T083212Z" creationid="lv7777" creationdate="20160821T083212Z">
+        <seg>実際のリクエストのレスポンスには、以下のヘッダを含めることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The response to the preflight request could have the following headers specified:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T080740Z" creationid="lv7777" creationdate="20160821T080740Z">
+        <seg>プリフライトリクエストに対するレスポンスは、次のヘッダーを持つことができます：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The result of this request is stored in a &lt;a1&gt;preflight result cache&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T153622Z" creationid="lv7777" creationdate="20160831T153622Z">
+        <seg>このリクエストの結果は&lt;a1&gt;preflight result cache&lt;/a1&gt;にキャッシュされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The security properties of such resources are unaffected by user-agents conformant to this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160822T005103Z" creationid="lv7777" creationdate="20160822T005103Z">
+        <seg>このようなリソースのセキュリティのプロパティは、この仕様に準拠しているユーザ エージェントの影響を受けません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The specification that defines the API that uses the policy is a CORS API specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125549Z" creationid="lv7777" creationdate="20160901T125549Z">
+        <seg>この仕様書はCORS API仕様書のポリシーを使用するAPIを定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The steps below describe what user agents must do for a &lt;d0&gt;cross-origin request with preflight&lt;/d0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160142Z" creationid="lv7777" creationdate="20160831T160142Z">
+        <seg>このステップではUAは&lt;d0&gt;プリフライト付きcross-origin request&lt;/d0&gt;のために何をしなければならないかを以下に記述している:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The steps below describe what user agents must do for a &lt;d0&gt;simple cross-origin request&lt;/d0&gt;:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T145908Z" creationid="lv7777" creationdate="20160831T145908Z">
+        <seg>このステップではUAは&lt;d0&gt;simple cross-origin request&lt;/d0&gt;のために何をしなければならないかを以下に記述している。:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The string "&lt;c0&gt;*&lt;/c0&gt;" cannot be used for a resource that &lt;a1&gt;supports credentials&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T040618Z" creationid="lv7777" creationdate="20160902T040618Z">
+        <seg>文字列 "&lt;c0&gt;*&lt;/c0&gt;" は &lt;a1&gt;資格情報をサポートしている&lt;/a1&gt;リソースに対して使用することができない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The term &lt;d0&gt;cross-origin&lt;/d0&gt; is used to mean non &lt;a1&gt;same origin&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T100043Z" creationid="lv7777" creationdate="20160821T100030Z">
+        <seg>語&lt;d0&gt;クロスオリジン&lt;/d0&gt;は &lt;a1&gt;同一オリジン&lt;/a1&gt;ではないという意味で使用される。.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The term &lt;d0&gt;user credentials&lt;/d0&gt; for the purposes of this specification means cookies, HTTP authentication, and client-side SSL certificates that would be sent based on the user agent's previous interactions with the origin.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T101426Z" creationid="lv7777" creationdate="20160821T100259Z">
+        <seg>語 &lt;d0&gt;ユーザー資格情報&lt;/d0&gt; はこの仕様書内では cookie, HTTP 認証、クライアント側SSL証明書の意味で使用される。hat would be sent based on the user agent's previous interactions with the origin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user aborted the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143147Z" creationid="lv7777" creationdate="20160831T143147Z">
+        <seg>ユーザーがリクエストを中断した。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent gets the request from an API, such as &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;, to perform a cross-origin request using the custom &lt;c2&gt;XMODIFY&lt;/c2&gt; method from &lt;a3&gt;source origin&lt;/a3&gt; &lt;c4&gt;http://example.org&lt;/c4&gt; to &lt;c5&gt;http://blog.example/entries/hello-world&lt;/c5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080518Z" creationid="lv7777" creationdate="20160901T080518Z">
+        <seg>UAは &lt;a3&gt;source origin&lt;/a3&gt; &lt;c4&gt;http://example.org&lt;/c4&gt; から &lt;c5&gt;http://blog.example/entries/hello-world&lt;/c5&gt;へのカスタムメソッド&lt;c2&gt;XMODIFY&lt;/c2&gt; を使ったクロスオリジンリクエストを送信するために、&lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;などのAPIからリクエストを取得する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent is about to make the &lt;a0&gt;actual request&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143436Z" creationid="lv7777" creationdate="20160831T143436Z">
+        <seg>UAは&lt;a0&gt;actual request&lt;/a0&gt;を作成しようとしている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent performs a &lt;a0&gt;preflight request&lt;/a0&gt; using the &lt;c1&gt;OPTIONS&lt;/c1&gt; method to &lt;c2&gt;http://blog.example/entries/hello-world&lt;/c2&gt; and includes the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; and &lt;c5&gt;&lt;a6&gt;Access-Control-Request-Method&lt;/a6&gt;&lt;/c5&gt; headers with the appropriate values.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T080838Z" creationid="lv7777" creationdate="20160901T080838Z">
+        <seg>UAは適切な値を持つ &lt;c5&gt;&lt;a6&gt;Access-Control-Request-Method&lt;/a6&gt;&lt;/c5&gt; ヘッダと &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; を含み、&lt;c1&gt;OPTIONS&lt;/c1&gt; メソッドを使った&lt;a0&gt;preflight request&lt;/a0&gt; を&lt;c2&gt;http://blog.example/entries/hello-world&lt;/c2&gt;に送信する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent then performs the desired request using the &lt;c0&gt;XMODIFY&lt;/c0&gt; method to &lt;c1&gt;http://blog.example/entries/hello-world&lt;/c1&gt; as this was allowed by the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081607Z" creationid="lv7777" creationdate="20160901T081456Z">
+        <seg>UAは &lt;c0&gt;XMODIFY&lt;/c0&gt; メソッドを使用してリソースの共有が許可されている&lt;c1&gt;http://blog.example/entries/hello-world&lt;/c1&gt;に要求リクエストを送る。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The user agent validates that the value and origin of where the request originated match.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T000500Z" creationid="lv7777" creationdate="20160821T000500Z">
+        <seg>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The values are:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T143026Z" creationid="lv7777" creationdate="20160831T143026Z">
+        <seg>以下の値のいずれかの:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The variables used in the generic set of steps are part of the algorithms that invoke these set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T114505Z" creationid="lv7777" creationdate="20160901T114505Z">
+        <seg>通常の一連のステップで使用されている変数はそのステップを呼び出しているアルゴリズムの一部である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>These restrictions prevent a client-side Web application running from one origin from obtaining data retrieved from another origin, and also limit unsafe HTTP requests that can be automatically launched toward destinations that differ from the running application's origin.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T005615Z" creationid="lv7777" creationdate="20160821T005615Z">
+        <seg>これらの制限は、のあるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>They are added and removed in such a way that there can never be duplicate items in the cache.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T103302Z" creationid="lv7777" creationdate="20160903T103302Z">
+        <seg>キャッシュの中のアイテムが決して重複しない方法で追加したり削除することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This W3C Recommendation of CORS was produced jointly by the &lt;a0&gt;Web Applications&lt;/a0&gt; (WebApps) and &lt;a1&gt;Web Application Security&lt;/a1&gt; (WebAppSec) Working Groups, and published by the WebAppSec Working Group.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T003203Z" creationid="lv7777" creationdate="20160821T003203Z">
+        <seg>これは、&lt;a0&gt;Web Applications&lt;/a0&gt; (WebApps)と &lt;a1&gt;Web Application Security&lt;/a1&gt; (WebAppSec) Working Groups による WebAppSecによって公開されたCORS W3C Recommendationである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This appendix is non-normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T035004Z" creationid="lv7777" creationdate="20160831T035004Z">
+        <seg>この付録は非規定である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This cache consists of a set of entries.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T081249Z" creationid="lv7777" creationdate="20160901T081249Z">
+        <seg>このキャッシュはいくつかのエントリから構成されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can include the &lt;a0&gt;origin&lt;/a0&gt; of the resource itself though be aware that requests to &lt;a1&gt;cross-origin&lt;/a1&gt; resources can be redirected back to the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T160906Z" creationid="lv7777" creationdate="20160831T103246Z">
+        <seg>これには &lt;a1&gt;cross-origin&lt;/a1&gt; リクエストのリソースがリソース自身にリダイレクトバックに気づくためにリソース自身の &lt;a0&gt;origin&lt;/a0&gt; を含むことができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document defines a mechanism to enable client-side cross-origin requests.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T161723Z" creationid="lv7777" creationdate="20160820T161723Z">
+        <seg>このドキュメントではのクロスオリジン・リクエストを有効にするためのメカニズムを定義します。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document has been reviewed by &lt;a0&gt;W3C&lt;/a0&gt; Members, by software developers, and by other &lt;a1&gt;W3C&lt;/a1&gt; groups and interested parties, and is endorsed by the Director as a &lt;a2&gt;W3C&lt;/a2&gt; Recommendation.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T004353Z" creationid="lv7777" creationdate="20160821T004353Z">
+        <seg>この文書は、&lt;a0&gt;W3C&lt;/a0&gt;のメンバー、ソフトウェア開発者、および他の&lt;a1&gt;W3C&lt;/a1&gt;グループや利害関係者によって検討され、&lt;a2&gt;W3C&lt;/a2&gt;勧告としてディレクターによって承認されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This document was produced by groups operating under the &lt;a0&gt;5 February 2004 W3C Patent Policy&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T001704Z" creationid="lv7777" creationdate="20160821T001704Z">
+        <seg>この文書は&lt;a0&gt;2004年2月6日のW3C特許ポリシー&lt;/a0&gt;の下で活動するグループによって作成された。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This does not include HTTP responses that indicate some type of error, such as HTTP status code 410.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T151538Z" creationid="lv7777" creationdate="20160831T151538Z">
+        <seg>&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This enhances the functionality and interoperability of the Web.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T001134Z" creationid="lv7777" creationdate="20160821T001134Z">
+        <seg>これはウェブの機能と相互運用性を強化する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This extension enables server-side applications to enforce limitations (e.g. returning nothing) on the cross-origin requests that they are willing to service.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T074516Z" creationid="lv7777" creationdate="20160821T074516Z">
+        <seg>この拡張はサーバーサイドアプリケーションがクロスオリジンリクエスト上でサービスを行うかどうかの(何も返さない等の)制限を強制できる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is again validated by the user agent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T070913Z" creationid="lv7777" creationdate="20160821T070913Z">
+        <seg>これは、再びユーザエージェントによって検証される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This is because an origin is composed of only the scheme, hostname, and port.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045846Z" creationid="lv7777" creationdate="20160831T045846Z">
+        <seg>これはオリジンがスキームとホスト名とポートにより構成されているためである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section defines the syntax of the new headers this specification introduces.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T051916Z" creationid="lv7777" creationdate="20160831T051916Z">
+        <seg>このセクションではこの仕様書で導入する新しいヘッダの構文を定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the processing models that resources have to implement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T102539Z" creationid="lv7777" creationdate="20160831T100448Z">
+        <seg>このセクションでは、リソースが実装する必要がある処理モデルについて説明します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the processing models that user agents have to implement.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T165051Z" creationid="lv7777" creationdate="20160901T164955Z">
+        <seg>このセクションではUAが実装する必要のある処理モデルについて説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section describes the status of this document at the time of its publication.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T000911Z" creationid="lv7777" creationdate="20160821T000911Z">
+        <seg>この節は、公開時点におけるこの文書のステータスについて説明する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section is non-normative.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T070011Z" creationid="lv7777" creationdate="20160820T175035Z">
+        <seg>この節は規定ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This section lists advice that did not fit anywhere else.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T104016Z" creationid="lv7777" creationdate="20160821T104016Z">
+        <seg>このセクションではそれ以外のアドバイスをリスト化している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification defines a resource sharing policy that cannot be implemented without an API that utilizes it.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T125317Z" creationid="lv7777" creationdate="20160901T125317Z">
+        <seg>この仕様書ではこの仕様書を活用するAPI抜きでは実装できないリソース共有ポリシーを定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification defines how to authorize an instance of an application from a foreign origin, executing in the user agent, to access the representation of the resource in an HTTP response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160822T001245Z" creationid="lv7777" creationdate="20160822T001245Z">
+        <seg>この仕様書ではどのようにHTTPレスポンスでリソースにアクセスするために自オリジン外のアプリケーションのインスタンスが認証されるかを定義する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification extends this model in several ways:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T175710Z" creationid="lv7777" creationdate="20160820T175710Z">
+        <seg>この仕様は、いくつかの方法でこのモデルを拡張します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification is a building block for other specifications, so-called CORS API specifications, which define how this specification is used.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T065925Z" creationid="lv7777" creationdate="20160820T174623Z">
+        <seg>この仕様は他の仕様書のビルディングブロックであり、 この仕様がどのように使用されるかを定義する。CORS API と呼ばれる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This specification is written for resource authors and user agents.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T011232Z" creationid="lv7777" creationdate="20160821T011232Z">
+        <seg>この仕様はリソースの著者およびユーザ エージェントについて書かれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This substitution can expose additional attack surface in some cases, as a cross-site scripting vulnerability in the requesting origin can allow elevation of privileges against the requested resource when compared to a server-to-server back channel.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T170550Z" creationid="lv7777" creationdate="20160830T170550Z">
+        <seg>この置換は、サーバー間のバックチャンネルと比較した場合、要求するオリジンがリクエストされたオリジンに対して権限を昇格させるXSS脆弱性、などのいくつかの場合において追加の攻撃する境界を露出することができてしまう。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To be clear, the &lt;a0&gt;method&lt;/a0&gt; and &lt;a1&gt;header&lt;/a1&gt; fields are mutually exclusive.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T090203Z" creationid="lv7777" creationdate="20160901T090203Z">
+        <seg>誤解の無いように言うと、&lt;a0&gt;method&lt;/a0&gt; と &lt;a1&gt;header&lt;/a1&gt; のフィールドは互いに排他的である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T160051Z" creationid="lv7777" creationdate="20160831T160051Z">
+        <seg>To protect resources/リソースを保護するためには/クロスオリジンリクエストに対して/ against cross-origin requests/特定のUAから生成できない/ that could not originate from certain user agents /この仕様書が存在する以前の/before this specification existed// a &lt;a0&gt;preflight request&lt;/a0&gt; はリソースがこの仕様書に気づくのを保証させる/ aware of this specification.To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Upload progress events are only dispatched once the &lt;a2&gt;cross-origin request status&lt;/a2&gt; is &lt;i3&gt;preflight complete&lt;/i3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T101958Z" creationid="lv7777" creationdate="20161101T101958Z">
+        <seg>Upload progress events は &lt;a2&gt;cross-origin request status&lt;/a2&gt; が &lt;i3&gt;preflight complete&lt;/i3&gt;状態になった後にのみ発行される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Use of &lt;a0&gt;user credentials&lt;/a0&gt; in a cross-origin request is appropriate when:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020949Z" creationid="lv7777" creationdate="20160824T020949Z">
+        <seg>クロスオリジンリクエスト &lt;a0&gt;ユーザー資格情報&lt;/a0&gt;を使用するのは次のような例の場合が適切である:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Used to determine the &lt;c3&gt;Referer&lt;/c3&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T121237Z" creationid="lv7777" creationdate="20160831T121237Z">
+        <seg>&lt;c3&gt;Referer&lt;/c3&gt; ヘッダを決定するために使用される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents and resource authors may employ any algorithm to implement this specification, so long as the end result is indistinguishable from the result that would be obtained by the specification's algorithms.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160830T120758Z" creationid="lv7777" creationdate="20160830T120758Z">
+        <seg>仕様書のアルゴリズムから得られる結果が区別不能な場合に限り、UAとリソースの著者はこの仕様を実装するためのどんなアルゴリズムでも実装できる。(結果が同じならば別に仕様書のアルゴでなくてもよい。)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents are encouraged to apply security decisions on a generic level and not just to the resource sharing policy.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T124435Z" creationid="lv7777" creationdate="20160901T124435Z">
+        <seg>UAは通常レベルのセキュリティ上の決定を適用することと、その決定はリソース共有ポリシーだけに適用しないことを推奨される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents are encouraged to impose a limit on &lt;a0&gt;max-age&lt;/a0&gt; so items cannot stay in the &lt;a1&gt;preflight result cache&lt;/a1&gt; for unreasonable amounts of time.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T120835Z" creationid="lv7777" creationdate="20160901T120835Z">
+        <seg>UAは  &lt;a1&gt;preflight result cache&lt;/a1&gt; を不当な長い時間にしてアイテムをキャッシュしないようにするために&lt;a0&gt;max-age&lt;/a0&gt; に制限を課すことを推奨される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents can discover via a &lt;a0&gt;preflight request&lt;/a0&gt; whether a cross-origin resource is prepared to accept requests, using a non-&lt;a1&gt;simple method&lt;/a1&gt;, from a given origin.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T070848Z" creationid="lv7777" creationdate="20160821T070848Z">
+        <seg>UAは&lt;a1&gt;simple method&lt;/a1&gt;ではないメソッドを使用して&lt;a0&gt;preflight request&lt;/a0&gt;を通じてクロスオリジンのリソースがそのアクセスを受け入れるかどうか判断できる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents commonly apply same-origin restrictions to network requests.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T175626Z" creationid="lv7777" creationdate="20160820T175626Z">
+        <seg>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents may clear cache entries before the time specified in the &lt;a0&gt;max-age&lt;/a0&gt; field has passed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160903T103448Z" creationid="lv7777" creationdate="20160903T103448Z">
+        <seg>UAは &lt;a0&gt;max-age&lt;/a0&gt; の指定された時間が過ぎ去る前に、キャッシュのエントリーをクリアすることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>User agents must filter out all response headers other than those that are a &lt;a0&gt;simple response header&lt;/a0&gt; or of which the field name is an &lt;a1&gt;ASCII case-insensitive&lt;/a1&gt; match for one of the values of the &lt;c2&gt;&lt;a3&gt;Access-Control-Expose-Headers&lt;/a3&gt;&lt;/c2&gt; headers (if any), before exposing response headers to APIs defined in CORS API specifications.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T134703Z" creationid="lv7777" creationdate="20160831T134703Z">
+        <seg>UAはCORS API仕様書で定義されているAPIにさらす前に、&lt;a1&gt;ASCII case-insensitive&lt;/a1&gt;でフィールド名が&lt;c2&gt;&lt;a3&gt;Access-Control-Expose-Headers&lt;/a3&gt;&lt;/c2&gt;マッチする、もしくは&lt;a0&gt;simple response header&lt;/a0&gt;以外の全てのレスポンスヘッダを除外しなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; a client-side Web application on &lt;c2&gt;http://hello-world.example&lt;/c2&gt; can access this resource as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T174938Z" creationid="lv7777" creationdate="20160820T174938Z">
+        <seg>以下のようにして &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; をクライアント側の Web application で使用し、 &lt;c2&gt;http://hello-world.example&lt;/c2&gt; にアクセスすることができる:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Using &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; again and assuming the application were hosted at &lt;c2&gt;http://calendar.example/app&lt;/c2&gt; the author could use the following ECMAScript snippet:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T090911Z" creationid="lv7777" creationdate="20160821T090911Z">
+        <seg>アプリケーションのホストが &lt;c2&gt;http://calendar.example/app&lt;/c2&gt; に置かれており、再度 &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; を使用すると仮定すると、作者は以下のECMAScript のスニペットを使用できる:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>W3C Recommendation 16 January 2014</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160820T160556Z" creationid="lv7777" creationdate="20160820T160556Z">
+        <seg>2014年1月16日付W3C勧告</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>W3C maintains a public list of any patent disclosures for the &lt;a1&gt;WebAppSec WG&lt;/a1&gt; and the &lt;a2&gt;WebApps WG&lt;/a2&gt; made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T002249Z" creationid="lv7777" creationdate="20160821T002201Z">
+        <seg>W3Cは、&lt;a1&gt;WebAppSec WG&lt;/a1&gt; と &lt;a2&gt;WebApps WG&lt;/a2&gt; が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Web applications that are not uniquely identified by specific host names, and/or mapped to specific ports, do not necessarily have a unique origin, and thus will not be able to securely utilize the mechanism defined in this specification.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T045812Z" creationid="lv7777" creationdate="20160831T045812Z">
+        <seg>一意に特定できないホスト名や、特定のポートにマッピングされていない、必ずしも一意のオリジンを持っていないウェブアプリケーションは、この仕様書で定義されている安全機構を使用することができない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When &lt;d0&gt;parsing a header&lt;/d0&gt; the header must be parsed per the corresponding ABNF production in the &lt;a1&gt;syntax&lt;/a1&gt; section.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T112835Z" creationid="lv7777" creationdate="20160821T112835Z">
+        <seg>&lt;d0&gt;ヘッダを解析する&lt;/d0&gt;時、 ヘッダは &lt;a1&gt;構文&lt;/a1&gt; セクションのABNFと一致した所ごとに解析されなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When one of them is empty the other is non-empty.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T090248Z" creationid="lv7777" creationdate="20160901T090248Z">
+        <seg>片方が空の時、もう片方が空ではない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When part of the response to a &lt;a3&gt;preflight request&lt;/a3&gt; it indicates that the &lt;a4&gt;actual request&lt;/a4&gt; can include &lt;a5&gt;user credentials&lt;/a5&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160901T151425Z" creationid="lv7777" creationdate="20160901T151425Z">
+        <seg>When part of the response to a これが&lt;a3&gt;preflight request&lt;/a3&gt;のレスポンスであった場合、 このヘッダは &lt;a4&gt;実際のリクエストに&lt;/a4&gt; に &lt;a5&gt;ユーザー資格情報&lt;/a5&gt;が存在できるかどうかについて指示するものである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When requests have significance other than retrieval, and when relying on the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header, resources must be careful to distinguish between authorizing a request (including its side-effects) and authorizing access to the representation of that resource in the response.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160824T020317Z" creationid="lv7777" creationdate="20160824T011011Z">
+        <seg>リクエストが検索以外の意義を持ち、&lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; ヘッダが信頼できる場合、リソースは認証リクエストとリソースが入っているレスポンスへのアクセスを許可の区別に気を付ける必要がある</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm is invoked, these steps must be followed:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T123142Z" creationid="lv7777" creationdate="20160831T123142Z">
+        <seg>&lt;a0&gt;クロスオリジンリクエスト&lt;/a0&gt; アルゴリズムが呼び出された場合、以下の手順を踏む必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>When this specification is used for requests which have significance other than retrieval and which involve coordination between or data originating from more than two origins, (e.g. between resources enabling editing, printing and storage, each at distinct origins) requests ought to set the &lt;a0&gt;omit credentials flag&lt;/a0&gt; and resources ought to perform authorization using security tokens explicitly provided in the content of the request, especially if the origins are not all mutually and completely trusted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160831T034915Z" creationid="lv7777" creationdate="20160831T031414Z">
+        <seg>この仕様が検索以外の意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは&lt;a0&gt;omit credentials flag&lt;/a0&gt;を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whenever the &lt;d0&gt;cache and network error steps&lt;/d0&gt; are applied, follow these steps:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160904T085738Z" creationid="lv7777" creationdate="20160904T085738Z">
+        <seg>&lt;d0&gt;cache and network error steps&lt;/d0&gt; が適用されたかによって以下の手順に従う。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>converted to ASCII lowercase</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
+        <seg>ASCII lowercaseに変換する</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://www.w3.org/TR/2014/REC-cors-20140116/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T020308Z" creationid="lv7777" creationdate="20160902T020308Z">
+        <seg>http://www.w3.org/TR/2014/REC-cors-20140116/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>http://www.w3.org/TR/cors/</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20160902T020344Z" creationid="lv7777" creationdate="20160902T020319Z">
+        <seg>http://www.w3.org/TR/cors/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>本明細書の目的のために長期的な&lt;d0&gt;ユーザー資格情報&lt;/d0&gt;の起源を持つユーザーエージェントの以前の対話に基づいて送信されるクッキー、HTTP認証、およびクライアント側のSSL証明書を意味します。具体的には、プロキシ認証またはを参照していない&lt;c1&gt;&lt;a2&gt;Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダー。 &lt;a3&gt;クッキー&lt;/a3&gt;</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T114253Z" creationid="lv7777" creationdate="20161101T114253Z">
+        <seg></seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
