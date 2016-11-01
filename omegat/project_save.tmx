@@ -1174,6 +1174,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In XMLHttpRequest progress events are dispatched only after the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;success&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T101640Z" creationid="lv7777" creationdate="20161101T101424Z">
+        <seg>XMLHttpRequest プログレスイベントは&lt;a0&gt;cross-origin request status&lt;/a0&gt;が&lt;i1&gt;success&lt;/i1&gt;になった後にのみ発行される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition, for the coming forty-two minutes, no &lt;a2&gt;preflight request&lt;/a2&gt; will be needed.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T081143Z" creationid="lv7777" creationdate="20160901T081143Z">
