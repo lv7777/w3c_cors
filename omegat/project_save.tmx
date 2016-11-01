@@ -1534,6 +1534,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Reviewing the XMLHttpRequest specification provides a good start for the kind of limitations that are to be imposed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T104312Z" creationid="lv7777" creationdate="20161101T104312Z">
+        <seg>XMLHttpRequest 仕様書のレビューは課すタイプの制限の良いスタートを提供します。provides a good start for the kind of limitations that are to be imposed.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Security requirements and considerations are listed throughout this specification.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T225730Z" creationid="lv7777" creationdate="20160821T103907Z">
@@ -2282,6 +2290,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T160051Z" creationid="lv7777" creationdate="20160831T160051Z">
         <seg>To protect resources/リソースを保護するためには/クロスオリジンリクエストに対して/ against cross-origin requests/特定のUAから生成できない/ that could not originate from certain user agents /この仕様書が存在する以前の/before this specification existed// a &lt;a0&gt;preflight request&lt;/a0&gt; はリソースがこの仕様書に気づくのを保証させる/ aware of this specification.To protect resources against cross-origin requests that could not originate from certain user agents before this specification existed a &lt;a0&gt;preflight request&lt;/a0&gt; is made to ensure that the resource is aware of this specification.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Upload progress events are only dispatched once the &lt;a2&gt;cross-origin request status&lt;/a2&gt; is &lt;i3&gt;preflight complete&lt;/i3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T101958Z" creationid="lv7777" creationdate="20161101T101958Z">
+        <seg>Upload progress events は &lt;a2&gt;cross-origin request status&lt;/a2&gt; が &lt;i3&gt;preflight complete&lt;/i3&gt;状態になった後にのみ発行される。</seg>
       </tuv>
     </tu>
     <tu>
