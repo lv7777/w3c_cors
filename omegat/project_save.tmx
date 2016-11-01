@@ -1446,6 +1446,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Optionally add a single &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; header with as value the amount of seconds the user agent is allowed to cache the result of the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161101T133239Z" creationid="lv7777" creationdate="20161101T133224Z">
+        <seg>オプションとして、ＵＡがリクエストの結果をキャッシュするのを許可する秒数を値とした &lt;c0&gt;&lt;a1&gt;Access-Control-Max-Age&lt;/a1&gt;&lt;/c0&gt; ヘッダを加えることもできる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Other documents may supersede this document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T000721Z" creationid="lv7777" creationdate="20160821T000721Z">
