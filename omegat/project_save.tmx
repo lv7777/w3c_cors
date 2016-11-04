@@ -1656,8 +1656,8 @@
       <tuv lang="EN-US">
         <seg>Some terminology in this specification is from &lt;c0&gt;The Web Origin Concept&lt;/c0&gt;, &lt;c1&gt;HTML&lt;/c1&gt;,</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T095630Z" creationid="lv7777" creationdate="20160821T095630Z">
-        <seg>この仕様書内のいくつか&lt;c0&gt;The Web Origin Concept&lt;/c0&gt;, &lt;c1&gt;HTML&lt;/c1&gt;の仕様のものである。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T115216Z" creationid="lv7777" creationdate="20160821T095630Z">
+        <seg>この仕様書内のいくつかの語は&lt;c0&gt;The Web Origin Concept&lt;/c0&gt;、 &lt;c1&gt;HTML&lt;/c1&gt;の仕様のものである。</seg>
       </tuv>
     </tu>
     <tu>
