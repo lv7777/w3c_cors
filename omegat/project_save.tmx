@@ -110,6 +110,22 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c0&gt;https&lt;/c0&gt; is not allowed because of certificate errors</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T133652Z" creationid="lv7777" creationdate="20161104T133652Z">
+        <seg>証明書のエラーのため、&lt;c0&gt;https&lt;/c0&gt;を指定することはできない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;c0&gt;https&lt;/c0&gt; to &lt;c1&gt;http&lt;/c1&gt; is not allowed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T133745Z" creationid="lv7777" creationdate="20161104T133614Z">
+        <seg>&lt;c0&gt;https&lt;/c0&gt;から&lt;c1&gt;http&lt;/c1&gt;の(リクエスト)は許可されていない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;d0&gt;Converting a string to ASCII lowercase&lt;/d0&gt; means replacing all characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Z with the corresponding characters in the range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103711Z" creationid="lv7777" creationdate="20160821T103711Z">
@@ -530,6 +546,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T013857Z" creationid="lv7777" creationdate="20160831T013857Z">
         <seg>リソースのロードに依存するHTML &lt;c0&gt;iframe&lt;/c0&gt;要素の中に入った資格情報付きのクロスオリジン通信技術の代替として、他のクロスオリジンサイドチャネルまたはクロスオリジン通信技術を実装する場合、この仕様はほぼ同等のセキュリティ状態を提供する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>As indicated as the first step of the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm and in the &lt;a1&gt;redirect steps&lt;/a1&gt; algorithm user agents are allowed to terminate the algorithm and not make a request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T133509Z" creationid="lv7777" creationdate="20161104T133509Z">
+        <seg> &lt;a0&gt;cross-origin request&lt;/a0&gt; アルゴリズムの最初のステップと &lt;a1&gt;redirect steps&lt;/a1&gt; アルゴリズム内で示されているUAはリクエストを作成せずにアルゴリズムを終了しても良い。</seg>
       </tuv>
     </tu>
     <tu>
