@@ -1672,8 +1672,8 @@
       <tuv lang="EN-US">
         <seg>Specifications that enable an API to make cross-origin requests to resources can use the algorithms defined by this specification.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161104T114647Z" creationid="lv7777" creationdate="20161104T114647Z">
-        <seg>リソースを取得するクロスオリジンリクエストを作成することができるAPI仕様はこの仕様書で定義されているアルゴリズムを使用することができます。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T114831Z" creationid="lv7777" creationdate="20161104T114647Z">
+        <seg>リソースを取得するクロスオリジンリクエストを作成することができるAPIを定義している仕様書では、この仕様書で定義されているアルゴリズムを使用することができます。</seg>
       </tuv>
     </tu>
     <tu>
