@@ -454,6 +454,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>An initial &lt;a0&gt;implementation report&lt;/a0&gt; is available, with a &lt;a1&gt;supplement for changes since Candidate Recommendation&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T101659Z" creationid="lv7777" creationdate="20161104T101457Z">
+        <seg>初期版の &lt;a0&gt;実装報告&lt;/a0&gt; が、 &lt;a1&gt;勧告候補版からの変更の補足&lt;/a1&gt;とともに使用可能です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Apply the &lt;a0&gt;abort steps&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T151031Z" creationid="lv7777" creationdate="20160831T151031Z">
@@ -570,6 +578,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T042645Z" creationid="lv7777" creationdate="20160821T230559Z">
         <seg>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request./リクエスト内のコンテンツで提供されている推測しにくいトークン/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>By publishing this Recommendation W3C expects that the functionality specified in this Cross-Origin Resource Sharing Recommendation will not be affected by changes to HTML5 or to HTTP Status Code 308 as those specifications proceed to Recommendation and RFC status respectively.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161104T101242Z" creationid="lv7777" creationdate="20161104T101242Z">
+        <seg>この勧告を公開することでW3CはCross-Origin Resource Sharing勧告内で仕様が決められている機能はHTML5 や HTTP Status Code 308などの仕様書を勧告に進めることやRFCのステータスの変更への影響を与えない。</seg>
       </tuv>
     </tu>
     <tu>
