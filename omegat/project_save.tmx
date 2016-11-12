@@ -2184,8 +2184,8 @@
       <tuv lang="EN-US">
         <seg>These restrictions prevent a client-side Web application running from one origin from obtaining data retrieved from another origin, and also limit unsafe HTTP requests that can be automatically launched toward destinations that differ from the running application's origin.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161101T115322Z" creationid="lv7777" creationdate="20160821T005615Z">
-        <seg>これらの制限は、あるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161112T171713Z" creationid="lv7777" creationdate="20160821T005615Z">
+        <seg>これらの制限により、あるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</seg>
       </tuv>
     </tu>
     <tu>
