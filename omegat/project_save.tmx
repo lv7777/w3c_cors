@@ -2697,6 +2697,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>While a &lt;a0&gt;cross-origin request&lt;/a0&gt; is progressing its associated &lt;a1&gt;cross-origin request status&lt;/a1&gt; is updated.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T124613Z" creationid="lv7777" creationdate="20161113T124613Z">
+        <seg>&lt;a0&gt;cross-origin request&lt;/a0&gt; が進行するとともに、&lt;a1&gt;cross-origin request status&lt;/a1&gt; が更新される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>converted to ASCII lowercase</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
