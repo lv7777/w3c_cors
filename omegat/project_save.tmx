@@ -2414,6 +2414,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Use method &lt;a10&gt;request method&lt;/a10&gt;, entity body &lt;a11&gt;request entity body&lt;/a11&gt;, including the &lt;a12&gt;author request headers&lt;/a12&gt;, and include &lt;a13&gt;user credentials&lt;/a13&gt; if the &lt;a14&gt;omit credentials flag&lt;/a14&gt; is unset.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T035438Z" creationid="lv7777" creationdate="20161113T035438Z">
+        <seg>もし &lt;a14&gt;omit credentials flag&lt;/a14&gt; が未設定の場合、 &lt;a13&gt;user credentials&lt;/a13&gt; と &lt;a12&gt;author request headers&lt;/a12&gt;を含む、 &lt;a11&gt;request entity body&lt;/a11&gt;がエンティティボディの&lt;a10&gt;request method&lt;/a10&gt;を使用します</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Use of &lt;a0&gt;user credentials&lt;/a0&gt; in a cross-origin request is appropriate when:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160824T020949Z" creationid="lv7777" creationdate="20160824T020949Z">
