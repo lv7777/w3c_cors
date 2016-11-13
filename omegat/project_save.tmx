@@ -1729,6 +1729,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Similarly to &lt;a0&gt;same origin&lt;/a0&gt; requests, CORS API specifications are encouraged to properly limit headers, methods, and &lt;a1&gt;user credentials&lt;/a1&gt; the author can set and get for requests that are &lt;a2&gt;cross-origin&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T113409Z" creationid="lv7777" creationdate="20161113T113409Z">
+        <seg>&lt;a0&gt;same origin&lt;/a0&gt; リクエストと同様に、CORS API 仕様書では &lt;a2&gt;cross-origin&lt;/a2&gt;リクエストで作成者が設定、取得できるヘッダ、メソッド、 &lt;a1&gt;user credentials&lt;/a1&gt; を適切に制限することを推奨している。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Simple cross-origin requests generated outside this specification (such as cross-origin form submissions using &lt;c1&gt;GET&lt;/c1&gt; or &lt;c2&gt;POST&lt;/c2&gt; or cross-origin &lt;c3&gt;GET&lt;/c3&gt; requests resulting from &lt;c4&gt;script&lt;/c4&gt; elements) typically include &lt;a5&gt;user credentials&lt;/a5&gt;, so resources conforming to this specification must always be prepared to expect simple cross-origin requests with credentials.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T235124Z" creationid="lv7777" creationdate="20160821T101237Z">
