@@ -1000,6 +1000,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>I.e. the &lt;a0&gt;cross-origin request status&lt;/a0&gt; value does not indicate that the request has completed.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T165523Z" creationid="lv7777" creationdate="20161113T165523Z">
+        <seg>例えば &lt;a0&gt;cross-origin request status&lt;/a0&gt; の値がリクエストが完了したことを示しません。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;a0&gt;author request headers&lt;/a0&gt; is not empty include an &lt;c1&gt;&lt;a2&gt;Access-Control-Request-Headers&lt;/a2&gt;&lt;/c1&gt; header with as header field value a comma-separated list of the header field names from &lt;a3&gt;author request headers&lt;/a3&gt; in lexicographical order, each &lt;a4&gt;converted to ASCII lowercase&lt;/a4&gt; (even when one or more are a &lt;a5&gt;simple header&lt;/a5&gt;).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T064700Z" creationid="lv7777" creationdate="20160901T064700Z">
@@ -2325,6 +2333,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T081249Z" creationid="lv7777" creationdate="20160901T081249Z">
         <seg>このキャッシュはいくつかのエントリから構成されている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>This can be handled equivalently to how &lt;i0&gt;network error&lt;/i0&gt; is handled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T165645Z" creationid="lv7777" creationdate="20161113T165645Z">
+        <seg>これは&lt;i0&gt;network error&lt;/i0&gt;の処理と同じ方法で処理できます。</seg>
       </tuv>
     </tu>
     <tu>
