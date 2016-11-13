@@ -874,8 +874,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>For APIs that transparently handle redirects CORS API specifications are encouraged to handle this scenario transparently as well by "catching" the redirect and invoking the &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm on the (&lt;a1&gt;cross-origin&lt;/a1&gt;) redirect URL.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161113T122406Z" creationid="lv7777" creationdate="20161113T120425Z">
-        <seg>For リダイレクト透過的に扱うAPIのために、CORS API 仕様書ではリダイレクトを「キャッチ」して、リダイレクトURL上で &lt;a0&gt;cross-origin request&lt;/a0&gt; アルゴリズムを呼び出すことでこのシナリオを透過的に処理することを推奨している。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T124339Z" creationid="lv7777" creationdate="20161113T120425Z">
+        <seg>リダイレクト透過的に扱うAPIのために、CORS API 仕様書ではリダイレクトを「キャッチ」して、リダイレクトURL上で &lt;a0&gt;cross-origin request&lt;/a0&gt; アルゴリズムを呼び出すことでこのシナリオを透過的に処理することを推奨している。</seg>
       </tuv>
     </tu>
     <tu>
