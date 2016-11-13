@@ -1747,9 +1747,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>Since browsers are based on a &lt;a0&gt;same origin&lt;/a0&gt; security model and the policy outlined in this specification is intended for APIs used in browsers, it is expected that APIs that will utilize this policy will have to handle a &lt;a1&gt;same origin&lt;/a1&gt; request that results in a redirect that is &lt;a2&gt;cross-origin&lt;/a2&gt; in a special way.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161113T114609Z" creationid="lv7777" creationdate="20161113T053321Z">
-        <seg>ブラウザが&lt;a0&gt;same origin&lt;/a0&gt; セキュリティモデルに基づいており、この仕様書で概説されているポリシーはAPIがブラウザで使用することを意図しているため、。/このポリシーを使用するAPI/特殊な方法で&lt;a2&gt;cross-origin&lt;/a2&gt;リダイレクトの結果生じた同一オリジンリクエストを適切に処理する/を期待する/it is expected that APIs that will utilize this policy will/&lt;a1&gt;same origin&lt;/a1&gt;リクエスト・リダイレクトの結果生じた/ have to handle a &lt;a1&gt;same origin&lt;/a1&gt; request that results in a redirect that is &lt;a2&gt;cross-origin&lt;/a2&gt; in a special way.
-このポリシーを利用するAPIは、同じ原点リクエストを処理しなければならないため、特別な方法でクロスオリジンであるリダイレクトが発生します。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T120003Z" creationid="lv7777" creationdate="20161113T053321Z">
+        <seg>ブラウザが&lt;a0&gt;same origin&lt;/a0&gt; セキュリティモデルに基づいており、この仕様書で概説されているポリシーはAPIがブラウザで使用することを意図しているため、このポリシーを使用するAPIは特殊な方法で&lt;a2&gt;cross-origin&lt;/a2&gt;リダイレクトの結果生じた同一オリジンリクエストを適切に処理しなければならない。</seg>
       </tuv>
     </tu>
     <tu>
