@@ -2190,6 +2190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>There is a &lt;d0&gt;cache match&lt;/d0&gt; when there is a cache entry in the &lt;a1&gt;preflight result cache&lt;/a1&gt; for which the following is true:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T041401Z" creationid="lv7777" creationdate="20161113T041401Z">
+        <seg>以下の条件のいずれかが真であるキャッシュエントリー内の、 &lt;a1&gt;preflight result cache&lt;/a1&gt;がある場合、There is a &lt;d0&gt;cache match&lt;/d0&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>These restrictions prevent a client-side Web application running from one origin from obtaining data retrieved from another origin, and also limit unsafe HTTP requests that can be automatically launched toward destinations that differ from the running application's origin.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161112T171713Z" creationid="lv7777" creationdate="20160821T005615Z">
