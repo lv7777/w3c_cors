@@ -1608,8 +1608,8 @@
       <tuv lang="EN-US">
         <seg>Remove the entries in the &lt;a0&gt;preflight result cache&lt;/a0&gt; where &lt;a1&gt;origin&lt;/a1&gt; field value is a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for &lt;a3&gt;source origin&lt;/a3&gt; and &lt;a4&gt;url&lt;/a4&gt; field value is a &lt;a5&gt;case-sensitive&lt;/a5&gt; match for &lt;a6&gt;request URL&lt;/a6&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160904T090849Z" creationid="lv7777" creationdate="20160904T090849Z">
-        <seg>Remove the entries in the&lt;a1&gt;origin&lt;/a1&gt; フィールドの値が  &lt;a3&gt;source origin&lt;/a3&gt;と &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチし、 ・&lt;a4&gt;url&lt;/a4&gt; フィールドの値が &lt;a6&gt;request URL&lt;/a6&gt;と&lt;a5&gt;case-sensitive&lt;/a5&gt; マッチする&lt;a0&gt;preflight result cache&lt;/a0&gt; 内のエントリーを削除する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T040511Z" creationid="lv7777" creationdate="20160904T090849Z">
+        <seg>&lt;a1&gt;origin&lt;/a1&gt; フィールドの値が &lt;a3&gt;source origin&lt;/a3&gt;と &lt;a2&gt;case-sensitive&lt;/a2&gt; マッチし、&lt;a4&gt;url&lt;/a4&gt; フィールドの値が &lt;a6&gt;request URL&lt;/a6&gt;と&lt;a5&gt;case-sensitive&lt;/a5&gt; マッチする&lt;a0&gt;preflight result cache&lt;/a0&gt; 内のエントリーを削除する。</seg>
       </tuv>
     </tu>
     <tu>
