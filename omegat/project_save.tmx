@@ -342,6 +342,16 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>A CORS API specification for an API that only allows requests using the &lt;c0&gt;GET&lt;/c0&gt; method might set &lt;a1&gt;request method&lt;/a1&gt; to &lt;c2&gt;GET&lt;/c2&gt;, &lt;a3&gt;request entity body&lt;/a3&gt; to empty, and &lt;a4&gt;source origin&lt;/a4&gt; to some appropriate value and let the other variables be controlled by the API.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T044856Z" creationid="lv7777" creationdate="20161113T044856Z">
+        <seg>
+GETメソッドを使用するリクエストのみを許可するAPIのCORS API仕様では、リクエストメソッドをGETに設定し、エンティティボディを空にし、ソースの原点を適切な値に設定し、他の変数をAPIで制御できるようにします。・・・・・・・・・・・・
+GETメソッドを使用するリクエストのみを許可するCORS API 仕様書のAPIspecification for an API that only allows requests using the &lt;c0&gt;GET&lt;/c0&gt; method might set &lt;a1&gt;request method&lt;/a1&gt; to &lt;c2&gt;GET&lt;/c2&gt;, &lt;a3&gt;request entity body&lt;/a3&gt; to empty, and &lt;a4&gt;source origin&lt;/a4&gt; to some appropriate value and let the other variables be controlled by the API.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>A conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T122533Z" creationid="lv7777" creationdate="20160830T122533Z">
