@@ -1454,6 +1454,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;original URL&lt;/v0&gt; be the &lt;a1&gt;request URL&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T040001Z" creationid="lv7777" creationdate="20161113T040001Z">
+        <seg>&lt;v0&gt;original URL&lt;/v0&gt; を&lt;a1&gt;request URL&lt;/a1&gt;とする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Likewise, the &lt;a1&gt;user agent processing model&lt;/a1&gt; section details how user agents are to use these headers.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T071230Z" creationid="lv7777" creationdate="20160831T071230Z">
@@ -2594,6 +2602,14 @@
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161113T034708Z" creationid="lv7777" creationdate="20161113T034708Z">
         <seg>リクエストステップが適用されたかどうかに関係なく、manual redirect flagがセットされたリファラーソースを使用して、参照元オリジンのオリジンからリクエストURLを取得し、その後、もしomit credentials flagが設定されていた場合、ブロックcookie flagを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whenever the &lt;d0&gt;redirect steps&lt;/d0&gt; are applied, follow this set of steps:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T035925Z" creationid="lv7777" creationdate="20161113T035925Z">
+        <seg>&lt;d0&gt;リダイレクトステップ&lt;/d0&gt;が適用されるたびに、この一連の手順に従います。</seg>
       </tuv>
     </tu>
     <tu>
