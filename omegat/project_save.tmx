@@ -690,8 +690,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>Depending on the value of the &lt;a2&gt;cross-origin request status&lt;/a2&gt; the API is to react in a different way:</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161113T072517Z" creationid="lv7777" creationdate="20161113T072517Z">
-        <seg>Depending on the value of the &lt;a2&gt;cross-origin request status&lt;/a2&gt;の値は異なった方法により依存する。 the API is to react in a different way:</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T074855Z" creationid="lv7777" creationdate="20161113T072517Z">
+        <seg> &lt;a2&gt;cross-origin request status&lt;/a2&gt;の値に応じて異なった方法で反応する。 </seg>
       </tuv>
     </tu>
     <tu>
