@@ -864,6 +864,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Features that can only be safely exposed after a &lt;a0&gt;preflight request&lt;/a0&gt; can now be enabled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T125708Z" creationid="lv7777" creationdate="20161113T125708Z">
+        <seg> &lt;a0&gt;preflight request&lt;/a0&gt;後のみ、安全に公開できる機能を有効にできるようになりました。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For &lt;a0&gt;request method&lt;/a0&gt; there either is a &lt;a1&gt;method cache match&lt;/a1&gt; or it is a &lt;a2&gt;simple method&lt;/a2&gt; and the &lt;a3&gt;force preflight flag&lt;/a3&gt; is unset.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T010006Z" creationid="lv7777" creationdate="20160901T010006Z">
