@@ -633,8 +633,8 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>CORS API specifications also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161101T071256Z" creationid="lv7777" creationdate="20161101T071256Z">
-        <seg>CORS API 仕様はまた、 also need to ensure not to reveal anything until the &lt;a0&gt;cross-origin request status&lt;/a0&gt; is set to &lt;i1&gt;preflight complete&lt;/i1&gt; or &lt;i2&gt;success&lt;/i2&gt; to prevent e.g. port scanning.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T111738Z" creationid="lv7777" creationdate="20161101T071256Z">
+        <seg>CORS API 仕様はまた、ポートスキャンなどを防止するために&lt;a0&gt;cross-origin request status&lt;/a0&gt; が &lt;i1&gt;preflight complete&lt;/i1&gt; もしくは &lt;i2&gt;success&lt;/i2&gt; 状態になるまで明示的に何もしないことを保証する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
