@@ -2089,6 +2089,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The request itself can still be progressing.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T125812Z" creationid="lv7777" creationdate="20161113T125812Z">
+        <seg>要求自体はまだ進行中です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The resource can be shared.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T143049Z" creationid="lv7777" creationdate="20160831T143049Z">
