@@ -1682,8 +1682,9 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>Reviewing the XMLHttpRequest specification provides a good start for the kind of limitations that are to be imposed.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161101T104312Z" creationid="lv7777" creationdate="20161101T104312Z">
-        <seg>XMLHttpRequest 仕様書のレビューは課すタイプの制限の良いスタートを提供します。provides a good start for the kind of limitations that are to be imposed.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T112022Z" creationid="lv7777" creationdate="20161101T104312Z">
+        <seg>
+XMLHttpRequest仕様書のレビューによって、課されるべき種類の制限が適切に開始されます。</seg>
       </tuv>
     </tu>
     <tu>
