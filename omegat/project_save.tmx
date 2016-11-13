@@ -2041,6 +2041,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The URL &lt;scheme&gt; is not supported.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T170000Z" creationid="lv7777" creationdate="20161113T170000Z">
+        <seg> URL &lt;scheme&gt; がサポートサポートされていない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The above algorithm also functions when the &lt;a0&gt;ASCII serialization&lt;/a0&gt; of an origin is the string "&lt;c1&gt;null&lt;/c1&gt;".</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T092114Z" creationid="lv7777" creationdate="20160904T092114Z">
@@ -2085,6 +2093,22 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T115701Z" creationid="lv7777" creationdate="20160831T115701Z">
         <seg>リクエストのメソッド。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The origin of the resource blacklisted.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T165845Z" creationid="lv7777" creationdate="20161113T165845Z">
+        <seg>リソースのオリジンがブラックリストに入っている。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The origin of the resource is known to be part of an intranet.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T165933Z" creationid="lv7777" creationdate="20161113T165933Z">
+        <seg>リソースのオリジンがイントラネットの一部である。</seg>
       </tuv>
     </tu>
     <tu>
