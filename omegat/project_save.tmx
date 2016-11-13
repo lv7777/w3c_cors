@@ -688,6 +688,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Depending on the value of the &lt;a2&gt;cross-origin request status&lt;/a2&gt; the API is to react in a different way:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T072517Z" creationid="lv7777" creationdate="20161113T072517Z">
+        <seg>Depending on the value of the &lt;a2&gt;cross-origin request status&lt;/a2&gt;の値は異なった方法により依存する。 the API is to react in a different way:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Do not actually terminate the request.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T153011Z" creationid="lv7777" creationdate="20160831T153011Z">
@@ -708,6 +716,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T124701Z" creationid="lv7777" creationdate="20160901T124701Z">
         <seg>例：もしUAが &lt;c0&gt;https&lt;/c0&gt; スキームから &lt;c1&gt;http&lt;/c1&gt; スキームに向かって発信する&lt;a2&gt;cross-origin request&lt;/a2&gt; リクエストを許可しない場合、同じことをHTML &lt;c3&gt;img&lt;/c3&gt; 要素にも適用することを推奨される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>E.g. upload progress events for &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T072557Z" creationid="lv7777" creationdate="20161113T072557Z">
+        <seg>例：&lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt;のupload progress events。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1722,8 +1738,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>Since browsers are based on a &lt;a0&gt;same origin&lt;/a0&gt; security model and the policy outlined in this specification is intended for APIs used in browsers, it is expected that APIs that will utilize this policy will have to handle a &lt;a1&gt;same origin&lt;/a1&gt; request that results in a redirect that is &lt;a2&gt;cross-origin&lt;/a2&gt; in a special way.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161113T053321Z" creationid="lv7777" creationdate="20161113T053321Z">
-        <seg>ブラウザが&lt;a0&gt;same origin&lt;/a0&gt; セキュリティモデルに基づいており、この仕様書で概説されているポリシーはAPIがブラウザで使用することを意図しているため、。it is expected that APIs that will utilize this policy will have to handle a &lt;a1&gt;same origin&lt;/a1&gt; request that results in a redirect that is &lt;a2&gt;cross-origin&lt;/a2&gt; in a special way.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T072104Z" creationid="lv7777" creationdate="20161113T053321Z">
+        <seg>ブラウザが&lt;a0&gt;same origin&lt;/a0&gt; セキュリティモデルに基づいており、この仕様書で概説されているポリシーはAPIがブラウザで使用することを意図しているため、。/APIがこのポリシーを使用することを期待する/it is expected that APIs that will utilize this policy will/&lt;a1&gt;same origin&lt;/a1&gt;リクエスト・リダイレクトの結果生じた/ have to handle a &lt;a1&gt;same origin&lt;/a1&gt; request that results in a redirect that is &lt;a2&gt;cross-origin&lt;/a2&gt; in a special way.</seg>
       </tuv>
     </tu>
     <tu>
@@ -2004,6 +2020,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T091318Z" creationid="lv7777" creationdate="20160821T090459Z">
         <seg>追加のプリフライトリクエストを呼び出すのはUAが行う複雑なタスクである。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The contents of the response can be shared with the API, including headers that have not been filtered out.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161113T072750Z" creationid="lv7777" creationdate="20161113T072750Z">
+        <seg>このAPIによって共有できるレスポンスのコンテンツは、フィルタリングされてないヘッダを含める。</seg>
       </tuv>
     </tu>
     <tu>
