@@ -1162,8 +1162,16 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; contains the &lt;c1&gt;&lt;a2&gt;userinfo&lt;/a2&gt;&lt;/c1&gt; production apply the &lt;a3&gt;network error steps&lt;/a3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161126T160919Z" creationid="lv7777" creationdate="20161126T160919Z">
-        <seg>もし&lt;a0&gt;要求するURL&lt;/a0&gt;に contains the &lt;c1&gt;&lt;a2&gt;ユーザー情報&lt;/a2&gt;&lt;/c1&gt; productionが含まれていた場合、&lt;a3&gt;network error steps&lt;/a3&gt;を適用する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T161454Z" creationid="lv7777" creationdate="20161126T160919Z">
+        <seg>もし&lt;a0&gt;要求するURL&lt;/a0&gt;に&lt;c1&gt;&lt;a2&gt;ユーザー認証情報&lt;/a2&gt;&lt;/c1&gt;が含まれていた場合、&lt;a3&gt;network error steps&lt;/a3&gt;を適用する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;resource sharing check&lt;/a0&gt; for the current resource returns fail, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T161707Z" creationid="lv7777" creationdate="20161126T161707Z">
+        <seg>もし現在の&lt;a0&gt;リソース共有チェック&lt;/a0&gt;が失敗と判定された場合、&lt;a1&gt;network error steps&lt;/a1&gt;を適用する。</seg>
       </tuv>
     </tu>
     <tu>
