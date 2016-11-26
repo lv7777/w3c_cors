@@ -2449,6 +2449,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This has no effect on setting of &lt;a0&gt;user credentials&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T164530Z" creationid="lv7777" creationdate="20161126T164530Z">
+        <seg>これは&lt;a0&gt;user credentials&lt;/a0&gt;の設定には影響を与えない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is again validated by the user agent.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T070913Z" creationid="lv7777" creationdate="20160821T070913Z">
