@@ -2577,6 +2577,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Transparently follow the redirect while observing the set of &lt;i0&gt;request rules&lt;/i0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T163603Z" creationid="lv7777" creationdate="20161126T163603Z">
+        <seg>一連の &lt;i0&gt;要求ルール&lt;/i0&gt;を観察する間、透過的にリダイレクトに従う。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Upload progress events are only dispatched once the &lt;a2&gt;cross-origin request status&lt;/a2&gt; is &lt;i3&gt;preflight complete&lt;/i3&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161101T101958Z" creationid="lv7777" creationdate="20161101T101958Z">
