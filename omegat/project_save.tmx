@@ -1154,8 +1154,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; is not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160904T085543Z" creationid="lv7777" creationdate="20160904T085543Z">
-        <seg>もし&lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; がサポートされていない場合、無限ループの規則に違反するかもしくはUAがis not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T153600Z" creationid="lv7777" creationdate="20160904T085543Z">
+        <seg>もし&lt;a0&gt;要求するURL&lt;/a0&gt; &lt;scheme&gt; がサポートされていない場合、無限ループを防止する、もしくはそのほかの理由によりUAが新しいリクエストを作成したくない場合、 &lt;a1&gt;network error steps&lt;/a1&gt;を適用する。</seg>
       </tuv>
     </tu>
     <tu>
