@@ -198,6 +198,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.5 &lt;/s0&gt;Cross-Origin Request with Preflight</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T165041Z" creationid="lv7777" creationdate="20161126T165041Z">
+        <seg>&lt;s0&gt;7.1.5 Preflightリクエストを伴った&lt;/s0&gt;Cross-Origin Request</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.7 &lt;/s0&gt;Generic Cross-Origin Request Algorithms</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T100345Z" creationid="lv7777" creationdate="20160901T100304Z">
