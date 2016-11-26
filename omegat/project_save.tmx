@@ -1152,6 +1152,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; &lt;a1&gt;origin&lt;/a1&gt; is not &lt;a2&gt;same origin&lt;/a2&gt; with the &lt;v3&gt;original URL&lt;/v3&gt; &lt;a4&gt;origin&lt;/a4&gt;, set &lt;a5&gt;source origin&lt;/a5&gt; to a globally unique identifier (becomes "&lt;c6&gt;null&lt;/c6&gt;" when transmitted).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T162054Z" creationid="lv7777" creationdate="20161126T162054Z">
+        <seg>もし&lt;a0&gt;リクエストURL&lt;/a0&gt;の&lt;a1&gt;origin&lt;/a1&gt;が &lt;v3&gt;original URL&lt;/v3&gt; &lt;a4&gt;origin&lt;/a4&gt;と&lt;a2&gt;same origin&lt;/a2&gt;でない場合、 set &lt;a5&gt;source origin&lt;/a5&gt; に (送信時に "&lt;c6&gt;null&lt;/c6&gt;" になる)globally unique identifier を設定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the &lt;a0&gt;request URL&lt;/a0&gt; &lt;scheme&gt; is not supported, infinite loop precautions are violated, or the user agent does not wish to make the new request for some other reason, apply the &lt;a1&gt;network error steps&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161126T153600Z" creationid="lv7777" creationdate="20160904T085543Z">
