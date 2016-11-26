@@ -2763,8 +2763,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>Whenever the &lt;d0&gt;abort steps&lt;/d0&gt; are applied, terminate the algorithm that invoked this set of steps and set the &lt;a1&gt;cross-origin request status&lt;/a1&gt; to &lt;i2&gt;abort error&lt;/i2&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161126T163752Z" creationid="lv7777" creationdate="20161126T163752Z">
-        <seg>Whenever the &lt;d0&gt;abort steps&lt;/d0&gt;が適用されるたびに、この一連のステップを呼び出しているアルゴリズムを終了し、&lt;a1&gt;cross-origin request status&lt;/a1&gt;を&lt;i2&gt;abort error&lt;/i2&gt;に設定する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T163953Z" creationid="lv7777" creationdate="20161126T163752Z">
+        <seg>&lt;d0&gt;abort steps&lt;/d0&gt;が適用されるごとに、この一連のステップを呼び出しているアルゴリズムを終了し、&lt;a1&gt;cross-origin request status&lt;/a1&gt;を&lt;i2&gt;abort error&lt;/i2&gt;に設定する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -2781,6 +2781,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161113T034708Z" creationid="lv7777" creationdate="20161113T034708Z">
         <seg>リクエストステップが適用されたかどうかに関係なく、manual redirect flagがセットされたリファラーソースを使用して、参照元オリジンのオリジンからリクエストURLを取得し、その後、もしomit credentials flagが設定されていた場合、ブロックcookie flagを設定します。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Whenever the &lt;d0&gt;network error steps&lt;/d0&gt; are applied, terminate the algorithm that invoked this set of steps and set the &lt;a1&gt;cross-origin request status&lt;/a1&gt; to &lt;i2&gt;network error&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T164039Z" creationid="lv7777" creationdate="20161126T164039Z">
+        <seg>&lt;d0&gt;network error steps&lt;/d0&gt;が適用されるごとに、この一連のステップを呼び出しているアルゴリズムを終了し、&lt;a1&gt;cross-origin request status&lt;/a1&gt;を&lt;i2&gt;network error&lt;/i2&gt;に設定する。</seg>
       </tuv>
     </tu>
     <tu>
