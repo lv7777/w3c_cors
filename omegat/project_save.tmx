@@ -1306,8 +1306,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If there is no &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; header or if &lt;a2&gt;parsing failed&lt;/a2&gt;, do not set any additional headers and terminate this set of steps.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161101T123140Z" creationid="lv7777" creationdate="20161101T123140Z">
-        <seg>もし no &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt; header or if &lt;a2&gt;parsing failed&lt;/a2&gt;, do not set any additional headers and terminate this set of steps.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T152033Z" creationid="lv7777" creationdate="20161101T123140Z">
+        <seg>もし no &lt;c0&gt;&lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt;&lt;/c0&gt;ヘッダが存在しなかったり&lt;a2&gt;解析に失敗&lt;/a2&gt;した場合、どんな追加のヘッダも追加してはならない。その後、この一連のステップを終了する。</seg>
       </tuv>
     </tu>
     <tu>
