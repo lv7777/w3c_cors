@@ -2761,6 +2761,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Whenever the &lt;d0&gt;abort steps&lt;/d0&gt; are applied, terminate the algorithm that invoked this set of steps and set the &lt;a1&gt;cross-origin request status&lt;/a1&gt; to &lt;i2&gt;abort error&lt;/i2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161126T163752Z" creationid="lv7777" creationdate="20161126T163752Z">
+        <seg>Whenever the &lt;d0&gt;abort steps&lt;/d0&gt;が適用されるたびに、この一連のステップを呼び出しているアルゴリズムを終了し、&lt;a1&gt;cross-origin request status&lt;/a1&gt;を&lt;i2&gt;abort error&lt;/i2&gt;に設定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Whenever the &lt;d0&gt;cache and network error steps&lt;/d0&gt; are applied, follow these steps:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T085738Z" creationid="lv7777" creationdate="20160904T085738Z">
