@@ -2457,6 +2457,15 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This ensures that &lt;a0&gt;preflight requests&lt;/a0&gt; that happened solely because of the &lt;a1&gt;force preflight flag&lt;/a1&gt; are cached too.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161127T160438Z" creationid="lv7777" creationdate="20161127T160438Z">
+        <seg>
+これにより、&lt;a1&gt;force preflight flag&lt;/a1&gt;によって発生した &lt;a0&gt;preflight requests&lt;/a0&gt;もまたキャッシュされることを保証する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This extension enables server-side applications to enforce limitations (e.g. returning nothing) on the cross-origin requests that they are willing to service.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T074516Z" creationid="lv7777" creationdate="20160821T074516Z">
