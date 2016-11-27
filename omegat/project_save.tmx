@@ -1865,6 +1865,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;cache and network error steps&lt;/a0&gt; are not used here as this is about an actual network error.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161127T022946Z" creationid="lv7777" creationdate="20161127T022946Z">
+        <seg>ここでは&lt;a0&gt;cache and network error steps&lt;/a0&gt;は実際のネットワークエラーとしては使用されない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;credentials&lt;/a0&gt; field value is true and the &lt;a1&gt;omit credentials flag&lt;/a1&gt; is unset, or it is false and the &lt;a2&gt;omit credentials flag&lt;/a2&gt; is set.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T091557Z" creationid="lv7777" creationdate="20160904T091557Z">
