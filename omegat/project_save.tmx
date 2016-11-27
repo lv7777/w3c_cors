@@ -1314,8 +1314,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If there are one or more &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; headers let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160902T051639Z" creationid="lv7777" creationdate="20160902T051639Z">
-        <seg>もし1以上のmore &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt; ヘッダheaders let &lt;v2&gt;methods&lt;/v2&gt; be the values as result of &lt;a3&gt;parsing&lt;/a3&gt; the headers.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161127T024430Z" creationid="lv7777" creationdate="20160902T051639Z">
+        <seg>もし1以上の&lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Methods&lt;/a1&gt;&lt;/c0&gt;ヘッダが存在する場合、&lt;v2&gt;methods&lt;/v2&gt;の値を、このヘッダを &lt;a3&gt;解析&lt;/a3&gt;した結果にする。</seg>
       </tuv>
     </tu>
     <tu>
