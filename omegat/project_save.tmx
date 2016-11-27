@@ -2465,6 +2465,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is a request to a non same-origin URL that first needs to be authorized using either a &lt;a1&gt;preflight result cache&lt;/a1&gt; entry or a &lt;a2&gt;preflight request&lt;/a2&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161127T022236Z" creationid="lv7777" creationdate="20161127T022236Z">
+        <seg>これは最初に &lt;a1&gt;preflight result cache&lt;/a1&gt; エントリー、もしくは&lt;a2&gt;preflight request&lt;/a2&gt;による認証が必要な同一オリジンではないURLである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This is again validated by the user agent.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T070913Z" creationid="lv7777" creationdate="20160821T070913Z">
