@@ -1104,6 +1104,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If for some reason the user agent is unable to provide a &lt;a0&gt;preflight result cache&lt;/a0&gt; (e.g. because of limited disk space) go to the next step in the overall set of steps (i.e. the &lt;a1&gt;actual request&lt;/a1&gt;).</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161127T163639Z" creationid="lv7777" creationdate="20161127T163639Z">
+        <seg>もし何らかの理由(例：ディスク容量が制限されているなど)でUAが&lt;a0&gt;preflight result cache&lt;/a0&gt;を提供できない場合、次のステップに進む (例：&lt;a1&gt;actual request&lt;/a1&gt;など)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If it returns fail, apply the &lt;a1&gt;cache and network error steps&lt;/a1&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T071339Z" creationid="lv7777" creationdate="20160901T071339Z">
