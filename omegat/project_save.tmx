@@ -1370,8 +1370,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If there is no such header, there is more than one such header, or &lt;a0&gt;parsing failed&lt;/a0&gt;, let &lt;v1&gt;max-age&lt;/v1&gt; be a value at the discretion of the user agent (zero is allowed).</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161127T164134Z" creationid="lv7777" creationdate="20161127T164134Z">
-        <seg>もしそのようなヘッダが存在しなかったり、１より多い数のヘッダが存在して &lt;a0&gt;parsing failed&lt;/a0&gt;した場合、 &lt;v1&gt;max-age&lt;/v1&gt; の値をIf there is no such header, there is more than one such header, or &lt;a0&gt;parsing failed&lt;/a0&gt;, let &lt;v1&gt;max-age&lt;/v1&gt; be a value at the discretion of the user agent (zero is allowed).</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161129T145357Z" creationid="lv7777" creationdate="20161127T164134Z">
+        <seg>もしそのようなヘッダが存在しなかったり、１より多い数のヘッダが存在して &lt;a0&gt;parsing failed&lt;/a0&gt;した場合、 &lt;v1&gt;max-age&lt;/v1&gt; の値をUAの選んだ適切な値にする(0も許可される)。</seg>
       </tuv>
     </tu>
     <tu>
