@@ -1304,6 +1304,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If the user agent imposes a limit on the &lt;a0&gt;max-age&lt;/a0&gt; field value and &lt;v1&gt;max-age&lt;/v1&gt; is greater than that limit let &lt;v2&gt;max-age&lt;/v2&gt; be the limit.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T083420Z" creationid="lv7777" creationdate="20161201T083420Z">
+        <seg>もしUAが &lt;a0&gt;max-age&lt;/a0&gt; フィールド値に制限を課し、&lt;v1&gt;max-age&lt;/v1&gt;がその値より大きい場合、&lt;v2&gt;max-age&lt;/v2&gt;の値を上限に設定する(max-ageの上限を超えた場合上限にする)。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If the value of &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; is not a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header as defined by its specification, return fail and terminate this algorithm.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T114707Z" creationid="lv7777" creationdate="20160901T114338Z">
