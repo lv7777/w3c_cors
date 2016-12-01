@@ -2578,6 +2578,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This is the &lt;d0&gt;actual request&lt;/d0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T090425Z" creationid="lv7777" creationdate="20161201T090425Z">
+        <seg>これは&lt;d0&gt;actual request&lt;/d0&gt;である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>This section defines the syntax of the new headers this specification introduces.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T051916Z" creationid="lv7777" creationdate="20160831T051916Z">
