@@ -1961,6 +1961,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;request URL&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T083826Z" creationid="lv7777" creationdate="20161201T083826Z">
+        <seg>&lt;a0&gt;request URL&lt;/a0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;request method&lt;/a0&gt; is a &lt;a1&gt;simple method&lt;/a1&gt; and the &lt;a2&gt;force preflight flag&lt;/a2&gt; is unset.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T123843Z" creationid="lv7777" creationdate="20160831T123843Z">
