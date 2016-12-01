@@ -904,6 +904,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For each method in &lt;v0&gt;methods&lt;/v0&gt; for which there is a &lt;a1&gt;method cache match&lt;/a1&gt; set the &lt;a2&gt;max-age&lt;/a2&gt; field value of the matching entry to &lt;v3&gt;max-age&lt;/v3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T083452Z" creationid="lv7777" creationdate="20161201T083452Z">
+        <seg>&lt;v0&gt;methods&lt;/v0&gt;内のそれぞれのメソッド/&lt;v3&gt;max-age&lt;/v3&gt;にマッチしたエントリーの&lt;a2&gt;max-age&lt;/a2&gt; フィールド名。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For every header of &lt;a0&gt;author request headers&lt;/a0&gt; there either is a &lt;a1&gt;header cache match&lt;/a1&gt; for the field name or it is a &lt;a2&gt;simple header&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T005746Z" creationid="lv7777" creationdate="20160901T005746Z">
