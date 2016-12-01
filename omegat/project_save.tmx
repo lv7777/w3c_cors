@@ -2954,6 +2954,40 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>client.onabort = updateUI</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T144940Z" creationid="lv7777" creationdate="20161201T144940Z">
+        <seg>client.onabort = updateUI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>client.onerror = updateUI</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T144946Z" creationid="lv7777" creationdate="20161201T144946Z">
+        <seg>client.onerror = updateUI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>client.onload = updateUI</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T144951Z" creationid="lv7777" creationdate="20161201T144951Z">
+        <seg>client.onload = updateUI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>client.send("id=" + itemId)
+}</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T144930Z" creationid="lv7777" creationdate="20161201T144930Z">
+        <seg>client.send("id=" + itemId)
+}</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>converted to ASCII lowercase</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103731Z" creationid="lv7777" creationdate="20160821T103731Z">
@@ -2974,6 +3008,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T020344Z" creationid="lv7777" creationdate="20160902T020319Z">
         <seg>http://www.w3.org/TR/cors/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>var client = new XMLHttpRequest()</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T145001Z" creationid="lv7777" creationdate="20161201T145001Z">
+        <seg>var client = new XMLHttpRequest()</seg>
       </tuv>
     </tu>
     <tu>
