@@ -2233,6 +2233,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The primary key of an entry consists of all fields excluding the &lt;a0&gt;max-age&lt;/a0&gt; field.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T090555Z" creationid="lv7777" creationdate="20161201T090555Z">
+        <seg>エントリーの主キーは&lt;a0&gt;max-age&lt;/a0&gt; field以外のすべてのフィールドから構成される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The request is outside the scope of this specification.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T035301Z" creationid="lv7777" creationdate="20160902T035301Z">
