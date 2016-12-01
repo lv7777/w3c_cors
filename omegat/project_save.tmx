@@ -361,8 +361,8 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>A conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160830T122533Z" creationid="lv7777" creationdate="20160830T122533Z">
-        <seg>準拠しているしているリソースとはA conformant resource is one that implements all the requirements listed in this specification that are applicable to resources.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T145419Z" creationid="lv7777" creationdate="20160830T122533Z">
+        <seg>準拠しているしているリソースはリソースに適用可能であるこの仕様書内のすべての要求リストを実装している。</seg>
       </tuv>
     </tu>
     <tu>
