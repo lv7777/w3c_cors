@@ -551,6 +551,14 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Apply the &lt;a1&gt;make a request steps&lt;/a1&gt; and observe the &lt;i2&gt;request rules&lt;/i2&gt; below while making the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T083941Z" creationid="lv7777" creationdate="20161201T083941Z">
+        <seg>&lt;a1&gt;make a request steps&lt;/a1&gt;を適用し、リクエストを作成するまで以下の &lt;i2&gt;request rules&lt;/i2&gt; を監視する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a substitute for JSONP-style cross-origin credentialed requests, use of this specification significantly improves the security posture of the requesting application, as it provides cross-origin data access whereas JSONP operates via cross-origin code-injection.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T173921Z" creationid="lv7777" creationdate="20160830T173921Z">
