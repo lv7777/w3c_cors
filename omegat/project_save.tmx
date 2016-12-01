@@ -1817,6 +1817,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Set the &lt;a0&gt;cross-origin request status&lt;/a0&gt; to &lt;i1&gt;preflight complete&lt;/i1&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T090457Z" creationid="lv7777" creationdate="20161201T090457Z">
+        <seg>&lt;a0&gt;cross-origin request status&lt;/a0&gt;を&lt;i1&gt;preflight complete&lt;/i1&gt;に設定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Set when &lt;a0&gt;user credentials&lt;/a0&gt; are to be excluded in the request and when cookies are to be ignored in its response.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T122849Z" creationid="lv7777" creationdate="20160831T122849Z">
