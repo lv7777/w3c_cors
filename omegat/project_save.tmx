@@ -2978,6 +2978,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>client.open("DELETE", "http://calendar.example/app")</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T145011Z" creationid="lv7777" creationdate="20161201T145011Z">
+        <seg>client.open("DELETE", "http://calendar.example/app")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>client.send("id=" + itemId)
 }</seg>
       </tuv>
