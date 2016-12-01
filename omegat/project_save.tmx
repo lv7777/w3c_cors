@@ -2379,8 +2379,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>The term &lt;d0&gt;user credentials&lt;/d0&gt; for the purposes of this specification means cookies, HTTP authentication, and client-side SSL certificates that would be sent based on the user agent's previous interactions with the origin.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161101T120502Z" creationid="lv7777" creationdate="20160821T100259Z">
-        <seg>語 &lt;d0&gt;ユーザー資格情報&lt;/d0&gt; はこの仕様書内では cookie、HTTP 認証、クライアント側SSL証明書の意味で使用される。hat would be sent based on the user agent's previous interactions with the origin.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T150302Z" creationid="lv7777" creationdate="20160821T100259Z">
+        <seg>語 &lt;d0&gt;ユーザー資格情報&lt;/d0&gt; はこの仕様書内ではUAがベースとなってオリジンとインタラクティブにやりとりされる前に送信される cookie、HTTP 認証、クライアント側SSL証明書の意味で使用される。</seg>
       </tuv>
     </tu>
     <tu>
