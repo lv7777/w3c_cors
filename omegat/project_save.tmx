@@ -1985,6 +1985,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;source origin&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T083809Z" creationid="lv7777" creationdate="20161201T083809Z">
+        <seg>&lt;a0&gt;source origin&lt;/a0&gt;。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;url&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;request URL&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T091251Z" creationid="lv7777" creationdate="20160904T091251Z">
