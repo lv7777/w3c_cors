@@ -3004,6 +3004,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>function deleteItem(itemId, updateUI) {</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T145021Z" creationid="lv7777" creationdate="20161201T145021Z">
+        <seg>function deleteItem(itemId, updateUI) {</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>http://www.w3.org/TR/2014/REC-cors-20140116/</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T020308Z" creationid="lv7777" creationdate="20160902T020308Z">
