@@ -912,6 +912,22 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>For each header in &lt;v0&gt;headers&lt;/v0&gt; for which there is &lt;e1&gt;no&lt;/e1&gt; &lt;a2&gt;header cache match&lt;/a2&gt; create a new entry in the &lt;a3&gt;preflight result cache&lt;/a3&gt; with the various fields set as follows:</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T154131Z" creationid="lv7777" creationdate="20161201T154131Z">
+        <seg> &lt;a1&gt;header cache match&lt;/a1&gt; が &lt;e1&gt;無い&lt;/e1&gt; &lt;v0&gt;headers&lt;/v0&gt; 内のそれぞれのヘッダは各種のフィールドに以下の値を設定した新しい&lt;a3&gt;preflight result cache&lt;/a3&gt; のエントリーを作成する：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>For each header in &lt;v0&gt;headers&lt;/v0&gt; for which there is a &lt;a1&gt;header cache match&lt;/a1&gt; set the &lt;a2&gt;max-age&lt;/a2&gt; field value of the matching entry to &lt;v3&gt;max-age&lt;/v3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161201T153901Z" creationid="lv7777" creationdate="20161201T153705Z">
+        <seg> &lt;a1&gt;header cache match&lt;/a1&gt; した &lt;v0&gt;headers&lt;/v0&gt; 内のそれぞれのヘッダは マッチしたエントリの&lt;a2&gt;max-age&lt;/a2&gt; フィールド値を &lt;v3&gt;max-age&lt;/v3&gt;に設定する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>For each method in &lt;v0&gt;methods&lt;/v0&gt; for which there is &lt;e1&gt;no&lt;/e1&gt; &lt;a2&gt;method cache match&lt;/a2&gt; create a new entry in the &lt;a3&gt;preflight result cache&lt;/a3&gt; with the various fields set as follows:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161201T144550Z" creationid="lv7777" creationdate="20161201T143945Z">
