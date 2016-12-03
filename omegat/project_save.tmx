@@ -190,6 +190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;6.4 &lt;/s0&gt;Implementation Considerations</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T094158Z" creationid="lv7777" creationdate="20161203T094158Z">
+        <seg>&lt;s0&gt;6.4 &lt;/s0&gt;実装に関する考慮事項</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7 &lt;/s0&gt;User Agent Processing Model</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161203T085550Z" creationid="lv7777" creationdate="20161203T085550Z">
@@ -2310,6 +2318,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161203T085645Z" creationid="lv7777" creationdate="20161203T085645Z">
         <seg>この処理モデルは独立して使うには適していない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The processing models in this sections need to be referenced by a CORS API specification that defines when the algorithm is invoked and how the return values are to be handled.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T094128Z" creationid="lv7777" creationdate="20161203T094128Z">
+        <seg>このセクションの処理モデルは、アルゴリズムがいつ呼び出されるか、および戻り値がどのように処理されるかを定義するCORS API仕様によって参照される必要がある。</seg>
       </tuv>
     </tu>
     <tu>
