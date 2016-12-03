@@ -576,6 +576,14 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>As a consequence, authors of such resources should send a &lt;c3&gt;Vary: Origin&lt;/c3&gt; HTTP header or provide other appropriate control directives to prevent caching of such responses, which may be inaccurate if re-used across-origins.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T112051Z" creationid="lv7777" creationdate="20161203T112051Z">
+        <seg>結果として、そのようなリソースの作成者は、&lt;c3&gt; Vary：Origin &lt;/ c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>As a substitute for JSONP-style cross-origin credentialed requests, use of this specification significantly improves the security posture of the requesting application, as it provides cross-origin data access whereas JSONP operates via cross-origin code-injection.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160830T173921Z" creationid="lv7777" creationdate="20160830T173921Z">
@@ -1853,6 +1861,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T034902Z" creationid="lv7777" creationdate="20160902T034902Z">
         <seg>リソースはリソース内でどの追加のヘッダを使用するか決定するために以下の一連の流れを使用しなければならない。：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Resources that wish to enable themselves to be shared with multiple &lt;c0&gt;Origins&lt;/c0&gt; but do not respond uniformly with &lt;c1&gt;"*"&lt;/c1&gt; must in practice generate the &lt;c2&gt;Access-Control-Allow-Origin&lt;/c2&gt; header dynamically in response to every request they wish to allow.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T112044Z" creationid="lv7777" creationdate="20161203T112044Z">
+        <seg>複数の &lt;c0&gt;Origins&lt;/c0&gt; と共有を有効にしたいが、 &lt;c1&gt;"*"&lt;/c1&gt; にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、&lt;c2&gt; Access-Control-Allow-Origin &lt;/ c2&gt;ヘッダーを動的に生成する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
