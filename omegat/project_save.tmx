@@ -761,6 +761,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>E.g., the &lt;a1&gt;omit credentials flag&lt;/a1&gt; could always be set.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T085007Z" creationid="lv7777" creationdate="20161203T085007Z">
+        <seg>例：&lt;a1&gt;omit credentials flag&lt;/a1&gt; を常にセットすることができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Each &lt;a0&gt;cross-origin request&lt;/a0&gt; has an associated &lt;d1&gt;cross-origin request status&lt;/d1&gt; that CORS API specifications that enable an API to make &lt;a2&gt;cross-origin requests&lt;/a2&gt; can hook into.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160831T142708Z" creationid="lv7777" creationdate="20160831T142708Z">
