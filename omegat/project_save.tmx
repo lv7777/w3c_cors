@@ -665,6 +665,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>CORS API specifications are free to limit the abilities of a &lt;a0&gt;cross-origin request&lt;/a0&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T084814Z" creationid="lv7777" creationdate="20161203T084814Z">
+        <seg>CORS API 仕様は&lt;a0&gt;cross-origin request&lt;/a0&gt;に自由に制限を課すことができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Certain types of resources should not attempt to specify particular authorized origins, but instead either deny or allow all origins.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160822T002625Z" creationid="lv7777" creationdate="20160822T001617Z">
