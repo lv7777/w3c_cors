@@ -473,8 +473,9 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160904T085108Z" creationid="lv7777" creationdate="20160904T085108Z">
-        <seg>/UAはこれをサポートすることを強く推奨される。/Although this effectively makes the &lt;a0&gt;preflight result cache&lt;/a0&gt; optional, user agents are strongly encouraged to support it.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T081352Z" creationid="lv7777" creationdate="20160904T085108Z">
+        <seg>
+しかしこれは&lt;a0&gt;preflight result cache&lt;/a0&gt;オプションが効果的に作成されるため、UAはこれをサポートすることを強く推奨される。</seg>
       </tuv>
     </tu>
     <tu>
