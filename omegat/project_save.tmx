@@ -190,6 +190,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7 &lt;/s0&gt;User Agent Processing Model</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T085550Z" creationid="lv7777" creationdate="20161203T085550Z">
+        <seg>&lt;s0&gt;7 &lt;/s0&gt;User Agentの処理モデル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Handling a Response to a Cross-Origin Request</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T164841Z" creationid="lv7777" creationdate="20160901T164841Z">
@@ -2294,6 +2302,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161201T090555Z" creationid="lv7777" creationdate="20161201T090555Z">
         <seg>エントリーの主キーは&lt;a0&gt;max-age&lt;/a0&gt; field以外のすべてのフィールドから構成される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>The processing models are not suitable for standalone use.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T085645Z" creationid="lv7777" creationdate="20161203T085645Z">
+        <seg>この処理モデルは独立して使うには適していない。</seg>
       </tuv>
     </tu>
     <tu>
