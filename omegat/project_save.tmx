@@ -1978,6 +1978,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The &lt;a0&gt;cross-origin request&lt;/a0&gt; algorithm can be used by CORS API specifications who wish to allow cross-origin requests for the network APIs they define.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161203T084651Z" creationid="lv7777" creationdate="20161203T083429Z">
+        <seg>&lt;a0&gt;cross-origin request&lt;/a0&gt;アルゴリズムは(アルゴリズムが)定義したネットワークAPIに対してクロスオリジンリクエストを許可するCORS API仕様を使用することができる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;origin&lt;/a0&gt; field value is a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for &lt;a2&gt;source origin&lt;/a2&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T091155Z" creationid="lv7777" creationdate="20160904T091155Z">
