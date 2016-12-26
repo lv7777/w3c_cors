@@ -2925,8 +2925,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>Using &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; again and assuming the application were hosted at &lt;c2&gt;http://calendar.example/app&lt;/c2&gt; the author could use the following ECMAScript snippet:</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T090911Z" creationid="lv7777" creationdate="20160821T090911Z">
-        <seg>アプリケーションのホストが &lt;c2&gt;http://calendar.example/app&lt;/c2&gt; に置かれており、再度 &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; を使用すると仮定すると、作者は以下のECMAScript のスニペットを使用できる:</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161226T161825Z" creationid="lv7777" creationdate="20160821T090911Z">
+        <seg>アプリケーションのホストが &lt;c2&gt;http://calendar.example/app&lt;/c2&gt; に置かれており、再度 &lt;c0&gt;&lt;a1&gt;XMLHttpRequest&lt;/a1&gt;&lt;/c0&gt; を使用すると想定したとき、作者は以下の ECMAScript のスニペットを使用できる:</seg>
       </tuv>
     </tu>
     <tu>
