@@ -658,8 +658,8 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>Because of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161212T005326Z" creationid="lv7777" creationdate="20160821T230559Z">
-        <seg>これはつまり、シンプルリクエストで指定しているリソース Cross-Site Request Forgery (CSRF) からリソースを保護しなければならないBecause of this, resources for which simple requests have significance other than retrieval must protect themselves from Cross-Site Request Forgery (CSRF) by requiring the inclusion of an unguessable token in the explicitly provided content of the request./リクエスト内のコンテンツで提供されている推測しにくいトークン////////////////////////////////////////////////////つまり、シンプルリクエストが検索以外の重要性を持つリソースは、要求の明示的に提供される内容に推測不可能なトークンを含めることを要求することによって、クロスサイトリクエストフォージェリ（CSRF）からシンプルリクエストを保護する必要があります。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161226T161922Z" creationid="lv7777" creationdate="20160821T230559Z">
+        <seg>つまり、シンプルリクエストが検索以外の重要性を持つリソースは、要求の明示的に提供される内容に推測不可能なトークンを含めることを要求することによって、クロスサイトリクエストフォージェリ（CSRF）からシンプルリクエストを保護する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
