@@ -650,8 +650,8 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161226T164439Z" creationid="lv7777" creationdate="20160831T034619Z">
-        <seg>前述のような攻撃を避けるためには、アプリケーションがそれぞれのオリジンの特権の範囲の明示的な知識を持ち、受け取ったすべてのパラメータや指示には本来オリジンが持つ権限が越えないよう暗示的な影響を保証するため、[コーディネーション]のそれぞれのステップでは注意してバリデーションしなければならない。Avoiding such attacks requires that the coordinating applications have explicit knowledge of the scope of privilege for each origin and that all parameters and instructions received are carefully validated at each step in the ..................coordination to ensure that effects implied do not exceed the authority of the originating principal.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161226T164918Z" creationid="lv7777" creationdate="20160831T034619Z">
+        <seg>前述のような攻撃を避けるためには、アプリケーションがそれぞれのオリジンの特権の範囲の明示的な知識を持つように調整して、受け取ったすべてのパラメータや指示には本来オリジンが持つ権限を越えないよう暗示的な影響を保証するため、"調整"のそれぞれのステップでは注意してバリデーションしなければならない。</seg>
       </tuv>
     </tu>
     <tu>
