@@ -2140,8 +2140,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>The &lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt; header indicates the methods that can be used in the actual request.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T083130Z" creationid="lv7777" creationdate="20160821T083130Z">
-        <seg>&lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt;ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。 .</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161226T161740Z" creationid="lv7777" creationdate="20160821T083130Z">
+        <seg>&lt;c2&gt;&lt;a3&gt;Access-Control-Allow-Methods&lt;/a3&gt;&lt;/c2&gt;ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。</seg>
       </tuv>
     </tu>
     <tu>
