@@ -1257,6 +1257,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If resources are set up like this, attackers would effectively have to be on the &lt;a2&gt;list of origins&lt;/a2&gt; to do harm.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T072230Z" creationid="lv7777" creationdate="20161227T072230Z">
+        <seg>リソースがこのように設定されている場合、攻撃者は実際に害を与えるためには &lt;a2&gt;list of origins&lt;/a2&gt; にいる必要があります。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If such an API is used on &lt;c0&gt;http://example.org&lt;/c0&gt; resources, a resource on &lt;c1&gt;http://hello-world.example&lt;/c1&gt; can opt in using the mechanism described by this specification (e.g., specifying &lt;c2&gt;Access-Control-Allow-Origin: http://example.org&lt;/c2&gt; as response header), which would allow that resource to be fetched cross-origin from &lt;c3&gt;http://example.org&lt;/c3&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161104T092737Z" creationid="lv7777" creationdate="20161104T091950Z">
