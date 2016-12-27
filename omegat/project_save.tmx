@@ -1537,6 +1537,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>In addition to checking the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt; header, resource authors are strongly encouraged to also check the &lt;c2&gt;Host&lt;/c2&gt; header.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T072344Z" creationid="lv7777" creationdate="20161227T072344Z">
+        <seg>In addition to checking the &lt;c0&gt;&lt;a1&gt;Origin&lt;/a1&gt;&lt;/c0&gt;ヘッダのチェックに加えて、リソースの作者には、&lt;c2&gt;Host&lt;/c2&gt;ヘッダをチェックすることも強く推奨する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>In addition, for the coming forty-two minutes, no &lt;a2&gt;preflight request&lt;/a2&gt; will be needed.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T081143Z" creationid="lv7777" creationdate="20160901T081143Z">
