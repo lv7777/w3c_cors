@@ -1665,6 +1665,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Let &lt;v0&gt;header field-names&lt;/v0&gt; be the values as result of &lt;a1&gt;parsing&lt;/a1&gt; the &lt;c2&gt;&lt;a3&gt;Access-Control-Request-Headers&lt;/a3&gt;&lt;/c2&gt; headers.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T061246Z" creationid="lv7777" creationdate="20161227T061246Z">
+        <seg>&lt;v0&gt;ヘッダフィールド名&lt;/v0&gt;を&lt;c2&gt;&lt;a3&gt;Access-Control-Request-Headers&lt;/a3&gt;&lt;/c2&gt;ヘッダの&lt;a1&gt;解析&lt;/a1&gt;した結果の値にする。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Let &lt;v0&gt;headers&lt;/v0&gt; be the empty list.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T052027Z" creationid="lv7777" creationdate="20160902T052027Z">
