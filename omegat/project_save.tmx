@@ -2082,6 +2082,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>That is, make sure that the host name provided by that header matches the host name of the server on which the resource resides.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T073504Z" creationid="lv7777" creationdate="20161227T073504Z">
+        <seg>これはつまり、このヘッダから提供されるホスト名がリソースが提供されているサーバーのホスト名とマッチするか確認する作業である。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The &lt;a0&gt;CORS wiki page&lt;/a0&gt; provides more background information about this document.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160820T173610Z" creationid="lv7777" creationdate="20160820T173610Z">
@@ -2891,6 +2899,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>This will provide protection against DNS rebinding attacks.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T073517Z" creationid="lv7777" creationdate="20161227T073517Z">
+        <seg>これは、DNSリバインディング攻撃に対する保護を提供する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>To be clear, the &lt;a0&gt;method&lt;/a0&gt; and &lt;a1&gt;header&lt;/a1&gt; fields are mutually exclusive.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T090203Z" creationid="lv7777" creationdate="20160901T090203Z">
@@ -2903,6 +2919,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161127T020828Z" creationid="lv7777" creationdate="20160831T160051Z">
         <seg>特定の（この仕様書が存在する前の）UAから生成できないクロスオリジンリクエストに対してリソースを保護するため、リソースがこの仕様を認識していることを確認するためのプリフライト要求が行う。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>To provide integrity protection of resource sharing policy statements usage of SSL/TLS is encouraged.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T074554Z" creationid="lv7777" creationdate="20161227T074554Z">
+        <seg>リソース共有ポリシーの完全性の保護を提供するためにSSL/TLSの使用を推奨される。</seg>
       </tuv>
     </tu>
     <tu>
