@@ -496,6 +496,14 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Always matching is acceptable since the &lt;a0&gt;list of methods&lt;/a0&gt; can be unbounded.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T063637Z" creationid="lv7777" creationdate="20161227T063637Z">
+        <seg> &lt;a0&gt;list of methods&lt;/a0&gt; は無制限にできるため、常にマッチングすることが許可される。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Always matching is acceptable since the &lt;a0&gt;list of origins&lt;/a0&gt; can be unbounded.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161101T124458Z" creationid="lv7777" creationdate="20161101T124458Z">
