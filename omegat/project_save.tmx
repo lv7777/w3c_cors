@@ -2010,6 +2010,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the &lt;a0&gt;list of methods&lt;/a0&gt; can be unbounded, simply returning the method indicated by &lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt; (if supported) can be enough.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T064542Z" creationid="lv7777" creationdate="20161227T064542Z">
+        <seg>Since the &lt;a0&gt;list of methods&lt;/a0&gt;は無制限に値を取れるため、&lt;a1&gt; Access-Control-Request-Method &lt;/a1&gt;（サポートされている場合）で示されたメソッドを返すだけで十分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Some terminology in this specification is from &lt;c0&gt;The Web Origin Concept&lt;/c0&gt;, &lt;c1&gt;HTML&lt;/c1&gt;,</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161104T120708Z" creationid="lv7777" creationdate="20160821T095630Z">
