@@ -761,6 +761,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Due to the specifics of some APIs this cannot be defined in a generic way and therefore it has to be provided as argument.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T055614Z" creationid="lv7777" creationdate="20161227T055614Z">
+        <seg>Due to the specifics of some APIs this cannot be defined in a generic way and therefore it has to be provided as argument.いくつかのAPIの仕様のせいで、これは一般的な方法で定義することはできませんので、引数として提供する必要がある。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>E.g. if a user agent disallows requests from the &lt;c0&gt;https&lt;/c0&gt; to the &lt;c1&gt;http&lt;/c1&gt; scheme for a &lt;a2&gt;cross-origin request&lt;/a2&gt; it is encouraged to do the same for the HTML &lt;c3&gt;img&lt;/c3&gt; element.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T124701Z" creationid="lv7777" creationdate="20160901T124701Z">
