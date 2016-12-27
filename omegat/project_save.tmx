@@ -1913,6 +1913,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Resource authors are strongly encouraged to ensure that requests using safe methods, e.g. &lt;c0&gt;GET&lt;/c0&gt; or &lt;c1&gt;OPTIONS&lt;/c1&gt;, have no side effects so potential attackers cannot modify the user's data easily.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T071717Z" creationid="lv7777" creationdate="20161227T071717Z">
+        <seg>リソースの作者には、&lt;c0&gt;GET&lt;/c0&gt;や&lt;c1&gt;OPTIONS&lt;/c1&gt;等のセーフメソッドによるリクエストを使うことを保証することを強く勧める。なぜならこれらのセーフメソッドは副作用を持たないため、潜在的な攻撃者がユーザーのデータを簡単に修正することができないからである。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Resources must use the following set of steps to determine which additional headers to use in the response:</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T034902Z" creationid="lv7777" creationdate="20160902T034902Z">
