@@ -763,8 +763,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>Due to the specifics of some APIs this cannot be defined in a generic way and therefore it has to be provided as argument.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161227T055614Z" creationid="lv7777" creationdate="20161227T055614Z">
-        <seg>Due to the specifics of some APIs this cannot be defined in a generic way and therefore it has to be provided as argument.いくつかのAPIの仕様のせいで、これは一般的な方法で定義することはできませんので、引数として提供する必要がある。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T060547Z" creationid="lv7777" creationdate="20161227T055614Z">
+        <seg>いくつかのAPIの仕様のせいで、これは一般的な方法で定義するこができないため、引数として提供する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
