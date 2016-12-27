@@ -2781,8 +2781,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>This specification is a building block for other specifications, so-called CORS API specifications, which define how this specification is used.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T065925Z" creationid="lv7777" creationdate="20160820T174623Z">
-        <seg>この仕様は他の仕様書のビルディングブロックであり、 この仕様がどのように使用されるかを定義する。CORS API と呼ばれる。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161226T165739Z" creationid="lv7777" creationdate="20160820T174623Z">
+        <seg>この仕様は他の仕様書のビルディングブロックであり、この仕様がどのように使用されるかを定義する。CORS API と呼ばれる。</seg>
       </tuv>
     </tu>
     <tu>
