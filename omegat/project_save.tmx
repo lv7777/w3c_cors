@@ -1145,6 +1145,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;v0&gt;method&lt;/v0&gt; is not a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for any of the values in &lt;a2&gt;list of methods&lt;/a2&gt; do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T062825Z" creationid="lv7777" creationdate="20161227T062825Z">
+        <seg>もし&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a2&gt;list of methods&lt;/a2&gt;内の何かの値と&lt;a1&gt;case-sensitive&lt;/a1&gt; マッチしなかった場合、どんな追加のヘッダもセットしてはならず、この一連のステップを終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;v0&gt;methods&lt;/v0&gt; is still the empty list and the &lt;a1&gt;force preflight flag&lt;/a1&gt; is set, append the &lt;a2&gt;request method&lt;/a2&gt; to &lt;v3&gt;methods&lt;/v3&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160902T051910Z" creationid="lv7777" creationdate="20160902T051910Z">
