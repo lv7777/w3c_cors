@@ -1635,8 +1635,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>It is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160824T020411Z" creationid="lv7777" creationdate="20160824T020411Z">
-        <seg>認証を要求するための適切なリソースIt is often appropriate for resources to require an authorization ceremony which explicitly asks for a user to consent that cross-origin requests with credentials be honored from a given origin.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T055017Z" creationid="lv7777" creationdate="20160824T020411Z">
+        <seg>しばしばリソースが明示的に特定のオリジンから機密情報を使用したクロスオリジンリクエストへの同意をユーザーに求めるような認証のための通過儀礼(動作)を必要とすることがあるがこれは適切である。</seg>
       </tuv>
     </tu>
     <tu>
