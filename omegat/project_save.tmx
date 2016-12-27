@@ -1121,6 +1121,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>If &lt;a0&gt;parsing failed&lt;/a0&gt; do not set any additional headers and terminate this set of steps.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161227T062048Z" creationid="lv7777" creationdate="20161227T062048Z">
+        <seg>もし&lt;a0&gt;構文解析に失敗&lt;/a0&gt;した場合、追加のヘッダをセットしてなならず、この一連の手順を終了する。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>If &lt;a0&gt;request method&lt;/a0&gt; is not a &lt;a1&gt;case-sensitive&lt;/a1&gt; match for any method in &lt;v2&gt;methods&lt;/v2&gt; and is not a &lt;a3&gt;simple method&lt;/a3&gt;, apply the &lt;a4&gt;cache and network error steps&lt;/a4&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161127T161245Z" creationid="lv7777" creationdate="20161127T160649Z">
