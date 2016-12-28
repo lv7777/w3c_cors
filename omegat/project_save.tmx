@@ -198,6 +198,94 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.3 &lt;/s0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T072933Z" creationid="lv7777" creationdate="20161228T072933Z">
+        <seg>&lt;s0&gt;5.3 &lt;/s0&gt;&lt;c1&gt;Access-Control-Expose-Headers&lt;/c1&gt; レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.4 &lt;/s0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T072938Z" creationid="lv7777" creationdate="20161228T072938Z">
+        <seg>&lt;s0&gt;5.4 &lt;/s0&gt;&lt;c1&gt;Access-Control-Max-Age&lt;/c1&gt; レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.5 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T072942Z" creationid="lv7777" creationdate="20161228T072942Z">
+        <seg>&lt;s0&gt;5.5 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Methods&lt;/c1&gt; レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.6 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt; Response Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T072948Z" creationid="lv7777" creationdate="20161228T072948Z">
+        <seg>&lt;s0&gt;5.6 &lt;/s0&gt;&lt;c1&gt;Access-Control-Allow-Headers&lt;/c1&gt; レスポンスヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.7 &lt;/s0&gt;&lt;c1&gt;Origin&lt;/c1&gt; Request Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073011Z" creationid="lv7777" creationdate="20161228T073011Z">
+        <seg>&lt;s0&gt;5.7 &lt;/s0&gt;&lt;c1&gt;Origin&lt;/c1&gt; リクエストヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.8 &lt;/s0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt; Request Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073015Z" creationid="lv7777" creationdate="20161228T073015Z">
+        <seg>&lt;s0&gt;5.8 &lt;/s0&gt;&lt;c1&gt;Access-Control-Request-Method&lt;/c1&gt; リクエストヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;5.9 &lt;/s0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt; Request Header</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073026Z" creationid="lv7777" creationdate="20161228T073026Z">
+        <seg>&lt;s0&gt;5.9 &lt;/s0&gt;&lt;c1&gt;Access-Control-Request-Headers&lt;/c1&gt; リクエストヘッダ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;6 &lt;/s0&gt;Resource Processing Model</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073042Z" creationid="lv7777" creationdate="20161228T073042Z">
+        <seg>&lt;s0&gt;6 &lt;/s0&gt;リソースの処理モデル</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;6.1 &lt;/s0&gt;Simple Cross-Origin Request, Actual Request, and Redirects</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073108Z" creationid="lv7777" creationdate="20161228T073108Z">
+        <seg>&lt;s0&gt;6.1 &lt;/s0&gt;シンプルなクロスオリジン・リクエスト、実際のリクエスト、およびリダイレクト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;6.2 &lt;/s0&gt;Preflight Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073114Z" creationid="lv7777" creationdate="20161228T073114Z">
+        <seg>&lt;s0&gt;6.2 &lt;/s0&gt;プリフライトリクエスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;6.3 &lt;/s0&gt;Security</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073121Z" creationid="lv7777" creationdate="20161228T073121Z">
+        <seg>&lt;s0&gt;6.3 &lt;/s0&gt;セキュリティ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;6.4 &lt;/s0&gt;Implementation Considerations</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161203T094158Z" creationid="lv7777" creationdate="20161203T094158Z">
@@ -214,6 +302,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1 &lt;/s0&gt;Cross-Origin Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073130Z" creationid="lv7777" creationdate="20161228T073130Z">
+        <seg>&lt;s0&gt;7.1 &lt;/s0&gt;クロスオリジンリクエスト</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.1 &lt;/s0&gt;Handling a Response to a Cross-Origin Request</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T164841Z" creationid="lv7777" creationdate="20160901T164841Z">
@@ -222,10 +318,42 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.2 &lt;/s0&gt;Cross-Origin Request Status</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073350Z" creationid="lv7777" creationdate="20161228T073158Z">
+        <seg>&lt;s0&gt;7.1.2 &lt;/s0&gt;Cross-Origin Requestのステータス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.3 &lt;/s0&gt;Source Origin</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073211Z" creationid="lv7777" creationdate="20161228T073211Z">
+        <seg>&lt;s0&gt;7.1.3 &lt;/s0&gt;ソースオリジン</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.4 &lt;/s0&gt;Simple Cross-Origin Request</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073341Z" creationid="lv7777" creationdate="20161228T073224Z">
+        <seg>&lt;s0&gt;7.1.4 &lt;/s0&gt;シンプルなCross-Origin Request</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;7.1.5 &lt;/s0&gt;Cross-Origin Request with Preflight</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161126T165041Z" creationid="lv7777" creationdate="20161126T165041Z">
-        <seg>&lt;s0&gt;7.1.5 Preflightリクエストを伴った&lt;/s0&gt;Cross-Origin Request</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073314Z" creationid="lv7777" creationdate="20161126T165041Z">
+        <seg>&lt;s0&gt;7.1.5 &lt;/s0&gt;Preflightリクエストを伴ったCross-Origin Request</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>&lt;s0&gt;7.1.6 &lt;/s0&gt;Preflight Result Cache</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T073321Z" creationid="lv7777" creationdate="20161228T073252Z">
+        <seg>&lt;s0&gt;7.1.6 &lt;/s0&gt;プPreflight結果のキャッシュ</seg>
       </tuv>
     </tu>
     <tu>
