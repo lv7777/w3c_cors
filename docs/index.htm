@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Cross-Origin Resource Sharing</title>
+  <style>
+   .example { margin-left:1em; padding-left:1em; border-left:double; color:#222; background:#fcfcfc }
+   .example code strong { color:inherit; background:#ff0 }
+   .note { margin-left:2em; font-weight:bold; font-style:italic; color:green }
+   .note pre { font-weight:normal; font-style:normal }
+   .warning { margin-left:2em; font-weight:bold; font-style:italic; color:red }
+   p.warning::before { content:"Warning: " }
+   pre > code, li > code { color:inherit; background:transparent }
+   p.note::before { content:"Note: " }
+   .XXX { padding:.5em; border:solid #f00 }
+   p.XXX::before { content:"Issue: " }
+   dl.switch { padding-left:2em }
+   dl.switch > dt { text-indent:-1.5em }
+   dl.switch > dt:before { content:'\21AA'; padding:0 0.5em 0 0; display:inline-block; width:1em; text-align:right; line-height:0.5em }
+   em.ct { text-transform:lowercase; font-variant:small-caps; font-style:normal }
+   dfn { font-weight:bold; font-style:normal }
+   code { color:orangered; }
+   code :link, code :visited { color:inherit }
+   hr:not(.top) { display:block; background:none; border:none; padding:0; margin:2em 0; height:auto }
+  </style>
+  <link href="Cross-Origin%20Resource%20Sharing_files/W3C-REC.css" rel="stylesheet">
+ </head>
+ <body>
+  <div class="head"><!--begin-logo-->
+
+
+<p><a href="http://www.w3.org/"><img alt="W3C" src="Cross-Origin%20Resource%20Sharing_files/w3c_home.png" height="48" width="72"></a></p><!--end-logo-->
+
+
+   <h1 id="cors">Cross-Origin Resource Sharing</h1>
+
+   <h2 class="no-num no-toc" id="w3c-doctype">2014年1月16日付W3C勧告</h2>
+
+   <dl>
+    <dt>This Version:</dt>
+    <dd class="publish"><a href="http://www.w3.org/TR/2014/REC-cors-20140116/">http://www.w3.org/TR/2014/REC-cors-20140116/</a></dd>
+
+     <dt class="publish">Latest Version:</dt>
+         <dd class="publish"><a href="http://www.w3.org/TR/cors/">http://www.w3.org/TR/cors/</a></dd>
+
+    <dt>Previous Versions:</dt>
+<dd><a href="http://www.w3.org/TR/2013/PR-cors-20131205/">http://www.w3.org/TR/2013/PR-cors-20131205/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2013/CR-cors-20130129/">http://www.w3.org/TR/2013/CR-cors-20130129/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2012/WD-cors-20120403/">http://www.w3.org/TR/2012/WD-cors-20120403/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2010/WD-cors-20100727/">http://www.w3.org/TR/2010/WD-cors-20100727/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2009/WD-cors-20090317/">http://www.w3.org/TR/2009/WD-cors-20090317/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2008/WD-access-control-20080912/">http://www.w3.org/TR/2008/WD-access-control-20080912/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2008/WD-access-control-20080214/">http://www.w3.org/TR/2008/WD-access-control-20080214/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20071126/">http://www.w3.org/TR/2007/WD-access-control-20071126/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20071001/">http://www.w3.org/TR/2007/WD-access-control-20071001/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20070618/">http://www.w3.org/TR/2007/WD-access-control-20070618/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2007/WD-access-control-20070215/">http://www.w3.org/TR/2007/WD-access-control-20070215/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2006/WD-access-control-20060517/">http://www.w3.org/TR/2006/WD-access-control-20060517/</a></dd>
+    <dd><a href="http://www.w3.org/TR/2005/NOTE-access-control-20050613/">http://www.w3.org/TR/2005/NOTE-access-control-20050613/</a></dd>
+
+    <dt>Editor:</dt>
+    <dd><a href="http://annevankesteren.nl/">Anne van Kesteren</a>
+    (formerly of <a href="http://www.opera.com/">Opera Software ASA</a>)
+    &lt;<a href="mailto:annevk@annevk.nl">annevk@annevk.nl</a>&gt;</dd>
+   </dl>
+<p>発行以降に報告されたエラーまたは問題については<a href="http://www.w3.org/2014/cors-errata.html">エラッタ</a>を確認されたい。</p>
+  <p>
+      この仕様の英語版の仕様書のみが正規のバージョンとなる。非標準の<a href="http://www.w3.org/Consortium/Translation/">翻訳</a>もあります。
+  </p>
+
+<div class="w3conly"><!--begin-copyright-->
+
+<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2014 <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+
+  <hr class="top"><!--end-copyright-->
+</div>
+
+  </div>
+
+<div class="publish">
+
+  <h2 class="no-num no-toc" id="abstract">概要</h2>
+
+  <p>このドキュメントではクロスオリジン・リクエストを有効にするためのメカニズムを定義します。 リソースを取得するクロスオリジンリクエストを作成することができるAPIを定義している仕様書では、この仕様書で定義されているアルゴリズムを使用することができます。もしそのようなAPIが <code>http://example.org</code> 上のリソースで使用されているとき、<code>http://hello-world.example</code>上のリソースはこの仕様書で述べられている<code>http://example.org</code>から上記のリソースを取得するのを許可するようなメカニズム(例： レスポンスヘッダ内で <code>Access-Control-Allow-Origin: http://example.org</code>ヘッダを使用するなど)を使用することもできます。 </p>
+
+
+
+
+  <h2 class="no-num no-toc" id="sotd">この文書の位置付け</h2>
+
+<p><em>この節は、公開時点におけるこの文書のステータスについて説明する。他の文書がこの文書に取って代わるかもしれない。W3Cが現在公開しているリストとテクニカルレポートの最新版は、<a href="http://www.w3.org/TR/">W3C technical reports index</a> at http://www.w3.org/TR/で見つけることができる。</em></p>
+
+  <p>この文書は、<abbr title="World Wide Web Consortium">W3C</abbr>のメンバー、ソフトウェア開発者、および他の<abbr title="World Wide Web Consortium">W3C</abbr>グループや利害関係者によって検討され、<abbr title="World Wide Web Consortium">W3C</abbr>勧告としてディレクターによって承認されている。これは安定した文書であり、規範的仕様として使用されてもよく、他の文書から引用してもよい。勧告の作成における<abbr title="World Wide Web Consortium">W3C</abbr>の役割は、仕様に注意を引き付け、広範な開発を促進することである。 これはウェブの機能と相互運用性を強化する。</p>
+
+  <p>これは、<a href="http://www.w3.org/2008/webapps/">Web Applications</a> (WebApps)と <a href="http://www.w3.org/2011/webappsec/">Web Application Security</a> (WebAppSec) Working Groups による WebAppSecによって公開されたCORS W3C Recommendationである。この文書がProposed Recommendationのステータスの時から変更されていない。</p>
+ <p>         この文書にコメントするには、<a href="mailto:public-webappsec@w3.org">public-webappsec@w3.org</a> （<a href="mailto:public-webappsec-request@w3.org?subject=subscribe">購読</a>, <a href="http://lists.w3.org/Archives/Public/public-webappsec/">アーカイブ</a>）に電子メールを送信されたい。
+</p>
+
+<p> この文書は<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月6日のW3C特許ポリシー</a>の下で活動するグループによって作成された。W3Cは、<a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/49309/status">WebAppSec WG</a> と <a rel="disclosure" href="http://www.w3.org/2004/01/pp-impl/42538/status">WebApps WG</a> が作成した成果物に関するあらゆる開示特許の公開リストを管理する。ここには、特許開示にあたっての指示も含まれている。特許について十分に知識のある人物が、仕様に<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</a>が認められると判断した場合は、<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">W3C特許ポリシーの第6章</a>に従い情報を開示する必要がある。. </p>
+
+<p>この勧告を公開することでW3CはCross-Origin Resource Sharing勧告内で仕様が決められている機能はHTML5 や HTTP Status Code 308などの仕様書を勧告に進めることやRFCのステータスの変更への影響を与えない。</p>
+
+  <p> 初期版の <a href="http://odinho.html5.org/CORS/testsuite-report.html">実装報告</a> が、 <a href="http://webappsec-test.info/%7Ebhill2/pub/CORS/cors-test-supplement.htm">勧告候補版からの変更の補足</a>とともに使用可能です。 </p>
+
+</div>
+
+<h2 class="no-num no-toc" id="toc">Table of Contents</h2><!--begin-toc-->
+
+  
+
+<ol class="toc">
+ <li><a href="#導入"><span class="secno">1 </span>導入</a></li>
+ <li><a href="#準拠"><span class="secno">2 </span>準拠</a></li>
+ <li><a href="#用語"><span class="secno">3 </span>用語</a></li>
+ <li><a href="#セキュリティ"><span class="secno">4 </span>セキュリティに関する考慮事項</a></li>
+ <li><a href="#構文"><span class="secno">5 </span>構文</a>
+  <ol class="toc">
+   <li><a href="#access-control-allow-origin-response-header"><span class="secno">5.1 </span><code title="">Access-Control-Allow-Origin</code> レスポンスヘッダ</a></li>
+   <li><a href="#access-control-allow-credentials-response-header"><span class="secno">5.2 </span><code title="">Access-Control-Allow-Credentials</code>レスポンスヘッダ</a></li>
+   <li><a href="#access-control-expose-headers-response-header"><span class="secno">5.3 </span><code title="">Access-Control-Expose-Headers</code> Response Header</a></li>
+   <li><a href="#access-control-max-age-response-header"><span class="secno">5.4 </span><code title="">Access-Control-Max-Age</code> Response Header</a></li>
+   <li><a href="#access-control-allow-methods-response-header"><span class="secno">5.5 </span><code title="">Access-Control-Allow-Methods</code> Response Header</a></li>
+   <li><a href="#access-control-allow-headers-response-header"><span class="secno">5.6 </span><code title="">Access-Control-Allow-Headers</code> Response Header</a></li>
+   <li><a href="#origin-request-header"><span class="secno">5.7 </span><code title="">Origin</code> Request Header</a></li>
+   <li><a href="#access-control-request-method-request-header"><span class="secno">5.8 </span><code title="">Access-Control-Request-Method</code> Request Header</a></li>
+   <li><a href="#access-control-request-headers-request-header"><span class="secno">5.9 </span><code title="">Access-Control-Request-Headers</code> Request Header</a></li></ol></li>
+ <li><a href="#resource-processing-model"><span class="secno">6 </span>Resource Processing Model</a>
+  <ol class="toc">
+   <li><a href="#resource-requests"><span class="secno">6.1 </span>Simple Cross-Origin Request, Actual Request, and
+  Redirects</a></li>
+   <li><a href="#resource-preflight-requests"><span class="secno">6.2 </span>Preflight Request</a></li>
+   <li><a href="#resource-security"><span class="secno">6.3 </span>Security</a></li>
+   <li><a href="#resource-implementation"><span class="secno">6.4 </span>実装に関する考慮事項</a></li></ol></li>
+ <li><a href="#user-agent-processing-model"><span class="secno">7 </span>User Agentの処理モデル</a>
+  <ol class="toc">
+   <li><a href="#cross-origin-request-0"><span class="secno">7.1 </span>Cross-Origin Request</a>
+    <ol class="toc">
+     <li><a href="#handling-a-response-to-a-cross-origin-request"><span class="secno">7.1.1 </span>Cross-Origin Requestのレスポンスを処理する</a></li>
+     <li><a href="#cross-origin-request-status-0"><span class="secno">7.1.2 </span>Cross-Origin Request Status</a></li>
+     <li><a href="#source-origin-0"><span class="secno">7.1.3 </span>Source Origin</a></li>
+     <li><a href="#simple-cross-origin-request-0"><span class="secno">7.1.4 </span>Simple Cross-Origin Request</a></li>
+     <li><a href="#cross-origin-request-with-preflight-0"><span class="secno">7.1.5 Preflightリクエストを伴った</span>Cross-Origin Request</a></li>
+     <li><a href="#preflight-result-cache-0"><span class="secno">7.1.6 </span>Preflight Result Cache</a></li>
+     <li><a href="#generic-cross-origin-request-algorithms"><span class="secno">7.1.7 </span> 通常のCross-Origin Requestアルゴリズム</a></li></ol></li>
+   <li><a href="#resource-sharing-check-0"><span class="secno">7.2 </span>リソース共有のチェック</a></li>
+   <li><a href="#user-agent-security"><span class="secno">7.3 </span>セキュリティ</a></li></ol></li>
+ <li><a href="#cors-api-specification-advice"><span class="secno">8 </span>CORS API Specification Advice</a>
+  <ol class="toc">
+   <li><a href="#cors-api-specifiation-request"><span class="secno">8.1 </span>クロス オリジン要求の生成</a></li>
+   <li><a href="#cors-api-specification-redirect"><span class="secno">8.2 </span>同一オリジンからクロスオリジンへのリダイレクトの対応</a></li>
+   <li><a href="#cors-api-specification-response"><span class="secno">8.3 </span>クロスオリジンリクエストのステータスに関して</a></li>
+   <li><a href="#cors-api-specification-security"><span class="secno">8.4 </span>セキュリティ</a></li></ol></li>
+ <li><a class="no-num" href="#参考文献">参考文献</a></li>
+ <li><a class="no-num" href="#謝辞">謝辞</a></li></ol><!--end-toc-->
+
+
+
+
+
+  <h2 id="introduction"><span class="secno">1 </span>導入</h2>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。これらの制限により、あるオリジンのクライアント側のウェブアプリケーションが別のオリジンのデータを取得するのを制限し、現在実行されているアプリケーションのオリジンとは異なる安全でないHTTPリクエストが自動的に発信されるのを制限する。</p>
+
+  <p>上のパターンが適用されるユーザーエージェントには、HTTP認証や cookie 情報などのユーザーの資格情報が含まれる典型的なネットワークリクエストがあります。</p>
+
+  <p>この仕様は、いくつかの方法でこのモデルを拡張します。
+
+  </p><ul>
+   <li>
+    <p>レスポンスには要求の発信元のオリジンを値として持つ、リソースの内容にアクセスを許可するための<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダを含めることができます。 </p>
+
+    <p>ユーザー エージェントは通常、ネットワーク要求に同一生成元制限を適用します。</p>
+   </li>
+
+   <li>
+    <p>UAは<a href="#simple-method">simple method</a>ではないメソッドを使用して<a href="#preflight-request">preflight request</a>を通じてクロスオリジンのリソースがそのアクセスを受け入れるかどうか判断できる。</p>
+
+    <p>これは、再びユーザエージェントによって検証される。</p>
+   </li>
+
+   <li>
+    <p> サーバーサイドアプリケーションは<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダを通してHTTPリクエストがUAによるクロスオリジンリクエストと見なされるかどうかを判断できる。</p>
+
+    <p>この拡張はサーバーサイドアプリケーションがクロスオリジンリクエスト上でサービスを行うかどうかの(何も返さない等の)制限を強制できる。</p>
+   </li>
+  </ul>
+
+
+
+
+  <p>この仕様は他の仕様書のビルディングブロックであり、この仕様がどのように使用されるかを定義する。CORS API と呼ばれる。例えば are Server-Sent Events や XMLHttpRequestなどがある。<a class="informative" href="#refsEVENTSOURCE">[EVENTSOURCE]</a> <a class="informative" href="#refsXHR">[XHR]</a>
+
+  </p><p><a href="http://www.w3.org/wiki/CORS">CORS wiki page</a> ではこのドキュメントのより裏側の情報を提供している。</p>
+
+  <div class="example">
+   <p>"Hello World!" という文字列が書かれているシンプルなテキストが <code>http://example.com/hello</code>のパスに置かれていて <code>http://hello-world.example</code>からのアクセスを許可したい場合、この仕様で導入されたヘッダの組み合わせのレスポンスは以下のようになる。:</p>
+
+   <pre><code>Access-Control-Allow-Origin: http://hello-world.example
+
+Hello World!</code></pre>
+
+   <p>以下のようにして <code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> をクライアント側の Web application で使用し、 <code>http://hello-world.example</code> にアクセスすることができる:
+
+   </p><pre><code>var client = new XMLHttpRequest()
+client.open("GET", "http://example.com/hello")
+client.onreadystatechange = function() { /* do something */ }
+client.send()</code></pre>
+
+   <p>もしリソースの作者が<a href="#simple-method" title="simple method">simple methods</a>以外のメソッドでクロスオリジンリクエストを使用できるようにしたいと思った場合、もう少し複雑になります。その場合にはプリフライトリクエストに<code>OPTIONS</code>メソッドを使用してレスポンスを返し、その後(<code>DELETE</code> などの)使用したいメソッドを使った実際のリクエストを処理して適切なレスポンスを返す必要があります。プリフライトリクエストに対するレスポンスは、次のヘッダーを持つことができます：</p>
+
+   <pre><code>Access-Control-Allow-Origin: http://hello-world.example
+Access-Control-Max-Age: 3628800
+Access-Control-Allow-Methods: PUT, DELETE</code></pre>
+
+   <p><code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code>ヘッダではどれだけの期間レスポンスをキャッシュさせるかを指示することができる。 それ以降のリクエストのために、指定された時間内なら、プリフライトリクエストを作成する必要はない。<code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダでは実際のリクエストで使用することのできるメソッドを指定することができる。実際のリクエストのレスポンスには、以下のヘッダを含めることができる。</p>
+
+   <pre><code>Access-Control-Allow-Origin: http://hello-world.example</code></pre>
+
+   <p>追加のプリフライトリクエストを呼び出すのはUAが行う複雑なタスクである。 アプリケーションのホストが <code>http://calendar.example/app</code> に置かれており、再度 <code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> を使用すると想定したとき、作者は以下の ECMAScript のスニペットを使用できる:
+
+   </p><pre><code>function deleteItem(itemId, updateUI) {
+  var client = new XMLHttpRequest()
+  client.open("DELETE", "http://calendar.example/app")
+  client.onload = updateUI
+  client.onerror = updateUI
+  client.onabort = updateUI
+  client.send("id=" + itemId)
+}</code></pre>
+  </div>
+
+
+
+
+  <h2 id="conformance"><span class="secno">2 </span>準拠</h2>
+
+  <p>この仕様はリソースの著者およびユーザ エージェントについて書かれている。これには — CORS API specifications — などのこの仕様書の中で定義されている<a href="#cross-origin-request">cross-origin request</a>アルゴリズムで使用するAPIを定義する仕様書へのアドバイスや通常のクライアント側のウェブアプリケーションの作者に向けたいくつかのアドバイスが含まれている <a href="#セキュリティ">security considerations</a>セクションが含まれている。</p>
+
+  <p>セクション名や付録と同様に、この仕様書の図、例、注釈は準拠ではない。それ以外の全ては準拠するべき標準である。</p>
+
+  <p>この仕様書では、単語はRFC 2119の仕様で説明されているものとして解釈する。<a href="#refsRFC2119">[RFC2119]</a></p>
+
+  <p>アルゴリズムの中の命令的言い回しによる要件（例えば： “先頭部のスペース文字並びを取り除く”, “false を返してこの手続きを終了” など）は、アルゴリズムを導入する際に利用されているキーワード（ “〜しなければならない”, “〜すべき”, “〜してもよい”, 等々）の意味の下で解釈されることになる。 </p>
+
+  <p>準拠しているしているリソースはリソースに適用可能であるこの仕様書内のすべての要求リストを実装している。</p>
+
+  <p>準拠しているUAとはこの仕様書にリストされている全ての要求が実装されているUAのことである</p>
+
+  <p>仕様書のアルゴリズムから得られる結果が区別不能な場合に限り、UAとリソースの著者はこの仕様を実装するためのどんなアルゴリズムでも実装できる。(結果が同じならば別に仕様書のアルゴでなくてもよい。)</p>
+
+
+  <h2 id="terminology"><span class="secno">3 </span>用語</h2>
+
+  <p>この仕様書内のいくつかの語は<cite>The Web Origin Concept</cite>、 <cite>HTML</cite>、<!--fetch-->
+  <cite>HTTP</cite>や<cite>URI</cite>の仕様のものである。<a href="#refsORIGIN">[ORIGIN]</a> <a href="#refsHTML">[HTML]</a> <a href="#refsHTTP">[HTTP]</a> <a href="#refsURI">[URI]</a>
+
+  </p><p>用語は大抵仕様所以外の場所で定義されている。しかし、いくつかの用語はどこにも定義されていない。そのような語はここで定義されている。</p>
+
+  <p>二つの文字列を比較して <dfn id="case-sensitive">case-sensitive</dfn> であるとは、それらを比較したときコードポイントとコードポイントが正確に一致しているという意味である。</p>
+
+  <p>2つの文字列を比較して<dfn id="ascii-case-insensitive">ASCII case-insensitive</dfn> であるとは、それらを比較した時、コードポイントとコードポイントが正確に一致し、なおかつその文字がU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲、または U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z の範囲に収まっている、という意味である。</p>
+
+  <p><dfn id="converted-to-ascii-lowercase" title="ASCII lowercaseに変換する">文字列をASCII lowercaseに変換する</dfn> とはU+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Zの範囲と一致する全ての文字列をそれと一致する U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z 内の文字に変換するという意味である。</p>
+
+  <p>語 <dfn id="user-credentials">ユーザー資格情報</dfn> はこの仕様書内ではUAがベースとなってオリジンとインタラクティブにやりとりされる前に送信される cookie、HTTP 認証、クライアント側SSL証明書の意味で使用される。特にこの語はプロキシ認証情報や<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダとは関係がない。<a href="#refsCOOKIES">[COOKIES]</a></p>
+
+  <p>語<dfn id="cross-origin">クロスオリジン</dfn>は <a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">同一オリジン</a>ではないという意味で使用される。</p>
+
+  <p>もし <var title="">method</var> が <a href="#case-sensitive">case-sensitive</a>で以下にマッチする場合、<dfn id="simple-method">simple method</dfn>と呼ばれる:</p>
+
+  <ul>
+   <li><code>GET</code></li>
+   <li><code>HEAD</code></li>
+   <li><code>POST</code></li>
+  </ul>
+
+  <p>もし <var title="">ヘッダ</var>のフィールド名が<a href="#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Accept</code>, <code>Accept-Language</code>, or <code>Content-Language</code> にマッチする場合、 もしくは<a href="#ascii-case-insensitive">ASCII case-insensitive</a>で<code>Content-Type</code>にマッチ、なおかつヘッダフィールドの値メディアタイプ(パラメータ以外)が <a href="#ascii-case-insensitive">ASCII case-insensitive</a> で<code>application/x-www-form-urlencoded</code>, <code>multipart/form-data</code>, or <code>text/plain</code>にマッチする場合、 そのヘッダは<dfn id="simple-header">simple header</dfn> と呼ばれる。</p>
+
+  <p>もし <var title="">ヘッダ</var>のフィールド名が <a href="#ascii-case-insensitive">ASCII case-insensitive</a> で以下にマッチする場合、 <dfn id="simple-response-header">シンプルレスポンスヘッダ</dfn> と呼ばれる。</p>
+
+  <ul>
+   <li><code>Cache-Control</code></li>
+   <li><code>Content-Language</code></li>
+   <li><code>Content-Type</code></li>
+   <li><code>Expires</code></li>
+   <li><code>Last-Modified</code></li>
+   <li><code>Pragma</code></li>
+  </ul>
+
+  <p><dfn id="header-parsing" title="header parsing">ヘッダを解析する</dfn>時、 ヘッダは <a href="#構文">構文</a> セクションのABNFと一致した所ごとに解析されなければならない。もしヘッダがこの仕様書で述べられているどんなABNFにもマッチしない場合、<dfn id="header-parsing-failed">ヘッダ解析に失敗した</dfn>と言われる。</p>
+
+
+
+
+  <h2 id="security"><span class="secno">4 </span>セキュリティに関する考慮事項</h2>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>セキュリティ要求と考慮事項はこの仕様書を通じて述べられている。このセクションではそれ以外のアドバイスをリスト化している。</p>
+
+  <hr>
+
+<p><a href="#simple-cross-origin-request">simple cross-origin request</a>は、この仕様に準拠していない現在展開されているユーザエージェントによって生成されるものと一致するものとして定義されているこの仕様以外の場所で生成される シンプルなクロスオリジンリクエストリクエスト(例えば<code>GET</code> や <code>POST</code> を使用したクロスオリジン間のフォームのポスト 、もしくは <code>script</code>要素で生成されたクロスオリジン間の <code>GET</code> リクエスト等) では大抵<a href="#user-credentials">ユーザー資格情報</a>が含まれている。そのため、この仕様に準拠したリソースは常に資格情報を持ったシンプルなクロスオリジンリクエストに備えなければならない。
+
+</p><p>つまり、シンプルリクエストが検索以外の重要性を持つリソースは、要求の明示的に提供される内容に推測不可能なトークンを含めることを要求することによって、クロスサイトリクエストフォージェリ（CSRF）からシンプルリクエストを保護する必要がある。<a class="informative" href="#refsCSRF">[CSRF]</a>
+
+</p><p>この仕様書ではどのようにHTTPレスポンスでリソースにアクセスするために自オリジン外のアプリケーションのインスタンスが認証されるかを定義する。特定のタイプのリソースを特定の認証されたオリジンとして指定してはいけない。代わりにすべて拒否、もしくはすべて許可にすべきである。
+
+</p><ol>
+ <li><p>ログインページ等の他のオリジンのアプリケーションで使用できないリソースには<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダを返してはいけない。リソースは依然としてリクエストを明示的に提供している推測可能なトークンを含んだコンテンツの要求などのCSRF攻撃から守らなければいけない。このようなリソースのセキュリティのプロパティは、この仕様に準拠しているUAの影響を受けません。
+
+ </p></li><li>
+  <p>アクセスコントロールがなく、公開されたリソースは常に安全に 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。
+
+ </p></li><li><p>機密性のあるコメントがなく、HTMLscript要素を使用してクロスオリジンとしてアクセスできるECMAScriptとして解析される <code>GET</code> レスポンスのボディは 値が"<code>*</code>"の<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>ヘッダを返すことができる。[参照:http://security.stackexchange.com/questions/43936/does-returning-access-control-allow-origin-weaken-the-security-of-json-get-re/43965#43965]もし必要なら、そのようなリソースに上記のようなアクセスコントロールやCSRFプロテクションを付加することができる。
+</p></li></ol>
+
+<p> <a href="#user-credentials">ユーザー資格情報</a>もしくは、 <code title="http-origin"><a href="#http-origin">オリジン</a></code>ヘッダを保持しているリクエストの要求には特別な配慮が必要である。</p>
+
+<ol>
+ <li>
+  <p>リクエストが検索以外の意義を持ち、<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダが信頼できる場合、リソースは認証リクエストとリソースが入っているレスポンスへのアクセスを許可の区別に気を付ける必要がある
+
+  </p><ol>
+   <li><p>リクエストの許可はユーザーの権限と要求しているオリジンのみを使用して判断する必要がある。
+
+   </p></li><li><p>しばしばリソースが明示的に特定のオリジンから機密情報を使用したクロスオリジンリクエストへの同意をユーザーに求めるような認証のための通過儀礼(動作)を必要とすることがあるがこれは適切である。このような場合、曖昧な許可している範囲を削除できるクロスオリジンリクエストリクエストの一環としてセキュリティトークンを明示的に渡す。以下はOAuthの例である。<a class="informative" href="#refsOAUTH">[OAUTH]</a>
+  </p></li></ol>
+
+ </li><li>
+  <p>クロスオリジンリクエスト <a href="#user-credentials">ユーザー資格情報</a>を使用するのは次のような例の場合が適切である:
+
+  </p><ol>
+   <li>
+    <p>この仕様書で定義されている機密情報を持ったクロスオリジンリクエストはサーバー間のバックチャンネル、JSONP、クロスドキュメントメッセージング等の認証されたリソース共有の代わりの方法として使用される。<a class="informative" href="#refsJSONP">[JSONP]</a> <a class="informative" href="#refsHTML">[HTML]</a>
+
+    </p><p>この置換は、サーバー間のバックチャンネルと比較した場合、要求するオリジンがリクエストされたオリジンに対して権限を昇格させるXSS脆弱性、などのいくつかの場合において追加の攻撃する境界を露出することができてしまう。
+
+    </p><p>JSONP型の機密情報クロスオリジンリクエストの代わりとして、この仕様を使用した場合、JSONP型はクロスオリジンのコードインジェクション経由で命令するのに対してクロスオリジンデータアクセスを提供するのでリクエストするアプリケーションのセキュリティに対する姿勢がかなり上昇する。
+
+    </p><p>リソースのロードに依存するHTML <code>iframe</code>要素の中に入った資格情報付きのクロスオリジン通信技術の代替として、他のクロスオリジンサイドチャネルまたはクロスオリジン通信技術を実装する場合、この仕様はほぼ同等のセキュリティ状態を提供する。再度（また？）、完全に信頼されていないオリジンから受信したデータが期待したフォーマットおよび承認済の値に準拠しているために検証します。
+
+   </p></li><li><p>/公開情報ではないユーザー固有のカスタマイズのみに使用している資格情報/を持ち検索以外の意図を持ってないリソースへのリクエストのために。その場合、特定のオリジンを制限されたアクセスは認証されたオリジンを除き、ユーザーを識別することに使用されているカスタマイズを防止することによってユーザーのプライバシー保護する。.
+  </p></li></ol>
+
+ </li><li>
+  <p>この仕様が検索以外の意図を持ったリクエストに使用されており、2つ以上のオリジンから生成されたデータ(例:別のオリジンのリソース間で編集、印刷、保存できるなど)またはそれと同等のものが含まれている場合、リクエストは<a href="#omit-credentials-flag">omit credentials flag</a>を設定し、リクエストのコンテンツ内で明示的に提供されているセキュリティトークンを使用して認証をしなければならない。特にもしオリジンが相互ではなく完全に信用できない場合には。
+
+  </p><p>このようなマルチオリジンのシナリオでは、一つのオリジンの悪意のあるリソースがUAを混乱した代理(https://ja.wikipedia.org/wiki/Confused_deputy_problem)として登録し、悪意のあるユーザー資格情報をクロスオリジンリクエストで送信することで、権限を昇格することができるかもしれない。前述のような攻撃を避けるためには、アプリケーションがそれぞれのオリジンの特権の範囲の明示的な知識を持つように調整して、受け取ったすべてのパラメータや指示には本来オリジンが持つ権限を越えないよう暗示的な影響を保証するため、"調整"のそれぞれのステップでは注意してバリデーションしなければならない。<a class="informative" href="#refsCONFUSED">[CONFUSED]</a>
+
+  </p><p>上記のような相互の複数のオリジンによる脆弱性を避けるのは難しく、代わりにUAのリクエストに自動的にアタッチされるユーザー資格情報、特定の機能やリクエストの明示的なコンテンツの一部として渡された認証されたリソースを指定するセキュリティトークンを使用する。OAuth again provides an example of such a pattern.
+</p></li></ol>
+
+  <hr>
+
+  <p>クライアント側のウェブアプリケーションの作者には <a href="#cross-origin">cross-origin</a> から受け取った有害かもしれないリソースを検証することを強く推奨する。</p>
+
+
+  <p>一意に特定できないホスト名や、特定のポートにマッピングされていない、必ずしも一意のオリジンを持っていないウェブアプリケーションは、この仕様書で定義されている安全機構を使用することができない。これはオリジンがスキームとホスト名とポートにより構成されているためである。</p>
+
+<p>例として、URLが <code>example.org/<var>app-name</var>/</code> であるアプリケーションが存在しており、app-nameの部分はexample.orgで実行されているほかのウェブアプリケーションと区別する必要のあるとします。また、ほかのアプリケーションはしっかりとこの仕様で定義されたメカニズムを採用することができません。</p>
+
+<p>異なった <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">オリジン</a> にウェブアプリケーションをマッピングすることはウェブアプリケーションのセキュリティを上昇するために必要です。</p>
+
+
+  <h2 id="syntax"><span class="secno">5 </span>構文</h2>
+
+  <p>このセクションではこの仕様書で導入する新しいヘッダの構文を定義する。ここではそれぞれのヘッダの機能の短い説明も提供している。</p>
+
+  <p><a href="#resource-processing-model">resource processing model</a> セクションではリソースがそれらのヘッダをレスポンス内でどのように使用するか説明する。同様に、 <a href="#user-agent-processing-model">user agent processing model</a> セクションではUAがどのようにそれらのヘッダを使用するか説明する。</p>
+
+  <p>このセクションで使用されているABNFの構文は、HTTP / 1.1からです。<a href="#refsHTTP">[HTTP]</a></p>
+
+  <p class="note">この仕様で導入される新しいヘッダが同等の解析ルールを持つことを保障するためにHTTP/1.1 をABNFの基本とする。</p>
+
+  <p class="note">HTTP/1.1 は現在暗示的にヘッダの値の定義にOWSを使用しないがここの形式ではOWSを想定している。</p>
+
+  <h3 id="access-control-allow-origin-response-header"><span class="secno">5.1 </span><code title="">Access-Control-Allow-Origin</code> レスポンスヘッダ</h3>
+
+  <p> <dfn id="http-access-control-allow-origin" title="http-access-control-allow-origin"><code>Access-Control-Allow-Origin</code></dfn> ヘッダはレスポンス内の <code title="http-origin"><a href="#http-origin">Origin</a></code> リクエストヘッダの帰ってきた値 、もしくは"*"、もしくは "null"に基づきリソースが共有できるかどうか指示するものである。ABNF:</p>
+
+  <pre>Access-Control-Allow-Origin = "Access-Control-Allow-Origin" ":" <a class="external" href="http://tools.ietf.org/html/rfc6454#section-7.1">origin-list-or-null</a> | "*"</pre>
+
+  <p class="note">実際には、値 <code class="external"><a href="http://tools.ietf.org/html/rfc6454#section-7.1">origin-list-or-null</a></code> はより制約的である。 <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4" title="origin">origins</a>の空白区切りのリストが許可されているというより、これは単一の <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">オリジン</a>、もしくは文字列"<code title="">null</code>"のどちらかである。
+  <!-- serialized-origin / %x6E %x75 %x6C %x6C / "*" -->
+
+
+  </p><h3 id="access-control-allow-credentials-response-header"><span class="secno">5.2 </span><code title="">Access-Control-Allow-Credentials</code>レスポンスヘッダ</h3>
+
+  <p> <dfn id="http-access-control-allow-credentials" title="http-access-control-allow-credentials"><code>Access-Control-Allow-Credentials</code></dfn> ヘッダは <a href="#omit-credentials-flag">omit credentials flag</a> がセットされていないときにリクエストのレスポンスを公開できるかどうかを支持するものである。When part of the response to a これが<a href="#preflight-request">preflight request</a>のレスポンスであった場合、 このヘッダは <a href="#actual-request">実際のリクエストに</a> に <a href="#user-credentials">ユーザー資格情報</a>が存在できるかどうかについて指示するものである。ABNF:</p>
+
+  <pre>Access-Control-Allow-Credentials: "Access-Control-Allow-Credentials" ":" true
+                            true: %x74.72.75.65 ; "true", case-sensitive</pre>
+
+
+  <h3 id="access-control-expose-headers-response-header"><span class="secno">5.3 </span><code title="">Access-Control-Expose-Headers</code> Response Header</h3>
+
+  <p><dfn id="http-access-control-expose-headers" title="http-access-control-expose-headers"><code>Access-Control-Expose-Headers</code></dfn>ヘッダはどのヘッダが安全にCORS API 仕様のAPIに公開されているかを指示するものである。 ABNF:</p>
+
+  <pre>Access-Control-Expose-Headers = "Access-Control-Expose-Headers" ":" #<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">field-name</a></pre>
+
+
+  <h3 id="access-control-max-age-response-header"><span class="secno">5.4 </span><code title="">Access-Control-Max-Age</code> Response Header</h3>
+
+  <p><dfn id="http-access-control-max-age" title="http-access-control-max-age"><code>Access-Control-Max-Age</code></dfn> ヘッダはどれだけの時間<a href="#preflight-result-cache">preflight result cache</a>に <a href="#preflight-request">preflight request</a> の結果をキャッシュできるかを指示したものである。ABNF:</p>
+
+  <pre>Access-Control-Max-Age = "Access-Control-Max-Age" ":" <a class="external" href="http://tools.ietf.org/html/rfc2616/#section-3.3.2">delta-seconds</a></pre>
+
+
+  <h3 id="access-control-allow-methods-response-header"><span class="secno">5.5 </span><code title="">Access-Control-Allow-Methods</code> Response Header</h3>
+
+  <p> <dfn id="http-access-control-allow-methods" title="http-access-control-allow-methods"><code>Access-Control-Allow-Methods</code></dfn> ヘッダは<a href="#preflight-request">preflight request</a>のレスポンスの一部として、どのメソッドが <a href="#actual-request">actual request</a>で使用できるかを指示したものである。 
+</p><p class="note">The `<code title="">Allow</code>` header is
+not relevant for the purposes of the CORS protocol.
+ABNF:</p>
+
+  <pre>Access-Control-Allow-Methods: "Access-Control-Allow-Methods" ":" #<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-5.1.1">Method</a></pre>
+
+
+
+  <h3 id="access-control-allow-headers-response-header"><span class="secno">5.6 </span><code title="">Access-Control-Allow-Headers</code> Response Header</h3>
+
+  <p> <dfn id="http-access-control-allow-headers" title="http-access-control-allow-headers"><code>Access-Control-Allow-Headers</code></dfn> ヘッダは<a href="#preflight-request">preflight request</a>のレスポンスの一部として、どのヘッダフィールド名が <a href="#actual-request">actual request</a>で使用できるかを指示したものである。ABNF:</p>
+
+  <pre>Access-Control-Allow-Headers: "Access-Control-Allow-Headers" ":" #<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">field-name</a></pre>
+
+
+  <h3 id="origin-request-header"><span class="secno">5.7 </span><code title="">Origin</code> Request Header</h3>
+
+  <p><dfn id="http-origin" title="http-origin"><code>Origin</code></dfn> ヘッダは <a href="#cross-origin-request">cross-origin request</a> や <a href="#preflight-request">preflight request</a> がどこから生成されているかを指示するものである。<a href="#refsORIGIN">[ORIGIN]</a></p>
+
+
+  <h3 id="access-control-request-method-request-header"><span class="secno">5.8 </span><code title="">Access-Control-Request-Method</code> Request Header</h3>
+
+  <p><dfn id="http-access-control-request-method" title="http-access-control-request-method"><code>Access-Control-Request-Method</code></dfn> ヘッダはどのメソッドを <a href="#actual-request">actual request</a> で使用するかを <a href="#preflight-request">preflight request</a>で指示したものである。ABNF:</p>
+
+  <pre>Access-Control-Request-Method: "Access-Control-Request-Method" ":" <a class="external" href="http://tools.ietf.org/html/rfc2616/#section-5.1.1">Method</a></pre>
+
+
+  <h3 id="access-control-request-headers-request-header"><span class="secno">5.9 </span><code title="">Access-Control-Request-Headers</code> Request Header</h3>
+
+  <p><dfn id="http-access-control-request-headers" title="http-access-control-request-headers"><code>Access-Control-Request-Headers</code></dfn> ヘッダはどのヘッダを <a href="#actual-request">actual request</a> で使用するかを <a href="#preflight-request">preflight request</a>で指示したものである。ABNF:</p>
+
+  <pre>Access-Control-Request-Headers: "Access-Control-Request-Headers" ":" #<a class="external" href="http://tools.ietf.org/html/rfc2616/#section-4.2">field-name</a></pre>
+
+
+
+
+  <h2 id="resource-processing-model"><span class="secno">6 </span>Resource Processing Model</h2>
+
+  <p>このセクションでは、リソースが実装する必要がある処理モデルについて説明します。リクエストの各タイプはリソースは自分自身のサブセクションで説明されている問題に対処する必要があるかもしれない。</p>
+
+  <p>この仕様書で説明されているリソース共有ポリシーは特定のリソースに結びついている。このセクションの目的のためにリソースは以下と結びついている(関係がある)。</p>
+
+  <ul>
+   <li>
+    <p>リソースにアクセスするのを許可されている 0、もしくはそれ以上の  <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4" title="origin">origins</a> から構成されている <dfn id="list-of-origins">オリジンのリスト</dfn>。</p>
+
+    <p class="note">これには <a href="#cross-origin">cross-origin</a> リクエストのリソースがリソース自身にリダイレクトバックに気づくためにリソース自身の <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a> を含むことができる。</p>
+   </li>
+
+   <li><p>リソースがサポートしている0、もしくはそれ以上の  メソッド から構成されている <dfn id="list-of-methods">メソッドのリスト</dfn>。</p></li>
+
+   <li><p>リソースがサポートしている0、もしくはそれ以上の  ヘッダフィールド名 から構成されている <dfn id="list-of-headers">ヘッダのリスト</dfn>。</p></li>
+
+   <li><p>リソースが使用して、リソースを公開することのできる <a href="#simple-response-header" title="simple response header">simple response headers</a> 以外のヘッダのヘッダフィールド名から構成されている0以上の <dfn id="list-of-exposed-headers">公開されているヘッダのリスト</dfn> 。</p></li>
+
+   <li><p><dfn id="supports-credentials">supports credentials</dfn> フラグはリクエスト内でリソースが <a href="#user-credentials">user credentials</a>をサポートするかどうかを指示する。リソースがサポートする場合はtrueであり、それ以外の場合はfalseになる。</p></li>
+  </ul>
+
+
+  <h3 id="resource-requests"><span class="secno">6.1 </span>Simple Cross-Origin Request, Actual Request, and
+  Redirects</h3>
+
+  <p><a href="#simple-cross-origin-request">simple cross-origin request</a> や <a href="#actual-request">actual request</a> のレスポンス内で、リソースがこのリソースを公開するかどうかを指示する。</p>
+
+  <p>もしリソースが再配置されていた場合、これは新しい <a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a>を共有かどうか指示する。</p>
+
+  <p>リソースはリソース内でどの追加のヘッダを使用するか決定するために以下の一連の流れを使用しなければならない。：</p>
+
+  <ol>
+   <li><p>もし<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダが存在しない場合、この一連の流れを終了する。このリクエストはこの仕様書の範囲外となる。</p></li>
+
+   <li>
+    <p>もし <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値が  <a href="#list-of-origins">list of origins</a>内の何らかの値に<a href="#case-sensitive">case-sensitive</a> マッチ しない場合、追加のヘッダを設定してはいけない。そしてこの一連の流れをを終了する。</p>
+
+    <p class="note"><a href="#list-of-origins">list of origins</a> は無制限にすることができるため、"常に一致"が許容される。</p>
+   </li>
+
+   <li>
+    <p>もしリソースが<a href="#supports-credentials">資格情報をサポートしている</a>場合、 単体の <code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダを付け加えて、値には、 <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値と同等の値を書き込み。さらに単体の <code title="http-access-control-allow-credentials"><a href="#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code> ヘッダを付け加えて、値には文字列 "<code title="">true</code>" と<a href="#case-sensitive">case-sensitive</a> する値を書き込む。</p>
+
+    <p>そうでない場合、単体の <code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダを付け加えて、値には  <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値と同等の値か、文字列"<code title="">*</code>"のどちらかを書き込む。</p>
+
+    <p class="note">文字列 "<code title="">*</code>" は <a href="#supports-credentials">資格情報をサポートしている</a>リソースに対して使用することができない。</p>
+   </li>
+
+   <li><p>もし <a href="#list-of-exposed-headers">list of exposed headers</a> が空ではない場合、1以上のi <code title="http-access-control-expose-headers"><a href="#http-access-control-expose-headers">Access-Control-Expose-Headers</a></code>ヘッダを付け加えて <a href="#list-of-exposed-headers">list of exposed headers</a>で与えられているヘッダフィールド名を値として用いる。</p></li>
+  </ol>
+
+  <p class="note">適切なヘッダを加えないことでリソースは <a href="#cache-origin" title="cache-origin">origin</a> が <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダrと <a href="#case-sensitive">case-sensitive</a>に一致し、なおかつ<a href="#cache-url" title="cache-url">url</a>がリソースの<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a>と <a href="#case-sensitive">case-sensitive</a> に一致するすべてのエントリの <a href="#preflight-result-cache">preflight result cache</a> を消去することもできる。</p>
+
+
+  <h3 id="resource-preflight-requests"><span class="secno">6.2 </span>Preflight Request</h3>
+
+  <p><a href="#preflight-request">preflight request</a> のレスポンス内で、リソースはどのメソッドとヘッダ( <a href="#simple-method" title="simple method">simple methods</a> や <a href="#simple-header" title="simple header">simple headers</a>以外の)を処理できるか、リソースが<a href="#supports-credentials">資格情報をサポートしている</a>かどうかなどを決定する。</p>
+
+  <p>リソースはリソース内でどの追加のヘッダを使用するか決定するために以下の一連の流れを使用しなければならない。：</p>
+
+  <ol>
+   <li><p>もし<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダが存在しない場合、この一連の流れを終了する。このリクエストはこの仕様書の範囲外となる。</p></li>
+
+   <li>
+    <p>もし <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値が<a href="#list-of-origins">list of origins</a>内の値に <a href="#case-sensitive">case-sensitive</a> マッチしなかった場合、追加のヘッダをセットせず、この一連の流れを終了する。</p>
+
+    <p class="note"><a href="#list-of-origins">list of origins</a> は無制限にすることができるため、"常に一致"が許容される。</p>
+
+    <p class="note"><code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダにはUAがリダイレクトを追跡しない、単一の<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a>のみ記述することができる。</p>
+   </li>
+
+   <li>
+    <p><var title="">method</var>を <code title="http-access-control-request-method"><a href="#http-access-control-request-method">Access-Control-Request-Method</a></code> ヘッダを<a href="#header-parsing" title="header parsing">解析</a>した結果の値にする。</p>
+
+    <p>もし no <code title="http-access-control-request-method"><a href="#http-access-control-request-method">Access-Control-Request-Method</a></code>ヘッダが存在しなかったり<a href="#header-parsing-failed" title="header parsing failed">解析に失敗</a>した場合、どんな追加のヘッダも追加してはならない。その後、この一連のステップを終了する。このリクエストはこの仕様書の範囲外となる。</p>
+   </li>
+
+   <li>
+    <p><var title="">ヘッダフィールド名</var>を<code title="http-access-control-request-headers"><a href="#http-access-control-request-headers">Access-Control-Request-Headers</a></code>ヘッダの<a href="#header-parsing" title="header parsing">解析</a>した結果の値にする。</p>
+
+    <p>もしそこに<code title="http-access-control-request-headers"><a href="#http-access-control-request-headers">Access-Control-Request-Headers</a></code> ヘッダが存在しなかった場合、<var title="">ヘッダフィールド名</var>を空のリストにする。
+
+    </p><p>もし<a href="#header-parsing-failed" title="header parsing failed">構文解析に失敗</a>した場合、追加のヘッダをセットしてなならず、この一連の手順を終了する。このリクエストはこの仕様書の範囲外となる。</p>
+   </li>
+
+   <li>
+    <p>もし<var title="">メソッド</var>が<a href="#list-of-methods">list of methods</a>内の何かの値と<a href="#case-sensitive">case-sensitive</a> マッチしなかった場合、どんな追加のヘッダもセットしてはならず、この一連のステップを終了する。</p>
+
+    <p class="note"> <a href="#list-of-methods">list of methods</a> は無制限にできるため、常にマッチングすることが許可される。</p>
+   </li>
+
+   <li>
+    <p>もし 何かの<var title="">ヘッダフィールド名</var> が<a href="#list-of-headers">list of headers</a>内のいずれかの値に <a href="#ascii-case-insensitive">ASCII case-insensitive</a> マッチしない場合、追加のヘッダを設定してはならない。そしてこの一連の流れを終了する。</p>
+
+    <p class="note"> <a href="#list-of-headers">list of headers</a> は無制限にできるため、常にマッチングすることが許可される。</p>
+   </li>
+
+   <li>
+    <p>もしリソースが<a href="#supports-credentials">資格情報をサポートしている</a>場合、 単体の <code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダを付け加えて、値には、 <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値と同等の値を書き込み。さらに単体の <code title="http-access-control-allow-credentials"><a href="#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code> ヘッダを付け加えて、値には文字列 "<code title="">true</code>" と<a href="#case-sensitive">case-sensitive</a> する値を書き込む。</p>
+
+    <p>そうでない場合、単体の <code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダを付け加えて、値には  <code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値と同等の値か、文字列"<code title="">*</code>"のどちらかを書き込む。</p>
+
+    <p class="note">文字列 "<code title="">*</code>" は <a href="#supports-credentials">資格情報をサポートしている</a>リソースに対して使用することができない。</p>
+   </li>
+
+   <li><p>オプションとして、ＵＡがリクエストの結果をキャッシュするのを許可する秒数を値とした <code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code> ヘッダを加えることもできる。</p></li><!-- there is no limit -->
+   
+
+   <li>
+    <p><var title="">メソッド</var>が<a href="#simple-method">単純なメソッド</a>の場合、この手順を省略することができる。</p>
+
+    <p><a href="#list-of-methods">list of methods</a>(のサブセット)から構成されている1以上の<code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code> ヘッダを付け加える 。</p>
+
+    <p class="note">&lt;v0&gt;メソッド&lt;/v0&gt;が&lt;a1&gt;単純なメソッド&lt;/a1&gt;の場合、リスティングする必要はないが、禁止されていない。</p>
+
+    <p class="note">Since the <a href="#list-of-methods">list of methods</a>は無制限に値を取れるため、<a href="#http-access-control-request-method"> Access-Control-Request-Method </a>（サポートされている場合）で示されたメソッドを返すだけで十分です。</p>
+   </li>
+
+   <li>
+    <p>各<var title="">header field-names</var> が <a href="#simple-header">simple header</a> であり、 <code>Content-Type</code>がnoneならこの手順を省略することができる。</p>
+
+    <p><a href="#list-of-headers">list of headers</a>(のサブセット)から構成されている1以上の<code title="http-access-control-allow-headers"><a href="#http-access-control-allow-headers">Access-Control-Allow-Headers</a></code> ヘッダを付け加える 。</p>
+
+    <p class="note">ヘッダフィールド名が<a href="#simple-header">simple header</a> であり、 <code>Content-Type</code>がない場合、これをリスティングする必要はない。<code>Content-Type</code>はその値のサブセットとしてのみリストされ、<a href="#simple-header">simple header</a>と見なされる。</p>
+
+    <p class="note"><a href="#list-of-headers">list of header</a>は無制限に値を取れるため、<a href="#http-access-control-allow-headers"> Access-Control-Request-Headers </a>で示されたメソッドを返すだけで十分です。</p>
+   </li>
+  </ol>
+
+
+  <h3 id="resource-security"><span class="secno">6.3 </span>Security</h3>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>リソースの作者には、<code>GET</code>や<code>OPTIONS</code>等のセーフメソッドによるリクエストを使うことを保証することを強く勧める。なぜならこれらのセーフメソッドは副作用を持たないため、潜在的な攻撃者がユーザーのデータを簡単に修正することができないからである。リソースがこのように設定されている場合、攻撃者は実際に害を与えるためには <a href="#list-of-origins">list of origins</a> にいる必要があります。</p>
+
+  <p>In addition to checking the <code title="http-origin"><a href="#http-origin">Origin</a></code>ヘッダのチェックに加えて、リソースの作者には、<code>Host</code>ヘッダをチェックすることも強く推奨する。これはつまり、このヘッダから提供されるホスト名がリソースが提供されているサーバーのホスト名とマッチするか確認する作業である。これは、DNSリバインディング攻撃に対する保護を提供する。</p>
+
+  <p>リソース共有ポリシーの完全性の保護を提供するためにSSL/TLSの使用を推奨される。</p>
+
+  <h3 id="resource-implementation"><span class="secno">6.4 </span>実装に関する考慮事項</h3>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>複数の <code>Origins</code> と共有を有効にしたいが、 <code>"*"</code> にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、<code> Access-Control-Allow-Origin &lt;/ c2&gt;ヘッダーを動的に生成する必要がある。結果として、そのようなリソースの作成者は、<code> Vary：Origin &lt;/ c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</p>
+
+
+  <h2 id="user-agent-processing-model"><span class="secno">7 </span>User Agentの処理モデル</h2>
+
+  <p>このセクションではUAが実装する必要のある処理モデルについて説明する。</p>
+
+  <p>simple cross-origin request has been definedこのセクションの処理モデルは、アルゴリズムがいつ呼び出されるか、および戻り値がどのように処理されるかを定義するCORS API仕様によって参照される必要がある。この処理モデルは独立して使うには適していない。</p>
+
+
+  <h3 id="cross-origin-request-0"><span class="secno">7.1 </span>Cross-Origin Request</h3>
+
+  <p> <dfn id="cross-origin-request">cross-origin request</dfn> アルゴリズムは以下の引数を取る:
+
+  </p><dl>
+   <dt><dfn id="request-url">request URL</dfn></dt>
+   <dd>
+    <p> <a class="external" href="http://www.w3.org/TR/html5/infrastructure.html#fetching-resources" title="fetching-resources">fetched</a>するための<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a> 。</p>
+
+    <p class="note"><a href="#request-url">request URL</a> はリダイレクトされた場合、修正される。</p>
+   </dd>
+
+   <dt><dfn id="request-method">request method</dfn></dt>
+   <dd><p>リクエストのメソッド。明示的に設定されない場合<code>GET</code>が設定される。</p></dd>
+
+   <dt><dfn id="author-request-headers">author request headers</dfn></dt>
+   <dd><p>リクエストの作成者によって設定されるヘッダのリスト。明示的に設定されない場合空になる。</p></dd>
+
+   <dt><dfn id="request-entity-body">request entity body</dfn></dt>
+   <dd><p>リクエストのボディ。明示的に設定されない場合空になる。</p></dd>
+
+   <dt><dfn id="source-origin">source origin</dfn></dt>
+   <dd>
+    <p>リクエストの <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">オリジン</a> 。</p>
+    <p class="note">いくつかのAPIの仕様のせいで、これは一般的な方法で定義するこができないため、引数として提供する必要がある。</p>
+   </dd>
+
+   <dt><dfn id="referrer-source">referrer source</dfn></dt>
+   <dd>
+    <p><code class="external"><a href="http://dom.spec.whatwg.org/#document">Document</a></code> もしくは <a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a>のどちらか。<code title="http-referer">Referer</code> ヘッダを決定するために使用される。
+    </p></dd>
+   
+
+   <dt><dfn id="manual-redirect-flag">manual redirect flag</dfn></dt>
+   <dd><p>リダイレクト時に自動で追跡し <em>ない</em>場合にセットする。
+
+   </p></dd><dt><dfn id="omit-credentials-flag">omit credentials flag</dfn></dt>
+   <dd><p>リクエスト内で <a href="#user-credentials">user credentials</a> が除外され、レスポンス内でクッキーが無視された場合にセットする
+
+   </p></dd><dt><dfn id="force-preflight-flag">force preflight flag</dfn></dt>
+   <dd><p><a href="#preflight-request">プリフライト リクエスト</a>が必要な場合にセットする。
+  </p></dd></dl>
+
+  <p><a href="#cross-origin-request">cross-origin request</a>アルゴリズムは(アルゴリズムが)定義したネットワークAPIに対してクロスオリジンリクエストを許可するCORS API仕様を使用することができる。</p>
+
+  <p class="note">CORS API 仕様は<a href="#cross-origin-request">cross-origin request</a>に自由に制限を課すことができる。例：<a href="#omit-credentials-flag">omit credentials flag</a> を常にセットすることができる。
+
+  </p><p><a href="#cross-origin-request">クロスオリジンリクエスト</a> アルゴリズムが呼び出された場合、以下の手順を踏む必要がある。</p>
+
+  <ol>
+   <li>
+    <p>もし何かの事情のためにUAがリクエストを送りたくない場合、このアルゴリズムを終了させて、 <a href="#cross-origin-request-status">cross-origin request status</a> を <i>network error</i>にする。</p>
+
+    <p class="note"> <a href="#request-url">request URL</a> はいくつかの方法でユーザーによってブラックリスト入りされている可能性がある。</p>
+   </li>
+
+   <li>
+    <p>以下の条件が真の場合、 <a href="#simple-cross-origin-request">simple cross-origin request</a> アルゴリズムに従う必要がある。(note:途中から？たぶん最初から。)：
+
+    </p><ul>
+     <li><p><a href="#request-method">リクエストメソッド</a> が<a href="#simple-method">シンプルメソッド</a> で<a href="#force-preflight-flag">force preflight flag</a> がセットされていない場合。
+
+     </p></li><li><p>各<a href="#author-request-headers">author request headers</a> が <a href="#simple-header">simple header</a> である、もしくは <a href="#author-request-headers">author request headers</a> が空である場合。</p></li>
+    </ul>
+   </li>
+
+   <li><p>それ以外の場合、<a href="#cross-origin-request-with-preflight">cross-origin request with preflight</a> アルゴリズムに従う必要がある。</p></li>
+  </ol>
+
+  <p class="note"> <a href="#simple-method" title="simple method">simple</a> なメソッドを使用して、<a href="#author-request-headers">author request headers</a> が<a href="#simple-header" title="simple header">simple</a>でないCross-origin requestsを行うとき 、リソースがそれらのヘッダを処理できることを保証するために<a href="#preflight-request">preflight request</a>を持つ。(同様にリクエストに<a href="#simple-method">simple method</a>ではないメソッドを使用する。)</p>
+
+
+  <h4 id="handling-a-response-to-a-cross-origin-request"><span class="secno">7.1.1 </span>Cross-Origin Requestのレスポンスを処理する</h4>
+
+  <p>UAはCORS API仕様書で定義されているAPIにさらす前に、<a href="#ascii-case-insensitive">ASCII case-insensitive</a>でフィールド名が<code title="http-access-control-expose-headers"><a href="#http-access-control-expose-headers">Access-Control-Expose-Headers</a></code>マッチする、もしくは<a href="#simple-response-header">simple response header</a>以外の全てのレスポンスヘッダを除外しなければならない。</p>
+
+  <p class="note"> 従って、<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code> の<code class="external" title="dom-XMLHttpRequest-getResponseHeader"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#dom-xmlhttprequest-getresponseheader">getResponseHeader()</a></code> メソッドは上記で指示していないどんなメソッドも公開することができない。</p>
+
+
+  <h4 id="cross-origin-request-status-0"><span class="secno">7.1.2 </span>Cross-Origin Request Status</h4>
+
+  <p>それぞれの <a href="#cross-origin-request">cross-origin request</a> は <a href="#cross-origin-request" title="cross-origin request">cross-origin requests</a> にフックできるようにするためのAPIが使用できるCORS API 仕様を持っている<dfn id="cross-origin-request-status">cross-origin request status</dfn> を持っているt。これは <a href="#cross-origin-request">cross-origin request</a>の間、２つの異なった値を取ることができる。以下の値のいずれかの:</p>
+
+  <dl>
+   <dt><i>preflight complete</i></dt>
+   <dd>UAは<a href="#actual-request">actual request</a>を作成しようとしている。</dd>
+
+   <dt><i>success</i>
+   </dt><dd>リソースは共有することができる。</dd>
+
+   <dt><i>abort error</i>
+   </dt><dd>ユーザーがリクエストを中断した。</dd>
+
+   <dt><i>network error</i>
+   </dt><dd>リソースを共有することできない。DNS エラーが、 TLS ネゴシエーションの失敗、外のタイプのネットワークエラーが発生した場合などにも使用される。<span class="note">これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。</span>
+   <!-- shared with XMLHttpRequest -->
+  </dd></dl>
+
+
+  <h4 id="source-origin-0"><span class="secno">7.1.3 </span>Source Origin</h4>
+
+  <p><a href="#source-origin">source origin</a> はUAが<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダに使用しなければならない初期の<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a>である。これは、<a href="#redirect-steps">redirect steps</a>を踏む間に修正することができる。</p>
+
+
+  <h4 id="simple-cross-origin-request-0"><span class="secno">7.1.4 </span>Simple Cross-Origin Request</h4>
+
+  <p>このステップではUAは<dfn id="simple-cross-origin-request">simple cross-origin request</dfn>のために何をしなければならないかを以下に記述している。:</p>
+
+  <ol>
+   <li>
+    <p><a href="#make-a-request-steps">make a request steps</a> を適用し、リクエストが作成されるまでの間以下の <i>request rules</i> を監視しなければならない。</p>
+
+    <dl class="switch">
+     <dt>もし<a href="#manual-redirect-flag">manual redirect flag</a> が未設定で、レスポンスのHTTPステータスコードが 301, 302, 303, 307, or 308のいづれかの場合</dt>
+     <dd><p><a href="#redirect-steps">redirect steps</a>を適用する。</p></dd>
+
+     <dt>もしエンドユーザーがリクエストをキャンセルした場合</dt>
+     <dd><p><a href="#abort-steps">abort steps</a>を適用する。</p></dd>
+
+     <dt>ネットワークエラーが起こった場合</dt>
+     <dd>
+      <p>DNS エラー、 TLS ネゴシエーションの失敗、それ以外のタイプのネットワークエラーが発生した場合、 <a href="#network-error-steps">network error steps</a>を適用する。エンドユーザーと会話するタイプのリクエストをしてはいけない。</p>
+
+      <p class="note">&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</p>
+     </dd>
+
+     <dt>それ以外の場合</dt>
+     <dd><p><a href="#resource-sharing-check">resource sharing check</a>を行う。もし失敗と判定された場合、<a href="#network-error-steps">network error steps</a>を適用するそれ以外の場合、もし判定が通った場合、このアルゴリズムを終了し、<a href="#cross-origin-request-status">cross-origin request status</a> を <i>success</i>に設定する。実際にリクエストを終了してはいけない。</p></dd>
+    </dl>
+   </li>
+  </ol>
+
+
+  <h4 id="cross-origin-request-with-preflight-0"><span class="secno">7.1.5 Preflightリクエストを伴った</span>Cross-Origin Request</h4>
+
+  <p>特定の（この仕様書が存在する前の）UAから生成できないクロスオリジンリクエストに対してリソースを保護するため、リソースがこの仕様を認識していることを確認するためのプリフライト要求が行う。このリクエストの結果は<a href="#preflight-result-cache">preflight result cache</a>にキャッシュされる。</p>
+
+  <p>このステップではUAは<dfn id="cross-origin-request-with-preflight">プリフライト付きcross-origin request</dfn>のために何をしなければならないかを以下に記述している:これは最初に <a href="#preflight-result-cache">preflight result cache</a> エントリー、もしくは<a href="#preflight-request">preflight request</a>による認証が必要な同一オリジンではないURLである。</p>
+
+  <ol>
+   <li>
+    <p>もし以下の条件がtrueの場合、次のステップに進める:
+
+    </p><ul>
+     <li>
+      <p><a href="#request-method">request method</a> が<a href="#preflight-result-cache-method-match">method cache match</a> する、もしくは <a href="#simple-method">simple method</a> なおかつ <a href="#force-preflight-flag">force preflight flag</a> が未設定であるのいずれかにマッチする場合。
+
+     </p></li><li>
+      <p><a href="#author-request-headers">author request headers</a> のすべてのヘッダがフィールド名に<a href="#preflight-result-cache-header-match">header cache match</a>しているか、もしくはヘッダが<a href="#simple-header">simple header</a>であるかのどちらかにマッチしている場合。</p>
+     </li>
+    </ul><!-- the preflight request -->
+
+
+    
+    <p>それ以外の場合、<dfn id="preflight-request">preflight request</dfn>を作成する。 <i title="">manual redirect flag</i> と <i title="">block cookies flag</i> をセットして、<i title="">override referrer source</i> として <a href="#referrer-source">referrer source</a> を使用し、<a href="#source-origin">source origin</a>から、 <code>OPTIONS</code>メソッドを使い<a href="#request-url">request URL</a>に<a class="external" href="http://www.w3.org/TR/html5/infrastructure.html#fetching-resources">Fetch</a>する。その後、以下の追加の制約に進む：</p>
+
+    <ul>
+     <li><p>値が<a href="#request-method">request method</a> の <code title="http-access-control-request-method"><a href="#http-access-control-request-method">Access-Control-Request-Method</a></code> ヘッダを含める (リクエストが <a href="#simple-method">simple method</a>の時でさえも)。</p></li>
+
+     <li><p>もし <a href="#author-request-headers">author request headers</a> が空でない場合、 <a href="#author-request-headers">author request headers</a> のフィールド名を<a href="#converted-to-ascii-lowercase">ASCII lowercase</a>に変換して辞書式順序でコンマ区切りのリストとした値を使った<code title="http-access-control-request-headers"><a href="#http-access-control-request-headers">Access-Control-Request-Headers</a></code> ヘッダ を含める (リクエストが<a href="#simple-header">simple header</a>の時でさえも)。</p></li>
+
+     <li><p><a href="#author-request-headers">author request headers</a>を除外する。</p></li>
+
+     <li><p> <a href="#user-credentials">user credentials</a>を除外する。</p></li>
+
+     <li><p><a href="#request-entity-body">request entity body</a>を除外する。</p></li>
+    </ul>
+
+    <p>以下の <i>request rules</i> を<a href="#preflight-request">preflight request</a>を作成するまでの間監視しなければならない:</p>
+
+    <dl class="switch">
+     <dt>もしエンドユーザーがリクエストをキャンセルした場合</dt>
+     <dd><p><a href="#abort-steps">abort steps</a>を適用する。</p></dd>
+
+     <dt>もしレスポンスのHTTPステータスコードが2XXの範囲ではない場合</dt>
+     <dd>
+      <p>&lt;a1&gt;network error steps&lt;/a1&gt;を適用する。</p>
+
+      <p class="note">ここでは<a href="#cache-and-network-error-steps">cache and network error steps</a>は実際のネットワークエラーとしては使用されない。</p>
+     </dd>
+
+     <dt>ネットワークエラーが起こった場合</dt>
+     <dd>
+      <p>DNS エラー、 TLS ネゴシエーションの失敗、それ以外のタイプのネットワークエラーが発生した場合、 <a href="#network-error-steps">network error steps</a>を適用する。エンドユーザーと会話するタイプのリクエストをしてはいけない。</p>
+
+      <p class="note">&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</p>
+
+      <p class="note">ここでは<a href="#cache-and-network-error-steps">cache and network error steps</a>は実際のネットワークエラーとしては使用されない。</p>
+     </dd>
+     <dt>それ以外(HTTPステータスコードが2xxの範囲に収まっている)</dt>
+     <dd>
+      <ol>
+       <li><p>もし<a href="#resource-sharing-check">リソース共有チェック</a> が失敗した場合、 <a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。</p></li>
+
+       <li><p><var title="">methods</var> が空のリストにする。</p></li>
+
+       <li>
+        <p>もし1以上の<code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code>ヘッダが存在する場合、<var title="">methods</var>の値を、このヘッダを <a href="#header-parsing" title="header parsing">解析</a>した結果にする。</p>
+
+        <p>もし<a href="#header-parsing-failed" title="header parsing failed">解析に失敗した</a>場合、<a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。</p>
+       </li>
+
+       <li>
+        <p>もし <var title="">methods</var> がまだ空のリストであり、 <a href="#force-preflight-flag">force preflight flag</a> がセットされている場合、<a href="#request-method">request method</a>を<var title="">methods</var>に追加する。
+
+        </p><p class="note">
+これにより、<a href="#force-preflight-flag">force preflight flag</a>によって発生した <a href="#preflight-request" title="preflight request">preflight requests</a>もまたキャッシュされることを保証する。
+
+       </p></li><li><p><var title="">headers</var> が空のリストにする。</p></li>
+
+       <li>
+        <p>もし一つ以上の <code title="http-access-control-allow-headers"><a href="#http-access-control-allow-headers">Access-Control-Allow-Headers</a></code> ヘッダが存在する場合<var title="">headers</var> の値をヘッダを<a href="#header-parsing" title="header parsing">解析</a>した結果にする。</p>
+
+        <p>もし<a href="#header-parsing-failed" title="header parsing failed">解析に失敗した</a>場合、<a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。</p>
+       </li>
+
+       <li><p>もし<a href="#request-method">request method</a>が<var title="">methods</var>内のメソッドに<a href="#case-sensitive">case-sensitive</a>マッチせず、なおかつそれが<a href="#simple-method">simple method</a>ではない場合、<a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。 </p></li>
+
+       <li><p> <a href="#author-request-headers">author request headers</a>内のそれぞれのヘッダのフィールド名が <var title="">headers</var> 内のヘッダフィールド名の一つに<a href="#ascii-case-insensitive">ASCII case-insensitive</a> マッチせず、そのヘッダが<a href="#simple-header">simple header</a>ではない場合、<a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。</p></li>
+
+       <li><p>もし何らかの理由(例：ディスク容量が制限されているなど)でUAが<a href="#preflight-result-cache">preflight result cache</a>を提供できない場合、次のステップに進む (例：<a href="#actual-request">actual request</a>など)。</p></li>
+
+       <li>
+        <p>もし単一の <code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code> ヘッダがある場合、ヘッダを<a href="#header-parsing" title="header parsing">解析</a> し、<var title="">max-age</var>を結果の値にする。</p>
+
+        <p>もしそのようなヘッダが存在しなかったり、１より多い数のヘッダが存在して <a href="#header-parsing-failed" title="header parsing failed">parsing failed</a>した場合、 <var title="">max-age</var> の値をUAの選んだ適切な値にする(0も許可される)。</p>
+
+        <p>もしUAが <a href="#cache-max-age" title="cache-max-age">max-age</a> フィールド値に制限を課し、<var title="">max-age</var>がその値より大きい場合、<var title="">max-age</var>の値を上限に設定する(max-ageの上限を超えた場合上限にする)。</p>
+       </li>
+
+       <li>
+        <p> <a href="#preflight-result-cache-method-match">method cache match</a>した<var title="">methods</var>内のそれぞれのメソッドは<var title="">max-age</var>にマッチしたエントリーの<a href="#cache-max-age" title="cache-max-age">max-age</a> フィールド値を設定する。</p>
+
+        <p><a href="#preflight-result-cache-method-match">method cache match</a> が  <em>ない</em> <var title="">methods</var>内のそれぞれのメソッドは各種のフィールドに以下の値を設定した新しい<a href="#preflight-result-cache">preflight result cache</a> のエントリーを作成する：</p>
+
+        <dl>
+         <dt><a href="#cache-origin" title="cache-origin">origin</a></dt>
+         <dd><a href="#source-origin">source origin</a>。</dd>
+
+         <dt><a href="#cache-url" title="cache-url">url</a></dt>
+         <dd><a href="#request-url">request URL</a>。</dd>
+
+         <dt><a href="#cache-max-age" title="cache-max-age">max-age</a></dt>
+         <dd>The <var title="">max-age</var>.</dd>
+
+         <dt><a href="#cache-credentials" title="cache-credentials">credentials</a></dt>
+         <dd>もし<a href="#omit-credentials-flag">omit credentials flag</a>がセットされている場合、falseになる。それ以外の場合、trueになる。
+
+         </dd><dt><a href="#cache-method" title="cache-method">method</a></dt>
+         <dd>The given method.</dd>
+
+         <dt><a href="#cache-header" title="cache-header">header</a></dt>
+         <dd>Empty.</dd>
+        </dl>
+       </li>
+
+       <li>
+        <p> <a href="#preflight-result-cache-header-match">header cache match</a> した <var title="">headers</var> 内のそれぞれのヘッダは マッチしたエントリの<a href="#cache-max-age" title="cache-max-age">max-age</a> フィールド値を <var title="">max-age</var>に設定する。</p>
+
+        <p> &lt;a1&gt;header cache match&lt;/a1&gt; が <em>無い</em> <var title="">headers</var> 内のそれぞれのヘッダは各種のフィールドに以下の値を設定した新しい<a href="#preflight-result-cache">preflight result cache</a> のエントリーを作成する：</p>
+
+        <dl>
+         <dt><a href="#cache-origin" title="cache-origin">origin</a></dt>
+         <dd><a href="#source-origin">source origin</a>。</dd>
+
+         <dt><a href="#cache-url" title="cache-url">url</a></dt>
+         <dd><a href="#request-url">request URL</a>。</dd>
+
+         <dt><a href="#cache-max-age" title="cache-max-age">max-age</a></dt>
+         <dd>The <var title="">max-age</var>.</dd>
+
+         <dt><a href="#cache-credentials" title="cache-credentials">credentials</a></dt>
+         <dd>もし<a href="#omit-credentials-flag">omit credentials flag</a>がセットされている場合、falseになる。それ以外の場合、trueになる。
+
+         </dd><dt><a href="#cache-method" title="cache-method">method</a></dt>
+         <dd>Empty.</dd>
+
+         <dt><a href="#cache-header" title="cache-header">header</a></dt>
+         <dd>The given header.</dd>
+        </dl>
+       </li>
+      </ol>
+     </dd>
+    </dl>
+   </li>
+
+   <li><p><a href="#cross-origin-request-status">cross-origin request status</a>を<i>preflight complete</i>に設定する。</p></li><!-- the actual request -->
+
+   
+   <li>
+    <p>これは<dfn id="actual-request">actual request</dfn>である。<a href="#make-a-request-steps">make a request steps</a>を適用し、リクエストを作成するまで以下の <i>request rules</i> を監視する。</p>
+
+    <dl class="switch">
+     <dt>もしレスポンスの HTTP ステータスコードが 301, 302, 303, 307, 308のいずれかを持っている場合</dt>
+
+     <dd><p><a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。</p></dd>
+
+     <dt>もしエンドユーザーがリクエストをキャンセルした場合</dt>
+
+     <dd><p><a href="#abort-steps">abort steps</a>を適用する。</p></dd>
+
+     <dt>ネットワークエラーが起こった場合</dt>
+     <dd>
+      <p>DNS エラー、 TLS ネゴシエーションの失敗、それ以外のタイプのネットワークエラーが発生した場合、 <a href="#network-error-steps">network error steps</a>を適用する。エンドユーザーと会話するタイプのリクエストをしてはいけない。</p>
+
+      <p class="note">&lt;s0&gt;これにはHTTPステータスコード410のような、エラーのタイプのHTTPレスポンスは含まれていない。&lt;/s0&gt;</p>
+     </dd>
+
+
+     <dt>それ以外の場合</dt>
+
+     <dd><p><a href="#resource-sharing-check">resource sharing check</a>を行う。もし失敗した場合、<a href="#cache-and-network-error-steps">cache and network error steps</a>を適用する。それ以外の場合、もし判定が通った場合、このアルゴリズムを終了し、<a href="#cross-origin-request-status">cross-origin request status</a> を <i>success</i>に設定する。実際にリクエストを終了してはいけない。</p></dd>
+    </dl>
+  </li></ol>
+
+  <div class="example">
+   <p>以下のシナリオを考えてみる：</p>
+
+   <ol>
+    <li><p>UAは <a href="#source-origin">source origin</a> <code>http://example.org</code> から <code>http://blog.example/entries/hello-world</code>へのカスタムメソッド<code>XMODIFY</code> を使ったクロスオリジンリクエストを送信するために、<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code>などのAPIからリクエストを取得する。
+
+    </p></li><li><p>UAは適切な値を持つ <code title="http-access-control-request-method"><a href="#http-access-control-request-method">Access-Control-Request-Method</a></code> ヘッダと <code title="http-origin"><a href="#http-origin">Origin</a></code> を含み、<code>OPTIONS</code> メソッドを使った<a href="#preflight-request">preflight request</a> を<code>http://blog.example/entries/hello-world</code>に送信する。</p></li>
+
+    <li>
+     <p>このレスポンスには以下のヘッダが含まれている：</p>
+     <pre>Access-Control-Allow-Origin: http://example.org
+Access-Control-Max-Age: 2520
+Access-Control-Allow-Methods: PUT, DELETE, XMODIFY</pre>
+
+    </li><li><p>UAは <code>XMODIFY</code> メソッドを使用してリソースの共有が許可されている<code>http://blog.example/entries/hello-world</code>に要求リクエストを送る。加えて、今から42分間は <a href="#preflight-request">preflight request</a> は必要ではなくなる。
+   </p></li></ol>
+  </div>
+
+
+  <h4 id="preflight-result-cache-0"><span class="secno">7.1.6 </span>Preflight Result Cache</h4>
+
+  <p>既に述べたように、<a href="#cross-origin-request-with-preflight">cross-origin request with preflight</a> は <dfn id="preflight-result-cache">preflight result cache</dfn>を使用する。このキャッシュはいくつかのエントリから構成されている。それぞれのエントリは以下のフィールドから構成されている:</p>
+
+  <dl>
+   <dt><dfn id="cache-origin" title="cache-origin">origin</dfn></dt>
+   <dd> <a href="#source-origin">source origin</a>を保持する。</dd>
+
+   <dt><dfn id="cache-url" title="cache-url">url</dfn></dt>
+   <dd><a href="#request-url">request URL</a>を保持する。</dd>
+
+   <dt><dfn id="cache-max-age" title="cache-max-age">max-age</dfn></dt>
+   <dd><code title="http-access-control-max-age"><a href="#http-access-control-max-age">Access-Control-Max-Age</a></code>のヘッダの値を保持する。</dd>
+
+   <dt><dfn id="cache-credentials" title="cache-credentials">credentials</dfn></dt>
+   <dd>もし<a href="#omit-credentials-flag">omit credentials flag</a>がセットされている場合、falseになる。それ以外の場合、trueになる。
+
+   </dd><dt><dfn id="cache-method" title="cache-method">method</dfn></dt>
+   <dd>もし <a href="#cache-header" title="cache-header">header</a> が空ではない場合、空になる。それ以外の場合、 <code title="http-access-control-allow-methods"><a href="#http-access-control-allow-methods">Access-Control-Allow-Methods</a></code> ヘッダの値になる。</dd>
+
+   <dt><dfn id="cache-header" title="cache-header">header</dfn></dt>
+   <dd>もし <a href="#cache-method" title="cache-method">method</a> が空ではない場合、空になる。それ以外の場合、 <code title="http-access-control-allow-headers"><a href="#http-access-control-allow-headers">Access-Control-Allow-Methods</a></code> ヘッダの値になる。</dd>
+  </dl>
+
+  <p class="note">誤解の無いように言うと、<a href="#cache-method" title="cache-method">method</a> と <a href="#cache-header" title="cache-header">header</a> のフィールドは互いに排他的である。片方が空の時、もう片方が空ではない。</p>
+
+  <p class="note">エントリーの主キーは<a href="#cache-max-age" title="cache-max-age">max-age</a> field以外のすべてのフィールドから構成される。</p>
+
+  <p>エントリが格納されてから、<a href="#cache-max-age" title="cache-max-age">max-age</a> フィールドで指定された時間が過ぎた場合、エントリーはクリアされなければならない。エントリーはまた、下のアルゴリズムごとに追加したり削除したりすることができる。？？？キャッシュの中のアイテムが決して重複しない方法で追加したり削除することができる。</p>
+
+  <p>UAは <a href="#cache-max-age" title="cache-max-age">max-age</a> の指定された時間が過ぎ去る前に、キャッシュのエントリーをクリアすることができる。</p>
+
+  <p class="note">
+しかしこれは<a href="#preflight-result-cache">preflight result cache</a>オプションが効果的に作成されるため、UAはこれをサポートすることを強く推奨される。</p>
+
+
+  <h4 id="generic-cross-origin-request-algorithms"><span class="secno">7.1.7 </span> 通常のCross-Origin Requestアルゴリズム</h4>
+
+  <p>通常の一連のステップで使用されている変数はそのステップを呼び出しているアルゴリズムの一部である。</p>
+
+  <hr>
+
+  <p>リクエストステップが適用されたかどうかに関係なく、manual redirect flagがセットされたリファラーソースを使用して、参照元オリジンのオリジンからリクエストURLを取得し、その後、もしomit credentials flagが設定されていた場合、ブロックcookie flagを設定します。もし <a href="#omit-credentials-flag">omit credentials flag</a> が未設定の場合、 <a href="#user-credentials">user credentials</a> と <a href="#author-request-headers">author request headers</a>を含む、 <a href="#request-entity-body">request entity body</a>がエンティティボディの<a href="#request-method">request method</a>を使用します
+
+  </p><p><dfn id="redirect-steps">リダイレクトステップ</dfn>が適用されるたびに、この一連の手順に従います。</p>
+
+  <ol>
+   <li><p><var>original URL</var> を<a href="#request-url">request URL</a>とする。（逆か？）
+
+   </p></li><li><p><a href="#request-url">request URL</a>を<a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url">URL</a> conveyed by the <code>Location</code> header in the redirect response.</p></li>
+
+   <li><p>もし<a href="#request-url">要求するURL</a> &lt;scheme&gt; がサポートされていない場合、無限ループを防止する、もしくはそのほかの理由によりUAが新しいリクエストを作成したくない場合、 <a href="#network-error-steps">network error steps</a>を適用する。
+
+   </p></li><li><p>もし<a href="#request-url">要求するURL</a>に<code class="external"><a href="http://tools.ietf.org/html/rfc2616/#section-3.2.1">ユーザー認証情報</a></code>が含まれていた場合、<a href="#network-error-steps">network error steps</a>を適用する。</p></li>
+
+   <li><p>もし現在の<a href="#resource-sharing-check">リソース共有チェック</a>が失敗と判定された場合、<a href="#network-error-steps">network error steps</a>を適用する。
+   <!--This prevents intranet data leakage.-->
+
+   </p></li><li><p>もし<a href="#request-url">リクエストURL</a>の<a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a>が <var>original URL</var> <a class="external" href="http://tools.ietf.org/html/rfc6454#section-4">origin</a>と<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a>でない場合、 set <a href="#source-origin">source origin</a> に (送信時に "<code title="">null</code>" になる)globally unique identifier を設定する。
+
+   </p></li><li><p>一連の <i>要求ルール</i>を観察する間、透過的にリダイレクトに従う。
+  </p></li></ol>
+
+  <hr>
+
+  <p><dfn id="abort-steps">abort steps</dfn>が適用されるごとに、この一連のステップを呼び出しているアルゴリズムを終了し、<a href="#cross-origin-request-status">cross-origin request status</a>を<i>abort error</i>に設定する。</p>
+
+  <hr>
+
+  <p><dfn id="network-error-steps">network error steps</dfn>が適用されるごとに、この一連のステップを呼び出しているアルゴリズムを終了し、<a href="#cross-origin-request-status">cross-origin request status</a>を<i>network error</i>に設定する。</p>
+
+  <p class="note">これは<a href="#user-credentials">user credentials</a>の設定には影響を与えない。例 <i title="">block cookies flag</i> が未設定の場合、クッキーがレスポンスにセットされる。
+
+  </p><p><dfn id="cache-and-network-error-steps">cache and network error steps</dfn> が適用された場合、以下の手順に従う。</p>
+
+  <ol>
+   <li><p><a href="#cache-origin" title="cache-origin">origin</a> フィールドの値が <a href="#source-origin">source origin</a>と <a href="#case-sensitive">case-sensitive</a> マッチし、<a href="#cache-url" title="cache-url">url</a> フィールドの値が <a href="#request-url">request URL</a>と<a href="#case-sensitive">case-sensitive</a> マッチする<a href="#preflight-result-cache">preflight result cache</a> 内のエントリーを削除する。</p></li>
+
+   <li><p>もしアルゴリズムが <a href="#network-error-steps">network error steps</a> の代わりに <a href="#cache-and-network-error-steps">cache and network error steps</a> を呼び出した場合、<a href="#network-error-steps">network error steps</a> を適用する。</p>
+  </li></ol>
+
+  <hr>
+
+  <p>以下の条件のいずれかが真であるキャッシュエントリー内の、 <a href="#preflight-result-cache">preflight result cache</a>がある場合、<dfn id="preflight-result-cache-match">cache match</dfn>となる：</p>
+
+  <ul>
+   <li><p> <a href="#cache-origin" title="cache-origin">origin</a> フィールドの値が <a href="#source-origin">source origin</a>に <a href="#case-sensitive">case-sensitive</a> マッチした場合。</p></li>
+
+   <li><p> <a href="#cache-url" title="cache-url">url</a> フィールドの値が <a href="#request-url">requestURL</a>に <a href="#case-sensitive">case-sensitive</a> マッチした場合。</p></li>
+
+   <li><p><a href="#cache-credentials" title="cache-credentials">資格情報</a>フィールドの値がtrueであり、<a href="#omit-credentials-flag">omit credentials flag</a> が未設定、もしくはomit credentials flagがfalseであり、なおかつ<a href="#omit-credentials-flag">omit credentials flag</a>が設定済みである。
+  </p></li></ul>
+
+  <p>There is a
+  <dfn id="preflight-result-cache-method-match">method cache match</dfn>
+  when there is a cache entry for which there is a <a href="#preflight-result-cache-match">cache match</a>
+  and the <a href="#cache-method" title="cache-method">method</a> field value is a
+  <a href="#case-sensitive">case-sensitive</a> match for the given method.</p>
+
+  <p>There is a
+  <dfn id="preflight-result-cache-header-match">header cache match</dfn>
+  when there is a cache entry for which there is a <a href="#preflight-result-cache-match">cache match</a>
+  and the <a href="#cache-header" title="cache-header">header</a> field value is an
+  <a href="#ascii-case-insensitive">ASCII case-insensitive</a> match for the given header field
+  name.</p>
+
+
+  <h3 id="resource-sharing-check-0"><span class="secno">7.2 </span>リソース共有のチェック</h3>
+
+  <p>与えられたリソースの<dfn id="resource-sharing-check">リソース共有チェック</dfn> アルゴリズムは以下の通りである。</p>
+
+  <ol>
+   <li><p>もしリソースが0以上の<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダの値を含んでいた場合、失敗と判断しこのアルゴリズムを終了する。</p></li>
+
+   <li><p>もし<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code> ヘッダの値が文字 "<code>*</code>" であり、 <a href="#omit-credentials-flag">omit credentials flag</a> が設定されていた場合、成功と判断しこのアルゴリズムを終了する。</p></li>
+
+   <li><p>もし<code title="http-access-control-allow-origin"><a href="#http-access-control-allow-origin">Access-Control-Allow-Origin</a></code>の値がこの仕様書で定義されている<code title="http-origin"><a href="#http-origin">Origin</a></code> ヘッダの値に <a href="#case-sensitive">case-sensitive</a> マッチしない場合、失敗と判断しこのアルゴリズムを終了する。</p></li>
+
+   <li><p>もし <a href="#omit-credentials-flag">omit credentials flag</a> がセットされておらず、レスポンスに0以上の<code title="http-access-control-allow-credentials"><a href="#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code> ヘッダの値が含まれている場合、失敗と判断しこのアルゴリズムを終了する。</p></li>
+
+   <li><p>もし <a href="#omit-credentials-flag">omit credentials flag</a> がセットされておらず、レスポンスに0以上の<code title="http-access-control-allow-credentials"><a href="#http-access-control-allow-credentials">Access-Control-Allow-Credentials</a></code> ヘッダの値が"<code>true</code>"に<a href="#case-sensitive">case-sensitive</a> マッチしない場合、失敗と判断しこのアルゴリズムを終了する。
+
+   </p></li><li><p>Return pass.
+  
+  </p></li></ol>
+
+  <p class="note">オリジンの<a class="external" href="http://tools.ietf.org/html/rfc6454#section-6.2">ASCII serialization</a>が文字列 "<code>null</code>"である場合、上記のアルゴリズムは関数でもある。</p>
+
+
+  <h3 id="user-agent-security"><span class="secno">7.3 </span>セキュリティ</h3>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>様々な場所で、ユーザエージェントは追加の予防策を取ることができる。例えば、UAはキャッシュしたアイテムを保存することを許可しない、キャッシュの<a href="#cache-max-age" title="cache-max-age">max-age</a>に届く前にキャッシュしたアイテムを削除する、特定の <a class="external" href="http://www.whatwg.org/specs/web-apps/current-work/multipage/urls.html#url" title="URL">URLs</a>に接続しない、などである。</p>
+
+  <p>UAは  <a href="#preflight-result-cache">preflight result cache</a> を不当な長い時間にしてアイテムをキャッシュしないようにするために<a href="#cache-max-age" title="cache-max-age">max-age</a> に制限を課すことを推奨される。</p>
+
+  <p> <a href="#cross-origin-request">cross-origin request</a> アルゴリズムの最初のステップと <a href="#redirect-steps">redirect steps</a> アルゴリズム内で示されているUAはリクエストを作成せずにアルゴリズムを終了しても良い。This could be done because e.g.:</p>
+
+  <ul>
+   <li>リソースのオリジンがブラックリストに入っている。</li>
+   <li>リソースのオリジンがイントラネットの一部である。</li>
+   <li> URL &lt;scheme&gt; がサポートサポートされていない。</li>
+   <li><code>https</code>から<code>http</code>の(リクエスト)は許可されていない。</li>
+   <li>証明書のエラーのため、<code>https</code>を指定することはできない。</li>
+  </ul>
+
+  <p>UAは通常レベルのセキュリティ上の決定を適用することと、その決定はリソース共有ポリシーだけに適用しないことを推奨される。例：もしUAが <code>https</code> スキームから <code>http</code> スキームに向かって発信する<a href="#cross-origin-request">cross-origin request</a> リクエストを許可しない場合、同じことをHTML <code>img</code> 要素にも適用することを推奨される。</p>
+
+
+
+
+  <h2 id="cors-api-specification-advice"><span class="secno">8 </span>CORS API Specification Advice</h2>
+
+  <p><em>この節は規定ではない。</em></p>
+
+  <p>この仕様書ではこの仕様書を活用するAPI抜きでは実装できないリソース共有ポリシーを定義する。この仕様書はCORS API仕様書のポリシーを使用するAPIを定義する。</p>
+
+  <p>In case a CORS API 仕様書がポリシーを使用する複数のAPIを定義していた場合、このアドバイスはそれぞれのAPIごとに考慮する。</p>
+
+
+  <h3 id="cors-api-specifiation-request"><span class="secno">8.1 </span>クロス オリジン要求の生成</h3>
+
+  <p>全ての<a href="#cross-origin">cross-origin</a> リクエストがこの仕様書内のリソース共有ポリシーが適用することができるAPIのサポートを適用するために、CORS API 仕様書は <a href="#cross-origin-request">cross-origin request</a> アルゴリズムを参照し、以下の適切な値を挿入しなければならない： <a href="#request-url">request URL</a>, <a href="#request-method">request method</a>, <a href="#author-request-headers">author request headers</a>, <a href="#request-entity-body">request entity body</a>, <a href="#source-origin">source origin</a>, <a href="#manual-redirect-flag">manual redirect flag</a>, <a href="#omit-credentials-flag">omit credentials flag</a>, and the <a href="#force-preflight-flag">force preflight flag</a>.</p>
+
+  <p>
+CORS API仕様では、これらの入力変数をAPIで制御できるようになっていますが、固定値を設定することもできます。</p>
+
+  <p class="example">
+GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕様では、 <a href="#request-method">request method</a> を <code>GET</code>に設定し、<a href="#request-entity-body">request entity body</a> を空にし、 <a href="#source-origin">source origin</a> を適切な値に設定し、他の変数をAPIによって制御できるようにします。</p>
+
+
+  <h3 id="cors-api-specification-redirect"><span class="secno">8.2 </span>同一オリジンからクロスオリジンへのリダイレクトの対応</h3>
+
+  <p>ブラウザが<a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a> セキュリティモデルに基づいており、この仕様書で概説されているポリシーはAPIがブラウザで使用することを意図しているため、このポリシーを使用するAPIは特殊な方法で<a href="#cross-origin">cross-origin</a>リダイレクトの結果生じた同一オリジンリクエストを適切に処理しなければならない。</p>
+
+  <p>リダイレクト透過的に扱うAPIのために、CORS API 仕様書ではリダイレクトを「キャッチ」して、リダイレクトURL上で <a href="#cross-origin-request">cross-origin request</a> アルゴリズムを呼び出すことでこのシナリオを透過的に処理することを推奨している。</p>
+
+  <p class="note">XMLHttpRequest仕様書ではこれを行う。<a class="informative" href="#refsXHR">[XHR]</a>
+
+
+  </p><h3 id="cors-api-specification-response"><span class="secno">8.3 </span>クロスオリジンリクエストのステータスに関して</h3>
+
+  <p><a href="#cross-origin-request">cross-origin request</a> が進行するとともに、<a href="#cross-origin-request-status">cross-origin request status</a> が更新される。 <a href="#cross-origin-request-status">cross-origin request status</a>の値に応じて異なった方法で反応する。 </p>
+
+  <dl>
+   <dt><i>preflight complete</i></dt>
+   <dd>
+    <p> <a href="#preflight-request">preflight request</a>後のみ、安全に公開できる機能を有効にできるようになりました。</p>
+
+    <p class="note">例：<code class="external"><a href="http://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html#xmlhttprequest">XMLHttpRequest</a></code>のupload progress events。
+   </p></dd>
+
+   <dt><i>success</i></dt>
+   <dd>
+    <p>このAPIによって共有できるレスポンスのコンテンツは、フィルタリングされてないヘッダを含める。</p>
+
+    <p class="note">要求自体はまだ進行中です。例えば <a href="#cross-origin-request-status">cross-origin request status</a> の値がリクエストが完了したことを示しません。</p>
+   </dd>
+
+   <dt><i>abort error</i></dt>
+   <dd><p>ユーザーがリクエストを中断した時の処理と似た処理です。これは<i>network error</i>の処理と同じ方法で処理できます。リクエストに関する情報を（オリジンに対して）明らかにしないようにしなければならない。</p></dd>
+
+   <dt><i>network error</i></dt>
+   <dd><p>なにかのエラーが起きたリクエストの処理と似た処理です。リクエストに関する情報を（オリジンに対して）明らかにしないようにしなければならない。</p></dd>
+  </dl>
+
+
+  <h3 id="cors-api-specification-security"><span class="secno">8.4 </span>セキュリティ</h3>
+
+  <p><a class="external" href="http://tools.ietf.org/html/rfc6454#section-5">same origin</a> リクエストと同様に、CORS API 仕様書では <a href="#cross-origin">cross-origin</a>リクエストで作成者が設定、取得できるヘッダ、メソッド、 <a href="#user-credentials">user credentials</a> を適切に制限することを推奨している。</p>
+
+  <p class="note">
+XMLHttpRequest仕様書のレビューによって、課されるべき種類の制限が適切に開始されます。<a class="informative" href="#refsXHR">[XHR]</a>
+
+  </p><p>CORS API 仕様はまた、ポートスキャンなどを防止するために<a href="#cross-origin-request-status">cross-origin request status</a> が <i>preflight complete</i> もしくは <i>success</i> 状態になるまで明示的に何もしないことを保証する必要がある。</p>
+
+  <p class="note">XMLHttpRequest プログレスイベントは<a href="#cross-origin-request-status">cross-origin request status</a>が<i>success</i>になった後にのみ発行される。Upload progress events は <a href="#cross-origin-request-status">cross-origin request status</a> が <i>preflight complete</i>状態になった後にのみ発行される。</p>
+
+
+
+<h2 class="no-num" id="references">参考文献</h2>
+<div id="anolis-references"><dl><dt id="refsCONFUSED">[CONFUSED]
+
+</dt><dd>(Non-normative) <cite><a href="http://www.cis.upenn.edu/%7EKeyKOS/ConfusedDeputy.html">The Confused Deputy</a></cite>, Norm Hardy.
+
+
+
+</dd><dt id="refsCOOKIES">[COOKIES]
+
+</dt><dd><cite><a href="http://tools.ietf.org/html/rfc6265">HTTP State Management Mechanism</a></cite>, Adam Barth. IETF.
+
+
+
+</dd><dt id="refsCSRF">[CSRF]
+
+</dt><dd>(Non-normative) <cite><a href="http://marc.info/?l=bugtraq&amp;m=99263135911884&amp;w=2">Cross-Site Request Forgeries</a></cite>, Peter Watkins.
+
+
+
+</dd><dt id="refsEVENTSOURCE">[EVENTSOURCE]
+
+</dt><dd>(Non-normative) <cite><a href="http://www.w3.org/TR/eventsource/">Server-Sent Events</a></cite>, Ian Hickson. W3C.
+
+
+
+</dd><dt id="refsHTML">[HTML]
+
+</dt><dd><cite><a href="http://www.w3.org/TR/html5/">HTML5</a></cite>, Berjon, Leithead, Navara, O'Connor, Pfeiffer and Hickson. W3C.
+
+
+
+</dd><dt id="refsHTTP">[HTTP]
+
+</dt><dd><cite><a href="http://tools.ietf.org/html/rfc2616">Hypertext Transfer Protocol -- HTTP/1.1</a></cite>, Roy Fielding, James Gettys, Jeffrey Mogul et al.. IETF.
+
+
+
+</dd><dt id="refsHTTP308">[308]
+
+</dt><dd><cite><a href="https://datatracker.ietf.org/doc/draft-reschke-http-status-308/">The Hypertext Transfer Protocol (HTTP) Status Code 308 (Permanent Redirect)</a></cite>, Julian Reschke. IETF.
+
+
+
+</dd><dt id="refsJSONP">[JSONP]
+
+</dt><dd>(Non-normative) <cite><a href="http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/">JSONP</a></cite>, Bob Ippolito.
+
+
+
+</dd><dt id="refsOAUTH">[OAUTH]
+
+</dt><dd>(Non-normative) <cite><a href="http://tools.ietf.org/html/rfc5849">The OAuth 1.0 Protocol</a></cite>, Eran Hammer-Lahav. IETF.
+
+
+
+</dd><dt id="refsORIGIN">[ORIGIN]
+
+</dt><dd><cite><a href="http://tools.ietf.org/html/rfc6454">The Web Origin Concept</a></cite>, Adam Barth. IETF.
+
+
+
+</dd><dt id="refsRFC2119">[RFC2119]
+
+</dt><dd><cite><a href="http://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a></cite>, Scott Bradner. IETF.
+
+
+
+</dd><dt id="refsURI">[URI]
+
+</dt><dd><cite><a href="http://tools.ietf.org/html/rfc3986">Uniform Resource Identifier (URI): Generic Syntax</a></cite>, Tim Berners-Lee, Roy Fielding and Larry Masinter. IETF.
+
+
+
+</dd><dt id="refsXHR">[XHR]
+
+</dt><dd>(Non-normative) <cite><a href="https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html">XMLHttpRequest</a></cite>, Anne van Kesteren. W3C.
+
+
+
+</dd></dl></div>
+
+
+  <h2 class="no-num" id="acknowledgments">謝辞</h2>
+
+  <p><em>この付録は非規定である。</em></p>
+
+  <p>The editor would like to thank
+
+  Adam Barth,
+  Alexey Proskuryakov,
+  Arne Johannessen,
+  Arthur Barstow,
+  Benjamin Hawkes-Lewis,
+  Bert Bos,
+  Björn Höhrmann,
+  Boris Zbarsky,
+  Brad Hill,
+  Cameron McCormack,
+  Collin Jackson,
+  David Håsäther,
+  David Orchard,
+  Dean Jackson,
+  Eric Lawrence,
+  Frank Ellerman,
+  Frederick Hirsch,
+  Graham Klyne,
+  Hal Lockhart,
+  Henri Sivonen,
+  Ian Hickson,
+  Jesse M. Heines,
+  Jonas Sicking,
+  Julian Reschke,
+  Lachlan Hunt,
+  呂康豪 (Kang-Hao Lu),
+  Maciej Stachowiak,
+  Marc Silbey,
+  Marcos Caceres,
+  Mark Nottingham,
+  Mark S. Miller,
+  Martin Dürst,
+  Matt Womer,
+  Mhano Harkness,
+  Michael Smith,
+  Mohamed Zergaoui,
+  Nikunj Mehta,
+  Odin Hørthe Omdal,
+  Philip Jägenstedt,
+  Sharath Udupa,
+  Simon Pieters,
+  Sunava Dutta,
+  Surya Ismail,
+  Thomas Roessler,
+  Tyler Close,
+  Jeff Hodges,
+  Vladimir Dzhuvinov,
+  Wayne Carr, and
+  Zhenbin Xu
+
+  for their contributions to this specification.</p>
+
+  <p>Special thanks to Brad Porter, Matt Oshry and R. Auburn, who all helped
+  editing earlier versions of this document.</p>
+ 
+
+</body></html>
