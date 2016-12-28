@@ -1089,6 +1089,14 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Handle analogous to requests where the user aborted the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T062742Z" creationid="lv7777" creationdate="20161228T062742Z">
+        <seg>ユーザーがリクエストを中だんした時の処理と似た処理です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Holds the &lt;a0&gt;request URL&lt;/a0&gt;.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T084209Z" creationid="lv7777" creationdate="20160901T084209Z">
