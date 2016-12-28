@@ -126,6 +126,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T052908Z" creationid="lv7777" creationdate="20161228T052908Z">
+        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.//Content-Typeはその値のサブセットとしてのみリストされ、 &lt;a3&gt;simple header&lt;/a3&gt;と見なされる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;d0&gt;Converting a string to ASCII lowercase&lt;/d0&gt; means replacing all characters in the range U+0041 LATIN CAPITAL LETTER A to U+005A LATIN CAPITAL LETTER Z with the corresponding characters in the range U+0061 LATIN SMALL LETTER A to U+007A LATIN SMALL LETTER Z).</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T103711Z" creationid="lv7777" creationdate="20160821T103711Z">
