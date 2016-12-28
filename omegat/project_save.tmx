@@ -382,6 +382,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>&lt;s0&gt;8 &lt;/s0&gt;CORS API Specification Advice</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T102146Z" creationid="lv7777" creationdate="20161228T102146Z">
+        <seg>&lt;s0&gt;8 &lt;/s0&gt;CORS API 仕様に関するアドバイス</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>&lt;s0&gt;8.1 &lt;/s0&gt;Constructing a Cross-Origin Request</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160821T010708Z" creationid="lv7777" creationdate="20160821T010708Z">
