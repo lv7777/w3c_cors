@@ -897,6 +897,22 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Ensure not the reveal any further information about the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T063130Z" creationid="lv7777" creationdate="20161228T063130Z">
+        <seg>リクエストに関する情報を（オリジンに対して）明らかにしないようにしなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Ensure not to reveal any further information about the request.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T063037Z" creationid="lv7777" creationdate="20161228T062947Z">
+        <seg>リクエストに関する情報を（オリジンに対して）明らかにしないようにしなければならない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Entries can also be added and removed per the algorithms below.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160901T100238Z" creationid="lv7777" creationdate="20160901T100238Z">
@@ -1089,10 +1105,18 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Handle analogous to requests where some kind of error occurred.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T063239Z" creationid="lv7777" creationdate="20161228T063119Z">
+        <seg>なにかのエラーが起きたリクエストの処理と似た処理です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Handle analogous to requests where the user aborted the request.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161228T062742Z" creationid="lv7777" creationdate="20161228T062742Z">
-        <seg>ユーザーがリクエストを中だんした時の処理と似た処理です。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T062959Z" creationid="lv7777" creationdate="20161228T062742Z">
+        <seg>ユーザーがリクエストを中断した時の処理と似た処理です。</seg>
       </tuv>
     </tu>
     <tu>
