@@ -2554,6 +2554,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>The `&lt;c0&gt;Allow&lt;/c0&gt;` header is not relevant for the purposes of the CORS protocol.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T102435Z" creationid="lv7777" creationdate="20161228T102435Z">
+        <seg>The `&lt;c0&gt;Allow&lt;/c0&gt;` ヘッダはCORSプロトコルの目的とは関連しない。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>The above algorithm also functions when the &lt;a0&gt;ASCII serialization&lt;/a0&gt; of an origin is the string "&lt;c1&gt;null&lt;/c1&gt;".</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20160904T092114Z" creationid="lv7777" creationdate="20160904T092114Z">
