@@ -128,8 +128,8 @@
       <tuv lang="EN-US">
         <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161228T052908Z" creationid="lv7777" creationdate="20161228T052908Z">
-        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.//Content-Typeはその値のサブセットとしてのみリストされ、 &lt;a3&gt;simple header&lt;/a3&gt;と見なされる。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T054145Z" creationid="lv7777" creationdate="20161228T052908Z">
+        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.//&lt;c2&gt;Content-Type&lt;/c2&gt;はその値のサブセットとしてのみリストされ、&lt;a3&gt;simple header&lt;/a3&gt;と見なされる。</seg>
       </tuv>
     </tu>
     <tu>
@@ -1187,8 +1187,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>If a header field name is a &lt;a0&gt;simple header&lt;/a0&gt; and is not &lt;c1&gt;Content-Type&lt;/c1&gt;, it is not required to be listed.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160902T045934Z" creationid="lv7777" creationdate="20160902T045934Z">
-        <seg>ヘッダフィールド名が&lt;a0&gt;simple header&lt;/a0&gt; であり、 &lt;c1&gt;Content-Type&lt;/c1&gt;でない場合、これをリスティングする必要はない。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T053258Z" creationid="lv7777" creationdate="20160902T045934Z">
+        <seg>ヘッダフィールド名が&lt;a0&gt;simple header&lt;/a0&gt; であり、 &lt;c1&gt;Content-Type&lt;/c1&gt;がない場合、これをリスティングする必要はない。</seg>
       </tuv>
     </tu>
     <tu>
