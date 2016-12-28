@@ -128,8 +128,8 @@
       <tuv lang="EN-US">
         <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161228T054145Z" creationid="lv7777" creationdate="20161228T052908Z">
-        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt; is to be listed as only a subset of its values makes it qualify as &lt;a3&gt;simple header&lt;/a3&gt;.//&lt;c2&gt;Content-Type&lt;/c2&gt;はその値のサブセットとしてのみリストされ、&lt;a3&gt;simple header&lt;/a3&gt;と見なされる。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T054719Z" creationid="lv7777" creationdate="20161228T052908Z">
+        <seg>&lt;c2&gt;Content-Type&lt;/c2&gt;はその値のサブセットとしてのみリストされ、&lt;a3&gt;simple header&lt;/a3&gt;と見なされる。</seg>
       </tuv>
     </tu>
     <tu>
