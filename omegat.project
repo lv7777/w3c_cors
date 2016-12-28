@@ -10,7 +10,7 @@
             <mask>**/Thumbs.db</mask>
             <mask>**/.DS_Store</mask>
         </source_dir_excludes>
-	<target_dir>./docs/</target_dir>
+        <target_dir>docs</target_dir>
         <tm_dir>__DEFAULT__</tm_dir>
         <glossary_dir>__DEFAULT__</glossary_dir>
         <glossary_file>__DEFAULT__</glossary_file>
