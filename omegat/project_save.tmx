@@ -688,6 +688,14 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>By not adding the appropriate headers resource can also clear the &lt;a0&gt;preflight result cache&lt;/a0&gt; of all entries where &lt;a1&gt;origin&lt;/a1&gt; is a &lt;a2&gt;case-sensitive&lt;/a2&gt; match for the value of the &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; header and &lt;a5&gt;url&lt;/a5&gt; is a &lt;a6&gt;case-sensitive&lt;/a6&gt; match for the &lt;a7&gt;URL&lt;/a7&gt; of the resource.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T061038Z" creationid="lv7777" creationdate="20161228T061038Z">
+        <seg>適切なヘッダを加えないことでリソースは &lt;a1&gt;origin&lt;/a1&gt; が &lt;c3&gt;&lt;a4&gt;Origin&lt;/a4&gt;&lt;/c3&gt; ヘッダrと &lt;a2&gt;case-sensitive&lt;/a2&gt;に一致し、なおかつ&lt;a5&gt;url&lt;/a5&gt;がリソースの&lt;a7&gt;URL&lt;/a7&gt;と &lt;a6&gt;case-sensitive&lt;/a6&gt; に一致するすべてのエントリの &lt;a0&gt;preflight result cache&lt;/a0&gt; を消去することもできる。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>By publishing this Recommendation W3C expects that the functionality specified in this Cross-Origin Resource Sharing Recommendation will not be affected by changes to HTML5 or to HTTP Status Code 308 as those specifications proceed to Recommendation and RFC status respectively.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161104T101242Z" creationid="lv7777" creationdate="20161104T101242Z">
