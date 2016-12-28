@@ -2042,6 +2042,14 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>Since the &lt;a0&gt;list of headers&lt;/a0&gt; can be unbounded, simply returning supported headers from &lt;a1&gt;Access-Control-Allow-Headers&lt;/a1&gt; can be enough.</seg>
+      </tuv>
+      <tuv lang="JA" changeid="lv7777" changedate="20161228T053034Z" creationid="lv7777" creationdate="20161228T053034Z">
+        <seg>&lt;a0&gt;list of header&lt;/a0&gt;は無制限に値を取れるため、&lt;a1&gt; Access-Control-Request-Headers &lt;/a1&gt;で示されたメソッドを返すだけで十分です。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>Since the &lt;a0&gt;list of methods&lt;/a0&gt; can be unbounded, simply returning the method indicated by &lt;a1&gt;Access-Control-Request-Method&lt;/a1&gt; (if supported) can be enough.</seg>
       </tuv>
       <tuv lang="JA" changeid="lv7777" changedate="20161227T064542Z" creationid="lv7777" creationdate="20161227T064542Z">
