@@ -2131,8 +2131,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>Resources that wish to enable themselves to be shared with multiple &lt;c0&gt;Origins&lt;/c0&gt; but do not respond uniformly with &lt;c1&gt;"*"&lt;/c1&gt; must in practice generate the &lt;c2&gt;Access-Control-Allow-Origin&lt;/c2&gt; header dynamically in response to every request they wish to allow.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161203T112044Z" creationid="lv7777" creationdate="20161203T112044Z">
-        <seg>複数の &lt;c0&gt;Origins&lt;/c0&gt; と共有を有効にしたいが、 &lt;c1&gt;"*"&lt;/c1&gt; にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、&lt;c2&gt; Access-Control-Allow-Origin &lt;/ c2&gt;ヘッダーを動的に生成する必要がある。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T125552Z" creationid="lv7777" creationdate="20161203T112044Z">
+        <seg>複数の &lt;c0&gt;Origins&lt;/c0&gt; と共有を有効にしたいが、 &lt;c1&gt;"*"&lt;/c1&gt; にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、&lt;c2&gt;&lt;/c2&gt; Access-Control-Allow-Origin &lt;/c2&gt;ヘッダーを動的に生成する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
