@@ -440,8 +440,8 @@
       <tuv lang="EN-US">
         <seg>A &lt;c0&gt;GET&lt;/c0&gt; response whose entity body happens to parse as ECMAScript can return an &lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt; header whose value is "&lt;c3&gt;*&lt;/c3&gt;" provided there are no sensitive comments as it can be accessed cross-origin using an HTML &lt;c4&gt;script&lt;/c4&gt; element.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160824T020108Z" creationid="lv7777" creationdate="20160824T020108Z">
-        <seg>機密性のあるコメントがなく、HTMLscript要素を使用してクロスオリジンとしてアクセスできるECMAScriptとして解析される &lt;c0&gt;GET&lt;/c0&gt; レスポンスのボディは 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。[参照:http://security.stackexchange.com/questions/43936/does-returning-access-control-allow-origin-weaken-the-security-of-json-get-re/43965#43965]</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T130019Z" creationid="lv7777" creationdate="20160824T020108Z">
+        <seg>機密性のあるコメントがなく、HTMLscript要素を使用してクロスオリジンとしてアクセスできるECMAScriptとして解析される &lt;c0&gt;GET&lt;/c0&gt;&lt;c1&gt;&lt;a2&gt;&lt;/a2&gt;&lt;/c1&gt; レスポンスのボディは 値が"*"のAccess-Control-Allow-Origin&lt;c3&gt;&lt;/c3&gt;&lt;c4&gt;&lt;/c4&gt;ヘッダを返すことができる。[参照:http://security.stackexchange.com/questions/43936/does-returning-access-control-allow-origin-weaken-the-security-of-json-get-re/43965#43965]</seg>
       </tuv>
     </tu>
     <tu>
@@ -569,8 +569,8 @@
       <tuv lang="EN-US">
         <seg>A resource that is publicly accessible, with no access control checks, can always safely return an &lt;c0&gt;&lt;a1&gt;Access-Control-Allow-Origin&lt;/a1&gt;&lt;/c0&gt; header whose value is "&lt;c2&gt;*&lt;/c2&gt;".</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160824T020223Z" creationid="lv7777" creationdate="20160824T020207Z">
-        <seg>アクセスコントロールがなく、公開されたリソースは常に安全に 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T130015Z" creationid="lv7777" creationdate="20160824T020207Z">
+        <seg>アクセスコントロールがなく、公開されたリソースは常に安全に 値が"&lt;c3&gt;*&lt;/c3&gt;"の&lt;c1&gt;&lt;a2&gt;Access-Control-Allow-Origin&lt;/a2&gt;&lt;/c1&gt;ヘッダを返すことができる。&lt;c0&gt;&lt;a1&gt;&lt;/a1&gt;&lt;/c0&gt;&lt;c2&gt;&lt;/c2&gt;</seg>
       </tuv>
     </tu>
     <tu>
@@ -714,8 +714,8 @@
       <tuv lang="EN-US">
         <seg>Apply the &lt;a0&gt;network error steps&lt;/a0&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160901T065054Z" creationid="lv7777" creationdate="20160901T065054Z">
-        <seg>&lt;a1&gt;network error steps&lt;/a1&gt;を適用する。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T130103Z" creationid="lv7777" creationdate="20160901T065054Z">
+        <seg>&lt;a0&gt;network error steps&lt;/a0&gt;を適用する。</seg>
       </tuv>
     </tu>
     <tu>
@@ -738,8 +738,8 @@
       <tuv lang="EN-US">
         <seg>As a consequence, authors of such resources should send a &lt;c3&gt;Vary: Origin&lt;/c3&gt; HTTP header or provide other appropriate control directives to prevent caching of such responses, which may be inaccurate if re-used across-origins.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20170103T125957Z" creationid="lv7777" creationdate="20161203T112051Z">
-        <seg>結果として、そのようなリソースの作成者は、&lt;c3&gt;&lt;/c3&gt; Vary：Origin &lt;/c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T130032Z" creationid="lv7777" creationdate="20161203T112051Z">
+        <seg>結果として、そのようなリソースの作成者は、&lt;c3&gt;&lt;/c3&gt;&lt;/c3&gt; Vary：Origin  HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
