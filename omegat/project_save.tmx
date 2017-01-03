@@ -738,8 +738,8 @@
       <tuv lang="EN-US">
         <seg>As a consequence, authors of such resources should send a &lt;c3&gt;Vary: Origin&lt;/c3&gt; HTTP header or provide other appropriate control directives to prevent caching of such responses, which may be inaccurate if re-used across-origins.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161203T112051Z" creationid="lv7777" creationdate="20161203T112051Z">
-        <seg>結果として、そのようなリソースの作成者は、&lt;c3&gt; Vary：Origin &lt;/ c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T125957Z" creationid="lv7777" creationdate="20161203T112051Z">
+        <seg>結果として、そのようなリソースの作成者は、&lt;c3&gt;&lt;/c3&gt; Vary：Origin &lt;/c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</seg>
       </tuv>
     </tu>
     <tu>
