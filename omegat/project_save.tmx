@@ -666,8 +666,8 @@ GETメソッドを使用するリクエストのみ許可するAPIのCORS API仕
       <tuv lang="EN-US">
         <seg>An individual who has actual knowledge of a patent which the individual believes contains &lt;a3&gt;Essential Claim(s)&lt;/a3&gt; must disclose the information in accordance with &lt;a4&gt;section 6 of the W3C Patent Policy&lt;/a4&gt;.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20160821T002439Z" creationid="lv7777" creationdate="20160821T002439Z">
-        <seg>特許について十分に知識のある人物が、仕様に&lt;a3&gt;Essential Claim(s)&lt;/a3&gt;が認められると判断した場合は、&lt;a4&gt;W3C特許ポリシーの第6章&lt;/a4&gt;に従い情報を開示する必要がある。.</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T122518Z" creationid="lv7777" creationdate="20160821T002439Z">
+        <seg>特許について十分に知識のある人物が、仕様に&lt;a3&gt;Essential Claim(s)&lt;/a3&gt;が認められると判断した場合は、&lt;a4&gt;W3C特許ポリシーの第6章&lt;/a4&gt;に従い情報を開示する必要がある。</seg>
       </tuv>
     </tu>
     <tu>
