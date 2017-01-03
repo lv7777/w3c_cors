@@ -1147,8 +1147,8 @@ CORS API仕様では、これらの入力変数をAPIで制御できるように
       <tuv lang="EN-US">
         <seg>For each header in &lt;v0&gt;headers&lt;/v0&gt; for which there is &lt;e1&gt;no&lt;/e1&gt; &lt;a2&gt;header cache match&lt;/a2&gt; create a new entry in the &lt;a3&gt;preflight result cache&lt;/a3&gt; with the various fields set as follows:</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20161201T154131Z" creationid="lv7777" creationdate="20161201T154131Z">
-        <seg> &lt;a1&gt;header cache match&lt;/a1&gt; が &lt;e1&gt;無い&lt;/e1&gt; &lt;v0&gt;headers&lt;/v0&gt; 内のそれぞれのヘッダは各種のフィールドに以下の値を設定した新しい&lt;a3&gt;preflight result cache&lt;/a3&gt; のエントリーを作成する：</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T144023Z" creationid="lv7777" creationdate="20161201T154131Z">
+        <seg> &lt;a2&gt;header cache match&lt;/a2&gt; が &lt;e1&gt;無い&lt;/e1&gt; &lt;v0&gt;headers&lt;/v0&gt;内のそれぞれのヘッダは各種のフィールドに以下の値を設定した新しい&lt;a3&gt;preflight result cache&lt;/a3&gt; のエントリーを作成する：</seg>
       </tuv>
     </tu>
     <tu>
