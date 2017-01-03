@@ -3341,8 +3341,8 @@ XMLHttpRequest仕様書のレビューによって、課されるべき種類の
       <tuv lang="EN-US">
         <seg>Whenever the &lt;d0&gt;make a request steps&lt;/d0&gt; are applied, &lt;a1&gt;fetch&lt;/a1&gt; the &lt;a2&gt;request URL&lt;/a2&gt; from &lt;i3&gt;origin&lt;/i3&gt; &lt;a4&gt;source origin&lt;/a4&gt; using &lt;a5&gt;referrer source&lt;/a5&gt; as &lt;i6&gt;override referrer source&lt;/i6&gt; with the &lt;i7&gt;manual redirect flag&lt;/i7&gt; set, and the &lt;i8&gt;block cookies flag&lt;/i8&gt; set if the &lt;a9&gt;omit credentials flag&lt;/a9&gt; is set.</seg>
       </tuv>
-      <tuv lang="JA" changeid="lv7777" changedate="20170103T130112Z" creationid="lv7777" creationdate="20161113T034708Z">
-        <seg>リクエストステップが適用されたかどうかに関係なく、manual redirect flagがセットされたリファラーソースを使用して、参照元オリジンのオリジンからリクエストURLを取得し、その後、もしomit credentials flagが設定されていた場合、ブロックcookie flagを設定します。&lt;d0&gt;&lt;/d0&gt;&lt;a1&gt;&lt;/a1&gt;&lt;a2&gt;&lt;/a2&gt;&lt;i3&gt;&lt;/i3&gt;&lt;a4&gt;&lt;/a4&gt;&lt;a5&gt;&lt;/a5&gt;&lt;i6&gt;&lt;/i6&gt;&lt;i7&gt;&lt;/i7&gt;&lt;i8&gt;&lt;/i8&gt;&lt;a9&gt;&lt;/a9&gt;</seg>
+      <tuv lang="JA" changeid="lv7777" changedate="20170103T135311Z" creationid="lv7777" creationdate="20161113T034708Z">
+        <seg>&lt;d0&gt;リクエスト作成ステップ&lt;/d0&gt;が適用されたかどうかに関係なく、&lt;i7&gt;manual redirect flag&lt;/i7&gt;がセットされた&lt;i6&gt;override referrer source&lt;/i6&gt;とした &lt;a5&gt;リファラーソース&lt;/a5&gt;を使用して、&lt;a4&gt;参照元オリジン&lt;/a4&gt;の&lt;i3&gt;オリジン&lt;/i3&gt;から&lt;a2&gt;リクエストURL&lt;/a2&gt;を&lt;a1&gt;取得&lt;/a1&gt;し、その後、もし&lt;a9&gt;omit credentials flag&lt;/a9&gt;が設定されていた場合、&lt;i8&gt;ブロックcookie flag&lt;/i8&gt;を設定します。</seg>
       </tuv>
     </tu>
     <tu>
