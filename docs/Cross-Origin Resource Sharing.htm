@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <!--<meta charset="utf-8">-->
   <title>Cross-Origin Resource Sharing</title>
   <style>
    .example { margin-left:1em; padding-left:1em; border-left:double; color:#222; background:#fcfcfc }
@@ -590,7 +589,7 @@ ABNF:</p>
 
   <p><em>この節は規定ではない。</em></p>
 
-  <p>複数の <code>Origins</code> と共有を有効にしたいが、 <code>"*"</code> にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、<code> Access-Control-Allow-Origin &lt;/ c2&gt;ヘッダーを動的に生成する必要がある。結果として、そのようなリソースの作成者は、<code> Vary：Origin &lt;/ c3&gt; HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</p>
+  <p>複数の <code>Origins</code> と共有を有効にしたいが、 <code>"*"</code> にはレスポンスを返したくないリソースの場合、実際には、許可したいすべての要求に応じて、<code> Access-Control-Allow-Origin </code>ヘッダーを動的に生成する必要がある。結果として、そのようなリソースの作成者は、<code> Vary：Origin</code> HTTPヘッダーを送信するか、またはそのような応答のキャッシングを防ぐための適切な制御指令を提供する必要があります。</p>
 
 
   <h2 id="user-agent-processing-model"><span class="secno">7 </span>User Agentの処理モデル</h2>
